@@ -86,9 +86,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "50ba66cc3fd2b4a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year 1/SDS/lesson-1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0518cae454ada985",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year 1/DSCS/week-1-4/logic.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -154,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Year 1/DSCS/week-1-4/logic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Year 1/DSCS/week-1-4/logic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +218,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Year 1/DSCS/week-1-4/logic.md"
               }
             }
           }
@@ -211,7 +235,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "README.md",
+                "file": "Year 1/DSCS/week-1-4/logic.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -257,8 +281,10 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "e1bff05c98f92534",
+  "active": "0518cae454ada985",
   "lastOpenFiles": [
+    "Year 1/SDS/lesson-1.md",
+    "README.md",
     "Year 1/CSAO/0x0001/boolean-logic.md",
     "Year 1/NCCD/lesson-2/netkit-intro.md",
     "Year 1/NCCD/lesson-2/lab-02-setup.md",
@@ -266,8 +292,6 @@
     "Year 1/NCCD/lesson-1/osi-7-layer-model.md",
     "Year 1/NCCD/lesson-1/lesson-1-into-overview.md",
     "Year 1/CSAO/0x0001/machine-level-rep-of-data.md",
-    "Year 1/CSAO/0x0001/debuggers.md",
-    "memory ready for execution.md",
-    "Year 1/OSCC/lesson-2/threads.md"
+    "Year 1/CSAO/0x0001/debuggers.md"
   ]
 }
