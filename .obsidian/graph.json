@@ -1,0 +1,51 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:\"Year 1/CSAO\"",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:\"Year 1/DSCS\"",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:\"Year 1/NCCD\"",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "path:\"Year 1/OSCC\"",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -0.2,
+  "nodeSizeMultiplier": 0.686923076923077,
+  "lineSizeMultiplier": 2.78439635535307,
+  "collapse-forces": false,
+  "centerStrength": 0.343956043956044,
+  "repelStrength": 11.7142857142857,
+  "linkStrength": 0.590041208791209,
+  "linkDistance": 287,
+  "scale": 0.4473975708615605,
+  "close": true
+}

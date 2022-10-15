@@ -1,0 +1,193 @@
+{
+  "main": {
+    "id": "761b3849c006b5cb",
+    "type": "split",
+    "children": [
+      {
+        "id": "056cb62c18903365",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Year 1/CSAO/0x0001/boolean-logic.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f1a17ff4d4f20869",
+    "type": "split",
+    "children": [
+      {
+        "id": "26c4c7c27a404dca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e219bebd780e6c9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "2ed04788633b615d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#kernel",
+                "matchingCase": true,
+                "explainSearch": true,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "582c84777cad4bdd",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 259.5
+  },
+  "right": {
+    "id": "e2efc083b9b7dcdc",
+    "type": "split",
+    "children": [
+      {
+        "id": "b379ec1ad0040261",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "63c2ce276dae3a34",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Year 1/CSAO/0x0001/boolean-logic.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "67dd0a7394a900cf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Year 1/CSAO/0x0001/boolean-logic.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e994a49df9b8e3dc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "e8a43f228aa07743",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Year 1/CSAO/0x0001/boolean-logic.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "e7e5d3e132aa53b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "245dabc57ce5f775",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Year 1/CSAO/0x0001/boolean-logic.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [
+                    {
+                      "query": "path:\"Year 1/CSAO\"",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14701138
+                      }
+                    }
+                  ],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.5559484594931873,
+                  "close": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300.5
+  },
+  "active": "056cb62c18903365",
+  "lastOpenFiles": [
+    "Year 1/OSCC/lesson-2/question-set-1.md",
+    "Year 1/OSCC/lesson-2/threads.md",
+    "Year 1/OSCC/lesson-1/lesson-1-intro.md",
+    "Year 1/OSCC/lesson-1/the-kernel.md",
+    "Year 1/OSCC/lesson-1/what-is-an-os.md",
+    "Year 1/OSCC/lesson-1/2-types-of-os.md",
+    "Year 1/OSCC/lesson-2/processes.md",
+    "Year 1/CSAO/0x0000/Registers.md",
+    "Year 1/CSAO/0x0000/Memory Categories.md",
+    "Year 1/CSAO/0x0000/Instruction Sets.md"
+  ]
+}
