@@ -8,111 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "056cb62c18903365",
+            "id": "ab696009646b82a9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 1/CSAO/0x0001/boolean-logic.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c51182a740f7762d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 1/CSAO/0x0001/boolean-logic.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1f515318db488e5e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 1/CSAO/0x0001/xor-encryption.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1616fd345f9ef506",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 1/CSAO/0x0001/machine-level-rep-of-data.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5820e52c3f04a50c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 1/NCCD/lesson-1/osi-7-layer-model.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f2166529c5bd8796",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "e1bff05c98f92534",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "50ba66cc3fd2b4a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 1/SDS/lesson-1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0518cae454ada985",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 1/DSCS/week-1-4/logic.md",
+                "file": "Year 1/DSCS/proofs-1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "vertical"
@@ -178,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 1/DSCS/week-1-4/logic.md",
+                "file": "Year 1/DSCS/proofs-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 1/DSCS/week-1-4/logic.md",
+                "file": "Year 1/DSCS/proofs-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 1/DSCS/week-1-4/logic.md"
+                "file": "Year 1/DSCS/proofs-1.md"
               }
             }
           }
@@ -235,7 +142,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year 1/DSCS/week-1-4/logic.md",
+                "file": "Year 1/DSCS/proofs-1.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -281,8 +188,10 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "0518cae454ada985",
+  "active": "ab696009646b82a9",
   "lastOpenFiles": [
+    "Year 1/DSCS/sets.md",
+    "Year 1/DSCS/logic.md",
     "Year 1/SDS/lesson-1.md",
     "README.md",
     "Year 1/CSAO/0x0001/boolean-logic.md",
@@ -290,8 +199,6 @@
     "Year 1/NCCD/lesson-2/lab-02-setup.md",
     "Year 1/NCCD/lesson-2/lab-02-commands.md",
     "Year 1/NCCD/lesson-1/osi-7-layer-model.md",
-    "Year 1/NCCD/lesson-1/lesson-1-into-overview.md",
-    "Year 1/CSAO/0x0001/machine-level-rep-of-data.md",
-    "Year 1/CSAO/0x0001/debuggers.md"
+    "Year 1/NCCD/lesson-1/lesson-1-into-overview.md"
   ]
 }
