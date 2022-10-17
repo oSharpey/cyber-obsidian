@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4b8e9bd7d555c160",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year 1/OSCC/lesson-3/direct-execution.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 1/CF/lesson-1.md",
+                "file": "Year 1/OSCC/lesson-3/direct-execution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 1/CF/lesson-1.md",
+                "file": "Year 1/OSCC/lesson-3/direct-execution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 1/CF/lesson-1.md"
+                "file": "Year 1/OSCC/lesson-3/direct-execution.md"
               }
             }
           }
@@ -155,7 +167,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year 1/CF/lesson-1.md",
+                "file": "Year 1/OSCC/lesson-3/direct-execution.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -201,17 +213,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "f6fa520d56ea0aea",
+  "active": "4b8e9bd7d555c160",
   "lastOpenFiles": [
+    "Year 1/OSCC/lesson-2/threads.md",
+    "Year 1/OSCC/lesson-2/processes.md",
+    "Year 1/OSCC/lesson-3/direct-execution.md",
+    "Year 1/CF/lesson-1.md",
     "Year 1/DSCS/proofs-1.md",
     "Year 1/DSCS/sets.md",
     "Year 1/DSCS/logic.md",
     "Year 1/SDS/lesson-1.md",
     "README.md",
-    "Year 1/CSAO/0x0001/boolean-logic.md",
-    "Year 1/NCCD/lesson-2/netkit-intro.md",
-    "Year 1/NCCD/lesson-2/lab-02-setup.md",
-    "Year 1/NCCD/lesson-2/lab-02-commands.md",
-    "Year 1/NCCD/lesson-1/osi-7-layer-model.md"
+    "Year 1/CSAO/0x0001/boolean-logic.md"
   ]
 }
