@@ -34,3 +34,8 @@
 
 
 ## There are problems with direct execution
+
+### Problem 1
+- Processes need to be able use additional resources not available in user mode (accessing I/O, changing registers)
+	- It is not a good idea to give the process direct access to kernel mode, this breaks [[cia|CIA]]
+	- 
