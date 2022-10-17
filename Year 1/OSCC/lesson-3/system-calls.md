@@ -7,7 +7,7 @@
 	- Implemented through trap instructions and the **trap table**
 
 ## How the system call works
-1) A process issues a system call to the OS
+1) A [[processes|process]] issues a system call to the OS
 2) An interrupt is raised 
 3) Looks into trap table and finds the address of the interrupt
 4) CPU starts executing the interrupt
@@ -16,7 +16,7 @@
 7) CPU switches back to user mode
 8) Return to the code
 
-- The kernel still needs to maintain a stack however it does not trust the user mode stack
+- The [[the-kernel|kernel]] still needs to maintain a stack however it does not trust the user mode stack
 - To fix this system calls run on a separate **kernel stack**
 
 **The hardware (BIOS) works with the OS to ensure system calls are handled properly**

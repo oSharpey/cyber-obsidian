@@ -41,7 +41,9 @@
 
 - **Solution: Introduce [[system-calls|system calls]]**
 
-- How the system call works:
-	1) A process issues a system call to the OS
-	2) An interrupt is raised 
-	3) 
+### Problem 2: Switching between processes
+- We need to ensure a mechanism to switch between processes
+- Ensure the OS has time to run on the CPU
+- **Solution: Use [[system-calls|system calls]]**
+	- Using a hardware timer: *timer interrupts*
+		- Hardware generates 
