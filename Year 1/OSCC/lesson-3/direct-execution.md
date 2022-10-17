@@ -12,9 +12,15 @@
 - OS will allocate memory to store instructions, static data etc.
 - The program will be loaded into main memory
 - The stack will be set up --> one entry for each function called
-- The bottom of the stack (first entry) will contain the main() function
+- The bottom of the staand the address is 0x%p\n", x, &xck (first entry) will contain the main() function
 - Process will now be in 'ready' state ready to be executed by the CPU
 - OS will clear the registers 
 - Execute call to main() function
 
 **(Process)**
+- Run code
+- Execute a return from the main() function
+
+**(OS)**
+- OS will free the memory used by the process
+- Process gets removed from the process list
