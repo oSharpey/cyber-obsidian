@@ -38,4 +38,14 @@
 ### Problem 1
 - Processes need to be able use additional resources not available in user mode (accessing I/O, changing registers)
 	- It is not a good idea to give the process direct access to kernel mode, this breaks [[cia|CIA]]
-	- 
+
+- Solution: Introduce [[system calls
+	- System call --> A function that runs in kernel mode that has access to system resources 
+	- User process can access system resources through system calls
+	- Allows the OS to control access to the resources
+	- Implemented through trap instructions and the **trap table**
+
+- How the system call works:
+	1) A process issues a system call to the OS
+	2) An interrupt is raised 
+	3) 

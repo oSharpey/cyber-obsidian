@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cia.md",
+                "file": "Year 1/OSCC/lesson-3/direct-execution.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cia.md",
+                "file": "Year 1/OSCC/lesson-3/direct-execution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cia.md",
+                "file": "Year 1/OSCC/lesson-3/direct-execution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cia.md"
+                "file": "Year 1/OSCC/lesson-3/direct-execution.md"
               }
             }
           }
@@ -167,7 +167,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "cia.md",
+                "file": "Year 1/OSCC/lesson-3/direct-execution.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -215,6 +215,7 @@
   },
   "active": "4b8e9bd7d555c160",
   "lastOpenFiles": [
+    "Year 1/OSCC/lesson-3/cia.md",
     "Year 1/OSCC/lesson-3/direct-execution.md",
     "Year 1/CSAO/0x0001/xor-encryption.md",
     "Year 1/CSAO/0x0001/machine-level-rep-of-data.md",
@@ -223,7 +224,6 @@
     "Year 1/CSAO/0x0000/memory-categories.md",
     "Year 1/CSAO/0x0000/registers.md",
     "Year 1/CSAO/0x0000/instruction-sets.md",
-    "Year 1/CSAO/0x0000/data-representation.md",
-    "Year 1/CSAO/0x0000/csao-tutorial-0x0000.pdf"
+    "Year 1/CSAO/0x0000/data-representation.md"
   ]
 }

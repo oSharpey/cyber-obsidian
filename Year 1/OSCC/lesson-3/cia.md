@@ -9,5 +9,8 @@
 - Maintaining consistency and accuracy 
 - Ensure data cannot be altered by unauthorised people 
 
-## Availi
+## Availability 
+- Information should be consistently available to authorised users
+
+
 
