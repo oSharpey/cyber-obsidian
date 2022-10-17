@@ -41,9 +41,10 @@
 
 - **Solution: Introduce [[system-calls|system calls]]**
 
-### Problem 2: Switching between processes
+### Problem 2: [[context-switching|Switching between processes]]
 - We need to ensure a mechanism to switch between processes
 - Ensure the OS has time to run on the CPU
 - **Solution: Use [[system-calls|system calls]]**
 	- Using a hardware timer: *timer interrupts*
-		- Hardware generates 
+		- Hardware time generates interrupts
+		- Interrupt handler (OS) is called similar to a system call (calls the kernel from the trap table allowing the kernel to have time on the CPU)

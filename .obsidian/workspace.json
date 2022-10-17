@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6e760b7defbada33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year 1/OSCC/lesson-3/context-switching.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 1/OSCC/lesson-3/direct-execution.md",
+                "file": "Year 1/OSCC/lesson-3/context-switching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 1/OSCC/lesson-3/direct-execution.md",
+                "file": "Year 1/OSCC/lesson-3/context-switching.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 1/OSCC/lesson-3/direct-execution.md"
+                "file": "Year 1/OSCC/lesson-3/context-switching.md"
               }
             }
           }
@@ -167,7 +179,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year 1/OSCC/lesson-3/direct-execution.md",
+                "file": "Year 1/OSCC/lesson-3/context-switching.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -213,17 +225,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "4b8e9bd7d555c160",
+  "active": "6e760b7defbada33",
   "lastOpenFiles": [
-    "Year 1/OSCC/lesson-3/system-calls.md",
     "Year 1/OSCC/lesson-3/direct-execution.md",
+    "Year 1/OSCC/lesson-3/system-calls.md",
+    "Year 1/OSCC/lesson-3/context-switching.md",
+    "Year 1/OSCC/lesson-3/process-context.md",
     "Year 1/OSCC/lesson-1/what-is-an-os.md",
     "Year 1/OSCC/lesson-3/cia.md",
     "Year 1/CSAO/0x0001/xor-encryption.md",
     "Year 1/CSAO/0x0001/machine-level-rep-of-data.md",
     "Year 1/CSAO/0x0001/debuggers.md",
-    "Year 1/CSAO/0x0001/boolean-logic.md",
-    "Year 1/CSAO/0x0000/memory-categories.md",
-    "Year 1/CSAO/0x0000/registers.md"
+    "Year 1/CSAO/0x0001/boolean-logic.md"
   ]
 }
