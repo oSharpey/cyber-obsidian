@@ -28,7 +28,4 @@ section .text
 
 
 **[[processes-in-memory|Notice that .data .bss and .text are also in the structure of a process in memory]]**
-
-
-
-
+**[[assembly-and-syntax|More of this structure is shown in the Assembly and Syntax section]]**

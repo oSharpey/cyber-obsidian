@@ -60,15 +60,18 @@ section .text
 		mov rax, 1  ; 1 indicated write function
 		mov rdi, 1  ; 1st arg in write(), file descriptor, 1 = stdout
 		mov rsi, hello_world   ; 2nd arg, buffer pointer, points to start address of hello_world
-		mov rdx, length  ; 3rd arg, count, how many bytes that have to be displaye
+		mov rdx, length  ; 3rd arg, count
+		syscall
 
 
+		;Syscall to exit function needed as to not cause seg fault
+		mov rax, 60  ; 60 indicated exit function 
+		mov rdi, 0  ; insure instruction pointer is empty, could also use xor rdi, rdi
+		syscall
+		
 
 section .data
 	hello_world: db 'hello world', 0xa
 	length: equ $ - hello_world
-
-global _start
-
 ```
 

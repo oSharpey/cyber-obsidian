@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 385.5
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -183,21 +183,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 409.5
   },
   "ribbon": {
     "mostRecentAction": ""
   },
   "active": "ffc580375852f00e",
   "lastOpenFiles": [
+    "Year 1/CSAO/0x0002/layout-of-assembly-program.md",
+    "Year 1/CSAO/0x0002/assembly-and-syntax.md",
     "Year 1/DSCS/proofs-1.md",
     "Year 1/CF/lesson-1.md",
     "Year 1/OSCC/lesson-3/direct-execution.md",
     "Year 1/CSAO/0x0001/machine-level-rep-of-data.md",
     "Year 1/CSAO/0x0002/processes-in-memory.md",
-    "Year 1/CSAO/0x0002/layout-of-assembly-program.md",
-    "Year 1/CSAO/0x0002/assembly-and-syntax.md",
     "Year 1/OSCC/lesson-3/system-calls.md",
     "Year 1/OSCC/lesson-3/process-context.md",
     "Year 1/OSCC/lesson-3/context-switching.md"
