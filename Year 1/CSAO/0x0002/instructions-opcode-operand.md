@@ -23,8 +23,9 @@
 |**Opcodes**|**B9**|**42 00 00 00**|
 
 
-# System Calls
+# [[system-calls|System Calls]]
 - 2 spaces in memory --> kernel and user space
 	- User space --> responsible for running user applications (restricted)
 	- Kernel space --> running kernel codes and system processes (privileged)
-- Syscalls --> Used by user space applications to talk to the kernel space though libraies 
+- Syscalls --> Used by user space applications to talk to the kernel space though libraries like *glibc* 
+- System calls for linux are defined in the *unistd_64.h* file
