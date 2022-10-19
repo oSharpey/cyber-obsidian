@@ -8,11 +8,13 @@
 
 section .data
 
-	; All unintialised data goes here
+	; All intialised data goes here
+	; 
 
 section .bss
 
 	; All unintialised data goes here
+	
 
 section .text
 	global _start
@@ -23,6 +25,9 @@ section .text
 
 ; End of program
 ```
+
+
+**[[processes-in-memory|Notice that .data .bss and .text are also in the structure of a process in memory]]**
 
 
 

@@ -74,13 +74,25 @@
               "type": "markdown",
               "state": {
                 "file": "Year 1/CSAO/0x0002/layout-of-assembly-program.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "da28cf91098b9136",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year 1/CSAO/0x0002/assembly-and-syntax.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -146,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 1/CSAO/0x0002/layout-of-assembly-program.md",
+                "file": "Year 1/CSAO/0x0002/assembly-and-syntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 1/CSAO/0x0002/layout-of-assembly-program.md",
+                "file": "Year 1/CSAO/0x0002/assembly-and-syntax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 1/CSAO/0x0002/layout-of-assembly-program.md"
+                "file": "Year 1/CSAO/0x0002/assembly-and-syntax.md"
               }
             }
           }
@@ -203,7 +215,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year 1/CSAO/0x0002/layout-of-assembly-program.md",
+                "file": "Year 1/CSAO/0x0002/assembly-and-syntax.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -249,10 +261,10 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "94293ef691a4add2",
+  "active": "da28cf91098b9136",
   "lastOpenFiles": [
-    "Year 1/CSAO/0x0002/processes-in-memory.md",
     "Year 1/CSAO/0x0002/layout-of-assembly-program.md",
+    "Year 1/CSAO/0x0002/processes-in-memory.md",
     "Year 1/CSAO/0x0001/machine-level-rep-of-data.md",
     "Year 1/OSCC/lesson-3/system-calls.md",
     "Year 1/OSCC/lesson-3/process-context.md",
