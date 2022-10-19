@@ -1,4 +1,3 @@
-
 # Loading and Executing a Binary --> Memory Layout
 
 - When you run a process it is organised in memory as shown in the picture below 
@@ -20,3 +19,6 @@
 	- **Stack**
 		- Contains local variables and function arguments
 		- Controls the program flow
+
+
+![[process-mem-layout.png]]

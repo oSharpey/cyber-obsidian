@@ -62,13 +62,25 @@
               "type": "markdown",
               "state": {
                 "file": "Year 1/CSAO/0x0002/processes-in-memory.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "94293ef691a4add2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year 1/CSAO/0x0002/layout-of-assembly-program.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 1/CSAO/0x0002/processes-in-memory.md",
+                "file": "Year 1/CSAO/0x0002/layout-of-assembly-program.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 1/CSAO/0x0002/processes-in-memory.md",
+                "file": "Year 1/CSAO/0x0002/layout-of-assembly-program.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 1/CSAO/0x0002/processes-in-memory.md"
+                "file": "Year 1/CSAO/0x0002/layout-of-assembly-program.md"
               }
             }
           }
@@ -191,7 +203,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year 1/CSAO/0x0002/processes-in-memory.md",
+                "file": "Year 1/CSAO/0x0002/layout-of-assembly-program.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -237,8 +249,10 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "4b62264e1747b9ca",
+  "active": "94293ef691a4add2",
   "lastOpenFiles": [
+    "Year 1/CSAO/0x0002/processes-in-memory.md",
+    "Year 1/CSAO/0x0002/layout-of-assembly-program.md",
     "Year 1/CSAO/0x0001/machine-level-rep-of-data.md",
     "Year 1/OSCC/lesson-3/system-calls.md",
     "Year 1/OSCC/lesson-3/process-context.md",
@@ -246,8 +260,6 @@
     "Year 1/OSCC/lesson-3/context-switching.md",
     "Year 1/OSCC/lesson-1/what-is-an-os.md",
     "Year 1/OSCC/lesson-3/cia.md",
-    "Year 1/CSAO/0x0001/xor-encryption.md",
-    "Year 1/CSAO/0x0001/debuggers.md",
-    "Year 1/CSAO/0x0001/boolean-logic.md"
+    "Year 1/CSAO/0x0001/xor-encryption.md"
   ]
 }
