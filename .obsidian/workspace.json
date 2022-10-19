@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "d9eed04580c02984",
+        "id": "5a40e6782c204733",
         "type": "tabs",
         "children": [
           {
-            "id": "ffc580375852f00e",
+            "id": "5aa99a577003258d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Year 1/CSAO/0x0002/assembly-and-syntax.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c7697b535b9f0c7d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year 1/CSAO/0x0002/instructions-opcode-operand.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.5
+    "width": 200
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 1/CSAO/0x0002/assembly-and-syntax.md",
+                "file": "Year 1/CSAO/0x0002/instructions-opcode-operand.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 1/CSAO/0x0002/assembly-and-syntax.md",
+                "file": "Year 1/CSAO/0x0002/instructions-opcode-operand.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 1/CSAO/0x0002/assembly-and-syntax.md"
+                "file": "Year 1/CSAO/0x0002/instructions-opcode-operand.md"
               }
             }
           }
@@ -142,7 +155,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year 1/CSAO/0x0002/assembly-and-syntax.md",
+                "file": "Year 1/CSAO/0x0002/instructions-opcode-operand.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -183,15 +196,16 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409.5
+    "width": 200,
+    "collapsed": true
   },
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "ffc580375852f00e",
+  "active": "c7697b535b9f0c7d",
   "lastOpenFiles": [
-    "Year 1/CSAO/0x0002/layout-of-assembly-program.md",
     "Year 1/CSAO/0x0002/assembly-and-syntax.md",
+    "Year 1/CSAO/0x0002/layout-of-assembly-program.md",
     "Year 1/DSCS/proofs-1.md",
     "Year 1/CF/lesson-1.md",
     "Year 1/OSCC/lesson-3/direct-execution.md",

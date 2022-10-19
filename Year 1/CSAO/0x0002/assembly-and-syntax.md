@@ -8,6 +8,19 @@
 	- Uses Intel Syntax
 - The Netwide Assembler [NASM]
 
+
+### **AT&T vs Intel**
+
+#### AT&T
+- Prefixes registers with *%* and constants with *$*
+- Different order of operands --> `mov $0x6, %edi`
+	- The source is *$0x6* and the destination is *%edi*
+
+#### intel
+- There are no prefixed on the registers and constants 
+- The order of the operands is opposite of AT&T --> `mov edi, 0x6`
+	- Source is *0x6* and the destination is *edi* 
+
 ### **Syntax**
 #### GAS
 ``` nasm
