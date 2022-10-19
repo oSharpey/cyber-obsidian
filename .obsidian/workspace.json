@@ -49,14 +49,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 1/OSCC/lesson-3/system-calls.md",
+                "file": "Year 1/CSAO/0x0001/machine-level-rep-of-data.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4b62264e1747b9ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year 1/CSAO/0x0002/processes-in-memory.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 1/OSCC/lesson-3/system-calls.md",
+                "file": "Year 1/CSAO/0x0002/processes-in-memory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 1/OSCC/lesson-3/system-calls.md",
+                "file": "Year 1/CSAO/0x0002/processes-in-memory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 1/OSCC/lesson-3/system-calls.md"
+                "file": "Year 1/CSAO/0x0002/processes-in-memory.md"
               }
             }
           }
@@ -179,7 +191,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year 1/OSCC/lesson-3/system-calls.md",
+                "file": "Year 1/CSAO/0x0002/processes-in-memory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -225,16 +237,16 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "6e760b7defbada33",
+  "active": "4b62264e1747b9ca",
   "lastOpenFiles": [
+    "Year 1/CSAO/0x0001/machine-level-rep-of-data.md",
+    "Year 1/OSCC/lesson-3/system-calls.md",
     "Year 1/OSCC/lesson-3/process-context.md",
     "Year 1/OSCC/lesson-3/direct-execution.md",
     "Year 1/OSCC/lesson-3/context-switching.md",
-    "Year 1/OSCC/lesson-3/system-calls.md",
     "Year 1/OSCC/lesson-1/what-is-an-os.md",
     "Year 1/OSCC/lesson-3/cia.md",
     "Year 1/CSAO/0x0001/xor-encryption.md",
-    "Year 1/CSAO/0x0001/machine-level-rep-of-data.md",
     "Year 1/CSAO/0x0001/debuggers.md",
     "Year 1/CSAO/0x0001/boolean-logic.md"
   ]
