@@ -30,7 +30,7 @@
 ```
 
 #### MASM
-```
+``` nasm
 extrn ExitProcess : proc
 
 .data
@@ -38,7 +38,37 @@ extrn ExitProcess : proc
 
 .code
 	_main PROC
+		mov rax, 25
+		mov rax, 50
 
+		xor rcx, rcx
+		call ExitProcess
+	_main ENDP
+
+END
 ```
 
+#### NASM
+
+```nasm
+global _start
+
+section .text
+	_start:
+
+		;Syscall to write() function
+		mov rax, 1  ; 1 indicated write function
+		mov rdi, 1  ; 1st arg in write(), file descriptor, 1 = stdout
+		mov rsi, hello_world   ; 2nd arg, buffer pointer, points to start address of hello_world
+		mov rdx, length  ; 3rd arg, count, how many bytes that have to be displaye
+
+
+
+section .data
+	hello_world: db 'hello world', 0xa
+	length: equ $ - hello_world
+
+global _start
+
+```
 
