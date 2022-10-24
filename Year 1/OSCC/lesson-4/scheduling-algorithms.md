@@ -15,7 +15,7 @@ The turnaround times for each process are as follows:
 - A: 10s
 - B: 20s
 - C: 30s
-This gives an average turnaround time of 20s
+This gives an average turnaround time is 20s
 
 **What if the conditions aren't optimal?**
 
@@ -26,7 +26,23 @@ The turnaround times for each process are as follows:
 - A: 100s
 - B: 110s
 - C: 120s
-This gives an average turnaround time of 110s
+This gives an average turnaround time is 110s
+
+This shows the disadvantages of FIFO, it is very simple however it cannot be optimised leading to long turnaround times
+
+## SJF - Shortest Job First
+
+### All processed submitted at the same time
+![[sjf-optimal.png]]
+The turnaround times for each process are as follows:
+- A: 120s
+- B: 10s
+- C: 20s
+This gives an average turnaround time is 50s
+
+### One job arrives late
+
+
 
 
 
