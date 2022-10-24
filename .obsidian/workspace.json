@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1eda3a088c129660",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year 1/OSCC/lesson-4/scheduling-algorithms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 1/OSCC/lesson-4/scheduling.md",
+                "file": "Year 1/OSCC/lesson-4/scheduling-algorithms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 1/OSCC/lesson-4/scheduling.md",
+                "file": "Year 1/OSCC/lesson-4/scheduling-algorithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 1/OSCC/lesson-4/scheduling.md"
+                "file": "Year 1/OSCC/lesson-4/scheduling-algorithms.md"
               }
             }
           }
@@ -167,7 +179,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year 1/OSCC/lesson-4/scheduling.md",
+                "file": "Year 1/OSCC/lesson-4/scheduling-algorithms.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -214,10 +226,10 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "4ca1f032aa5f0cd9",
+  "active": "1eda3a088c129660",
   "lastOpenFiles": [
-    "Year 1/OSCC/lesson-3/system-calls.md",
     "Year 1/OSCC/lesson-4/scheduling.md",
+    "Year 1/OSCC/lesson-3/system-calls.md",
     "Year 1/OSCC/lesson-3/process-context.md",
     "Year 1/CSAO/0x0002/assembly-and-syntax.md",
     "Year 1/CSAO/0x0002/processes-in-memory.md",

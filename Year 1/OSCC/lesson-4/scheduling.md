@@ -37,10 +37,15 @@
 	- Balance - Keep all parts of the system busy
 - **Batch Systems**
 	- Throughput - maximise the number of jobs per hour
-	- Turnaround time - "minimise time between submission and termination" --> this means keeping the hardware as busy as possible 
+	- Turnaround time - "minimise time between submission and termination" 
 	- CPU utilisation - Keep the CPU busy at all times
 - **Interactive systems**
-	- Response time - mini
+	- Response time - minimise time between submission and first run
+	- Proportionality - meet users expectations, some processes may have higher priority to run
+	- *There has to be a compromise with how busy the hardware is and the interactivity of the system*
+- **Real Time systems**
+	- Meeting deadlines - avoids data loss
+	- Predictability - avoid losing quality in multimedia systems (streaming etc)
 
 
 
