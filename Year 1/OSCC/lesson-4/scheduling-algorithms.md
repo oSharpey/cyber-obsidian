@@ -88,5 +88,12 @@ Response Times
 ### No overlapping
 - The scheduler in the image below does no allow process B to have time on the CPU once process A is blocked by I/O. 
 - Causes the throughput to be very low 
+![[no-overlap-scheduling.png]]
 
+### With overlapping
+- Overlap as much as you can
+- As soon as a process is blocked another process can have time on the CPU
+- Allows the CPU to stay busy all the time
+
+![[overlapping-scheduler.png]]
 

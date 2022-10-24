@@ -33,7 +33,7 @@
 
 ### Process Control Block#
 - Process management 
-	- Scheduling
+	- [[scheduling|Scheduling]]
 - Memory management
 	- Works with logical addresses
 	- OS maps logical addresses to physical addresses
