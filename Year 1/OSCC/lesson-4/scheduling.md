@@ -7,6 +7,9 @@
 
 
 # Why do you need to schedule
+- Forking processes --> the parent and child are both in a ready state, need to decide which one gets ran first
+- If a process has terminated --> next process to run needs to be decided 
+- If a process has been blocked by I/O
 
 
 
