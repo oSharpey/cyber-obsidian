@@ -228,6 +228,8 @@
   },
   "active": "1eda3a088c129660",
   "lastOpenFiles": [
+    "Images/fifo-optimal.png",
+    "Year 1/OSCC/lesson-4/scheduling-algorithms.md",
     "Year 1/OSCC/lesson-4/scheduling.md",
     "Year 1/OSCC/lesson-3/system-calls.md",
     "Year 1/OSCC/lesson-3/process-context.md",
@@ -235,8 +237,6 @@
     "Year 1/CSAO/0x0002/processes-in-memory.md",
     "Year 1/CF/lesson-1.md",
     "Year 1/CSAO/0x0002/instructions-opcode-operand.md",
-    "Year 1/CSAO/0x0002/layout-of-assembly-program.md",
-    "Year 1/DSCS/proofs-1.md",
-    "Year 1/OSCC/lesson-3/direct-execution.md"
+    "Year 1/CSAO/0x0002/layout-of-assembly-program.md"
   ]
 }
