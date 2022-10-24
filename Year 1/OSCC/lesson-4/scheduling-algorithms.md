@@ -41,7 +41,36 @@ The turnaround times for each process are as follows:
 This gives an average turnaround time is 50s
 
 ### One job arrives late
+![[sjf-late-arrival.png]]
 
+
+The turnaround times for each process are as follows:
+- A: 100s
+- B: 110s
+- C: 120s
+This gives an average turnaround time is 110s
+
+**A late job causes SJF to have the same average turnaround time as FIFO**
+
+---
+
+# Preemptive
+- A process can be taken off the CPU by the scheduler
+- Turnaround time does not matter as much anymore, response time is more important 
+
+## STCF - Shortest Time to Complete First
+![[stcf.png]]
+
+Turnaround times
+- A: 120s
+- B: 10s
+- C: 20s
+- Avg: 50s
+Response Times
+- A: 0s
+- B: 0s
+- C: 0s
+- Avg: 
 
 
 
