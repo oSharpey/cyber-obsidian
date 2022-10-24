@@ -24,6 +24,18 @@
 	- Interactive systems (general purpose OS)
 		- Interacts with the user
 		- Cannot afford to run one job at a time
+		- Preemptive
+	- Real time systems (IOT sensors)
+		- Needs to process data in real time
+		- Usually preemptive
+
+
+#  Scheduling Metrics
+- All systems
+	- Fairness --> Give each process a fair amount of time on the CPU
+	- Policy enforcement 
+	- Balance - Keep all p
+
 
 
 
