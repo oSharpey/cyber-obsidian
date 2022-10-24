@@ -69,11 +69,24 @@ Turnaround times
 Response Times
 - A: 0s
 - B: 0s
-- C: 0s
-- Avg: 
+- C: 10s
+- Avg: 3.3s
 
 
+## Round Robbin
+
+![[round-robbin.png]]
+Response Times
+- A: 0s
+- B: 1s
+- C: 2s
+- Avg: 1s
 
 
+## The problem with I/O
+
+### No overlapping
+- The scheduler in the image below does no allow process B to have time on the CPU once process A is blocked by I/O. 
+- Causes the throughput to be very low 
 
 
