@@ -32,9 +32,15 @@
 
 #  Scheduling Metrics
 - All systems
-	- Fairness --> Give each process a fair amount of time on the CPU
+	- Fairness - Give each process a fair amount of time on the CPU
 	- Policy enforcement 
-	- Balance - Keep all p
+	- Balance - Keep all parts of the system busy
+- **Batch Systems**
+	- Throughput - maximise the number of jobs per hour
+	- Turnaround time - "minimise time between submission and termination" --> this means keeping the hardware as busy as possible 
+	- CPU utilisation - Keep the CPU busy at all times
+- **Interactive systems**
+	- Response time - mini
 
 
 
