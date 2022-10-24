@@ -1,5 +1,5 @@
 # What is CPU Scheduling
-- When a [[context-switching|context switch]] happens, which process out of the pool of [[processes|ready processes]] will be given time on the CPU (run the process)
+- When a [[context-switching|context switch]] happens, which process out of the pool of [[processes|ready processes]] will be given time on the CPU ([[direct-execution|run the process]])
 - The scheduler schedules the CPU requests (bursts, time shares) of processes
 	- Burst/time-share --> the CPU times used by a process in a continuous stretch
 	- If a process comes back after being blocked by I/O it counts as a new burst
@@ -10,7 +10,7 @@
 - Forking processes --> the parent and child are both in a ready state, need to decide which one gets ran first
 - If a process has terminated --> next process to run needs to be decided 
 - If a process has been blocked by I/O
-- Hardware timer interrupt --> [[scheduling|2 policies]]:
+- Hardware timer interrupt --> [[scheduling-algorithms|2 policies]]:
 	- Non-preemptive --> let the process run until it finishes
 	- Preemptive --> can interrupt the current running process
 

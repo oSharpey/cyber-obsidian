@@ -47,12 +47,8 @@
             "id": "1eda3a088c129660",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 1/OSCC/lesson-3/direct-execution.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ],
@@ -122,7 +118,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 1/OSCC/lesson-3/direct-execution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +134,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 1/OSCC/lesson-3/direct-execution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,9 +155,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Year 1/OSCC/lesson-3/direct-execution.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -179,7 +171,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year 1/OSCC/lesson-3/direct-execution.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -228,15 +219,15 @@
   },
   "active": "1eda3a088c129660",
   "lastOpenFiles": [
+    "Year 1/OSCC/lesson-4/scheduling.md",
+    "Year 1/OSCC/lesson-4/scheduling-algorithms.md",
+    "Year 1/OSCC/lesson-3/direct-execution.md",
     "Year 1/OSCC/lesson-3/context-switching.md",
     "Year 1/OSCC/lesson-3/cia.md",
     "Year 1/OSCC/lesson-2/threads.md",
     "Year 1/OSCC/lesson-2/processes.md",
     "Year 1/OSCC/lesson-1/what-is-an-os.md",
     "Year 1/OSCC/lesson-1/the-kernel.md",
-    "Year 1/OSCC/lesson-1/lesson-1-intro.md",
-    "Year 1/OSCC/lesson-4/scheduling.md",
-    "Year 1/OSCC/lesson-3/system-calls.md",
-    "Year 1/OSCC/lesson-2/question-set-1.md"
+    "Year 1/OSCC/lesson-1/lesson-1-intro.md"
   ]
 }
