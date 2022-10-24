@@ -23,12 +23,28 @@
             "id": "c7697b535b9f0c7d",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Year 1/OSCC/lesson-3/system-calls.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4ca1f032aa5f0cd9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year 1/OSCC/lesson-4/scheduling.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -78,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 394.5
+    "width": 200
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -94,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Year 1/OSCC/lesson-4/scheduling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Year 1/OSCC/lesson-4/scheduling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +149,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Year 1/OSCC/lesson-4/scheduling.md"
+              }
             }
           }
         ],
@@ -147,6 +167,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Year 1/OSCC/lesson-4/scheduling.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -187,13 +208,16 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "c7697b535b9f0c7d",
+  "active": "4ca1f032aa5f0cd9",
   "lastOpenFiles": [
+    "Year 1/OSCC/lesson-3/system-calls.md",
+    "Year 1/OSCC/lesson-3/process-context.md",
     "Year 1/CSAO/0x0002/assembly-and-syntax.md",
     "Year 1/CSAO/0x0002/processes-in-memory.md",
     "Year 1/CF/lesson-1.md",
@@ -201,8 +225,6 @@
     "Year 1/CSAO/0x0002/layout-of-assembly-program.md",
     "Year 1/DSCS/proofs-1.md",
     "Year 1/OSCC/lesson-3/direct-execution.md",
-    "Year 1/CSAO/0x0001/machine-level-rep-of-data.md",
-    "Year 1/OSCC/lesson-3/system-calls.md",
-    "Year 1/OSCC/lesson-3/process-context.md"
+    "Year 1/CSAO/0x0001/machine-level-rep-of-data.md"
   ]
 }
