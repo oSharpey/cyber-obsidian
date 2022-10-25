@@ -59,11 +59,9 @@
             "id": "95e50b51af3e56f6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Year 1/NCCD/lab-03/lab-03-notes.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20221025144628.png"
               }
             }
           }
@@ -134,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 1/NCCD/lab-03/lab-03-notes.md",
+                "file": "Pasted image 20221025144628.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 1/NCCD/lab-03/lab-03-notes.md",
+                "file": "Pasted image 20221025144628.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 1/NCCD/lab-03/lab-03-notes.md"
+                "file": "Pasted image 20221025144628.png"
               }
             }
           }
@@ -191,7 +189,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year 1/NCCD/lab-03/lab-03-notes.md",
+                "file": "Pasted image 20221025144628.png",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,6 +237,8 @@
   },
   "active": "95e50b51af3e56f6",
   "lastOpenFiles": [
+    "Year 1/NCCD/lab-03/lab-03-lecture-notes.md",
+    "Images/hub-diagram.png",
     "Year 1/NCCD/lesson-1/Untitled.md",
     "Year 1/NCCD/lab-02/lab-02-commands.md",
     "Year 1/NCCD/lab-02/lab-02-setup.md",
@@ -246,8 +246,6 @@
     "Year 1/OSCC/lesson-4/scheduling.md",
     "Year 1/OSCC/lesson-4/scheduling-algorithms.md",
     "Year 1/OSCC/lesson-3/direct-execution.md",
-    "Year 1/OSCC/lesson-3/context-switching.md",
-    "Year 1/OSCC/lesson-3/cia.md",
-    "Year 1/OSCC/lesson-2/threads.md"
+    "Year 1/OSCC/lesson-3/context-switching.md"
   ]
 }
