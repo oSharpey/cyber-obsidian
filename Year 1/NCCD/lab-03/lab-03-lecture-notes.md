@@ -35,6 +35,12 @@
 	- Not waiting ages for a response 
 
 
+# Loops connecting switches
+- Causes broadcast storms
+- **LOOPS BAD!!!!**
+
+
+
 
 
 
