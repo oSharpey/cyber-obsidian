@@ -12,9 +12,13 @@
 - Like a hub but with memory
 - Also called a bridge
 - Switches start off effectively as a hub, but as network traffic goes through it the switch learns (caches MAC addresses)
-![[Pasted image 20221025144628.png]]
+![[switch-diagram-01.png]]
 
 ## 2 switches connected together
+![[2-switch-diagram.png]]
+![[two-switches-notes-01.png]]
+![[two-switch-notes-02.png]]
+![[two-switches-notes-03.png]]
 
 
 # Constraints
@@ -26,7 +30,7 @@
 - Frames will always end up in order
 
 ## Soft
-- Bandwidth is cheap - Dont care how much traffic you are sending on a LAN
+- Bandwidth is cheap - Don't care how much traffic you are sending on a LAN
 - Latency should be low 
 	- Not waiting ages for a response 
 
