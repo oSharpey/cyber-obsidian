@@ -9,5 +9,9 @@
 # Switches
 - Like a hub but with memory
 - Also called a bridge
-- Switches start off effectively as a hub, but as network traffic goes through it the switch learns (caches MAC addresses )
+- Switches start off effectively as a hub, but as network traffic goes through it the switch learns (caches MAC addresses)
+
+
+## 2 switches connected together
+
 
