@@ -21,6 +21,8 @@
 - It only becomes a zero day when someone knows about it
 - Exposed with a zero day exploit
 - Often sold on the dark web, sometimes for £100,000s
+- Zero day malware is malware with no known antivirus signature
+- It is in the interest of organised cyber criminal gangs to sit on a zero day for as long as possible so they can exploit it for as long as possible
 
 #### 7 Stages of Zero Day
 1) The vulnerability is introduced by coders (intentionally or not)
@@ -31,6 +33,8 @@
 6) The software vendor releases the patch for the exploit
 7) The software vendor feels like a significant number of endpoints has installed the patch
 
+- This 7 stage model also parallels the life cycle of a pandemic
+
 #### Markets
 - Dark Web 
 	- Selling zero day on dark web marketplaces 
@@ -38,5 +42,9 @@
 	- A threat actor with the zero day informs the company they know about it and demand money from the company
 - Threat hunters
 	- Only legitimate market
-	- Usually a company scheme
+	- Usually a company scheme that allows people to find vulnerabilities and get paid a prize of sort by the company
+
+#### Zero Day Examples
+- Stuxnet - Exploited 4 zero days
+- Sony zero day (2014) - Films were leaked, brought down Sony's network, leaked companies 
 
