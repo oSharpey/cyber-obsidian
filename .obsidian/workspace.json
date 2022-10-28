@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 1/NCCD/lab-03/lab-03-lecture-notes.md",
+                "file": "Year 1/CF/the-cyber-lexicon.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5
+    "width": 200
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 1/NCCD/lab-03/lab-03-lecture-notes.md",
+                "file": "Year 1/CF/the-cyber-lexicon.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 1/NCCD/lab-03/lab-03-lecture-notes.md",
+                "file": "Year 1/CF/the-cyber-lexicon.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 1/NCCD/lab-03/lab-03-lecture-notes.md"
+                "file": "Year 1/CF/the-cyber-lexicon.md"
               }
             }
           }
@@ -191,7 +191,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year 1/NCCD/lab-03/lab-03-lecture-notes.md",
+                "file": "Year 1/CF/the-cyber-lexicon.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -232,15 +232,16 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "ribbon": {
     "mostRecentAction": ""
   },
   "active": "95e50b51af3e56f6",
   "lastOpenFiles": [
-    "Images/two-switches-notes-03.png",
     "Year 1/NCCD/lab-03/lab-03-lecture-notes.md",
+    "Images/two-switches-notes-03.png",
     "Images/two-switch-notes-02.png",
     "Images/two-switches-notes-01.png",
     "Images/2-switch-diagram.png",
