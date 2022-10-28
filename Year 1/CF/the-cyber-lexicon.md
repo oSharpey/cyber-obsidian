@@ -71,5 +71,13 @@
 
 ### Who are the threats 
 - **Outsider Threats**
-	- 
+	- Nation state actors
+	- Organised criminals or criminal groups
+	- Amateur hackers
+- **Insider threats** - Users with legitimate access to a companies assets/systems and abuse them either on purpose or not.
+	- Employees that do not take security policies seriously 
+	- Disgruntled current or former employees 
+	- Business partners and people with system access
+	- May be planted by criminal groups or bribed by these groups
+	- Insider threats are usually of more concern than outsider threats.
 
