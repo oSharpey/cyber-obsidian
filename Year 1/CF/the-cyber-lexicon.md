@@ -46,5 +46,30 @@
 
 #### Zero Day Examples
 - Stuxnet - Exploited 4 zero days
-- Sony zero day (2014) - Films were leaked, brought down Sony's network, leaked companies 
+- Sony zero day (2014) - Films were leaked, brought down Sony's network, leaked company business plans and senior exec emails
+- RSA (2011) - Adobe flash player zero led to RSA network to be compromised 
+- Operation Aurora 
+
+
+### Capability 
+- Commodity Capability 
+	- Readily available tools that can be purchased off the darkweb
+	- Example - Poison Ivy: a remote access tool (RAT)
+- Bespoke Capability
+	- Producing bespoke malware to serve a specific purpose
+	- Can become a commodity when it is discovered and sold on
+
+
+### Types of Attacks
+- Untargeted 
+	- Phising
+	- Water holing
+	- Ransomware
+- Targeted 
+	- Spear phishing
+	- Botnets
+
+### Who are the threats 
+- **Outsider Threats**
+	- 
 
