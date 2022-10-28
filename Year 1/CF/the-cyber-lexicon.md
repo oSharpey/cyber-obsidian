@@ -7,13 +7,23 @@
 - Example: the threat could be the software and the vulnerability would be a buffer overflow
 
 ### What are vulnerabilities
-#### Flaws
-- Programming/design errors/shortcomings
-#### Features
-- Macros (Like word vbs macro malware)
-- JavaScript
-#### User Error
-
+3 main types of vulnerabilities 
+- **Flaws**
+	- Programming/design error/shortcomings
+- **Features**
+	- Macros (like in MS Word)
+	- JavaScript
+- **User Error**
+	- User causes vulnerability
 
 ### Zero Day Vulnerabilities
-- A vulnerability that e
+- A vulnerability that exists and has been disclosed but there is no known mitigation (no patch)
+- It only becomes a zero day when someone knows about it
+- Exposed with a zero day exploit
+- Often sold on the dark web, sometimes for £100,000s
+
+#### 7 Stages of Zero Day
+1) The vulnerability is introduced by coders (intentionally or not)
+2) A threat actor discovers the vulnerability
+3) The software vendor becomes aware
+4) 
