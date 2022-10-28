@@ -24,6 +24,19 @@
 
 #### 7 Stages of Zero Day
 1) The vulnerability is introduced by coders (intentionally or not)
-2) A threat actor discovers the vulnerability
+2) A threat actor discovers the vulnerability and sells it on one of 3 markets
 3) The software vendor becomes aware
-4) 
+4) The vendor discloses it publicly and the vulnerability gets a CVE number
+5) Anti-Virus and security companies produce a malware signature for the vulnerability - completed when the AV company releases the signature
+6) The software vendor releases the patch for the exploit
+7) The software vendor feels like a significant number of endpoints has installed the patch
+
+#### Markets
+- Dark Web 
+	- Selling zero day on dark web marketplaces 
+- Extortion
+	- A threat actor with the zero day informs the company they know about it and demand money from the company
+- Threat hunters
+	- Only legitimate market
+	- Usually a company scheme
+
