@@ -26,4 +26,18 @@
 - Uses the Linux *nice* levels
 	- Default values from -20 to +19
 	- A lower value means a higher priority 
-- Affects the length of the time 
+- Affects the length of the CPU time slice (CPU burst) given to the process
+
+
+## Data Structures
+- Red-Black trees
+	- A balanced tree containing processes in ready state
+	- Searching time becomes logarithmic
+- Built and maintained based on the processes' *vruntime*
+
+
+## Dealing with processes in Blocked state
+- Problem:
+	- A process which is in a blocked state for a long time will have a very low *vruntime* and monopolise the CPU when they return
+- Solution:
+	- Reset the *vruntime* of a returning process to the lowest value currently in the tree

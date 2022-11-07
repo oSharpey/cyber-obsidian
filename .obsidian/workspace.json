@@ -4,107 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "5a40e6782c204733",
+        "id": "6c88b9f5bbee4860",
         "type": "tabs",
         "children": [
           {
-            "id": "5aa99a577003258d",
+            "id": "ab25615f8d1c1726",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "year-1/CSAO/0x0002/assembly-and-syntax.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c7697b535b9f0c7d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/OSCC/lesson-3/system-calls.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4ca1f032aa5f0cd9",
+            "id": "050eab12ae8f67a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/OSCC/lesson-4/scheduling.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1eda3a088c129660",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/NCCD/lab-02/lab-02-commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "95e50b51af3e56f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/OSCC/lesson-4/scheduling-algorithms.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b4f5a8fe55537fe2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/OSCC/lesson-5/mlfq.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9c7a1fe065f1c714",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/OSCC/lesson-5/proportional-share-scheduler.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e26394670eea4c97",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/OSCC/lesson-5/completely-fair-scheduler.md",
+                "file": "year-1/CSAO/0x0003/assembly-program-structure.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/OSCC/lesson-5/completely-fair-scheduler.md",
+                "file": "year-1/CSAO/0x0003/assembly-program-structure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/OSCC/lesson-5/completely-fair-scheduler.md",
+                "file": "year-1/CSAO/0x0003/assembly-program-structure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/OSCC/lesson-5/completely-fair-scheduler.md"
+                "file": "year-1/CSAO/0x0003/assembly-program-structure.md"
               }
             }
           }
@@ -226,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/OSCC/lesson-5/completely-fair-scheduler.md",
+                "file": "year-1/CSAO/0x0003/assembly-program-structure.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -270,17 +198,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "e26394670eea4c97",
+  "active": "050eab12ae8f67a1",
   "lastOpenFiles": [
+    "year-1/CSAO/0x0002/instructions-opcode-operand.md",
+    "year-1/CSAO/0x0003/assembly-program-structure.md",
+    "year-1/CSAO/0x0002/assembly-and-syntax.md",
+    "year-1/OSCC/lesson-3/system-calls.md",
+    "year-1/OSCC/lesson-4/scheduling.md",
+    "year-1/NCCD/lab-02/lab-02-commands.md",
+    "year-1/OSCC/lesson-4/scheduling-algorithms.md",
     "year-1/OSCC/lesson-5/mlfq.md",
     "year-1/OSCC/lesson-5/proportional-share-scheduler.md",
-    "year-1/OSCC/lesson-5/completely-fair-scheduler.md",
-    "year-1/CF/the-cyber-lexicon.md",
-    "images/mlfq-image-2.png",
-    "images/mlfq-image-1.png",
-    "year-1/OSCC/lesson-4/scheduling.md",
-    "year-1/OSCC/lesson-4/scheduling-algorithms.md",
-    "year-1/DSCS/sets.md",
-    "year-1/DSCS/proofs-1.md"
+    "year-1/OSCC/lesson-5/completely-fair-scheduler.md"
   ]
 }
