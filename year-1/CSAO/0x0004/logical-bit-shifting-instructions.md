@@ -91,4 +91,25 @@ sal qword [qNum], cl
 
 
 ## shr instruction 
-- Shift the source operand right by from
+- Shift the source operand right by from 1 to 31 bits
+- empty bit positions are cleared
+- the CF flag is loaded with the LSB that got shifted out of the operand
+- the immediate number is the number if places to shift
+- the destination operand cannot be immediate 
+```nasm
+; Syntax 
+shr <dest>, <imm>  
+shr <dest>, cl  
+
+; Examples
+shr ax, 8  
+sar rcx, 32  
+shr rax, cl  
+sar qword [qNum], cl
+```
+![[images/shr-instruction.png]]
+
+
+## sar instruction
+- The arithmetic right shift moves the bits the number of specified places to the right but treats the operand as a signed number which preserves the sign
+- In layman's terms 
