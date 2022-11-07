@@ -1,4 +1,4 @@
-# Scheduling Continued 
+ .# Scheduling Continued 
 ## Multi-level Feedback Queue (MLFQ)
 - How can we build a scheduler without any inferred knowledge about the processes
 	- Learn from the past
@@ -63,15 +63,19 @@ If a job gives up the CPU before it uses an entire time slice, it stays on the s
 ### Priority Boost
 **Rule 5**:
 After some time period decided by the kernel programmer or user, move all the jobs to the highest priority 
+(This fixes problem 1 & 3 above)
 
 ### Improving CPU Usage Tracking
 **Rule 4 (revised)**:
 Once a uses up its time allotment (CPU time slice) at a given level (regardless of how many times its given up the CPU), its priority is reduced
+(Kills of gaming)
 
 ## Tuning MLFQ
 - **Setting up the parameters**
 	- How many queues are there
 	- How big is the time slice
+		- Time slice is usually in milliseconds (ms)
+		- Bases on a multiplier of the hardware timer
 	- How often to boost priority 
 
 - **Mostly determined heuristically**
