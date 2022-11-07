@@ -23,5 +23,32 @@ dec <REG>
 dec <MEM>
 ```
 
-## Integer Addition
+## add instruction
+- add instruction adds together two operands, storing the result in the first operand
+``` nasm
+; Syntax
+add <REG>,<REG>
+add <REG>, <MEM>
+add <MEM>,<REG>
+add <REG>,<immediate value>
+add <MEM>,<immediate value>
+; Examples
+add rax, 10 ; add 10 to the contents of RAX.
+add BYTE PTR [var_1], 10 ; add 10 to the single byte stored at memory address “var_1”.
+```
 
+
+## adc instruction - add with carry
+- adds together 2 operands and the value in the carry flag, stores the result in the first operand
+- destination = destination + source + CF
+``` nasm
+; Syntax
+adc destination,source
+```
+
+- Carry flag manipulating instructions
+	- `stc` --> 'set carry flag', sets CF to 1
+	- `clc` --> 'clear carry flag', clears CF to 0
+	- `cmc` --> 'complement carry flag', inverts the value in the CF
+
+## Sub instruction
