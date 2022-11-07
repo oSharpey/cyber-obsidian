@@ -39,7 +39,7 @@
 
 ## Stride Scheduling
 - Each process has 
-	- *Stride* = inverse in proportion to the number of tickets it has
+	- *Stride* = inverse in proportion to the number of tickets it has, the more tickets the lower the stride
 	- maintain a counter called a *pass* accumulating the strides used
 - Algorithm
 	- run the process with the lowest pass
