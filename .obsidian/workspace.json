@@ -248,15 +248,15 @@
   },
   "active": "33fe788758b36c28",
   "lastOpenFiles": [
-    "year-1/CSAO/0x0004/arithmetic-instrcutions.md",
+    "images/shl-sal-diagram.png",
+    "Pasted image 20221107181541.png",
+    "Pasted image 20221107181512.png",
     "year-1/CSAO/0x0004/logical-bit-shifting-instructions.md",
+    "year-1/CSAO/0x0004/arithmetic-instrcutions.md",
     "year-1/CSAO/0x0004/the-stack.md",
     "year-1/CSAO/0x0003/types-of-mov-instructions.md",
     "year-1/CSAO/Untitled.md",
     "year-1/CSAO/0x0003/assembly-program-structure.md",
-    "year-1/CSAO/0x0002/instructions-opcode-operand.md",
-    "year-1/CSAO/0x0002/assembly-and-syntax.md",
-    "year-1/OSCC/lesson-3/system-calls.md",
-    "year-1/OSCC/lesson-4/scheduling.md"
+    "year-1/CSAO/0x0002/instructions-opcode-operand.md"
   ]
 }

@@ -66,4 +66,29 @@ not qword [qNum]
 - `shr` (logical shift right)
 - `sar` (arithmetic shift right)
 
-## shl and sal instru
+## shl and sal instructions
+- both perform the same operation 
+- shift the source operand left by from 1 to 31 bit positions 
+- Empty bit positions are cleared
+- the CF flag is loaded with the MSB that got shifted out of the operand 
+- the immediate number is the number if places to shift
+- the destination operand cannot be immediate 
+```nasm
+; Syntax
+shl <dest>, <imm>  
+sal <dest>, <imm>  
+sal <dest>, cl  
+shl <dest>, cl  
+
+; Examples 
+shl ax, 8  
+sal rcx, 32  
+shl rax, cl  
+sal qword [qNum], cl
+```
+
+![[images/shl-sal-diagram.png]]
+
+
+## shr instruction 
+- Shift the source operand right by from
