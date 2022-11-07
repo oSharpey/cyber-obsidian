@@ -51,4 +51,16 @@ If a job gives up the CPU before it uses an entire time slice, it stays on the s
 ^ Showing how MLFQ works using the rules above with one long (batch) job and a long job & short job (from scheduling cont. PP by Dr Christo Panchev)
 
 ![[images/mlfq-image-2.png]]
-^ Showing how MLFQ works using the rules above with one long (batch) job and a  (from scheduling cont. PP by Dr Christo Panchev)
+^ Showing how MLFQ works using the rules above with one long (batch) job and an interactive I/O heavy job (from scheduling cont. PP by Dr Christo Panchev)
+
+## Issues With These 4 Rules
+- Batch process starvation
+- You are able to attack/game the scheduling algorithm (monopolise the CPU)
+- What happens if a process changes its behaviour (from batch to interactive)
+	- No rule to increase the priority of a process
+
+## Possible MLFQ Fixes
+
+### Priority Boost
+**Rule 5**:
+After some time period decided by the kernel programmer or user, move all the jobs to the highest prior
