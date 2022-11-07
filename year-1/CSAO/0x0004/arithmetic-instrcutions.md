@@ -65,3 +65,12 @@ sub <MEM>,<immediate value>
 sub rax, 10 ; subtract contents of RAX from the immediate value 10.  
 sub [var_1], esi ; subtract the contents of ESI from the 32-bit ; integer stored at memory location “var”.
 ```
+
+## sbb instruction
+- subtracts the second operand from the first and then subtracts the value in the carry flag 
+- Finally indicates the borrow in the CF
+- destination = destination - source - CF
+``` nasm
+; Syntax
+sbb destination,source
+```
