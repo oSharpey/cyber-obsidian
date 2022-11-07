@@ -5,8 +5,19 @@
 - section .text
 
 
-## section .data - Datatypes
+## section .data 
 
-|Type|Length||
+### Datatypes
+|Type|Length|Name|
 |-|-|-|
-|mov|rax|0x42|
+|db|8 bits|Bytes|
+|dw|16 bits|Word|
+|dd|32 bits|Double Word|
+|dq|64 bits|Quadword
+
+### Initialising Variables and Constants in .data
+**\<variable name\>**  **\<type>**  **\<value\>**
+var_2: dw 0x7788
+
+**\<constant name\>**  **equ**  **\<value\>**
+Capacity equ 100 
