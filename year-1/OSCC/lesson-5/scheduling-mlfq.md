@@ -43,4 +43,12 @@ When a job enters the system, it is placed at the highest priority (assumes all 
 **Rule 4a**:
 If a job uses up the entire CPU time slice while running it gets moved down 1 priority level
 
-**Rule 4b
+**Rule 4b**:
+If a job gives up the CPU before it uses an entire time slice, it stays on the same priority level
+
+
+![[images/mlfq-image-1.png]]
+^ Showing how MLFQ works using the rules above with one long (batch) job and a long job & short job (from scheduling cont. PP by Dr Christo Panchev)
+
+![[images/mlfq-image-2.png]]
+^ Showing how MLFQ works using the rules above with one long (batch) job and a  (from scheduling cont. PP by Dr Christo Panchev)
