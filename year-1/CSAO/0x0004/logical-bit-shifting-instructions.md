@@ -20,10 +20,50 @@ and qword [qNum], rdx
 - Performs a logical OR operation on 2 operands and places the result in the first operand 
 - Both operands cannot be in memory
 - The destination operand cannot be an immediate 
-```
-Syntax: or <dest>, <src>  
-Examples: or ax, bx  
+```nasm
+; Syntax
+or <dest>, <src>  
+
+; Examples
+or ax, bx  
 or rcx, rdx  
 or eax, dword [dNum]  
 or qword [qNum], rdx
 ```
+
+## xor instruction - Bitwise XOR (^)
+- Performs a logical XOR operation on 2 operands and places the result in the first operand 
+- Both operands cannot be in memory
+- The destination operand cannot be an immediate 
+```nasm
+; Syntax
+xor <dest>, <src>  
+
+; Examples
+xor ax, bx  
+xor rcx, rdx  
+xor eax, dword [dNum]  
+xor qword [qNum], rdx
+```
+
+## not instruction - Bitwise NOT (~ or !)
+- Performs a logical not operation
+- operand cannot be an immediate
+```nasm
+; Syntax 
+not <op>  
+
+; Examples 
+not ax  
+not rdx  
+not dword [dNum]  
+not qword [qNum]
+```
+
+# Bit Shifting Operations
+- `shl` (logical left shift)
+- `sal` (arithmetic shift left)
+- `shr` (logical shift right)
+- `sar` (arithmetic shift right)
+
+## shl and sal instru
