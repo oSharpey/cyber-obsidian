@@ -112,4 +112,20 @@ sar qword [qNum], cl
 
 ## sar instruction
 - The arithmetic right shift moves the bits the number of specified places to the right but treats the operand as a signed number which preserves the sign
-- In layman's terms 
+- In layman's terms the MSB is maintained 
+- The CF flag is loaded withe the last bit shifted out
+- the immediate number is the number if places to shift
+- the destination operand cannot be immediate 
+
+``` nasm
+; Syntax 
+sar <dest>, <imm>  
+sar <dest>, cl  
+
+; Examples 
+sar ax, 8  
+sar rcx, 32  
+sar rax, cl  
+sar qword [qNum], cl
+```
+![[images/sar-diagram.png]]

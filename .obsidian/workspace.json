@@ -62,7 +62,7 @@
               "type": "markdown",
               "state": {
                 "file": "year-1/CSAO/0x0004/logical-bit-shifting-instructions.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -234,17 +234,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "8e219bebd780e6c9",
+  "active": "b76987211048b82f",
   "lastOpenFiles": [
+    "year-1/CSAO/0x0004/the-stack.md",
+    "images/sar-diagram.png",
+    "year-1/CSAO/0x0004/logical-bit-shifting-instructions.md",
     "year-1/CSAO/0x0004/arithmetic-instrcutions.md",
     "images/shr-instruction.png",
-    "year-1/CSAO/0x0004/logical-bit-shifting-instructions.md",
     "images/shl-sal-diagram.png",
     "Pasted image 20221107181541.png",
     "Pasted image 20221107181512.png",
-    "year-1/CSAO/0x0004/the-stack.md",
     "year-1/CSAO/0x0003/types-of-mov-instructions.md",
-    "year-1/CSAO/Untitled.md",
-    "year-1/CSAO/0x0003/assembly-program-structure.md"
+    "year-1/CSAO/Untitled.md"
   ]
 }
