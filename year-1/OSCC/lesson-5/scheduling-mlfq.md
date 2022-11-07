@@ -25,3 +25,22 @@
 - Observed behaviour 
 	- Processes with lots of I/O gets higher priority 
 	- Processes that use the CPU the most get lower priority 
+
+### Problems 
+- High priority queue can monopolise time on the CPU
+
+
+## MLFQ Algorithm Rules
+**Rule 1**:
+If Priority(A) > Priority(B), A runs and B doesn't
+
+**Rule 2**
+If Priority(A) = Priority(B), A & B run in round robin
+
+**Rule 3**:
+When a job enters the system, it is placed at the highest priority (assumes all processes are interactive)
+
+**Rule 4a**:
+If a job uses up the entire CPU time slice while running it gets moved down 1 priority level
+
+**Rule 4b
