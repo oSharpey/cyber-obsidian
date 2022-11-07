@@ -60,7 +60,40 @@ If a job gives up the CPU before it uses an entire time slice, it stays on the s
 	- No rule to increase the priority of a process
 
 ## Possible MLFQ Fixes
-
 ### Priority Boost
 **Rule 5**:
-After some time period decided by the kernel programmer or user, move all the jobs to the highest prior
+After some time period decided by the kernel programmer or user, move all the jobs to the highest priority 
+
+### Improving CPU Usage Tracking
+**Rule 4 (revised)**:
+Once a uses up its time allotment (CPU time slice) at a given level (regardless of how many times its given up the CPU), its priority is reduced
+
+## Tuning MLFQ
+- **Setting up the parameters**
+	- How many queues are there
+	- How big is the time slice
+	- How often to boost priority 
+
+- **Mostly determined heuristically**
+	- A 'good' set of default values
+	- SysAdmins can fine tune the config
+
+---
+# THE MLFQ SCHEDULER 
+
+**Rule 1**:
+If Priority(A) > Priority(B), A runs and B doesn't
+
+**Rule 2**
+If Priority(A) = Priority(B), A & B run in round robin
+
+**Rule 3**:
+When a job enters the system, it is placed at the highest priority (assumes all processes are interactive)
+
+**Rule 4**:
+Once a uses up its time allotment (CPU time slice) at a given level (regardless of how many times its given up the CPU), its priority is reduced
+
+**Rule 5**:
+After some time period decided by the kernel programmer or user, move all the jobs to the highest priority 
+
+---
