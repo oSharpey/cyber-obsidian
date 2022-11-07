@@ -8,4 +8,23 @@
 	- Lottery scheduling
 
 ## The lottery
-- The scheduler issues a set number of tick
+- The scheduler issues a set number of tickets
+- The total number of tickets composes the total CPU time
+- Each ticket represents a CPU time slice
+- The proportion of tickets that a process holds represents its share of the CPU time
+- As you add more processes you can reduce the time slice for each ticket
+- At every cycle:
+	- The scheduler randomly selects a winning ticket
+	- The process holding the winning ticket is given access to the CPU
+
+## Advantages of Using Randomness
+- Simplifies the overall algorithm 
+	- No need for detailed accounting like with MLFQ
+- No need to worry about many of the worst case scenarios with fairness issues
+- Computationally light
+	- As long as you have a fast pseudo-random number generator
+
+
+## Working With Tickets
+- Ticket transfer
+	- A process can transfer some of its tickets to another process

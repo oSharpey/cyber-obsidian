@@ -1,4 +1,4 @@
- .# Scheduling Continued 
+# Scheduling Continued 
 ## Multi-level Feedback Queue (MLFQ)
 - How can we build a scheduler without any inferred knowledge about the processes
 	- Learn from the past
