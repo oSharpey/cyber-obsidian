@@ -28,3 +28,22 @@
 ## Working With Tickets
 - Ticket transfer
 	- A process can transfer some of its tickets to another process
+	- Boosts another process to execution
+- Ticket currency
+	- A user can hold tickets and distribute them to its processes using a different value for its tickets
+	- The user's 'currency' is converted to the global currency when tickets are sent to the scheduler
+- Ticket inflation
+	- A process can lower or increase the number of tickets it holds
+	- Massive security problem so only works in trusted environments 
+
+
+## Stride Scheduling
+- Each process has 
+	- *Stride* = inverse in proportion to the number of tickets it has
+	- maintain a counter called a *pass* accumulating the strides used
+- Algorithm
+	- run the process with the lowest pass
+	- *pass* += *stride*
+
+
+
