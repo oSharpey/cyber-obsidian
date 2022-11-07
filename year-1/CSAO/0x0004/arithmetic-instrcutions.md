@@ -51,4 +51,17 @@ adc destination,source
 	- `clc` --> 'clear carry flag', clears CF to 0
 	- `cmc` --> 'complement carry flag', inverts the value in the CF
 
-## Sub instruction
+## sub instruction
+- subtracts the second operand from the first
+``` nasm
+; Syntax
+sub <REG>,<REG>  
+sub <REG>,<MEM>  
+sub <MEM>,<REG>  
+sub <REG>,<immediate value>  
+sub <MEM>,<immediate value>  
+
+; Examples  
+sub rax, 10 ; subtract contents of RAX from the immediate value 10.  
+sub [var_1], esi ; subtract the contents of ESI from the 32-bit ; integer stored at memory location “var”.
+```
