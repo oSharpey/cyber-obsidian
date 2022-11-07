@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/CSAO/0x0000/data-representation.md",
+                "file": "year-1/DSCS/sets.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/CSAO/0x0000/data-representation.md",
+                "file": "year-1/DSCS/sets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/CSAO/0x0000/data-representation.md",
+                "file": "year-1/DSCS/sets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/CSAO/0x0000/data-representation.md"
+                "file": "year-1/DSCS/sets.md"
               }
             }
           }
@@ -190,7 +190,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/CSAO/0x0000/data-representation.md",
+                "file": "year-1/DSCS/sets.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -235,15 +235,15 @@
   },
   "active": "95e50b51af3e56f6",
   "lastOpenFiles": [
+    "year-1/DSCS/proofs-1.md",
+    "year-1/DSCS/logic.md",
+    "year-1/CSAO/0x0000/data-representation.md",
     "year-1/CSAO/0x0000/memory-categories.md",
     "year-1/CSAO/0x0000/registers.md",
     "year-1/CSAO/0x0000/cpu-architecture.md",
     "README.md",
     "year-1/CF/the-cyber-lexicon.md",
     "year-1/NCCD/lab-03/lab-03-lecture-notes.md",
-    "images/two-switches-notes-03.png",
-    "images/two-switch-notes-02.png",
-    "images/two-switches-notes-01.png",
-    "images/2-switch-diagram.png"
+    "images/two-switches-notes-03.png"
   ]
 }
