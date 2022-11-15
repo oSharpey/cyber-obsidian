@@ -10,11 +10,24 @@ tcpdump -v -i eth0 -w /hostlab/gw-d1.pcap
 ``` 
 nc -u 172.28.97.46 51966
 ```
+- Once you try to send UDP traffic 
+
 
 ### Set up listeners
 ```
 nc -l -p 51966  # On gwW
-nc -l -p 5
+nc -l -p 57005  # on m7
+```
+These 2 commands are wrong as it does not specify UDP
 
 ```
+nc -u -l -p 51966  # On gwW
+nc -u -l -p 57005  # on m7
+```
 
+### Hex values of port numbers 
+Port 51966: 0xcafe
+Port 57005: 0xdead
+
+
+### Send UDP Traffic to M7 from M1
