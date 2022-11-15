@@ -10,8 +10,7 @@ tcpdump -v -i eth0 -w /hostlab/gw-d1.pcap
 ``` 
 nc -u 172.28.97.46 51966
 ```
-- Once you try to send UDP traffic 
-
+- Once you try to send UDP traffic it will receive a ICMP destination unreachable packet and quit out of the nc session
 
 ### Set up listeners
 ```
@@ -29,5 +28,16 @@ nc -u -l -p 57005  # on m7
 Port 51966: 0xcafe
 Port 57005: 0xdead
 
-
 ### Send UDP Traffic to M7 from M1
+```
+echo "hello m7" | nc -q0 51966
+```
+
+
+
+
+
+
+
+
+
