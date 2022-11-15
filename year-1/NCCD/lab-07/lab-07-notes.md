@@ -28,9 +28,10 @@ nc -u -l -p 57005  # on m7
 Port 51966: 0xcafe
 Port 57005: 0xdead
 
-### Send UDP Traffic to M7 from M1
+### Send UDP Traffic to M7 from M1 and from m1 to gwW
 ```
-echo "hello m7" | nc -q0 51966
+echo "hello m7" | nc -q0 172.21.62.107 57005
+echo "hello gwW" | nc -q0 172.28.97.40 51966
 ```
 
 
