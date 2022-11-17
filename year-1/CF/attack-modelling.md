@@ -1,3 +1,14 @@
 # Attack Modelling Techniques (AMT)
+- Constructed using a combination of shapes such as cirlces, ellipses and rectangles to cyber
 - Preconditions - conditions that must exist for an exploit to be successful
-- 
+- Exploits - Could be anything talked about in previous lecture, always result in a new condition called a "post-condition"
+- Arcs connecting preconditions mean that both conditions have to exist for an exploit to succeed 
+- Rectangle - Precondition
+- Ellipses - Exploit
+- Post-condition is result of the exploit 
+- Going to look at:
+	- Cyber kill chain
+	- Attack graph
+	- Attack tree
+	- Fault tree
+- AMTs can determine attack probabili
