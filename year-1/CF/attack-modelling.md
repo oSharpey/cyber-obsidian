@@ -21,8 +21,8 @@
 - If you have paid subscription 
 	- WIFI password can be brute forced because it is generated before the date and time is set
 	- Means there are a very small amount of passwords to brute force 
-- Also able to connect via sprint network
+- Also able to connect via sprint network and Sierra wireless Celluar Unit
 
-- Once connected they were able to reflash the 
+- Once connected they were able to reflash the the Renesas V850 and jailbreak the system through a frimware over the air update ()
 
 
