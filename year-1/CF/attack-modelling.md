@@ -20,7 +20,9 @@
 # Jeep Cherokee Hack
 - If you have paid subscription 
 	- WIFI password can be brute forced because it is generated before the date and time is set
-	- WAP2 password is based on default system Epoch time 
 	- Means there are a very small amount of passwords to brute force 
+- Also able to connect via sprint network
+
+- Once connected they were able to reflash the 
 
 
