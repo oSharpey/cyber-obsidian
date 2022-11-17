@@ -18,3 +18,5 @@
 - Combination of preconditions and exploits is a goal - goal is also a precondition 
 
 # Jeep Cherokee Hack
+- If the car has an active subscription
+	- WIFI password can be brute forced because it is generated before the date and time is set
