@@ -58,4 +58,5 @@
 
 ### Multilevel Page Tables
 - Page table spread over many pages
-- 
+- Significantly reduces the size of the page tables
+- Downside is that when you translate an address you now need multiple read operations from memory, can be up to 7 levels deep
