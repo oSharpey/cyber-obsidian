@@ -44,3 +44,18 @@
 	- If TLB is it, PA can be directly used
 	- If TLB miss, then MMU performs additional memory access to "walk" the page table, then the new mapping will be stored in TLB
 - TLB misses are expensive 
+
+### How are page tables stored in memory
+- Typical page size is between 4k-8k
+- If each PTE is 4 bytes, the the page table is 4MB
+- One table per process..... lots of memory used
+- How to reduce the size of page tables
+	- Larger pages so fewer entries
+	- some OS can dynamically change the size of page tables 
+- How does OS allocate memory for large tables
+	- page table is stored in smaller chunks
+
+
+### Multilevel Page Tables
+- Page table spread over many pages
+- 
