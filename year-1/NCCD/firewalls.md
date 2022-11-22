@@ -26,9 +26,39 @@
 	- define who can access that particular network
 - Port Security
 	- define control rules with port numbers
-	- blocking specific ports
+	- Blocking specific ports
 - DMZ
 	- Related with architecture - how you design your network
 	- Not hardware or software
 - Protocol Switching
-	- Defining the rules according to your protocol 
+	- Defining the rules according to your protocol
+- Dynamic Packet filtering
+	- Used with IDS and IPS
+	- Dynamically decides which rules apply at that specific time
+
+## Firewalls at different OSI layers
+- Stateful and stateless network layer firewalls
+	- Can detect TCP/UDP
+- NGFW
+	- Can detect application protocols
+
+### Stateless Firewall
+- Basic packet filter
+- Does not remember the packets sent
+- Does not examine a packet is stand-alone or part of a message stream
+- Does not monitor the connection status
+- Use less memory than stateful
+- For example no idea if a TCP handshake is happening
+
+### Stateful firewall
+- Keeps tack of connections and data streams passing through
+- Can identify packets that are part of established connection
+- Better to prevent network attacks that look to exploit existing connections
+- Can track connection-less protocols like UDP
+- A bit slower than stateless firewalls
+
+### NGFW
+- Can read application data alongside IP header
+- can detect application layer protocols
+- Can set proxy rules
+- Slower than Network layer firewalls
