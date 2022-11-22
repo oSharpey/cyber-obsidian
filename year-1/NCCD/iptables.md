@@ -7,7 +7,7 @@
 - each table contains a chain
 - each chain can have one or more rules
 
-### Tables
+## Tables
 - Filter table
 - NAT table
 - Mangle table
@@ -27,5 +27,19 @@
 
 ### Mangle table
 - specialised packet alteration like QoS bits and TCP header
+
 ### Raw table
-- Used for O
+- Used for configuration exceptions
+
+## iptables rules
+- contains criteria and targets for packets
+	- Target - Accept, reject, drop etc
+- If a rule matched, iptables execute the rile and slip other rules
+- If a rule does not match it moves to the next rule
+- So, rules are first come fist serve
+
+## Target Values for Firewall Rules
+- ACCEPT - Firewall lets packet through
+- DROP - Firewall drops the packet without error message
+- REJECT - DROP and sends an error message
+- There are more target values. some values are specific to particular tables.
