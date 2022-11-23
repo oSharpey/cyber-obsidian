@@ -33,12 +33,19 @@
 # Parameter Passing
 - A combination of registers and the stack is used to pass parameters to and/or from a function
 - The first 6 integer arguments are passed in registers as follows
-
+|Argument #|64-bit|32-bit|
+|-|-|-|
+|1|RDI|EDI|
+|2|RSI|ESI|
+|3|RDX|EDX|
+|4|RCX|ECX|
+|5|R8|R8D|
+|6|R9|R9D|
 
 
 # Calling convention - Register use
 - Some registers are are expected to be preserved across a function call
 
 # Stack frame layout
-- From the 7th argument onwards the arguments will be stored on the stack as shown below
+- From the 7th argument onward the arguments will be stored on the stack as shown below
 
