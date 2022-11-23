@@ -1,6 +1,4 @@
-# The Stack
-
-## Review
+# The Stack Review
 - Memory used to store functions, local variables, and flow control
 	- Last In First Out structure
 
@@ -26,7 +24,21 @@
 		- two instructions that handle the linkage, call and ret
 			- call \<fun name>; calls a function, push the 64 bit RIP register and jump to \<fun name>
 			- ret; returns from a function, pop the stack into the rip register, effecting a jump to the line after the call
-	- Argument:
-		- sends info
-	- 
+	- Argument Transmission:
+		- sends information to the function and obtain a result
+			- transmitting values to a function: call-by-value
+			- transmitting address to a function: call-by-reference
+
+
+# Parameter Passing
+- A combination of registers and the stack is used to pass parameters to and/or from a function
+- The first 6 integer arguments are passed in registers as follows
+
+
+
+# Calling convention - Register use
+- Some registers are are expected to be preserved across a function call
+
+# Stack frame layout
+- From the 7th argument onwards the arguments will be stored on the stack as shown below
 
