@@ -109,14 +109,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/CSAO/0x0007/the-stack-review.md",
+                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e9a91ed85a6f8437",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -182,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/CSAO/0x0007/the-stack-review.md",
+                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/CSAO/0x0007/the-stack-review.md",
+                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/CSAO/0x0007/the-stack-review.md"
+                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md"
               }
             }
           }
@@ -238,7 +250,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/CSAO/0x0007/the-stack-review.md",
+                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -282,8 +294,10 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "f0b948b8a53f2e88",
+  "active": "e9a91ed85a6f8437",
   "lastOpenFiles": [
+    "year-1/CSAO/0x0007/procedures.md",
+    "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
     "year-1/OSCC/lesson-7/paging.md",
     "year-1/NCCD/iptables.md",
     "year-1/NCCD/lab-07/lab-07-notes.md",
@@ -291,8 +305,6 @@
     "year-1/NCCD/firewalls.md",
     "README.md",
     "year-1/OSCC/Untitled.md",
-    "year-1/CF/attack-modelling.md",
-    "year-1/NCCD/lab-02/lab-02-commands.md",
-    "year-1/CSAO/0x0004/logical-bit-shifting-instructions.md"
+    "year-1/CF/attack-modelling.md"
   ]
 }
