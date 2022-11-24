@@ -29,8 +29,10 @@
 
 
 # Cyber Kill Chain
-- Dont have to use all the 
-## Reconasense
+- Dont have to use all the sections
+- Does not have to be in order
+
+##  Reconnaissance
 - Did the scan IPs
 - What did they do to find out about their target
 - Eg wannacry - Active scanning, scanning the internet for public facing port 445 (SMB) anyone with the p
@@ -58,4 +60,6 @@
 - C2 used when you have a weak payload and have a good payload on the C2 server
 - Now into the system (installed) server sends instructions to the malware on the system (Could instructions to scan for files and send them back)
 
+## Actions and objectives
+- wannacry - test the nhs, not meant to spread as far as it did
 
