@@ -145,7 +145,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/CF/mitre-att&ck-and-killchain.md",
+                "file": "year-1/CF/wannacry-timeline.md",
                 "mode": "source",
                 "source": false
               }
@@ -218,7 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/CF/mitre-att&ck-and-killchain.md",
+                "file": "year-1/CF/wannacry-timeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,7 +235,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/CF/mitre-att&ck-and-killchain.md",
+                "file": "year-1/CF/wannacry-timeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -258,7 +258,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/CF/mitre-att&ck-and-killchain.md"
+                "file": "year-1/CF/wannacry-timeline.md"
               }
             }
           }
@@ -274,7 +274,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/CF/mitre-att&ck-and-killchain.md",
+                "file": "year-1/CF/wannacry-timeline.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -320,8 +320,8 @@
   },
   "active": "5928dc1ee72aa9ab",
   "lastOpenFiles": [
-    "year-1/CF/wannacry-timeline.md",
     "year-1/CF/mitre-att&ck-and-killchain.md",
+    "year-1/CF/wannacry-timeline.md",
     "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
     "year-1/CSAO/0x0003/assembly-program-structure.md",
     "year-1/CSAO/0x0004/arithmetic-instrcutions.md",
