@@ -126,9 +126,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2b2fba797cf05efb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "year-1/CF/mitre-att&ck-and-killchain.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -194,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
+                "file": "year-1/CF/mitre-att&ck-and-killchain.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
+                "file": "year-1/CF/mitre-att&ck-and-killchain.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md"
+                "file": "year-1/CF/mitre-att&ck-and-killchain.md"
               }
             }
           }
@@ -250,7 +262,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
+                "file": "year-1/CF/mitre-att&ck-and-killchain.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -294,11 +306,11 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "e9a91ed85a6f8437",
+  "active": "2b2fba797cf05efb",
   "lastOpenFiles": [
+    "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
     "year-1/CSAO/0x0003/assembly-program-structure.md",
     "year-1/CSAO/0x0004/arithmetic-instrcutions.md",
-    "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
     "year-1/CSAO/0x0007/procedures.md",
     "year-1/OSCC/lesson-7/paging.md",
     "year-1/NCCD/iptables.md",
