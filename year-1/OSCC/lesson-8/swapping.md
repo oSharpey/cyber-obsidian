@@ -39,4 +39,32 @@
 	- OS updates the PTE - PFN to point to the page in memory
 	- Return to hardware to retry address resolution
 - OS might have to swap out another page to free up memory
-- The affected process is in a blocked s
+- The affected process is in a blocked state throughout these steps
+
+
+## Page Replacement Policy
+### Idea
+- Decides which page to swap out to disk
+- Swapping in/out is a very expensive process
+- Goal:
+	- maximise the TLB hits
+	- minimise the TLB misses
+- Optimal:
+	- Replace the page that will be accessed furthest in the future
+
+### Algorithms
+- Random
+- FIFO
+	- assumes pages loaded a long time ago are not going to be used and can be dumped
+- Least-Frequently-Used (LFU)
+- Least-Recently-Used (LRU)
+
+## Thrashing
+- What if you completely run out of memory
+	- system will constantly be paging - Thrashing
+
+- Select a set of processes to run first
+	- Hopefully they will finish and free up memory
+	- Others will stay in swap space
+- Kill some processes
+	- Terminate some memory intensive processes
