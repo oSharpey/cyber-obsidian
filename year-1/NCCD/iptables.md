@@ -60,6 +60,8 @@ layer 2 then layer 3 then layer 4
 ```bash
 iptables -P FORWARD DROP   # Convert defaut_accept to default_drop
 
+#### CONFIGURE RULE TO GET PACKETS FROM CLIENT TO SERVER ####
+
 iptables -A FORWARD \
 	-i eth0 \
 	-o eth1 \
@@ -68,7 +70,17 @@ iptables -A FORWARD \
 	-p tcp \
 	--dport 80 \
 	! --sport 1:1023 \
+	-j ACCEPT
 
+#### CONFIGURE RULE TO GET PACKETS FROM SERVER TO CLIENT ####
 
-
+iptables -A FORWARD \
+	-i eth1 \
+	-o eth0 \
+	! -s 172.28.97.40/29 \
+	-d 172.28.97.40/29 \
+	-p tcp \
+	--sport 80 \
+	! --dport 1:1023 \
+	-j ACCEPT
 ```
