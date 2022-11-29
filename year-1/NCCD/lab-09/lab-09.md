@@ -47,8 +47,12 @@ tcpdump -v -i eth0 -w /hostlab/.dumps/m7-eth0-d1.pcap
 tcpdump -v -i eth0 -w /hostlab/.dumps/gw-eth0-d1.pcap
 tcpdump -v -i eth1 -w /hostlab/.dumps/gw-eth1-d1.pcap
 
-## CANNOT PING 
+#### CANNOT PING THROUGH GWX AS GWX FIREWALL ONLY CONFGIGURED FORWARD CHAIN TO ALLOW TCP AND UDP PACKETS, WILL DROP ALL ICMP PACKETS ####
 
+
+## Rule to permit IMCP traffic on gwX 
+iptables -A FORWARD -i eth0 -o eth1 -s 0.0.0.0/0 -d 0.0.0.0/0 -p icmp -j ACCPET
+iptables -A FORWARD -i eth1 -o eth0 -s 0.0.0.0/0 -d 0.0.0.0/0 -p icmp -j ACCEPT
 
 
 
