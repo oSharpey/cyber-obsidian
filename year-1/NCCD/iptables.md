@@ -52,12 +52,22 @@ First thing that matches will hit
 Network Firewall - Put rules on forward chain
 Host Firewall - Put rules on input and output chain
 
+consider things in a particular order
+layer 2 then layer 3 then layer 4
+
 ## Commands
 
 ```bash
-iptables -P 
+iptables -P FORWARD DROP   # Convert defaut_accept to default_drop
 
-iptables -A FORWARD 
+iptables -A FORWARD \
+	-i eth0 \
+	-o eth1 \
+	-s 172.28.97.40/29 \
+	! -d 172.28.97.40/29 \
+	-p tcp \
+	--dport 80 \
+	! --sport 1:1023 \
 
 
 
