@@ -58,10 +58,10 @@ layer 2 then layer 3 then layer 4
 ## Commands
 
 ```bash
-iptables -P FORWARD DROP   # Convert defaut_accept to default_drop
+#### CONVERT DEFAULT_ACCEPT TO DEFAULT_DROP ####
+iptables -P FORWARD DROP   
 
 #### CONFIGURE RULE TO GET PACKETS FROM CLIENT TO SERVER ####
-
 iptables -A FORWARD \
 	-i eth0 \
 	-o eth1 \
@@ -73,7 +73,6 @@ iptables -A FORWARD \
 	-j ACCEPT
 
 #### CONFIGURE RULE TO GET PACKETS FROM SERVER TO CLIENT ####
-
 iptables -A FORWARD \
 	-i eth1 \
 	-o eth0 \
@@ -83,4 +82,13 @@ iptables -A FORWARD \
 	--sport 80 \
 	! --dport 1:1023 \
 	-j ACCEPT
+
+
+#### LIST A PARTICULAR CHAIN ####
+iptables -L FORWARD
+
+
+#### LIST WITH LINE NUMBERS AND MORE INFO (VERBOSE) ####
+iptables -nvL FORWARD
+
 ```
