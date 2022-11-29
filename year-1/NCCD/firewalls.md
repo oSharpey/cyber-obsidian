@@ -49,6 +49,7 @@
 - Does not monitor the connection status
 - Use less memory than stateful
 - For example no idea if a TCP handshake is happening
+- Looks at one packet and does not care about any history
 
 ### Stateful firewall
 - Keeps tack of connections and data streams passing through
@@ -56,6 +57,7 @@
 - Better to prevent network attacks that look to exploit existing connections
 - Can track connection-less protocols like UDP
 - A bit slower than stateless firewalls
+- Looks at one packet in the context of the history before it 
 
 ### NGFW
 - Can read application data alongside IP header
