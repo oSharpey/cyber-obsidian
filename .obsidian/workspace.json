@@ -8,175 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ab25615f8d1c1726",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/NCCD/firewalls.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "02e8b327ecae52e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/NCCD/stateless-firewalls.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "050eab12ae8f67a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/CSAO/0x0003/assembly-program-structure.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b9ed27c48711f728",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/CSAO/0x0003/types-of-mov-instructions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bb2240860ccaa97d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/CF/attack-modelling.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "09445a9b752382cf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "12292f34b243d52c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/OSCC/lesson-7/paging.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "47ebbeb3ed1cd528",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/NCCD/firewalls.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "548d04cc27d5db29",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/OSCC/lesson-7/paging.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f0b948b8a53f2e88",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e9a91ed85a6f8437",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2b2fba797cf05efb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/CF/mitre-att&ck-and-killchain.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5928dc1ee72aa9ab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/CF/mitre-att&ck-and-killchain.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b163809b6e840c8f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/OSCC/lesson-8/swapping.md",
+                "file": "year-1/NCCD/iptables.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -242,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/NCCD/stateless-firewalls.md",
+                "file": "year-1/NCCD/iptables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -259,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/NCCD/stateless-firewalls.md",
+                "file": "year-1/NCCD/iptables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -282,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/NCCD/stateless-firewalls.md"
+                "file": "year-1/NCCD/iptables.md"
               }
             }
           }
@@ -298,7 +141,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/NCCD/stateless-firewalls.md",
+                "file": "year-1/NCCD/iptables.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -345,6 +188,7 @@
   "active": "02e8b327ecae52e2",
   "lastOpenFiles": [
     "year-1/NCCD/firewalls.md",
+    "year-1/NCCD/stateless-firewalls.md",
     "year-1/NCCD/lab-07/lab-07-notes.md",
     "year-1/CSAO/0x0002/assembly-and-syntax.md",
     "year-1/CF/mitre-att&ck-and-killchain.md",
@@ -352,7 +196,6 @@
     "year-1/CF/wannacry-timeline.md",
     "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
     "year-1/CSAO/0x0003/assembly-program-structure.md",
-    "year-1/CSAO/0x0004/arithmetic-instrcutions.md",
-    "year-1/CSAO/0x0007/procedures.md"
+    "year-1/CSAO/0x0004/arithmetic-instrcutions.md"
   ]
 }
