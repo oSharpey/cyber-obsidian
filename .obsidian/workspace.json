@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/NCCD/lab-03/lab-03-lecture-notes.md",
+                "file": "year-1/NCCD/lab-09/lab-09.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/NCCD/lab-03/lab-03-lecture-notes.md",
+                "file": "year-1/NCCD/lab-09/lab-09.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/NCCD/lab-03/lab-03-lecture-notes.md",
+                "file": "year-1/NCCD/lab-09/lab-09.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/NCCD/lab-03/lab-03-lecture-notes.md"
+                "file": "year-1/NCCD/lab-09/lab-09.md"
               }
             }
           }
@@ -154,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/NCCD/lab-03/lab-03-lecture-notes.md",
+                "file": "year-1/NCCD/lab-09/lab-09.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -200,15 +200,15 @@
   },
   "active": "c8d6516949a43417",
   "lastOpenFiles": [
+    "year-1/NCCD/lab-07/lab-07-notes.md",
+    "year-1/NCCD/lab-03/lab-03-lecture-notes.md",
     "year-1/NCCD/lab-09/lab-09.md",
     "year-1/NCCD/iptables.md",
     "year-1/NCCD/firewalls.md",
     "year-1/NCCD/stateless-firewalls.md",
-    "year-1/NCCD/lab-07/lab-07-notes.md",
     "year-1/CSAO/0x0002/assembly-and-syntax.md",
     "year-1/CF/mitre-att&ck-and-killchain.md",
     "year-1/CF/the-cyber-lexicon.md",
-    "year-1/CF/wannacry-timeline.md",
-    "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md"
+    "year-1/CF/wannacry-timeline.md"
   ]
 }

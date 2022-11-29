@@ -42,6 +42,12 @@ iptables -nvL FORWARD
 iptables -nvL 
 
 
+## Dump Traffic on m7 amd gw
+tcpdump -v -i eth0 -w /hostlab/.dumps/m7-eth0-d1.pcap
+tcpdump -v -i eth0 -w /hostlab/.dumps/gw-eth0-d1.pcap
+tcpdump -v -i eth1 -w /hostlab/.dumps/gw-eth1-d1.pcap
+
+## CANNOT PING 
 
 
 
