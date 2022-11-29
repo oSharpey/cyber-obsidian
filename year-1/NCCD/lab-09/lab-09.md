@@ -58,7 +58,7 @@ iptables -A FORWARD -i eth1 -o eth0 -s 0.0.0.0/0 -d 0.0.0.0/0 -p icmp -j ACCPET
 
 ### THE RULES ABOVE ALLOW ICMP PACKETS THROUGH GWX ###
 
-
+## Delete these rules and replace with 
 
 
 ```
