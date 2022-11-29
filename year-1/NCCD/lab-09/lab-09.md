@@ -50,9 +50,13 @@ tcpdump -v -i eth1 -w /hostlab/.dumps/gw-eth1-d1.pcap
 #### CANNOT PING THROUGH GWX AS GWX FIREWALL ONLY CONFGIGURED FORWARD CHAIN TO ALLOW TCP AND UDP PACKETS, WILL DROP ALL ICMP PACKETS ####
 
 
-## Rule to permit IMCP traffic on gwX 
+## Rule to permit IMCP traffic on gwX from eth0 to eth1
 iptables -A FORWARD -i eth0 -o eth1 -s 0.0.0.0/0 -d 0.0.0.0/0 -p icmp -j ACCPET
-iptables -A FORWARD -i eth1 -o eth0 -s 0.0.0.0/0 -d 0.0.0.0/0 -p icmp -j ACCEPT
+
+## Rule to permit IMCP traffic on gwX from eth1 to eth0
+iptables -A FORWARD -i eth1 -o eth0 -s 0.0.0.0/0 -d 0.0.0.0/0 -p icmp -j ACCPET
+
+### THE RULES ABOVE ALLOW ICMP PACKETS THROUGH GWX ###
 
 
 
