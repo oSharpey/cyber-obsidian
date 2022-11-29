@@ -43,3 +43,22 @@
 - DROP - Firewall drops the packet without error message
 - REJECT - DROP and sends an error message
 - There are more target values. some values are specific to particular tables.
+
+
+**ORDER OF THE RULES MATTERS**
+First thing that matches will hit
+
+
+Network Firewall - Put rules on forward chain
+Host Firewall - Put rules on input and output chain
+
+## Commands
+
+```bash
+iptables -P 
+
+iptables -A FORWARD 
+
+
+
+```
