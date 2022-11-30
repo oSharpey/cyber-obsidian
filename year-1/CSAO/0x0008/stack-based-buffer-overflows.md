@@ -101,3 +101,22 @@ gcc -fno-stack-protector -z execstack day7_ex1.c -o day7_ex1
 0056| 0x7fffffffdfb0 --> 0x0
 [------------------------------------------------------------------------------]
 ```
+
+- The return address has been overwritten by some of the data used in the strcpy() function
+- Causes a seg fault
+
+
+### Replace strcpy() with strncpy()
+```c
+#include <string.h>
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+	argv[1] = (char*)"ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char buffer[8];
+	strncpy(buffer, argv[1]);
+
+	return 0;
+}
+```
