@@ -10,8 +10,29 @@
 
 **Example**
 ```c
+// day7_ex1.c
+
 #include <string.h>
-#include <stdio.h
+#include <stdio.h>
 
+int main(int argc, char** argv)
+{
+	argv[1] = (char*)"ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char buffer[8];
+	strcpy(buffer, argv[1]);
 
+	return 0;
+}
 ```
+
+- The buffer is 8 bytes long
+- The code uses the function `strcpy`
+- The code tries to copy more than the buffer can handle via the `strcpy` function
+	- `argv[1]` contains 26 characters, while the buffer can only handle 8
+- When the program runs, the exceeding data will overwrite some adjacent memory addresses
+
+Compile the code turning off stack protection:
+```sh
+gcc -fno-stack-protector -z execstack day7_ex1.c -o day7_ex1
+```
+
