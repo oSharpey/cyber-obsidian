@@ -94,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -210,7 +211,7 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "079bb58ca31da9ef",
+  "active": "8e219bebd780e6c9",
   "lastOpenFiles": [
     "year-1/NCCD/lab-09/lab-09.md",
     "year-1/NCCD/lab-07/lab-07-notes.md",
