@@ -114,9 +114,11 @@ gcc -fno-stack-protector -z execstack day7_ex1.c -o day7_ex1
 int main(int argc, char** argv)
 {
 	argv[1] = (char*)"ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char buffer[8];
-	strncpy(buffer, argv[1]);
+	char buffer[8];cp
+	strncpy(buffer, argv[1], sizeof(buffer));
 
 	return 0;
 }
 ```
+
+- This limits the buffer size to a defined length, the rest of the information that overflows the buffer will be discarded
