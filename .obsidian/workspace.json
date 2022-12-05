@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "19eabfd3dd21b177",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "year-1/OSCC/concurency.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/CF/wannacry-timeline.md",
+                "file": "year-1/OSCC/concurency.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/CF/wannacry-timeline.md",
+                "file": "year-1/OSCC/concurency.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/CF/wannacry-timeline.md"
+                "file": "year-1/OSCC/concurency.md"
               }
             }
           }
@@ -178,7 +190,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/CF/wannacry-timeline.md",
+                "file": "year-1/OSCC/concurency.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -222,8 +234,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "1c10d0c9ce22871a",
+  "active": "19eabfd3dd21b177",
   "lastOpenFiles": [
+    "year-1/CF/wannacry-timeline.md",
     "year-1/CF/coursework-1.md",
     "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
     "year-1/NCCD/lab-09/lab-09.md",
@@ -232,7 +245,6 @@
     "year-1/NCCD/iptables.md",
     "year-1/NCCD/firewalls.md",
     "year-1/NCCD/stateless-firewalls.md",
-    "year-1/CSAO/0x0002/assembly-and-syntax.md",
-    "year-1/CF/mitre-att&ck-and-killchain.md"
+    "year-1/CSAO/0x0002/assembly-and-syntax.md"
   ]
 }
