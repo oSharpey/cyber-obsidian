@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/NCCD/stateless-firewalls.md",
+                "file": "year-1/NCCD/firewalls.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/NCCD/stateless-firewalls.md",
+                "file": "year-1/NCCD/firewalls.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/NCCD/stateless-firewalls.md",
+                "file": "year-1/NCCD/firewalls.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/NCCD/stateless-firewalls.md"
+                "file": "year-1/NCCD/firewalls.md"
               }
             }
           }
@@ -190,7 +190,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/NCCD/stateless-firewalls.md",
+                "file": "year-1/NCCD/firewalls.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -236,6 +236,7 @@
   },
   "active": "19eabfd3dd21b177",
   "lastOpenFiles": [
+    "year-1/NCCD/stateless-firewalls.md",
     "year-1/NCCD/lab-09/lab-09.md",
     "year-1/OSCC/concurency.md",
     "year-1/CF/wannacry-timeline.md",
@@ -244,7 +245,6 @@
     "year-1/NCCD/lab-07/lab-07-notes.md",
     "year-1/NCCD/lab-03/lab-03-lecture-notes.md",
     "year-1/NCCD/iptables.md",
-    "year-1/NCCD/firewalls.md",
-    "year-1/NCCD/stateless-firewalls.md"
+    "year-1/NCCD/firewalls.md"
   ]
 }
