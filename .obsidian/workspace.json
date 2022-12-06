@@ -61,14 +61,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/NCCD/firewalls.md",
+                "file": "year-1/NCCD/lab-09/lab-09.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d80a2781f439f210",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "year-1/NCCD/lab-10/lab-10.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/NCCD/firewalls.md",
+                "file": "year-1/NCCD/lab-10/lab-10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/NCCD/firewalls.md",
+                "file": "year-1/NCCD/lab-10/lab-10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/NCCD/firewalls.md"
+                "file": "year-1/NCCD/lab-10/lab-10.md"
               }
             }
           }
@@ -190,7 +202,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/NCCD/firewalls.md",
+                "file": "year-1/NCCD/lab-10/lab-10.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -234,17 +246,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "19eabfd3dd21b177",
+  "active": "d80a2781f439f210",
   "lastOpenFiles": [
-    "year-1/NCCD/stateless-firewalls.md",
     "year-1/NCCD/lab-09/lab-09.md",
+    "year-1/NCCD/firewalls.md",
+    "year-1/NCCD/stateless-firewalls.md",
     "year-1/OSCC/concurency.md",
     "year-1/CF/wannacry-timeline.md",
     "year-1/CF/coursework-1.md",
     "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
     "year-1/NCCD/lab-07/lab-07-notes.md",
     "year-1/NCCD/lab-03/lab-03-lecture-notes.md",
-    "year-1/NCCD/iptables.md",
-    "year-1/NCCD/firewalls.md"
+    "year-1/NCCD/iptables.md"
   ]
 }
