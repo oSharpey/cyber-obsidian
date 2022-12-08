@@ -39,5 +39,6 @@ book chapter
 
 citing a website
 - Use cite this for me
-- 
+
+- Plainnat for bibtex referencing 
 
