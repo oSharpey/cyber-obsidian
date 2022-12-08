@@ -19,5 +19,14 @@
 		- Get data, stats 
 		- Not enough just to say it "knocked out the power supply"
 - Analysis
-	- 
+	- **ONLY DO ONE CYBER ATTACK**
+	- Draw a kill chain
+	- Always say if your making assumptions
+- Info-graphic
+	- Find a good one
+	- Test the infographic on people
+
+Avoid direct quoting
+avoid copy and pasting at all costs
+provide a citation even after you put it in your own words
 
