@@ -30,3 +30,14 @@ Avoid direct quoting
 avoid copy and pasting at all costs
 provide a citation even after you put it in your own words
 
+
+Journal paper
+website
+news article
+book chapter
+
+
+citing a website
+- Use cite this for me
+- 
+
