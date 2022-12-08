@@ -8,8 +8,16 @@
 - Find out how to write an executive summary
 	- What are the rules around them
 	- Its not an abstract or an introduction
+	- **THIS IS THE LAST THING YOU WRITE**
+	- Should give you an overview of what the report is about
 - Background
 	- Get some examples of timelines (copy and paste maybe)
 	- Get context around the threat actors 
-		- Are they state actors, ac
+		- Are they state actors, hacktivists, etc
+		- What other campaigns have they been involved in
+	- Point 2 
+		- Get data, stats 
+		- Not enough just to say it "knocked out the power supply"
+- Analysis
+	- 
 
