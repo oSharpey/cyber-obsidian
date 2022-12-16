@@ -125,5 +125,6 @@ systemctl status tcpdump20@sw0
 ```
 - Looking at the PCAP file we can see how DHCP assigns the IP addresses to the various machines
 - First a DHCP Discover message is sent to locate the IP of the DHCP Sever
-- The DHCP server then responds with a DCHP Offer saying it can allocate that machine an IP address
+- The DHCP server then responds with a DCHP Offer containing available addresses and options 
 - The machine then sends the DHCP server a DHCP Request where it requests and IP address
+- Finally the DHCP server responds with a DHCP Ack where the server responds with the IP configuration data
