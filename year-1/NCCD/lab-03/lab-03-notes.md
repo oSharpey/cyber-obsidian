@@ -65,7 +65,7 @@ ip link add sw0 type bridge \
    priority 9000 \
    vlan_filtering 0
 ```
-This configures `a0` to be a 
+This configures `a0` to be a "bridge" (old name for a switch), enables and configures spanning tree protocol and ignores the vlan tag on the Ethernet frame
 
 ### h1
 - **IP:** 192.168.97.1
@@ -83,19 +83,18 @@ This configures `a0` to be a
 - Acts as a switch/bridge
 
 ## Commands
-- Create a new directory to store packet captures
-- Dump all traffic passing through the switch (a0)
+#### Create a new directory to store packet capture & Dump all traffic passing through the switch (a0)
 ``` sh
 mkdir -p /hostlab/.output  
 tcpdump -s0 -i sw0 -w /hostlab/.output/a0-sw0-01.pcap
 ```
 
-- List the IP and MAC of all machines except a0
+#### List the IP and MAC of all machines except a0
 ``` sh
 ip addr show dev eth0    # shows the ip and mac for the eth0 card
 ```
 
-- Ping h1 from h2
+#### Ping h1 from h2
 ``` sh
 ###################
 # From Machine h2 #
@@ -103,19 +102,21 @@ ip addr show dev eth0    # shows the ip and mac for the eth0 card
 
 ping -c1 192.168.97.1  # pings using ip address of h1 
 ```
+- When you ping:
+	- h2 will send out an ARP broadcast to find the MAC address of h1
+	- h2 will then add the MAC and IP of h1 into its ARP table
+	- When h1 responds, it sends an ARP request directly to h2 to get its MAC address
+	- h1 then adds the MAC and IP mapping of h2 to its ARP table
 
-- h2 will send out an ARP broadcast to find the MAC address of h1
-- h2 will then add the MAC and IP of h1 into its ARP table
-- When h1 responds, it sends an ARP request directly to h2 to get its MAC address
-- h1 then adds the MAC and IP mapping of h2 to its ARP table
-
-- To clear the ARP table on a particular machine
+#### To clear the ARP table on a particular machine
 ``` sh
 ip -s -s neigh flush all   # deletes the whole a machines ARP table
 ```
 
 
-- Configure the ageing time of the switch so MAC entries are only cached for 20 seconds
+#### Configure the ageing time of the switch so MAC entries are only cached for 20 seconds
+- There are 2 ways to configure the ageing time of the switch's cache
+- One way is using `iproute2 commands, the other is using `brctl`
 ```
 ```
 
