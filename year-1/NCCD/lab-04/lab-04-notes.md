@@ -57,3 +57,21 @@ dh[mem]=256
 #
 # 
 ```
+
+
+## Machines
+Like Lab-03 we have the same switch with 8 ports, however this time we have 6 ports connected to machines. Machines `h1` to `h5` are configured as regular host. `dh` is configured as a DHCP server.  
+
+Within the startup files of `h1` to `h5` there is no direct assignment of IP addresses from within the file, as shown below
+```sh
+###############################
+#
+# h2.startup
+#
+###############################
+
+ip link set dev eth0 address 02:02:02:02:02:02
+dhclient eth0
+```
+
+Instead there is a call to the 
