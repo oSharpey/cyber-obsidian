@@ -75,11 +75,31 @@ h3[0]=a03
 ## Commands
 - Create a new directory to store packet captures
 - Dump all traffic passing through the switch (a0)
-
 ``` sh
 mkdir -p /hostlab/.output  
 tcpdump -s0 -i sw0 -w /hostlab/.output/a0-sw0-01.pcap
 ```
 
+- List the IP and MAC of all machines except a0
+``` sh
+ip addr show dev eth0    # shows the ip and mac for the eth0 card
+```
 
+- Ping h1 from h2
+``` sh
+###################
+# From Machine h2 #
+###################
+
+ping -c1 192.168.97.1  # pings using ip address of h1 
+```
+
+- h2 will send out an ARP broadcast to find the MAC address of h1
+- h2 will then add the MAC and IP of h1 into its ARP table
+- 
+
+
+- Configure the ageing time of the switch so MAC entries are only cached for 20 seconds
+```
+```
 
