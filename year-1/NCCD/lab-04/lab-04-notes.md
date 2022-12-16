@@ -180,3 +180,6 @@ systemctl status tcpdump20@sw0
 - The machine then sends the DHCP server a DHCP Request where it requests and IP address
 - Finally the DHCP server responds with a DHCP Ack where the server responds with the IP configuration data
 - Within the pcap file there are also some ARP request and an ICMP ping request, I assume these are to check if there are any other machines on the network that already are allocated IPs within the range that the DCHP server can offer. 
+
+#### Change the default gateway
+- Chnage 
