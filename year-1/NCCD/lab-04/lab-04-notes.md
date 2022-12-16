@@ -117,6 +117,12 @@ ip link set dev eth0 up
 ip neigh add 192.168.97.5 lladdr 02:05:05:05:05:05 dev eth0
 ```
 
+### h1
+IP from the DHCP server ()
+
+
+
+
 
 ## DHCP Section
 #### Ensure that the packet capture has completed and look at the PCAP file
@@ -128,3 +134,5 @@ systemctl status tcpdump20@sw0
 - The DHCP server then responds with a DCHP Offer containing available addresses and options 
 - The machine then sends the DHCP server a DHCP Request where it requests and IP address
 - Finally the DHCP server responds with a DHCP Ack where the server responds with the IP configuration data
+
+- Within the pcap file there are also some ARP request and an ICMP ping request, I assume these are to check if there are any other machines on the network that already are allocated IPs within the range that the DCHP server can offer. 
