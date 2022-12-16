@@ -96,7 +96,13 @@ ping -c1 192.168.97.1  # pings using ip address of h1
 
 - h2 will send out an ARP broadcast to find the MAC address of h1
 - h2 will then add the MAC and IP of h1 into its ARP table
-- 
+- When h1 responds, it sends an ARP request directly to h2 to get its MAC address
+- h1 then adds the MAC and IP mapping of h2 to its ARP table
+
+- To clear the ARP table on a particular machine
+``` sh
+ip -s -s neigh flush all   # deletes the whole a machines ARP table
+```
 
 
 - Configure the ageing time of the switch so MAC entries are only cached for 20 seconds
