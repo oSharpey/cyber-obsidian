@@ -56,6 +56,16 @@ h3[0]=a03
 
 
 ## Machines 
+From the lab conf file above you can see we have a switch with 8 ports and only 3 connected. Machines `h1`, `h2` and `h3` are configured as normal machines however `a0` is configured as a switch. This means it does not need its own IP address 
+
+`a0` is configured like this below:
+``` sh
+ip link add sw0 type bridge \
+   stp_state 1 \
+   priority 9000 \
+   vlan_filtering 0
+```
+This configures `a0` to be a 
 
 ### h1
 - **IP:** 192.168.97.1
