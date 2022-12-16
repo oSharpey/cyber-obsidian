@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/NCCD/lab-03/lab-03-notes.md",
+                "file": "year-1/NCCD/lab-04/lab-04-notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/NCCD/lab-03/lab-03-notes.md",
+                "file": "year-1/NCCD/lab-04/lab-04-notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/NCCD/lab-03/lab-03-notes.md",
+                "file": "year-1/NCCD/lab-04/lab-04-notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/NCCD/lab-03/lab-03-notes.md"
+                "file": "year-1/NCCD/lab-04/lab-04-notes.md"
               }
             }
           }
@@ -238,7 +238,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/NCCD/lab-03/lab-03-notes.md",
+                "file": "year-1/NCCD/lab-04/lab-04-notes.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -284,15 +284,15 @@
   },
   "active": "62dd06029628af25",
   "lastOpenFiles": [
-    "year-1/NCCD/lab-04/lab-04-notes.md",
-    "year-1/NCCD/lab-03/lab-03-notes.md",
+    "year-1/NCCD/lab-02/lab-02-setup.md",
+    "year-1/NCCD/lab-02/netkit-intro.md",
+    "year-1/NCCD/lab-02/lab-02-commands.md",
     "year-1/NCCD/lab-01/osi-7-layer-model.md",
-    "year-1/NCCD/stateless-firewalls.md",
-    "year-1/NCCD/firewalls.md",
-    "year-1/NCCD/iptables.md",
-    "year-1/DSCS/logic.md",
-    "year-1/DSCS/sets.md",
-    "year-1/DSCS/proofs-1.md",
-    "year-1/NCCD/lab-03/lab-03-lecture-notes.md"
+    "year-1/NCCD/lab-01/lesson-1-into-overview.md",
+    "year-1/NCCD/lab-03/lab-03-notes.md",
+    "2022-12-16.md",
+    "year-1/NCCD/lab-03/lab-03-lecture-notes.md",
+    "year-1/NCCD/lab-04/lab-04-notes.md",
+    "year-1/NCCD/stateless-firewalls.md"
   ]
 }
