@@ -117,11 +117,56 @@ ip link set dev eth0 up
 ip neigh add 192.168.97.5 lladdr 02:05:05:05:05:05 dev eth0
 ```
 
+The DHCP servers network card is configured in the `interfaces` file, shown below:
+``` sh
+# Used by ifup(8) and ifdown(8). See the interfaces(5) manpage or
+# /usr/share/doc/ifupdown/examples for more information.
+
+# The loopback network interface
+auto lo 
+iface lo inet loopback
+
+# eth0 
+auto eth0
+iface eth0 inet static
+	address 192.168.97.1
+	netmask 255.255.255.192
+	broadcast 192.168.97.63
+	gateway 192.168.97.62
+	hwaddress ether 02:d8:d8:d8:d8:d8
+```
+This sets up the IP, MAC, subnet mask, broadcast and gateway address
+
+
 ### h1
-IP from the DHCP server ()
+IP from the DHCP server (known mac address)
+- **IP:** 192.168.97.41
+- **MAC:** 02:01:01:01:01:01
 
+### h2
+IP from the DHCP server (known mac address)
+- **IP:** 192.168.97.42
+- **MAC:** 02:02:02:02:02:02
 
+### h3
+IP from the DHCP server (arbitrary mac address)
+- **IP:** Can range from .50 to .60 (192.168.97.52 for example)
+- **MAC:** 02:03:03:03:03:03
 
+### h4
+IP from h4 startup file
+- **IP:** 192.168.97.4
+- **MAC:** 02:04:04:04:04:04
+
+### h5
+IP from h5 startup file
+- **IP:** 192.168.97.5
+- **MAC:** 02:05:05:05:05:05
+
+### dh
+IP from `interfaces` file and brought up using `ifup` command
+- **IP:** 192.168.97.1
+- **MAC:** 02:d8:d8:d8:d8:d8
 
 
 ## DHCP Section
@@ -134,5 +179,4 @@ systemctl status tcpdump20@sw0
 - The DHCP server then responds with a DCHP Offer containing available addresses and options 
 - The machine then sends the DHCP server a DHCP Request where it requests and IP address
 - Finally the DHCP server responds with a DHCP Ack where the server responds with the IP configuration data
-
 - Within the pcap file there are also some ARP request and an ICMP ping request, I assume these are to check if there are any other machines on the network that already are allocated IPs within the range that the DCHP server can offer. 
