@@ -87,5 +87,32 @@ dhcp-host=02:02:02:02:02:02,h2,192.168.97.42,5m
 
 Machines `h4` and `h5` have statically assigned IP addresses within their startup files
 ``` sh
+###############################
+#
+# h5.startup
+#
+###############################
 
+# configure this host's MAC address and ip address
+# also prevent it using arp
+ip link set dev eth0 address 02:05:05:05:05:05
+ip link set dev eth0 arp off
+ip addr add dev eth0 192.168.97.5/26
+ip link set dev eth0 up
+
+
+###############################
+#
+# h4.startup
+#
+###############################
+
+# configure this host's ip address
+ip link set dev eth0 address 02:04:04:04:04:04
+ip link set dev eth0 arp off
+ip addr add dev eth0 192.168.97.4/26
+ip link set dev eth0 up
+
+# put a static entry for h5 into our arp cache
+ip neigh add 192.168.97.5 lladdr 02:05:05:05:05:05 dev eth0
 ```
