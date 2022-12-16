@@ -116,3 +116,12 @@ ip link set dev eth0 up
 # put a static entry for h5 into our arp cache
 ip neigh add 192.168.97.5 lladdr 02:05:05:05:05:05 dev eth0
 ```
+
+
+## DHCP Section
+#### Ensure that the packet capture has completed
+```sh
+systemctl status tcpdump20@sw0
+```
+
+- 
