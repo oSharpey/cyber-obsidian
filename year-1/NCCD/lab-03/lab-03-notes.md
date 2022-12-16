@@ -1,4 +1,4 @@
-# Lab 03 Notes & Commands
+# Lab 03 Switches/Bridges
 
 ## lab.conf
 ``` sh
@@ -116,7 +116,20 @@ ip -s -s neigh flush all   # deletes the whole a machines ARP table
 
 #### Configure the ageing time of the switch so MAC entries are only cached for 20 seconds
 - There are 2 ways to configure the ageing time of the switch's cache
-- One way is using `iproute2 commands, the other is using `brctl`
+- One way is using `iproute2` commands, the other is using `brctl`
+
+##### `iproute2`
+``` sh
+ip link set sw0 type bridge ageing_time 2000    # Set ageing time to 20s 
+
+ip -s -j -p link show dev sw0 | grep "ageing_time" # Show the ageing time of the switches cache
 ```
+
+##### `brctl`
+``` sh
+brctl showmacs sw0   # Shows MAC addresses learned by the switch (bridge)
+
+brctl setaging sw0 20    # Sets the ageing time to be 20 seconds 
+
 ```
 
