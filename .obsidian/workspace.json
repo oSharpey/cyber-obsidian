@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/NCCD/iptables.md",
+                "file": "year-1/NCCD/lab-03/lab-03-lecture-notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6a30d0a522630768",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "year-1/NCCD/lab-03/lab-03-notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -158,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/CF/coursework-1.md",
+                "file": "year-1/NCCD/lab-03/lab-03-notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/CF/coursework-1.md",
+                "file": "year-1/NCCD/lab-03/lab-03-notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/CF/coursework-1.md"
+                "file": "year-1/NCCD/lab-03/lab-03-notes.md"
               }
             }
           }
@@ -214,7 +226,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/CF/coursework-1.md",
+                "file": "year-1/NCCD/lab-03/lab-03-notes.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -258,17 +270,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "8e219bebd780e6c9",
+  "active": "6a30d0a522630768",
   "lastOpenFiles": [
+    "year-1/NCCD/lab-03/lab-03-lecture-notes.md",
+    "year-1/NCCD/lab-02/lab-02-commands.md",
+    "year-1/NCCD/lab-07/lab-07-notes.md",
+    "year-1/NCCD/lab-02/lab-02-setup.md",
+    "year-1/NCCD/lab-03/lab-03-notes.md",
+    "year-1/NCCD/lab-02/netkit-intro.md",
+    "year-1/NCCD/iptables.md",
     "year-1/CF/Untitled.md",
     "year-1/NCCD/lab-10/lab-10.md",
-    "year-1/NCCD/lab-09/lab-09.md",
-    "year-1/NCCD/firewalls.md",
-    "year-1/NCCD/stateless-firewalls.md",
-    "year-1/OSCC/concurency.md",
-    "year-1/CF/wannacry-timeline.md",
-    "year-1/CF/coursework-1.md",
-    "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
-    "year-1/NCCD/lab-07/lab-07-notes.md"
+    "year-1/NCCD/lab-09/lab-09.md"
   ]
 }
