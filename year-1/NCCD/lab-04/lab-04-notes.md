@@ -119,9 +119,11 @@ ip neigh add 192.168.97.5 lladdr 02:05:05:05:05:05 dev eth0
 
 
 ## DHCP Section
-#### Ensure that the packet capture has completed
+#### Ensure that the packet capture has completed and look at the PCAP file
 ```sh
 systemctl status tcpdump20@sw0
 ```
-
-- 
+- Looking at the PCAP file we can see how DHCP assigns the IP addresses to the various machines
+- First a DHCP Discover message is sent to locate the IP of the DHCP Sever
+- The DHCP server then responds with a DCHP Offer saying it can allocate that machine an IP address
+- The machine then sends the DHCP server a DHCP Request where it requests and IP address
