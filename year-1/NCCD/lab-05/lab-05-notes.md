@@ -143,3 +143,14 @@ ip route replace default via <ip of gateway> # change gateway for m1 & m2
 - Because .64 would not be a valid subnet. 
 - /25 would give you a range of 146.227.150.0 - 146.227.150.128
 - This means .64 would be in the middle of this range, so it is the wrong notation 
+
+#### Add a new machine to the lab within subnet x
+- Create a file `foo.startup`
+- Create a directory called `foo`
+- Within `foo.startup`:
+``` sh
+ip link set dev eth0 address 02:0f:0f:0f:0f:0f
+ip addr add 172.21.62.102/27 dev eth0
+ip link set up dev eth0
+ip route add default via 172.21.62.126
+```
