@@ -243,4 +243,5 @@ root@h3:~# ip neigh show
 ip link set dev eth0 arp off
 ```
 
-- This makes it that h4 and h5 will not respond to ARP requests so they will never
+- This disables the ARP protocol for h4 and h5. So h4 and h5 will broadcast an ARP request or reply to an ARP request from another machine.
+- h4 and h5 will never be able to populate its ARP 
