@@ -95,3 +95,14 @@ gw[1]=tap01,192.168.100.1,192.168.100.2
 ``` sh
 tcpdump -i eth0 -w /hostlab/.output/gwW-eth0-01.pcap
 ```
+
+#### Ping between 2 machines on the same subnet
+``` sh
+# Ping m2 from m1
+ping -c1 172.28.97.42
+
+# Ping m1 from m2
+ping -c1 172.28.97.41
+```
+
+#### Look at the IP header in RFC 791 and compare it to a particular ping
