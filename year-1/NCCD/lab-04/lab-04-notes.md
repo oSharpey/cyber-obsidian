@@ -179,7 +179,15 @@ systemctl status tcpdump20@sw0
 - The DHCP server then responds with a DCHP Offer containing available addresses and options 
 - The machine then sends the DHCP server a DHCP Request where it requests and IP address
 - Finally the DHCP server responds with a DHCP Ack where the server responds with the IP configuration data
-- Within the pcap file there are also some ARP request and an ICMP ping request, I assume these are to check if there are any other machines on the network that already are allocated IPs within the range that the DCHP server can offer. 
+- Within the pcap file there are also some ARP request and an ICMP ping request, I assume these are to check if there are any other machines on the network that already are allocated IPs within the range that the DHCP server can offer. 
 
 #### Change the default gateway
-- Chnage 
+- Change the default gateway of the server to the IP address of the DHCP server (192.168.97.1)
+
+
+## ARP Section
+
+#### Capture packets passing through the switch (a0)
+``` sh
+tcpdump -i sw0 -w /hostlab/.output/a0-sw0-02.pcap
+```
