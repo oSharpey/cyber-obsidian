@@ -55,3 +55,9 @@ gw[1]=tap01,192.168.100.1,192.168.100.2
 ```
 
 ### Commands
+#### Capture traffic on m2, m7 and gw
+```sh
+tcpdump -i eth0 -w /hostlab/.output/m1-eth0-01.pcap
+tcpdump -i eth0 -w /hostlab/.output/m2-eth0-01.pcap
+tcpdump -i eth0 -w /hostlab/.output/gw-eth0-01.pcap
+```
