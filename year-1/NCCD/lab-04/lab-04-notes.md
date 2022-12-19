@@ -236,5 +236,11 @@ root@h3:~# ip neigh show
 192.168.97.41 dev eth0 lladdr 02:01:01:01:01:01 REACHABLE
 ```
 
-As you can see multiple of these addresses failed to ping
-.101, .2 and .3 failed to ping as they do not exist (it seems .101 shows up as .62 in the ARP table as .62 would be the last address that can be assigned to a machine)
+- As you can see multiple of these addresses failed to ping
+- .101, .2 and .3 failed to ping as they do not exist (it seems .101 shows up as .62 in the ARP table as .62 would be the last address that can be assigned to a machine)
+- Interesting thing is that h3 is unable to ping .4 and .5 - This is due to how it is set up in the h4 and h5 startup files, both contain this line:
+``` sh
+ip link set dev eth0 arp off
+```
+
+- This makes it that h4 and h5 will not respond to ARP requests so they will never
