@@ -211,3 +211,18 @@ root@h3:~# ip neigh show
 192.168.97.41 dev eth0 lladdr 02:01:01:01:01:01 STALE
 192.168.97.1 dev eth0 lladdr 02:d8:d8:d8:d8:d8 REACHABLE
 ```
+
+
+#### On h3, quickly ping the IP address of each machine in turn, together with one non-existent address.
+- Since we are pinging an IP address, ARP is going to have to discover the corresponding MAC address so it can send an ethernet frame to the correct NIC.
+- This can be done with a simple bash script
+``` bash
+for i in 1 2 3 4 5 41 42 52 101;  
+do  
+	ping -c1 192.168.97.${i};  
+done;
+```
+
+- After this runs look at what is in h3 ARP table
+``` bash
+```
