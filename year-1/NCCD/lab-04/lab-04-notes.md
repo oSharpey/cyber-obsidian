@@ -191,3 +191,23 @@ systemctl status tcpdump20@sw0
 ``` sh
 tcpdump -i sw0 -w /hostlab/.output/a0-sw0-02.pcap
 ```
+
+#### Look at the ARP cache of h3
+- There are 2 ways to do this
+- The old way is to use `arp -n` the new way is to use `ip neigh show`
+- the `-n` in the arp command stops the addresses being resolved into host names
+
+**arp -n**
+``` bash
+root@h3:~# arp -n
+Address                  HWtype  HWaddress           Flags Mask            Iface
+192.168.97.41            ether   02:01:01:01:01:01   C                     eth0
+192.168.97.1             ether   02:d8:d8:d8:d8:d8   C                     eth0
+```
+
+**ip neigh show**
+``` bash
+root@h3:~# ip neigh show
+192.168.97.41 dev eth0 lladdr 02:01:01:01:01:01 STALE
+192.168.97.1 dev eth0 lladdr 02:d8:d8:d8:d8:d8 REACHABLE
+```
