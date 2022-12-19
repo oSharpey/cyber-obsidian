@@ -1,4 +1,4 @@
-# Lab 04 DHCP & ARP
+# Lab 04: DHCP & ARP
 
 ## lab.conf
 ``` sh
@@ -244,4 +244,4 @@ ip link set dev eth0 arp off
 ```
 
 - This disables the ARP protocol for h4 and h5. So h4 and h5 will broadcast an ARP request or reply to an ARP request from another machine.
-- h4 and h5 will never be able to populate its ARP 
+- h4 and h5 will never be able to populate its ARP table so if it doesnt have a IP mapped to the mac address already it cannot ping that particular machine
