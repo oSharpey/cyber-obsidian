@@ -147,10 +147,14 @@ ip route replace default via <ip of gateway> # change gateway for m1 & m2
 #### Add a new machine to the lab within subnet x
 - Create a file `foo.startup`
 - Create a directory called `foo`
-- Within `foo.startup`:
 ``` sh
+# Within foo.startup:
 ip link set dev eth0 address 02:0f:0f:0f:0f:0f
-ip addr add 172.21.62.102/27 dev eth0
+ip addr add 172.21.62.108/27 dev eth0
 ip link set up dev eth0
 ip route add default via 172.21.62.126
+
+# Within lab.conf
+foo[0]=X
 ```
+
