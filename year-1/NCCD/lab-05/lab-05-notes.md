@@ -130,3 +130,8 @@ The header within the ping contains no options and no padding
 - Padding: ensures it is a multiple of 32 bits
 These parts of the header are rarely ever used
 
+#### Change the config for subnet w
+```
+ip addr replace <new IP with Mask> dev <network card> # eg 146.227.150.64/26
+ip route 
+```
