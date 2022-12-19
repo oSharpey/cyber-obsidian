@@ -225,4 +225,16 @@ done;
 
 - After this runs look at what is in h3 ARP table
 ``` bash
+root@h3:~# ip neigh show
+192.168.97.2 dev eth0  FAILED
+192.168.97.3 dev eth0  FAILED
+192.168.97.1 dev eth0 lladdr 02:d8:d8:d8:d8:d8 REACHABLE
+192.168.97.4 dev eth0  FAILED
+192.168.97.5 dev eth0  FAILED
+192.168.97.42 dev eth0 lladdr 02:02:02:02:02:02 REACHABLE
+192.168.97.62 dev eth0  FAILED
+192.168.97.41 dev eth0 lladdr 02:01:01:01:01:01 REACHABLE
 ```
+
+As you can see multiple of these addresses failed to ping
+.101, .2 and .3 failed to ping as they do not exist (it seems .101 shows up as .62 in the ARP table as .62 would be the last address that can be assigned to a machine)
