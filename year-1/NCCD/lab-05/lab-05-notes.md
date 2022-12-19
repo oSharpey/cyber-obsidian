@@ -88,4 +88,10 @@ gw[1]=tap01,192.168.100.1,192.168.100.2
 
 
 ## Commands
+#### Start capturing the traffic from the gateway machine
+- This can be on any of the gateway machines in the network
+- For example for subnet W you would capture traffic on gwW
 
+``` sh
+tcpdump -i eth0 -w /hostlab/.output/gwW-eth0-01.pcap
+```
