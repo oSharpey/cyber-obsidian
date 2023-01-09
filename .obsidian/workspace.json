@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/DSCS/logic.md",
+                "file": "year-1/OSCC/file-system.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/DSCS/logic.md",
+                "file": "year-1/OSCC/file-system.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/DSCS/logic.md",
+                "file": "year-1/OSCC/file-system.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/DSCS/logic.md"
+                "file": "year-1/OSCC/file-system.md"
               }
             }
           }
@@ -250,7 +250,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/DSCS/logic.md",
+                "file": "year-1/OSCC/file-system.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -306,6 +306,7 @@
   },
   "active": "1dd585b6b5d2ffae",
   "lastOpenFiles": [
+    "year-1/DSCS/logic.md",
     "year-1/OSCC/concurency.md",
     "year-1/OSCC/file-system.md",
     "year-1/NCCD/lab-04/lab-04-notes.md",
@@ -314,7 +315,6 @@
     "year-1/NCCD/lab-02/lab-02-commands.md",
     "year-1/NCCD/lab-07/lab-07-notes.md",
     "year-1/NCCD/lab-02/lab-02-setup.md",
-    "year-1/NCCD/lab-02/netkit-intro.md",
-    "year-1/NCCD/iptables.md"
+    "year-1/NCCD/lab-02/netkit-intro.md"
   ]
 }
