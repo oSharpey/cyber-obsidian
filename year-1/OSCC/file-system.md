@@ -27,4 +27,19 @@ int fd = open("foo", O_CREAT|O_WRONGLY|O_TRUNC, S_IRUSR|SIWUSR)
 - Existing files must be opened before they can be read/written
 - Also uses `open()` syscall, and returns fd
 
-### C
+### Closing a file
+- `close()` syscall closes the file
+- Takes the fd as an argument 
+
+### Read/write files
+- uses `read()`/`write()` syscalls 
+- Takes in the fd, buffer with data and size as arguments
+- Happens sequentially by default
+- `lseek()` lets to seek to a random offset
+- `fsync()` flushes all writes to the disk
+
+
+## Operations on directories
+- Directories can be accessed like files
+- Can use create, open, read, close
+- Directory entries 
