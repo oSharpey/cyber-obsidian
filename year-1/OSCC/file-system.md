@@ -42,4 +42,4 @@ int fd = open("foo", O_CREAT|O_WRONGLY|O_TRUNC, S_IRUSR|SIWUSR)
 ## Operations on directories
 - Directories can be accessed like files
 - Can use create, open, read, close
-- Directory entries 
+- Directory entries contain filename, inode number, type of file etc
