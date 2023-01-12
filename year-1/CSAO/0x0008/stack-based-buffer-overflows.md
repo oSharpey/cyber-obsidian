@@ -1,3 +1,4 @@
+
 ## Understanding Buffer Overflows
 - Happens when data written to a buffer is larger than the size of the buffer
 	- Due to insufficient bounds check, it overflows and overwrites adjacent memory locations
