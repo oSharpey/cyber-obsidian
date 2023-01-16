@@ -246,15 +246,15 @@
   },
   "active": "68926b6bff8426c2",
   "lastOpenFiles": [
+    "images/execution-stack.png",
+    "year-1/OSCC/persistence.md",
+    "images/disk-sector.png",
     "year-1/NCCD/lab-04/lab-04-notes.md",
     "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
     "year-1/OSCC/file-system.md",
     "year-1/DSCS/logic.md",
     "year-1/OSCC/concurency.md",
     "year-1/NCCD/lab-03/lab-03-notes.md",
-    "year-1/NCCD/lab-03/lab-03-lecture-notes.md",
-    "year-1/NCCD/lab-02/lab-02-commands.md",
-    "year-1/NCCD/lab-07/lab-07-notes.md",
-    "year-1/NCCD/lab-02/lab-02-setup.md"
+    "year-1/NCCD/lab-03/lab-03-lecture-notes.md"
   ]
 }

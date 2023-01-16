@@ -51,5 +51,19 @@
 - Uniform naming
 - Error handling
 - Synchronus (blocking) vs asynchronous (interupt-driven) transfers
+- Buffering
+- Shared vs Dedicated drivers
 
 ## Hard Disk Internals
+- Interface: a set of (512-bytes on old, 4KiB on new disks) blocks (sectors), that can be read or written atomically
+- Internals: one or more platters, connected by a spindle spinning at either 5400rpm, 7200rpm or 10000rpm
+- Each platter has a disk head and arm
+- A platter is divided into sectors
+![[disk-sector.png]]
+- Smallest writable bit on a disk is a sector - sector size is defined by the formatting of the disk (vFAT, NTFS)
+
+## Disk terminology
+- Data is addressed at sector level and stored in sector sized chunks
+- Data is addressed using LBA at the OS/driver level and converted into something else (cylinder-head-sector (CHS)) by the disk firmware
+- A cluster is a fixed size of sectors
+	- Disk space is allocated in whole clusters
