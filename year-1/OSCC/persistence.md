@@ -79,8 +79,9 @@
 - This is quite slow
 
 ## Time taken for I/O
-- Time taken to read/write a block (rand) consists of:
+- Time taken to read/write a block (random reads) consists of:
 	- Seek time to get to the right track (few ms)
 	- Rotational latency for disk to spin to correct sector (few ms)
 	- Transfer time to read sector (tens microsec)
 - Sequential Reads: choose a track and read all the sectors
+- Usually sequential reads are faster than random reads
