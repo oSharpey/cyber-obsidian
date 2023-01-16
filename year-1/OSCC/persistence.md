@@ -24,7 +24,7 @@
 	- Memory hardware routes accesses to these special memory addresses to devices
 
 ## Polling
-- Polling status to see if device is ready - suspends cpu - wastes cpu cycles
+- Polling status to see if device is ready - suspends CPU - wastes CPU cycles
 
 ## Interrupts
 - Instead of polling, OS can put process to sleep and do a context switch to another process
@@ -35,5 +35,21 @@
 - Interrupt switches process to kernel mode
 - Interrupt Descriptor Table (IDT) stores pointers to interrupt handlers
 	- IRQ number identifies the interrupt handler to run for a device
-- Interupt handler acts upon device notification, unblocks the process waiting for I/O and starts the next I/O request
-- Handling interupts imposes kernel mode transistion overheads (context switches use reso)
+- Interrupt handler acts upon device notification, unblocks the process waiting for I/O and starts the next I/O request
+- Handling interrupts imposes kernel mode transition overheads (context switches use resources)
+
+## Direct Memory Access
+- CPU cycles are wasted in copying data to/from a device
+- Instead, a special piece of hardware called a DMA engine copies from main memory to the device
+	- CPU will write control signals into the memory, DMA will read these from the memory
+	- CPU will now start another process, DMA takes these control signals and sends them to the device
+	- Read: interrupt raised after DMA completes
+	- Write: disk starts writing after DMA completes
+
+## Device Drivers
+- Device Independence (eg. reading and writing files without worrying precisely about what device it is)
+- Uniform naming
+- Error handling
+- Synchronus (blocking) vs asynchronous (interupt-driven) transfers
+
+## Hard Disk Internals
