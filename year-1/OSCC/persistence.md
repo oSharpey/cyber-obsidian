@@ -67,3 +67,20 @@
 - Data is addressed using LBA at the OS/driver level and converted into something else (cylinder-head-sector (CHS)) by the disk firmware
 - A cluster is a fixed size of sectors
 	- Disk space is allocated in whole clusters
+	- 128 sectors per cluster for example
+- Slack Space: wasted space on the disk when the file does not need all the space that has been allocated to it
+	- Can be used to hide stuff as OS will not touch it as long as the file is there
+	- Pick up slack space of a file that will never be deleted
+	- Can only access when doing raw disk read
+
+## Accessing a sector
+- Suppose disk head is at 30, we need to access 11
+- Seek to the correct track and wait for the disk to rotate
+- This is quite slow
+
+## Time taken for I/O
+- Time taken to read/write a block (rand) consists of:
+	- Seek time to get to the right track (few ms)
+	- Rotational latency for disk to spin to correct sector (few ms)
+	- Transfer time to read sector (tens microsec)
+- Sequential Reads: choose a track and read all the sectors
