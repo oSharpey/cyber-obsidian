@@ -61,3 +61,7 @@ tcpdump -i eth0 -w /hostlab/.output/m1-eth0-01.pcap
 tcpdump -i eth0 -w /hostlab/.output/m2-eth0-01.pcap
 tcpdump -i eth0 -w /hostlab/.output/gw-eth0-01.pcap
 ```
+
+#### Pings
+- All pings 
+
