@@ -75,6 +75,27 @@ traceroute -n 172.21.62.106
 ```
 - `ping -R` means "Record Route" - It uses the RECORD_ROUTE option in the IP options/parameters. This means that it keeps track of every IP of the interface that the packet leaves on
 
+``` sh
+--- 172.21.62.106 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.706/0.706/0.706/0.000 ms
+root@m1:~# ping -c1 172.21.62.106 -R
+PING 172.21.62.106 (172.21.62.106) 56(124) bytes of data.
+64 bytes from 172.21.62.106: icmp_seq=1 ttl=62 time=0.408 ms
+RR: 172.28.97.41
+	10.227.150.55
+	172.21.62.126
+	172.21.62.106
+	172.21.62.106
+	10.227.150.56
+	172.28.97.46
+	172.28.97.41
+
+--- 172.21.62.106 ping statistics ---
+```
+
+- As displayed above on the route to `172.21.62.106`  -  `172.28.97.46` is not displayed as it entered on that interface on gwW, the .55 address is shown as it left that interface on gwW
+
 ##### Traceroute
 - Shows route a packet takes (IPs of the interface a packet enters on)
 - Uses time-to-live (TTL) to figure out the route of the packet
