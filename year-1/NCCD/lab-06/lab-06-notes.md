@@ -66,3 +66,11 @@ tcpdump -i eth0 -w /hostlab/.output/gw-eth0-01.pcap
 - All pings, despite containing the full IP addresses for each packet, use the destination MAC addresses of the nearest gateway to work. 
 - When you ping machine m7 from m2. m2's ARP table would map m7's IP address to 
 
+
+#### Traceroute vs Ping
+```sh
+ping -c1 172.21.62.106 -R
+traceroute -n 172.21.62.106
+```
+
+- `ping -R` means "Record Route" - It uses the RECORD_ROUTE option in the IP options/parameters. This means that it keeps track of every IP that the packet leaves on 
