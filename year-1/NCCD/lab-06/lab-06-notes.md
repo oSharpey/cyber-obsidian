@@ -2,7 +2,7 @@
 
 ## 06a
 ### lab.conf
-```
+``` sh
 ##############################################
 LAB_DESCRIPTION="IP4 routing 'half lab'. Run lab06b for the other half"
 LAB_VERSION="lab06a-ip-route.2022.rc2"
@@ -73,8 +73,8 @@ tcpdump -i eth0 -w /hostlab/.output/gw-eth0-01.pcap
 ping -c1 172.21.62.106 -R
 traceroute -n 172.21.62.106
 ```
-
 - `ping -R` means "Record Route" - It uses the RECORD_ROUTE option in the IP options/parameters. This means that it keeps track of every IP of the interface that the packet leaves on
 
 ##### Traceroute
+- Uses time-to-live (TTL)
 
