@@ -95,9 +95,19 @@ RR: 172.28.97.41
 ```
 
 - As displayed above on the route to `172.21.62.106`  -  `172.28.97.46` is not displayed as it entered on that interface on gwW, the .55 address is shown as it left that interface on gwW
+- `ping -R` also displays the return route back from .106 traceroute does not do this
 
 ##### Traceroute
 - Shows route a packet takes (IPs of the interface a packet enters on)
 - Uses time-to-live (TTL) to figure out the route of the packet
 - Traceroute is slower, but more reliable 
+- `traceroute -n` ip address to hostname mapping 
+
+``` sh
+root@m1:~ traceroute -n 172.21.62.106
+traceroute to 172.21.62.106 (172.21.62.106), 30 hops max, 60 byte packets
+ 1  172.28.97.46  0.205 ms  0.142 ms  0.122 ms
+ 2  10.227.150.56  0.248 ms  0.209 ms  0.190 ms
+ 3  172.21.62.106  0.327 ms  0.280 ms  0.279 ms
+```
 
