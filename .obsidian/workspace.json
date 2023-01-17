@@ -259,15 +259,15 @@
   },
   "active": "f28d583b77e5c237",
   "lastOpenFiles": [
+    "year-1/NCCD/lab-04/lab-04-notes.md",
+    "year-1/NCCD/lab-06/lab-06-notes.md",
     "year-1/NCCD/dns.md",
     "year-1/OSCC/persistence.md",
     "images/execution-stack.png",
     "images/disk-sector.png",
-    "year-1/NCCD/lab-04/lab-04-notes.md",
     "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
     "year-1/OSCC/file-system.md",
     "year-1/DSCS/logic.md",
-    "year-1/OSCC/concurency.md",
-    "year-1/NCCD/lab-03/lab-03-notes.md"
+    "year-1/OSCC/concurency.md"
   ]
 }
