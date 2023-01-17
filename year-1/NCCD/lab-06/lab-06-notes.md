@@ -63,5 +63,6 @@ tcpdump -i eth0 -w /hostlab/.output/gw-eth0-01.pcap
 ```
 
 #### Pings
-- All pings 
+- All pings, despite containing the full IP addresses for each packet, use the destination MAC addresses of the nearest gateway to work. 
+- When you ping machine m7 from m2. m2's ARP table would map m7's IP address to 
 
