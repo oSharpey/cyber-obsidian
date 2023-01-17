@@ -76,5 +76,7 @@ traceroute -n 172.21.62.106
 - `ping -R` means "Record Route" - It uses the RECORD_ROUTE option in the IP options/parameters. This means that it keeps track of every IP of the interface that the packet leaves on
 
 ##### Traceroute
-- Uses time-to-live (TTL)
+- Shows route a packet takes (IPs of the interface a packet enters on)
+- Uses time-to-live (TTL) to figure out the route of the packet
+- Traceroute is slower, but more reliable 
 
