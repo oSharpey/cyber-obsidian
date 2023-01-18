@@ -33,7 +33,7 @@ Port 57005: 0xdead
 ### Send UDP Traffic to M7 from M1 and from m1 to gwW
 ``` sh
 echo "hello m7" | nc -u -q0 172.21.62.107 57005
-echo "hello gwW" | nc -u t-q0 172.28.97.40 51966
+echo "hello gwW" | nc -u -q0 172.28.97.40 51966
 ```
 
 - `nc -w` &`nc -q0` : provides a timeout time 
