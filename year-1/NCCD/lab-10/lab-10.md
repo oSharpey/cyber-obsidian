@@ -4,7 +4,7 @@
 
 ```bash
 # add new firewall rule
-iptables -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -A FORWARD -m state --ctstate RELATED,ESTABLISHED -j ACCEPT
 iptables -A FORWARD -i eth0 -o eth1
 
 ```
