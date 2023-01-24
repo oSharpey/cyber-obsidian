@@ -15,8 +15,17 @@ ip -s -s neigh flush all   # deletes the whole a machines ARP table
 # COMMAND TO SET AGING TIME
 ip link set sw0 type bridge ageing_time 2000    # Set ageing time to 20s 
 
-# SHOW THE AGING TIME 
+# SHOW THE AGING TIME OF THE CACHE
 ip -s -j -p link show dev sw0 | grep "ageing_time" # Show the ageing time of the switches cache
 ```
+
+## Lab 4
+
+```sh
+# SHOW THE ARP TABLE
+ip neigh show 
+arp -n
+```
+
 
 

@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/NCCD/viva-commands.md",
+                "file": "year-1/NCCD/lab-04/lab-04-notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/NCCD/viva-commands.md",
+                "file": "year-1/NCCD/lab-04/lab-04-notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/NCCD/viva-commands.md",
+                "file": "year-1/NCCD/lab-04/lab-04-notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/NCCD/viva-commands.md"
+                "file": "year-1/NCCD/lab-04/lab-04-notes.md"
               }
             }
           }
@@ -238,7 +238,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/NCCD/viva-commands.md",
+                "file": "year-1/NCCD/lab-04/lab-04-notes.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -294,9 +294,9 @@
   },
   "active": "e27f361ac41f7ab7",
   "lastOpenFiles": [
-    "year-1/NCCD/lab-03/lab-03-notes.md",
-    "year-1/NCCD/lab-04/lab-04-notes.md",
     "year-1/NCCD/viva-commands.md",
+    "year-1/NCCD/lab-04/lab-04-notes.md",
+    "year-1/NCCD/lab-03/lab-03-notes.md",
     "year-1/NCCD/network defence.md",
     "year-1/NCCD/lab-03/lab-03-lecture-notes.md",
     "year-1/NCCD/lab-02/netkit-intro.md",
