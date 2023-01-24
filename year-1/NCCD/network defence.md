@@ -26,4 +26,21 @@
 
 ## Network Segmentation
 ### Common types of network segmentation
-- DMZ - a network segment that contains p
+- DMZ - a network segment that contains public facing services, typically located at the networks perimeter. Perimeter firewall protects this
+- Internal DMZ - Used to segment less trusted internal services
+- Enterprise Zone - Network segment that contains the most sensitive data and systems. Usually the end user is here
+- Management Zone - A admin control zone to monitor the network. 
+
+### How to segment a network
+- Identify the types of data and systems that need to be protected
+- Identify the types of users and devices that will be accessing the network (or different subnets)
+- Identify the network services and devices that will be in each segment
+- Decide which network devices and services will be in each segment and how they will be connected
+- Implement the segment
+- Test and monitor
+
+### Common Mistakes
+- Not considering the needs of the business
+- Not using a consistent approach 
+- Not properly securing the DMZ (perimeter firewall)
+- Not properly isolating the segments
