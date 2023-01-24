@@ -15,3 +15,15 @@
 - IDS/IPS used to monitor network traffic and block suspicious activity
 - Use proper authentication methods to control access
 - Have an incident team and disaster recovery plan
+
+### Some common mistakes
+- Over-reliance on a single security control
+- Not segmenting the network
+- Not testing the security controls - Directionality is important
+- Not monitoring the network
+- Not keeping software up to date
+- Not considering the human factor - humans are the weakest link
+
+## Network Segmentation
+### Common types of network segmentation
+- DMZ - a network segment that contains p
