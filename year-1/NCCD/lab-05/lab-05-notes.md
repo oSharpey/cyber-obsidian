@@ -131,7 +131,7 @@ The header within the ping contains no options and no padding
 These parts of the header are rarely ever used
 
 #### Change the config for subnet w
-```
+``` sh
 ip addr add <new IP with Mask> dev <network card> # eg 146.227.150.64/26
 ip addr del <old ip with mask> dev <network card>
 ip route replace default via <ip of gateway> # change gateway for m1 & m2
