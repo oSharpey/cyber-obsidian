@@ -114,9 +114,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ab8af96a9602a91e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "year-1/NCCD/lab-08/lab-08.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -182,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/NCCD/viva-commands.md",
+                "file": "year-1/NCCD/lab-08/lab-08.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/NCCD/viva-commands.md",
+                "file": "year-1/NCCD/lab-08/lab-08.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/NCCD/viva-commands.md"
+                "file": "year-1/NCCD/lab-08/lab-08.md"
               }
             }
           }
@@ -238,7 +250,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/NCCD/viva-commands.md",
+                "file": "year-1/NCCD/lab-08/lab-08.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -292,11 +304,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e27f361ac41f7ab7",
+  "active": "ab8af96a9602a91e",
   "lastOpenFiles": [
+    "year-1/NCCD/viva-commands.md",
     "year-1/NCCD/lab-05/lab-05-notes.md",
     "year-1/NCCD/lab-04/lab-04-notes.md",
-    "year-1/NCCD/viva-commands.md",
     "year-1/NCCD/lab-03/lab-03-notes.md",
     "year-1/NCCD/network defence.md",
     "year-1/NCCD/lab-03/lab-03-lecture-notes.md",
