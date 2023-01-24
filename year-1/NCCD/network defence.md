@@ -2,7 +2,7 @@
 
 ## Defence in depth
 ### What is it?
-- A security strategy they involves implementung
+- A security strategy they involves implementing
 
 ### How to implement it
 - Segment the network - Break the network into smaller zones with their own security controls
@@ -44,3 +44,4 @@
 - Not using a consistent approach 
 - Not properly securing the DMZ (perimeter firewall)
 - Not properly isolating the segments
+- Not taking into account the mobile and remote workforce
