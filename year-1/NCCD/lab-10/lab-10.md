@@ -1,6 +1,7 @@
 - Ping anon from m1:
 	- This fails
 	- Firewall rule on gw means will not allow any packets in or out of eth1 (the public facing network card)
+	- also anon has no routing instructions 
 
 ```bash
 # add new firewall rule
