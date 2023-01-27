@@ -60,5 +60,41 @@ iptables -A FORWARD -i eth1 -o eth0 -s 0.0.0.0/0 -d 0.0.0.0/0 -p icmp -j ACCPET
 
 ## Delete these rules and replace with 
 
+iptables -A FORWARD \ 
+	-i eth0 -o eth1 \
+	-s 172.21.62.96/27 -d 172.28.97.40/29 \
+	-p icmp --icmp-type echo-request \
+	-j ACCEPT
 
+iptables -A FORWARD \
+	-i eth1 -o eth0 -s \
+	172.28.97.40/29 -d 172.21.62.96/27 \
+	-p icmp --icmp-type echo-reply \
+	-j ACCEPT
+
+# Set up udp nc listener on m6
+nc -u -nvlp 53
+# Connect on m1
+nc -u 172.21.62.106 53
+
+# Only accept UDP traffic from LANx on port 53 and to LANx on potr 53
+iptables -A FORWARD \
+	-i eth0 -o eth1 \
+	-s 172.28.97.40/29 -d 0.0.0.0/0 \
+	-p udp \
+	--dport 53 \
+	-j ACCEPT
+
+iptables -A FORWARD \
+	-i eth1 -o eth0 \
+	-s 0.0.0.0/0 -d 172.21.62.96/27 \
+	-p udp \
+	--sport 53 \
+	-j ACCEPT
+
+#only allow tcp web traffic
+
+iptables -A FORWARD -i eth1 -o eth0 ! -s 172.28.97.40/29 -d 172.28.97.40/29 -p tcp --sport 80 -j ACCEPT
+
+iptables -A FORWARD -i eth0 -o eth1 -s 172.28.97.40/29 ! -d 172.28.97.40/29 -p tcp --dport 80 -j ACCEPT
 ```
