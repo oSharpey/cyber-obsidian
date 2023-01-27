@@ -92,9 +92,20 @@ iptables -A FORWARD \
 	--sport 53 \
 	-j ACCEPT
 
+
+
 #only allow tcp web traffic
+iptables -A FORWARD \
+	-i eth1 -o eth0 \
+	! -s 172.28.97.40/29 -d 172.28.97.40/29 \
+	-p tcp \
+	--sport 80 \
+	-j ACCEPT
 
-iptables -A FORWARD -i eth1 -o eth0 ! -s 172.28.97.40/29 -d 172.28.97.40/29 -p tcp --sport 80 -j ACCEPT
-
-iptables -A FORWARD -i eth0 -o eth1 -s 172.28.97.40/29 ! -d 172.28.97.40/29 -p tcp --dport 80 -j ACCEPT
+iptables -A FORWARD \
+	-i eth0 -o eth1 \
+	-s 172.28.97.40/29 ! -d 172.28.97.40/29 \
+	-p tcp \
+	--dport 80 \
+	-j ACCEPT
 ```
