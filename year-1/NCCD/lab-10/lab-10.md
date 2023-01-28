@@ -10,12 +10,14 @@ iptables -A FORWARD -i eth0 -o eth1 -s 0.0.0.0/0 -d 0.0.0.0/0 -j ACCEPT
 
 
 # SNAT on gw so the source address is changed to the outside address of gw
-
 iprables -t nat \
 	-A POSTROUTING \
 	-o eth1 \
 	-j SNAT \
 	--to-source 55.5.5.1
+
+# DNAT on gw to allow web traffic to be redirected to the webserver
+
 
 
 
