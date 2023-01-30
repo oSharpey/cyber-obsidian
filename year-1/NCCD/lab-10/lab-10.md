@@ -5,7 +5,7 @@
 
 ```bash
 # add new firewall rule
-iptables -A FORWARD -m state --ctstate RELATED,ESTABLISHED -j ACCEPT
+iptables -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
 iptables -A FORWARD -i eth0 -o eth1 -s 0.0.0.0/0 -d 0.0.0.0/0 -j ACCEPT
 
 
@@ -17,7 +17,7 @@ iprables -t nat \
 	--to-source 55.5.5.1
 
 # DNAT on gw to allow web traffic to be redirected to the webserver
-
+iptables -t nat -A PREROUTING -i eth1 -d 55.5.5.1 -p tcp --dport 80 -j DNAT --to-destination 10.227.150.100
 
 
 
