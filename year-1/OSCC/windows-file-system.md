@@ -22,13 +22,21 @@
 - Tracks the sequence and allocation of clusters for each file
 - Tracks the free/available clusters that can be written to
 - Tracks bad clusters (dont overwrite them)
-- The FAT numver is the size of bits for each entry in the table
+- The FAT number is the size of bits for each entry in the table
 
 
 ### FAT Area
 - Contains:
 	- Allocation status of each cluster
-	- The cluters the follow the starting cluster for  a given file or directory 
+	- The clusters the follow the starting cluster for  a given file or directory 
 
 
 ### FAT Entries
+
+
+
+
+## NTFS
+
+### NTFS vs FAT
+- Better read/write/
