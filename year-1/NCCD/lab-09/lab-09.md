@@ -77,7 +77,7 @@ nc -u -nvlp 53
 # Connect on m1
 nc -u 172.21.62.106 53
 
-# Only accept UDP traffic from LANx on port 53 and to LANx on potr 53
+# Only accept UDP traffic from LANx on port 53 and to LANx on port 53
 iptables -A FORWARD \
 	-i eth0 -o eth1 \
 	-s 172.28.97.40/29 -d 0.0.0.0/0 \
