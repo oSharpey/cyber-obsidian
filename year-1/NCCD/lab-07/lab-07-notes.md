@@ -38,7 +38,15 @@ echo "hello gwW" | nc -u -q0 172.28.97.40 51966
 
 - `nc -w` &`nc -q0` : provides a timeout time 
 
+### File transfer with UDP
+```bash
+# set up listener
+nc -nulvp 49374 < /etc/services
 
+
+# Connect through another machine
+
+```
 
 
 
