@@ -52,3 +52,21 @@ ip route replace default via <ip of gateway> # change gateway for m1 & m2
 - Because .64 would not be a valid subnet. 
 - /25 would give you a range of 146.227.150.0 - 146.227.150.128
 - This means .64 would be in the middle of this range, so it is the wrong notation 
+
+```sh
+# Tracing a ping
+ping -c1 172.21.62.106 -R 
+traceroute -n 172.21.62.106
+```
+`ping -R` means "Record Route" - It uses the RECORD_ROUTE option in the IP options/parameters. This means that it keeps track of every IP of the interface that the packet leaves on
+
+Traceroute hows route a packet takes (IPs of the interface a packet enters on)
+`-n` means that it wont try to resolve hostnames
+
+`ping -R` also displays the return route back from .106 traceroute does not do this
+
+
+
+## Lab 7 & 8 (Layer 4)
+
+
