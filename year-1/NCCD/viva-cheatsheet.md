@@ -69,4 +69,26 @@ Traceroute hows route a packet takes (IPs of the interface a packet enters on)
 
 ## Lab 7 & 8 (Layer 4)
 
+```sh
+# Set up UDP listeners and senders
+nc -u 172.28.97.46 51966
+nc -nvulp 51966
+```
 
+```sh
+# using timeouts 
+echo "hello m7" | nc -u -w 3 172.21.62.107 57005
+echo "hello gwW" | nc -u -q0 172.28.97.40 51966
+```
+
+```sh
+# UDP file transfer
+nc -nulvp 49374 > out.txt # on the receiving machine 
+nc -u -q0 <ip of client> 46374 < /dir/file # on the sending machine
+```
+
+```sh
+# look at udp/tcp connetctions
+watch -n1 netstat -an4 # netstat is depricated
+watch -n1 ss -anut4
+```
