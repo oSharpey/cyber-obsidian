@@ -128,7 +128,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/NCCD/lab-10/lab-10.md",
+                "file": "year-1/NCCD/viva-cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "aa5d2d71b8bbdd94",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29fb25d4e10aed0e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "year-1/NCCD/viva-cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -184,7 +202,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -310,11 +329,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e27f361ac41f7ab7",
+  "active": "ee77b883c2ffa65e",
   "lastOpenFiles": [
     "year-1/NCCD/lab-10/lab-10.md",
-    "year-1/NCCD/lab-09/lab-09.md",
     "year-1/NCCD/viva-cheatsheet.md",
+    "year-1/NCCD/lab-09/lab-09.md",
     "year-1/NCCD/lab-08/lab-08.md",
     "year-1/NCCD/lab-07/lab-07-notes.md",
     "year-1/NCCD/lab-06/lab-06-notes.md",
