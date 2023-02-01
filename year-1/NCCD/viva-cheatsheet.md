@@ -47,3 +47,8 @@ ip addr add <new IP with Mask> dev <network card> # eg 146.227.150.64/26
 ip addr del <old ip with mask> dev <network card>
 ip route replace default via <ip of gateway> # change gateway for m1 & m2
 ```
+
+#### Why can the machines not go on 146.227.150.64/25
+- Because .64 would not be a valid subnet. 
+- /25 would give you a range of 146.227.150.0 - 146.227.150.128
+- This means .64 would be in the middle of this range, so it is the wrong notation 
