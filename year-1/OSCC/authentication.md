@@ -43,4 +43,8 @@
 - Implements additional authentication in Linux
 - Provides admins the ability to use multiple auth mechanisms into an existing system
 
+## Authorisation
+### What is authorisation
+- Determines what a user can and cannot access
+- For example linux file permissions
 
