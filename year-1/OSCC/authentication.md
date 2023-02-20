@@ -48,3 +48,7 @@
 - Determines what a user can and cannot access
 - For example linux file permissions
 
+### Mandatory Access Control
+- Allows for granular permissions for all users, programs, processes, files & devices
+- There is a policy that is checked for any given access
+- In Linux it operates as a kernel module
