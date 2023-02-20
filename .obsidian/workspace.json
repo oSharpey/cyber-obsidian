@@ -8,114 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "02e8b327ecae52e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/NCCD/lab-03/lab-03-lecture-notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6a30d0a522630768",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/NCCD/lab-04/lab-04-notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "61a0187159b2572b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/OSCC/file-system.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1dd585b6b5d2ffae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/NCCD/lab-04/lab-04-notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "68926b6bff8426c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/OSCC/persistence.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f28d583b77e5c237",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/NCCD/lab-05/lab-05-notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0187ce712cf59cc8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/NCCD/lab-10/lab-10.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6fdcc8f34524c9c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/NCCD/lab-06/lab-06-notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e27f361ac41f7ab7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-1/CF/coursework-1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "301cad5b8c33651e",
             "type": "leaf",
             "state": {
@@ -127,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "vertical"

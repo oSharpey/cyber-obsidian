@@ -1,4 +1,4 @@
-# Authentication & Authorization
+# Authentication & Authorisation
 
 
 ## Authentication
@@ -40,5 +40,7 @@
 - if fail, just fail - no info about why
 
 ### PAM
-- Implements additional authentication in li
+- Implements additional authentication in Linux
+- Provides admins the ability to use multiple auth mechanisms into an existing system
+
 
