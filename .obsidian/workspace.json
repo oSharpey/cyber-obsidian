@@ -114,9 +114,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "301cad5b8c33651e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "year-1/OSCC/authentication.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -166,7 +178,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -182,7 +195,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/CF/coursework-1.md",
+                "file": "year-1/OSCC/authentication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +212,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/CF/coursework-1.md",
+                "file": "year-1/OSCC/authentication.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +235,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/CF/coursework-1.md"
+                "file": "year-1/OSCC/authentication.md"
               }
             }
           }
@@ -238,7 +251,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/CF/coursework-1.md",
+                "file": "year-1/OSCC/authentication.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -292,8 +305,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e27f361ac41f7ab7",
+  "active": "8e219bebd780e6c9",
   "lastOpenFiles": [
+    "year-1/CF/coursework-1.md",
     "year-1/CF/Untitled.md",
     "year-1/NCCD/viva-cheatsheet.md",
     "year-1/NCCD/lab-06/lab-06-notes.md",
@@ -302,7 +316,6 @@
     "year-1/NCCD/lab-05/lab-05-notes.md",
     "year-1/NCCD/lab-04/lab-04-notes.md",
     "year-1/NCCD/lab-09/lab-09.md",
-    "year-1/NCCD/lab-08/lab-08.md",
-    "year-1/NCCD/osi-7-layer-model.md"
+    "year-1/NCCD/lab-08/lab-08.md"
   ]
 }
