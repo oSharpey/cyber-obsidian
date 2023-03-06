@@ -129,7 +129,7 @@ Nmap done: 1 IP address (1 host up) scanned in 36.86 seconds
 
 - Nothing interesting on the index page so use feroxbuster to enumerate resources on the server
 
-#### Feroxbuster
+### Feroxbuster
 - Search for html, php and txt files
 ```
 ┌──(kali㉿kali-99-590)-[~]
@@ -163,4 +163,12 @@ by Ben "epi" Risher 🤓                 ver: 2.7.3
 [####################] - 1m    882184/882184  7816/s  http://10.1.26.30/
 ```
 
-- Nothing of interest was found - seems just like a default apache server
+- Nothing of interest was found - seems just like a default Apache server
+
+## Initial Access
+
+- From nmap we can see we have webmin 1.890 running on port 10000
+- This version is vulnerable to  that we can exploit using metasploit
+
+
+
