@@ -2,7 +2,7 @@
 
 ## Remote Enumeration
 
-**Initial NMAP Scan of Whole Network**
+### Initial NMAP Scan of Whole Network
 ``` 
 ┌──(kali@kali-99-590)-[~]
 └─$ sudo nmap 10.1.26.0/24
@@ -65,7 +65,7 @@ Nmap done: 256 IP addresses (7 hosts up) scanned in 2.54 seconds
 - Nothing too interesting from 10.1.26.1 - 10.1.26.5
 - 10.1.26.30 has some interesting ports open so we will do a more detailed scan of that machine
 
-**Nmap Scan of 10.1.26.30**
+### Nmap Scan of 10.1.26.30
 - -sC to run default scripts 
 - -sV to enumerate versions
 
@@ -123,3 +123,44 @@ Nmap done: 1 IP address (1 host up) scanned in 36.86 seconds
 - Apache 2.4.18 which could possibly be exploited
 - An nfs share we can mount to upload files to the server
 - MiniServ 1.89 which can be exploited to get a shell
+
+### Looking at the Apache Server
+![[apache-default-page.png]]
+
+- Nothing interesting on the index page so use feroxbuster to enumerate resources on the server
+
+#### Feroxbuster
+- Search for html, php and txt files
+```
+┌──(kali㉿kali-99-590)-[~]
+└─$ feroxbuster -u http://10.1.26.30 -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -x html,php,txt                                                                                           1 ⨯
+
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.7.3
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://10.1.26.30
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt
+ 👌  Status Codes          │ [200, 204, 301, 302, 307, 308, 401, 403, 405, 500]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ feroxbuster/2.7.3
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 💲  Extensions            │ [html, php, txt]
+ 🏁  HTTP methods          │ [GET]
+ 🔃  Recursion Depth       │ 4
+ 🎉  New Version Available │ https://github.com/epi052/feroxbuster/releases/latest
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+200      GET      375l      968w    11321c http://10.1.26.30/
+200      GET      375l      968w    11321c http://10.1.26.30/index.html
+403      GET        9l       28w      275c http://10.1.26.30/.html
+403      GET        9l       28w      275c http://10.1.26.30/.php
+403      GET        9l       28w      275c http://10.1.26.30/server-status
+[####################] - 1m    882184/882184  0s      found:5       errors:0
+[####################] - 1m    882184/882184  7816/s  http://10.1.26.30/
+```
+
+- Nothing of interest was found - seems just like a default apache server
