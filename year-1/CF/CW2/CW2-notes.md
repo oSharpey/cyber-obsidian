@@ -574,7 +574,7 @@ root@srv-99-590:/var/www/html#
 ```
 
 
-### Method 4  - CVE-2022-2588 (FAILED
+### Method 4  - CVE-2022-2588 (FAILED CRASHED BOX)
 - I tried to exploit this cve however it failed as shown below
 
 ```
