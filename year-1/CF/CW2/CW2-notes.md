@@ -426,6 +426,15 @@ curl -L https://github.com/carlospolop/PEASSng/releases/latest/download/linpeas.
 
 - Linpeas tells us that the machine is vulnerable to CVE-2021-4043 or PwnKit - a polkit exploit
 - It also says its potentially vulnerable to CVE-2022-2588
+- We also get the root shadow file which we can crack with john
+
+
+## Priv Esc
+
+### Method 1
+- Crack root password using john
+- We have to combine the /etc/passwd entry for root and /etc/shadow entry for root 
+- 
 
 
 
