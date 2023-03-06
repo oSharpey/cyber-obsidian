@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "df1b1128cc2154c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "year-1/CF/CW2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/OSCC/authentication.md",
+                "file": "year-1/CF/CW2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/OSCC/authentication.md",
+                "file": "year-1/CF/CW2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/OSCC/authentication.md"
+                "file": "year-1/CF/CW2.md"
               }
             }
           }
@@ -142,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/OSCC/authentication.md",
+                "file": "year-1/CF/CW2.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -196,8 +208,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "301cad5b8c33651e",
+  "active": "df1b1128cc2154c1",
   "lastOpenFiles": [
+    "year-1/CF/cw2/En.md",
+    "year-1/CF/CW2.md",
+    "year-1/OSCC/authentication.md",
+    "year-1/CF/cw2",
     "year-1/CF/coursework-1.md",
     "year-1/CF/Untitled.md",
     "year-1/NCCD/viva-cheatsheet.md",
