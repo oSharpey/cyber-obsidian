@@ -577,6 +577,8 @@ root@srv-99-590:/var/www/html#
 ### Method 4 - DirtyCow
 - This is a well known kernel exploit that originated back in 2016
 - Below is a PoC using exploit code from github user gibonacini (https://github.com/gbonacini/CVE-2016-5195)
+- The specific exploit used here overwrites the /etc/passwd file to replace the root password
+- 
 
 ```
 ubuntu@kernel-explout-tests:~/CVE-2016-5195$ make
