@@ -26,37 +26,8 @@
 
 ### Feroxbuster
 - Search for html, php and txt files
-```
-┌──(kali㉿kali-99-590)-[~]
-└─$ feroxbuster -u http://10.1.26.30 -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -x html,php,txt                                                                                           1 ⨯
 
- ___  ___  __   __     __      __         __   ___
-|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
-|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
-by Ben "epi" Risher 🤓                 ver: 2.7.3
-───────────────────────────┬──────────────────────
- 🎯  Target Url            │ http://10.1.26.30
- 🚀  Threads               │ 50
- 📖  Wordlist              │ /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt
- 👌  Status Codes          │ [200, 204, 301, 302, 307, 308, 401, 403, 405, 500]
- 💥  Timeout (secs)        │ 7
- 🦡  User-Agent            │ feroxbuster/2.7.3
- 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
- 💲  Extensions            │ [html, php, txt]
- 🏁  HTTP methods          │ [GET]
- 🔃  Recursion Depth       │ 4
- 🎉  New Version Available │ https://github.com/epi052/feroxbuster/releases/latest
-───────────────────────────┴──────────────────────
- 🏁  Press [ENTER] to use the Scan Management Menu™
-──────────────────────────────────────────────────
-200      GET      375l      968w    11321c http://10.1.26.30/
-200      GET      375l      968w    11321c http://10.1.26.30/index.html
-403      GET        9l       28w      275c http://10.1.26.30/.html
-403      GET        9l       28w      275c http://10.1.26.30/.php
-403      GET        9l       28w      275c http://10.1.26.30/server-status
-[####################] - 1m    882184/882184  0s      found:5       errors:0
-[####################] - 1m    882184/882184  7816/s  http://10.1.26.30/
-```
+![[feroxbuster.png]]
 
 - Nothing of interest was found - seems just like a default Apache server
 
