@@ -23,11 +23,9 @@
             "id": "df1b1128cc2154c1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
-                "mode": "source",
-                "source": false
+                "file": "year-1/CSAO/0x0000/csao-tutorial-0x0000.pdf"
               }
             }
           }
@@ -98,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
+                "file": "year-1/CSAO/0x0000/csao-tutorial-0x0000.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
+                "file": "year-1/CSAO/0x0000/csao-tutorial-0x0000.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/CSAO/0x0008/stack-based-buffer-overflows.md"
+                "file": "year-1/CSAO/0x0000/csao-tutorial-0x0000.pdf"
               }
             }
           }
@@ -154,7 +152,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
+                "file": "year-1/CSAO/0x0000/csao-tutorial-0x0000.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -210,16 +208,20 @@
   },
   "active": "df1b1128cc2154c1",
   "lastOpenFiles": [
+    "year-1/CSAO/0x0000/csao-intro.md",
+    "year-1/CSAO/0x0000/cpu-architecture.md",
+    "year-1/CSAO/0x0002/instructions-opcode-operand.md",
+    "year-1/CSAO/0x0002/assembly-and-syntax.md",
+    "year-1/CSAO/0x0000/registers.md",
+    "year-1/CSAO/0x0000/memory-categories.md",
+    "year-1/CSAO/0x0000/instruction-sets.md",
+    "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
     "year-1/CSAO/0x0001/debuggers.md",
     "year-1/CSAO/0x0001/machine-level-rep-of-data.md",
     "year-1/CSAO/0x0001/xor-encryption.md",
     "year-1/CSAO/0x0002/processes-in-memory.md",
     "year-1/CSAO/0x0002/layout-of-assembly-program.md",
-    "year-1/CSAO/0x0002/instructions-opcode-operand.md",
-    "year-1/CSAO/0x0002/assembly-and-syntax.md",
     "year-1/CSAO/0x0000/data-representation.md",
-    "year-1/CSAO/0x0000/registers.md",
-    "year-1/CSAO/0x0000/memory-categories.md",
     "year-1/CSAO/0x0001/boolean-logic.md",
     "year-1/CSAO/0x0003/assembly-program-structure.md",
     "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
@@ -228,9 +230,7 @@
     "year-1/CSAO/0x0004/the-stack.md",
     "year-1/CSAO/0x0004/arithmetic-instrcutions.md",
     "year-1/CSAO/0x0003/types-of-mov-instructions.md",
-    "year-1/CSAO/0x0000/instruction-sets.md",
     "year-1/CSAO/0x0000/csao-tutorial-0x0000.pdf",
-    "year-1/CSAO/0x0000/csao-intro.md",
     "year-1/CF/CW2/CW2-notes.md",
     "year-1/CF/CW2/hydra.png",
     "year-1/CF/CW2/php-rev-shell.png",
@@ -246,8 +246,6 @@
     "year-1/CF/CW2",
     "year-1/CF/cw2/En.md",
     "year-1/CF/cw2",
-    "year-1/CF/coursework-1.md",
-    "year-1/CF/Untitled.md",
-    "year-1/NCCD/viva-cheatsheet.md"
+    "year-1/CF/coursework-1.md"
   ]
 }
