@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/CF/CW2/CW2-notes.md",
+                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/CF/CW2/CW2-notes.md",
+                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/CF/CW2/CW2-notes.md",
+                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/CF/CW2/CW2-notes.md"
+                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md"
               }
             }
           }
@@ -154,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/CF/CW2/CW2-notes.md",
+                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -210,8 +210,25 @@
   },
   "active": "df1b1128cc2154c1",
   "lastOpenFiles": [
-    "year-1/CF/CW2/hydra.png",
+    "year-1/CSAO/0x0007/procedures.md",
+    "year-1/CSAO/0x0004/logical-bit-shifting-instructions.md",
+    "year-1/CSAO/0x0004/the-stack.md",
+    "year-1/CSAO/0x0004/arithmetic-instrcutions.md",
+    "year-1/CSAO/0x0003/types-of-mov-instructions.md",
+    "year-1/CSAO/0x0003/assembly-program-structure.md",
+    "year-1/CSAO/0x0002/processes-in-memory.md",
+    "year-1/CSAO/0x0002/layout-of-assembly-program.md",
+    "year-1/CSAO/0x0002/instructions-opcode-operand.md",
+    "year-1/CSAO/0x0002/assembly-and-syntax.md",
+    "year-1/CSAO/0x0001/machine-level-rep-of-data.md",
+    "year-1/CSAO/0x0000/registers.md",
+    "year-1/CSAO/0x0000/memory-categories.md",
+    "year-1/CSAO/0x0000/instruction-sets.md",
+    "year-1/CSAO/0x0000/data-representation.md",
+    "year-1/CSAO/0x0000/csao-tutorial-0x0000.pdf",
+    "year-1/CSAO/0x0000/csao-intro.md",
     "year-1/CF/CW2/CW2-notes.md",
+    "year-1/CF/CW2/hydra.png",
     "year-1/CF/CW2/php-rev-shell.png",
     "year-1/CF/CW2/2023-03-07-175207_12x2_scrot.png",
     "year-1/CF/CW2/mount-nfs.png",
@@ -231,9 +248,6 @@
     "year-1/NCCD/lab-06/lab-06-notes.md",
     "year-1/NCCD/lab-07/lab-07-notes.md",
     "year-1/NCCD/lab-10/lab-10.md",
-    "year-1/NCCD/lab-05/lab-05-notes.md",
-    "year-1/NCCD/lab-04/lab-04-notes.md",
-    "year-1/NCCD/lab-09/lab-09.md",
-    "year-1/NCCD/lab-08/lab-08.md"
+    "year-1/NCCD/lab-05/lab-05-notes.md"
   ]
 }
