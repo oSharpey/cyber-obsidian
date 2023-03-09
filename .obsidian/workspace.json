@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/CSAO/0x0001/debuggers.md",
+                "file": "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/CSAO/0x0001/debuggers.md",
+                "file": "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/CSAO/0x0001/debuggers.md",
+                "file": "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/CSAO/0x0001/debuggers.md"
+                "file": "year-1/CSAO/0x0008/stack-based-buffer-overflows.md"
               }
             }
           }
@@ -154,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/CSAO/0x0001/debuggers.md",
+                "file": "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -210,13 +210,13 @@
   },
   "active": "df1b1128cc2154c1",
   "lastOpenFiles": [
+    "year-1/CSAO/0x0001/debuggers.md",
     "year-1/CSAO/0x0001/machine-level-rep-of-data.md",
     "year-1/CSAO/0x0001/xor-encryption.md",
     "year-1/CSAO/0x0002/processes-in-memory.md",
     "year-1/CSAO/0x0002/layout-of-assembly-program.md",
     "year-1/CSAO/0x0002/instructions-opcode-operand.md",
     "year-1/CSAO/0x0002/assembly-and-syntax.md",
-    "year-1/CSAO/0x0001/debuggers.md",
     "year-1/CSAO/0x0000/data-representation.md",
     "year-1/CSAO/0x0000/registers.md",
     "year-1/CSAO/0x0000/memory-categories.md",
