@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/CF/CW2/CW2-notes.md",
+                "file": "year-1/NCCD/viva-cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/CF/CW2/CW2-notes.md",
+                "file": "year-1/NCCD/viva-cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/CF/CW2/CW2-notes.md",
+                "file": "year-1/NCCD/viva-cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/CF/CW2/CW2-notes.md"
+                "file": "year-1/NCCD/viva-cheatsheet.md"
               }
             }
           }
@@ -154,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/CF/CW2/CW2-notes.md",
+                "file": "year-1/NCCD/viva-cheatsheet.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -210,6 +210,8 @@
   },
   "active": "df1b1128cc2154c1",
   "lastOpenFiles": [
+    "year-1/NCCD/network defence.md",
+    "year-1/CF/CW2/CW2-notes.md",
     "year-1/CSAO/0x0000/csao-tutorial-0x0000.pdf",
     "year-1/CSAO/0x0000/csao-intro.md",
     "year-1/CSAO/0x0000/cpu-architecture.md",
@@ -233,7 +235,6 @@
     "year-1/CSAO/0x0004/the-stack.md",
     "year-1/CSAO/0x0004/arithmetic-instrcutions.md",
     "year-1/CSAO/0x0003/types-of-mov-instructions.md",
-    "year-1/CF/CW2/CW2-notes.md",
     "year-1/CF/CW2/hydra.png",
     "year-1/CF/CW2/php-rev-shell.png",
     "year-1/CF/CW2/2023-03-07-175207_12x2_scrot.png",
