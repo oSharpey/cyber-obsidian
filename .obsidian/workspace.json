@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/NCCD/lab-10/lab-10.md",
+                "file": "year-1/CF/CW2/CW2-notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/NCCD/lab-10/lab-10.md",
+                "file": "year-1/CF/CW2/CW2-notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/NCCD/lab-10/lab-10.md",
+                "file": "year-1/CF/CW2/CW2-notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/NCCD/lab-10/lab-10.md"
+                "file": "year-1/CF/CW2/CW2-notes.md"
               }
             }
           }
@@ -154,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/NCCD/lab-10/lab-10.md",
+                "file": "year-1/CF/CW2/CW2-notes.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -210,11 +210,11 @@
   },
   "active": "df1b1128cc2154c1",
   "lastOpenFiles": [
+    "year-1/NCCD/lab-10/lab-10.md",
     "year-1/NCCD/lab-09/lab-09.md",
     "year-1/NCCD/viva-cheatsheet.md",
     "year-1/NCCD/lab-05/lab-05-notes.md",
     "year-1/NCCD/lab-04/lab-04-notes.md",
-    "year-1/NCCD/lab-10/lab-10.md",
     "year-1/NCCD/lab-08/lab-08.md",
     "year-1/NCCD/lab-07/lab-07-notes.md",
     "year-1/NCCD/network defence.md",
