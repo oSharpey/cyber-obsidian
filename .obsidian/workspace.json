@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/CF/CW2/CW2-notes.md",
+                "file": "year-1/NCCD/lab-10/lab-10.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/CF/CW2/CW2-notes.md",
+                "file": "year-1/NCCD/lab-10/lab-10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/CF/CW2/CW2-notes.md",
+                "file": "year-1/NCCD/lab-10/lab-10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/CF/CW2/CW2-notes.md"
+                "file": "year-1/NCCD/lab-10/lab-10.md"
               }
             }
           }
@@ -154,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/CF/CW2/CW2-notes.md",
+                "file": "year-1/NCCD/lab-10/lab-10.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -210,6 +210,7 @@
   },
   "active": "df1b1128cc2154c1",
   "lastOpenFiles": [
+    "year-1/CF/CW2/CW2-notes.md",
     "year-1/NCCD/lab-10/lab-10.md",
     "year-1/NCCD/lab-09/lab-09.md",
     "year-1/NCCD/viva-cheatsheet.md",
@@ -218,7 +219,6 @@
     "year-1/NCCD/lab-08/lab-08.md",
     "year-1/NCCD/lab-07/lab-07-notes.md",
     "year-1/NCCD/network defence.md",
-    "year-1/CF/CW2/CW2-notes.md",
     "year-1/CSAO/0x0000/csao-tutorial-0x0000.pdf",
     "year-1/CSAO/0x0000/csao-intro.md",
     "year-1/CSAO/0x0000/cpu-architecture.md",
