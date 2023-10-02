@@ -6,3 +6,5 @@
 ### Problems with XOR encryption
 - Its symmetric 
 - Main issue --> for long runs of the same character it is very easy to see the key within the cipher-text
+
+

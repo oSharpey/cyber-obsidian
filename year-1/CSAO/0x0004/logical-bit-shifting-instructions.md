@@ -87,7 +87,7 @@ shl rax, cl
 sal qword [qNum], cl
 ```
 
-![[images/shl-sal-diagram.png]]
+![[shl-sal-diagram.png]]
 
 
 ## shr instruction 
@@ -107,7 +107,7 @@ sar rcx, 32
 shr rax, cl  
 sar qword [qNum], cl
 ```
-![[images/shr-instruction.png]]
+![[shr-instruction.png]]
 
 
 ## sar instruction
@@ -128,4 +128,4 @@ sar rcx, 32
 sar rax, cl  
 sar qword [qNum], cl
 ```
-![[images/sar-diagram.png]]
+![[sar-diagram.png]]

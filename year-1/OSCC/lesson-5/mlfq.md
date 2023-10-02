@@ -47,10 +47,10 @@ If a job uses up the entire CPU time slice while running it gets moved down 1 pr
 If a job gives up the CPU before it uses an entire time slice, it stays on the same priority level
 
 
-![[images/mlfq-image-1.png]]
+![[mlfq-image-1.png]]
 ^ Showing how MLFQ works using the rules above with one long (batch) job and a long job & short job (from scheduling cont. PP by Dr Christo Panchev)
 
-![[images/mlfq-image-2.png]]
+![[mlfq-image-2.png]]
 ^ Showing how MLFQ works using the rules above with one long (batch) job and an interactive I/O heavy job (from scheduling cont. PP by Dr Christo Panchev)
 
 ## Issues With These 4 Rules
