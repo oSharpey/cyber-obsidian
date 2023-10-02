@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-2/HBCS/Lecture-1.md",
+                "file": "year-2/PLCS/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-2/HBCS/Lecture-1.md",
+                "file": "year-2/PLCS/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-2/HBCS/Lecture-1.md",
+                "file": "year-2/PLCS/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-2/HBCS/Lecture-1.md"
+                "file": "year-2/PLCS/Untitled.md"
               }
             }
           }
@@ -149,7 +149,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-2/HBCS/Lecture-1.md",
+                "file": "year-2/PLCS/Untitled.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -205,12 +205,13 @@
   },
   "active": "301cad5b8c33651e",
   "lastOpenFiles": [
+    "year-2/HBCS/Lecture-1.md",
+    "year-2/PLCS/Untitled.md",
     "year-1/CSAO/0x0000/csao-intro.md",
     "year-1/DSCS/sets.md",
     "year-1/DSCS/proofs-1.md",
     "year-1/DSCS/logic.md",
     "year-1/NCCD/lab-02/lab-02-setup.md",
-    "year-2/HBCS/Lecture-1.md",
     "year-1/CSAO/0x0000/data-representation.md",
     "README.md",
     "year-1/CSAO/0x0001/boolean-logic.md",
@@ -237,7 +238,6 @@
     "year-1/NCCD/lab-02/netkit-intro.md",
     "year-1/NCCD/lab-02/lab-02-commands.md",
     "year-1/OSCC/persistence.md",
-    "year-1/OSCC/file-system.md",
     "year-1/images-yr1/PAM.png",
     "year-1/CF/CW2/hydra.png",
     "year-1/CF/CW2/php-rev-shell.png",
