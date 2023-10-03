@@ -102,7 +102,7 @@
 
 2) Ciphertext: Nvr wba yym lhinu kdos vyc lhfnu, dxkgv dmkx vkdqte
 
-
+3) Plaintext: IT WAS TOTALLY INVISIBLE HOWS THAT POSSIBLE THEY USED THE EARTHS MAGNETIC FIELD
 
 
 
