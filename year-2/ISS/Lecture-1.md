@@ -98,7 +98,11 @@
 
 
 ## Vigenere Cipher
-1) 
+1) Plaintext: WISDOM BEGINS IN WONDER, AND AT THE END, WHEN PHILOSOPHIC THOUGHT HAS DONE ITS BEST, THE WONDER REMAINS
+
+2) Ciphertext: Nvr wba yym lhinu kdos vyc lhfnu, dxkgv dmkx vkdqte
+
+
 
 
 
