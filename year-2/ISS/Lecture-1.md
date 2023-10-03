@@ -88,9 +88,11 @@
 | Ciphertext      | Plaintext |
 | ----------- | ----------- |
 | Xyfw      | Star (shift 5)       |
-| Bon lkvvyyx   | Red balloon (shift)        |
+| Bon lkvvyyx   | Red balloon (shift 10)        |
 | Axiiat vgttc qpv   | Little green bag (shift 15)    |
 
+4) Break the following text using the template “Caesar Analysis using character frequencies”:
+	- Plaintext: NZMYCMVKG IVITGAQA QA I KZGXBIVITGAQA BMKPVQYCM CAML BW JZMIS AQUXTM ACJABQBCBQWV KQXPMZA. QB'A JIAML WV BPM WJAMZDIBQWV BPIB KMZBIQV TMBBMZA WZ AGUJWTA WKKCZ UWZM NZMYCMVBTG QV I TIVOCIOM. IVITGABA KWCVB BPM WKKCZZMVKMA WN KPIZIKBMZA QV BPM MVKZGXBML BMFB IVL KWUXIZM BPMU BW MFXMKBML TIVOCIOM NZMYCMVKQMA BW CVKWDMZ XIBBMZVA IVL UISM MLCKIBML OCMAAMA, OZILCITTG LMKZGXBQVO BPM UMAAIOM
 
 
 
