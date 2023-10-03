@@ -48,3 +48,15 @@
 	- Maintaining the accuracy and trustworthiness of data, protecting from unauthorised alterations
 - **Availability**
 	- Ensuring that data and resources are available and accessible when needed
+
+
+## Cipher Types
+- **Substitution**
+	- The position of the characters remain the the same but the characters are replaced by the other characters
+	- Eg Caesar Cipher
+- **Transposition**
+	- The characters remain the same but the position changes
+	- Eg Rail Fence Cipher
+
+
+
