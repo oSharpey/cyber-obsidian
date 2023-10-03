@@ -85,6 +85,12 @@
 
 3) By attempting simple character shifting (manually), determine the plain-text for the following cipher-texts encrypted using a basic Caesar Cipher
 
+| Ciphertext      | Plaintext |
+| ----------- | ----------- |
+| Xyfw      | Star (shift 5)       |
+| Bon lkvvyyx   | Red balloon (shift)        |
+| Axiiat vgttc qpv   | Little green bag (shift 15)    |
+
 
 
 
