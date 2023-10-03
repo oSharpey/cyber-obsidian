@@ -30,9 +30,21 @@
 - Etc…
 
 ### Example 1 - Eavesdropping
-- Unautherized parties intercepting messages
+- Unauthorised parties intercepting messages
 - Compromises confidentiality
 
-### Example 2 - Message Altertion
+### Example 2 - Message Alteration
 - Tampering with data during transmission
-- 
+- Compromises Integrity
+
+### Example 3 - Impersonation
+- Pretending to be someone else to gain trust
+- Compromises authenticity 
+
+## CIA Triad
+- **Confidentiality**
+	- Ensuring data remains confidential and only accessible to authorised parties
+- **Integrity**
+	- Maintaining the accuracy and trustworthiness of data, protecting from unauthorised alterations
+- **Availability**
+	- Ensuring that data and resources are available and accessible when needed
