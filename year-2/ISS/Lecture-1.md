@@ -81,7 +81,11 @@
 
 2) Encrypt the following text using the Caesar cipher and Key 10:
 	- **Plaintext:** *An unexamined life is not worth living. He who is not a good servant will not be a good master*
-	- **Ciphertext:** **
+	- **Ciphertext:** *Kx exohkwsxon vspo sc xyd gybdr vsfsxq. Ro gry sc xyd k qyyn cobfkxd gsvv xyd lo k qyyn wkcdob*
+
+3) By attempting simple character shifting (manually), determine the plain-text for the following cipher-texts encrypted using a basic Caesar Cipher
+
+
 
 
 
