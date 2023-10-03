@@ -58,5 +58,18 @@
 	- The characters remain the same but the position changes
 	- Eg Rail Fence Cipher
 
+## Frequency Analysis
+- Utilises language models and textual patterns
+- Able to decipher classical ciphers manually
+- Letter frequencies in language allows to deduce the correspondence between the plaintext and ciphertext
+- **A systematic examination of:**
+	- Letter Frequency Analysis
+	- Pattern Analysis
+	- Language Specific Information
+	- Frequency Distribution
+	- Identifying Common Letters
+
+
+
 
 
