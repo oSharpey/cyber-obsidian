@@ -74,7 +74,14 @@
 
 # Worksheet
 
-## 1) 
+## Caesar Cipher
+1) Decrypt the following text using the Caesar cipher and Key 13
+	- **Ciphertext**: *GUR BAYL GEHR JVFQBZ VF VA XABJVAT LBH XABJ ABGUVAT*
+	- **Plaintext:** *THE ONLY TRUE WISDOM IS IN KNOWING YOU KNOW NOTHING*
+
+2) Encrypt the following text using the Caesar cipher and Key 10:
+	- **Plaintext:** *An unexamined life is not worth living. He who is not a good servant will not be a good master*
+	- **Ciphertext:** **
 
 
 
