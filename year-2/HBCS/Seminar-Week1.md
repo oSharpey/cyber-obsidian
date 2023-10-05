@@ -10,4 +10,11 @@
 ## Social Engineering Attack Taxonomy
 - Human factors are difficult to deal with as they are hard to predict
 - Attackers can crack the security of an information system by exploitation of human weaknesses
+
+## Human factors involved in Magellan health and Twitter
+- Awareness
+- Communication
+- Stress?
+
+## Defining critical human factors
 - 
