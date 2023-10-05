@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-2/HBCS/Seminar-Week1.md",
+                "file": "year-2/IM/Lab-1.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-2/HBCS/Seminar-Week1.md",
+                "file": "year-2/IM/Lab-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-2/HBCS/Seminar-Week1.md",
+                "file": "year-2/IM/Lab-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-2/HBCS/Seminar-Week1.md"
+                "file": "year-2/IM/Lab-1.md"
               }
             }
           }
@@ -149,7 +149,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-2/HBCS/Seminar-Week1.md",
+                "file": "year-2/IM/Lab-1.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -205,8 +205,9 @@
   },
   "active": "301cad5b8c33651e",
   "lastOpenFiles": [
-    "year-2/HBCS/Lecture-1.md",
     "year-2/HBCS/Seminar-Week1.md",
+    "year-2/IM/Lab-1.md",
+    "year-2/HBCS/Lecture-1.md",
     "year-2/ISS/Lecture-1.md",
     "year-2/PLCS/Lecture 1.md",
     "year-1/CSAO/0x0000/csao-intro.md",
@@ -237,7 +238,6 @@
     "year-1/CSAO/0x0001/machine-level-rep-of-data.md",
     "year-1/CSAO/0x0000/registers.md",
     "year-1/CSAO/0x0000/memory-categories.md",
-    "year-1/NCCD/lab-02/netkit-intro.md",
     "year-1/images-yr1/PAM.png",
     "year-1/CF/CW2/hydra.png",
     "year-1/CF/CW2/php-rev-shell.png",
