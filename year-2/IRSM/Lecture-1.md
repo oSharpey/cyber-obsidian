@@ -51,15 +51,15 @@ remediation where needed.
 	- Who are and what are the roles of the involved parties
 
 ## Task
-- Risk
+- **Risk**
 	- Any potentially nefarious/unwanted/vulnerable usage of a system
-- Risk Management
+- **Risk Management**
 	- Mitigating and minimising risk to a system
-- Information Risk Management
+- **Information Risk Management**
 	- How do you implement controls/procedures/policies. Apply risk management techniques to data.
-- Risk Identification
+- **Risk Identification**
 	- Going through your systems to assess and audit your systems. What risks are relevant to your data
-- Risk Treatment
+- **Risk Treatment***
 	- How you respond to and mitigate the risk. Security controls, new policy. How do we apply controls and how do we write effective policy
 
 ## Threat
@@ -77,5 +77,29 @@ remediation where needed.
 - Modification
 - Fabrication
 
-## Understanding the Solution
-- 
+
+## Understating the solution
+- **CIA** of an organiations data
+	- Assets, operations, and information
+- Extends to four human-oriented security aspects 
+	- Responsibility 
+	- Integrity 
+	- Trust 
+	- Ethicality
+### Umbrella of terms
+- Information Security governance
+- Information Security Management
+- Information Risk Management
+
+## Information Security Purpose 
+Protection of the following assets 
+- Hardware 
+- Software 
+- Communication equipment 
+- Environmental control equipment 
+- Documentation 
+- Data and information 
+- Personnel 
+…of an Information System
+
+**
