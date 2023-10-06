@@ -21,12 +21,15 @@ remediation where needed.
 - We cannot say any system is 100% secure and bulletproof
 
 ## Events that changed how information security was manages
-- 2007: HMRC lost 2 HDDs containing all child benifit records, comained the personal details of 25 million people
+- 2007: HMRC lost 2 HDDs containing all child benifit records, contained the personal details of 25 million people
 	- Human error
 - 2009: USB stick containing medical records for 6000 prisoners was lost from HMP Preston
 
 ## The reason
- - Most of an organisions assets are digital
- - The critical processes depend on IT
- - 
+ - Most of an organisations assets are digital
+ - We need to put measures in place to help reduce the risk of threats against a system - to a level that is acceptable
+ -  The critical processes depend on IT but there is still a human element
+	 - You still need someone monitoring the system
+- Impact of technology innovations in information security 
+	- 
 
