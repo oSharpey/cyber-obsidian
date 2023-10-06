@@ -15,3 +15,8 @@ remediation where needed.
 4. Human Perspective 
 5. Controls and Maintenance
 
+# Lecture 1
+
+## Why do we need to manage risk and information security?
+- We cannot say any system is 100
+
