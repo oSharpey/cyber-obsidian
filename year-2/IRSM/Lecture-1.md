@@ -102,4 +102,34 @@ Protection of the following assets
 - Personnel 
 …of an Information System
 
-**
+**PREVENTION - DETECTION - RESPONSE**
+
+## CIA Triad
+- CIA might not be enough
+- Standard extended to include *Authenticity*, *Accountability*, *Non-Repudiation*
+- Authenticity
+	- Providing verification of identites
+
+## Properties of Information security
+- Reliabilty
+- Avaliblity
+- Safety
+- Integrity
+- Confidentiality
+- Privacy
+
+## Measutres that can enfice CIA
+- Confidentialtu
+	- Password protection
+	- Encryption
+	- SSL
+	- VPN
+- Integrity
+	- CRC
+	- Digital Signing
+	- Hashes
+- Avalibilty 
+	- AV software
+	- Hot/Cold Sites
+	- Insurance 
+	- Backups
