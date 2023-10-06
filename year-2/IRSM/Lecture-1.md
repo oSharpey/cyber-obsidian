@@ -54,8 +54,14 @@ remediation where needed.
 - Risk
 	- Any potentially nefarious/unwanted/vulnerable usage of a system
 - Risk Management
-	- Implementing controls/procedures/policies to mitigate and minimise risk to a system
+	- Mitigating and minimising risk to a system
 - Information Risk Management
-	- Risk management pertaining to information
+	- How do you implement controls/procedures/policies. Apply risk management techniques to data.
 - Risk Identification
-	- 
+	- Going through your systems to assess and audit your systems. What risks are relevant to your data
+- Risk Treatment
+	- How you respond to and mitigate the risk. Security controls, new policy. How do we apply controls and how do we write effective policy
+
+## Threat
+- *A circumstance or event that has the potential to cause harm by violating security*
+- 
