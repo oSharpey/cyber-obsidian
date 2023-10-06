@@ -50,4 +50,12 @@ remediation where needed.
 	- Control
 	- Who are and what are the roles of the involved parties
 
-
+## Task
+- Risk
+	- Any potentially nefarious/unwanted/vulnerable usage of a system
+- Risk Management
+	- Implementing controls/procedures/policies to mitigate and minimise risk to a system
+- Information Risk Management
+	- Risk management pertaining to information
+- Risk Identification
+	- 
