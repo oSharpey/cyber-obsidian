@@ -31,5 +31,7 @@ remediation where needed.
  -  The critical processes depend on IT but there is still a human element
 	 - You still need someone monitoring the system
 - Impact of technology innovations in information security 
+	- Moving very fast 
+	- High virtual dependency
 	- 
 
