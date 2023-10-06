@@ -79,7 +79,7 @@ remediation where needed.
 
 
 ## Understating the solution
-- **CIA** of an organiations data
+- **CIA** of an organisations data
 	- Assets, operations, and information
 - Extends to four human-oriented security aspects 
 	- Responsibility 
@@ -108,18 +108,18 @@ Protection of the following assets
 - CIA might not be enough
 - Standard extended to include *Authenticity*, *Accountability*, *Non-Repudiation*
 - Authenticity
-	- Providing verification of identites
+	- Providing verification of identities
 
 ## Properties of Information security
-- Reliabilty
-- Avaliblity
+- Reliability
+- Availability
 - Safety
 - Integrity
 - Confidentiality
 - Privacy
 
-## Measutres that can enfice CIA
-- Confidentialtu
+## Measures that can enforce CIA
+- Confidentiality
 	- Password protection
 	- Encryption
 	- SSL
@@ -128,8 +128,19 @@ Protection of the following assets
 	- CRC
 	- Digital Signing
 	- Hashes
-- Avalibilty 
+- Availability 
 	- AV software
 	- Hot/Cold Sites
 	- Insurance 
 	- Backups
+
+## Risk Management
+- Risk management is the process of discovering and assessing the risks to an organisation’s operations and determining how those risks can be controlled or mitigated
+- Not only about the data perspective
+	- Look at bigger picture
+	- Can impact other entities - People, property, etc
+
+**Risk identification** • Where and what is the risk? 
+**Risk analysis** • How severe is the current level of risk? 
+**Risk evaluation** • Is the current level of risk acceptable? 
+**Risk treatment** • What do I need to do to bring the risk to an acceptable level?
