@@ -18,5 +18,15 @@ remediation where needed.
 # Lecture 1
 
 ## Why do we need to manage risk and information security?
-- We cannot say any system is 100
+- We cannot say any system is 100% secure and bulletproof
+
+## Events that changed how information security was manages
+- 2007: HMRC lost 2 HDDs containing all child benifit records, comained the personal details of 25 million people
+	- Human error
+- 2009: USB stick containing medical records for 6000 prisoners was lost from HMP Preston
+
+## The reason
+ - Most of an organisions assets are digital
+ - The critical processes depend on IT
+ - 
 
