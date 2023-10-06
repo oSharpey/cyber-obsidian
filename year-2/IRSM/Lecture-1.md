@@ -35,8 +35,19 @@ remediation where needed.
 	- High virtual dependency
 
 ## Setting the scene
-- We need to distiquish cyber attacks we see
+- We need to distinguish cyber attacks we see
 	- Destructive - Not a high level of expertise, 
-	- meaningful - require a high level of expertise, most cases come from within the organsion
-		- People 
+	- meaningful - require a high level of expertise, most cases come from within the organisation
+		- People in the organisation know how things work, have access to systems, escalate privileges
+		- Also state actors
+		- The attackers will get in - only a matter of time
+
+## What is the system
+- items with common characteristics
+- could be the set that comprises an organisations assets
+- Define the countries of the system
+	- Who has and how do we share responsibility
+	- Control
+	- Who are and what are the roles of the involved parties
+
 
