@@ -64,4 +64,18 @@ remediation where needed.
 
 ## Threat
 - *A circumstance or event that has the potential to cause harm by violating security*
+- A threat will be identified if we see a vulnerablity or weakness on our system
+- Factors to employ a threat: 
+	- **Motivation** is the degree to which an agent is prepared to implement a threat. Is it an opportunity or targeted
+	- **Capability** is the degree to which an aggressor is able to implement a threat. Different capability based on expertise
+	- **Opportunity** is the degree to which the target presents a likelihood of attack. Human error, social engineering, a specific type of attack?
+	- **Impact** is the degree the result of the threat will influence the target (minor, moderate, major, catastrophic)
+
+## Information Security threats
+- Interception
+- Interruption
+- Modification
+- Fabrication
+
+## Understanding the Solution
 - 
