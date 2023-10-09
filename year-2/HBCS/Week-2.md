@@ -19,3 +19,11 @@
 - UX/UI designers:
 	- Creates everything that the user interacts with
 	- Concerned with usability
+
+## Usability Goals
+- Effective to use (effectiveness)
+- Efficient to use (efficiency)
+- Safe to use (safety)
+- Having good utility (utility)
+- Learnability
+- Memorability
