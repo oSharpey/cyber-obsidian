@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-2/HBCS/Week-1.md",
+                "file": "year-2/HBCS/Week-2.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-2/HBCS/Week-1.md",
+                "file": "year-2/HBCS/Week-2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-2/HBCS/Week-1.md",
+                "file": "year-2/HBCS/Week-2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-2/HBCS/Week-1.md"
+                "file": "year-2/HBCS/Week-2.md"
               }
             }
           }
@@ -149,7 +149,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-2/HBCS/Week-1.md",
+                "file": "year-2/HBCS/Week-2.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -206,8 +206,8 @@
   "active": "301cad5b8c33651e",
   "lastOpenFiles": [
     "year-2/HBCS/Seminar-Week1.md",
+    "year-2/HBCS/Week-2.md",
     "year-2/HBCS/Week-1.md",
-    "year-2/HBCS/Lecture-2.md",
     "year-2/IRSM/Lecture-1.md",
     "year-2/IM/Lab-1.md",
     "year-2/ISS/Lecture-1.md",

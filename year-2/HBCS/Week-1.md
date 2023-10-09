@@ -1,3 +1,4 @@
+# Lecture 1
 ## Module Learning Outcomes
 - Select and critically evaluate the usability criteria that security mechanisms must meet to be usable in their contexts of use
 - Apply techniques from interaction design and security engineering to design and evaluate secure systems
@@ -19,6 +20,8 @@
 - Education cannot help if a task is impossible
 
 
+
+# Seminar 1
 # How human behaviour contributed to the Magellan Health and Twitter cyber attacks
 
 ## Critical Human Factors
