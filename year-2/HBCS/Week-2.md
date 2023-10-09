@@ -37,6 +37,14 @@
 ### Why use conceptual models
 
 
-## Cognatice friction
-- if toy neglect the users mental model can cause frustration
-- 
+## Cognitive friction
+- if you neglect the users mental model can cause frustration
+- UX appears to be intuitive but delivers unexpected results
+- Can cause product abandonment
+### User friction
+- Anything that prevents the user from accomplishing a goal in your product
+- Emotional friction
+	- Emotions that prevent the user from accomplishing a goal
+- Cognitive friction
+	- Instances where the user had to stop and think increasing cognative load
+	
