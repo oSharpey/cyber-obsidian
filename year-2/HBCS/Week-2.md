@@ -28,3 +28,15 @@
 - Learnability
 - Memorability
 
+## Conceptual Model
+- A high-level description of how a system is organised and operates. -
+- Abstraction outlining what people can do with a product and what concepts are needed to understand how to interact with it. 
+- Provides a working strategy and a framework of general concepts and their interrelations. 
+- Many kinds and ways of classifying conceptual models.
+
+### Why use conceptual models
+
+
+## Cognatice friction
+- if toy neglect the users mental model can cause frustration
+- 
