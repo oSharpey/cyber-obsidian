@@ -9,6 +9,13 @@
 - Umbrella term including different aspects of what is being designed.
 
 ## Cyber security & UX/UI design
-- Security professionals tasked with protecting, detecting and eracdicating cyber threats
+- Security professionals tasked with protecting, detecting and eradicating cyber threats
 - UX/UI designers coordinate to build the best possible experience/interface for users
-- Both prof
+- Both professionals must collaborate to ensure a safe user experience
+
+- Cyber security professionals:
+	- Work behind the scenes
+	- Concerned with security
+- UX/UI designers:
+	- Creates everything that the user interacts with
+	- Concerned with usability
