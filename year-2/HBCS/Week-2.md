@@ -46,5 +46,6 @@
 - Emotional friction
 	- Emotions that prevent the user from accomplishing a goal
 - Cognitive friction
-	- Instances where the user had to stop and think increasing cognative load
-	
+	- Instances where the user had to stop and think increasing cognitive load
+- Interaction Friction
+	- Friction and frustration that occurs when interacting with your interface
