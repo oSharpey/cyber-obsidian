@@ -16,8 +16,25 @@
 - **Query Processing and Optimisation**
 	- Processing - Converts queries into a low level that is then optimised
 	- Optimisation - Perfect strategy for a query execution
-- **Data Definition Language** - Allows users to vreate database and alter structures
+- **Data Definition Language** - Allows users to create database and alter structures
 - **Data Manipulation Language** - Allows users to manipulate data in the database
 - **Concurrency Control** - Schedules multiple transactions in a database and stops them being executed at the same time
-- **Recovery** - Ensure if database failed, the data remains consitent 
-- **Security Control** - 
+- **Recovery** - Ensure if database failed, the data remains consistent 
+- **Security Control** - Prevent unauthorised access to data
+- **Data Integrity** - enforces integrity constraints whenever a change is made to the database to ensure the database is consistent and correct.
+
+### Applications
+- Banking
+- Airlines
+- Universities
+- Online Retailers
+
+### Advantages
+- **Data Consistency** 
+	- DMBS makes sure consistency is maintained and shares throughout the organisation
+- **Effective Data Integration**
+	- Provides integrated picture how processes in one segment of the organisation affect other segments.
+- **Data Sharing and Security**
+	- Enables you to share the data so its easy to access and secured
+- **Reducing data redundancy**
+	- Avoids duplicate files • any changes in a databases reflected immediately. • Hence there is no chance of encountering duplicate data.
