@@ -1,11 +1,11 @@
 # Lecture 2 - Database Management Systems
 
 ## What is a database
-- A collection of interrealted the data
+- A collection of inter-realted the data
 	- What the data is and how its connected
 - A database can be of any size and varying in complexity
 - A visual representation of a database which defines how data is organised within a database, inclusive of: 
-	- logical constraints such as, table names, fields, data types, and th e relationships between these entities
+	- logical constraints such as, table names, fields, data types, and the relationships between these entities
 	- Database Scheme - blueprint of how the data will be stored
 
 ## Database Management System
@@ -31,7 +31,7 @@
 
 ### Advantages
 - **Data Consistency** 
-	- DMBS makes sure consistency is maintained and shares throughout the organisation
+	- DBMS makes sure consistency is maintained and shares throughout the organisation
 - **Effective Data Integration**
 	- Provides integrated picture how processes in one segment of the organisation affect other segments.
 - **Data Sharing and Security**
@@ -48,4 +48,16 @@
 - Minimises repeated and redundant data
 
 ## Data Models
-- The way the data is going
+- The way the data is going to be stored
+- Described how data is stored, accessed and updated in a DBMS
+- Types:
+	- Entity Relationship Diagram
+	- Normalisation 
+
+### Advantages
+- Ensure data is represented accurately 
+- Data redundancy is minimised
+- Security is not compromised
+### Disadvantages
+- Difficult to understand
+- Costs can be high
