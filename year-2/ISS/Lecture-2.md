@@ -22,3 +22,5 @@
 - Only parties who have access to that secret key can compute the digest of an HMAC function
 - Indicates originator of the message
 
+# Lab - Hash Functions
+
