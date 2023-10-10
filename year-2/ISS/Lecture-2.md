@@ -17,4 +17,8 @@
 - A keyed-hash message authentication code (HMAC) is used
 - HMAC uses an additional secret key as input to the hash function
 ## HMAC Hashing algorithm
+- Uses any cryptographic algorithm that combines a cryptographic hash function with a secret key 
+- Only the sender and the receiver know the secret key 
+- Only parties who have access to that secret key can compute the digest of an HMAC function
+- Indicates originator of the message
 
