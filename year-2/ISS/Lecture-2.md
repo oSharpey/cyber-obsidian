@@ -10,3 +10,11 @@
 - H(x) is relatively easy to compute for a given x 
 - H(x) is one-way and not reversible 
 - H(x) is collision-free, meaning that two different input values will result in different hash values
+## Hashing
+- Can be used to detect changes 
+- Vulnerable to Man in the Middle
+## Origin authentication
+- A keyed-hash message authentication code (HMAC) is used
+- HMAC uses an additional secret key as input to the hash function
+## HMAC Hashing algorithm
+
