@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -203,7 +204,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "301cad5b8c33651e",
+  "active": "8e219bebd780e6c9",
   "lastOpenFiles": [
     "year-2/ISS/Lecture-1.md",
     "year-2/ISS/Lecture-2.md",
