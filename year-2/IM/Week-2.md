@@ -9,4 +9,15 @@
 	- Database Scheme - blueprint of how the data will be stored
 
 ## Database Management System
-- Programs that enable users to create manipulate and extact 
+- Programs that enable users to create manipulate and extract data from databases
+- DBMS perform various types of operations such as insert, update and delete data records
+
+### Functions of a DBMS
+- **Query Processing and Optimisation**
+	- Processing - Converts queries into a low level that is then optimised
+	- Optimisation - Perfect strategy for a query execution
+- **Data Definition Language** - Allows users to vreate database and alter structures
+- **Data Manipulation Language** - Allows users to manipulate data in the database
+- **Concurrency Control** - Schedules multiple transactions in a database and stops them being executed at the same time
+- **Recovery** - Ensure if database failed, the data remains consitent 
+- **Security Control** - 
