@@ -24,9 +24,18 @@
 
 # Lab - Hash Functions
 
+| Plaintext | MD5 | Sha1   | Sha256 |
+| -------- | ------- |----------|-------- |
+| password  | 5f4dcc3b5aa765d61d8327deb882cf99 | 468df36d08e878d73b90af1d33740db9e63b0245| |
+| _blankfile_ | d41d8cd98f00b204e9800998ecf8427e   | | |
+| alice   | 6384e2b2184bcbf58eccf10ca7a6563c    | | |
+
+
 password : 5f4dcc3b5aa765d61d8327deb882cf99
-\<blankfile\> : d41d8cd98f00b204e9800998ecf8427e
-alice : 6384e2b2184bcbf58eccf10ca7a6563c
+\<blankfile\> : 
+alice : 
+
+
 
 
 
