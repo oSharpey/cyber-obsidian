@@ -37,4 +37,15 @@
 - **Data Sharing and Security**
 	- Enables you to share the data so its easy to access and secured
 - **Reducing data redundancy**
-	- Avoids duplicate files • any changes in a databases reflected immediately. • Hence there is no chance of encountering duplicate data.
+	- Avoids duplicate files 
+	- Any changes in a databases reflected immediately. 
+	- Hence there is no chance of encountering duplicate data.
+
+### Relational database management systems
+- Based on relational models
+- Tables in relational databases are linked to each other
+- Allows sorting, storing, organising and managing of the data more efficiently.
+- Minimises repeated and redundant data
+
+## Data Models
+- The way the data is going
