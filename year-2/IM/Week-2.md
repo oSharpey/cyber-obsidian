@@ -1,7 +1,7 @@
 # Lecture 2 - Database Management Systems
 
 ## What is a database
-- A collection of inter-realted the data
+- A collection of inter-related the data
 	- What the data is and how its connected
 - A database can be of any size and varying in complexity
 - A visual representation of a database which defines how data is organised within a database, inclusive of: 
