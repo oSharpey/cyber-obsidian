@@ -61,6 +61,13 @@ Good:
 - Date and time are displayed very large making it easy to get information at a glance
 
 Bad: 
+- Lockscreen can become cluttered from notifications and features
+- On screen buttons for on screen features are poorly positioned and can cause strain to your thumbs
+- Phone can feel too generalised and does not properly cater to the user
+
+
+b)  Give a description of the user experience resulting from interacting with it.
 - 
+
 
 
