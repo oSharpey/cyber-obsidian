@@ -67,7 +67,16 @@ Bad:
 
 
 b)  Give a description of the user experience resulting from interacting with it.
-- The UX is overall very good, the phone offers many features from the first moment you turn it on and its design is very visually appealing and intuitive to use. However for other people the amount of notifications can easily clutter the screen and become overwhelming 
+- The UX is overall very good, the phone offers many features from the first moment you turn it on and its design is very visually appealing and intuitive to use. However for other people the amount of notifications can easily clutter the screen and become overwhelming.
+
+c)
+Usability goals:
+
+
+
+D) 
+Are the buttons placed so they will be comfortable to hold and use
+is the 
 
 
 
