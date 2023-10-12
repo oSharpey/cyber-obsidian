@@ -49,3 +49,18 @@
 	- Instances where the user had to stop and think increasing cognitive load
 - Interaction Friction
 	- Friction and frustration that occurs when interacting with your interface
+
+
+# Seminar Week 2
+
+a) First impressions 
+
+Good: 
+- Buttons are in comfortable positions, eg the rest under your thumb 
+- Layout of lockscreen specifically allows for easy access of important features
+- Date and time are displayed very large making it easy to get information at a glance
+
+Bad: 
+- 
+
+
