@@ -75,12 +75,12 @@ Usability goals:
 - Easy to learn: Is the UI Intuitive and easy to interpret?
 - Utility: Does the phone perform all the functions it should?
 
-User experice Goals
-- Enaging, Entertaining, not overwhelming, comfortable to use
+User experience Goals
+- Engaging, Entertaining, not overwhelming, comfortable to use
 
 Most Important:
 Learnability, Utility
-If the Device is not easy to learn and does not perfom the desired functions, people will stop using the product
+If the Device is not easy to learn and does not perform the desired functions, people will stop using the product
 
 
 D) 
@@ -91,12 +91,19 @@ How easy is it for users to access key features of the device?
 
 e)
 - Consistency
-- Visability 
+- Visibility 
 - Feedback
+
+Is the phone consistent in the way it operates and presents information to the user?
+Does the phone provide visual or audio or haptic feedback to either keep the user engaged or ensure they know the device is active? 
 
 Most important:
 Consistency and feedback
-If the device si
+If the device is not consistent the user will not be able to predict and understand what the device will do or what its going to do
+If the device does not provide feedback the user may get bored and stop using the device
+
+f)
+based on what we have outliend here, the phone could improve by de cluttering the home screen of notifications changing the design to make it less overwhelming to look at. They could also improve by repositoning some of the feature buttons on the home screen so you dont have to stretch and strain to use the important and useful features 
 
 
 
