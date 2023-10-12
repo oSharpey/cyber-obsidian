@@ -73,13 +73,30 @@ c)
 Usability goals: 
 - Efficient to use: Phone should be smooth and responsive
 - Easy to learn: Is the UI Intuitive and easy to interpret?
-- Utility: Does the phone perform all the functions it should
+- Utility: Does the phone perform all the functions it should?
 
+User experice Goals
+- Enaging, Entertaining, not overwhelming, comfortable to use
+
+Most Important:
+Learnability, Utility
+If the Device is not easy to learn and does not perfom the desired functions, people will stop using the product
 
 
 D) 
 Are the buttons placed so they will be comfortable to hold and use
-is the 
+is the?
+Is the screen and os responsive?
+How easy is it for users to access key features of the device?
+
+e)
+- Consistency
+- Visability 
+- Feedback
+
+Most important:
+Consistency and feedback
+If the device si
 
 
 
