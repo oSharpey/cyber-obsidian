@@ -49,4 +49,24 @@
 ## Security management considerations
 - Deter
 	- Deter a potential attacker: *Warning a system could be monitored*
-	- 
+- Defend
+	- Prevent or slow down an attacker
+- Detect
+	- Intuition detection systems
+	- Security operation centre
+- Organising
+	- Public or Private Sector?
+	- How do we classify our files
+	- What is considered to be top secret, confidential, public
+- Coordination
+	- Threat evaluations
+	- How do we train employees
+	- What do we train them for
+	- Setting up countermeasures and backups
+
+**Information protections = Information classififcation**
+
+- Personnel
+	- Secutiry screening of employees
+	- Personel securitu policies
+	- Confidential councelling 
