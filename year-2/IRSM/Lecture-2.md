@@ -26,4 +26,17 @@
 	- Cyber risk and intelligence
 	- Investigations and forensics
 - May have overlapping responsibilities
-- 
+
+## Organising for security
+- The larger an organision the more difficult it is for the secuirty department to keep up with demand
+
+## Information security roles
+- Definers
+	- Senior role 
+	- Lots of broad knowledge but lacks depth
+	- Policy and guidelines
+	- Consulting and the risk assessment
+- Builders
+	- techies
+	- Create and install security soluions
+	- 
