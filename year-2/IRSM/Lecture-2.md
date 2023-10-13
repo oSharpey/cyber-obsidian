@@ -92,7 +92,7 @@
 	- No person should have knowledge of an entire system
 	- Only be exposed to security related functions in their own ares
 	- Someone who is preparing data should not be processing data
-## Securitu Controls
+## Security Controls
 ### Methods of defence
 - Encryption
 - Software controls
