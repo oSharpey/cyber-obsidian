@@ -103,7 +103,7 @@ If the device is not consistent the user will not be able to predict and underst
 If the device does not provide feedback the user may get bored and stop using the device
 
 f)
-based on what we have outliend here, the phone could improve by de cluttering the home screen of notifications changing the design to make it less overwhelming to look at. They could also improve by repositoning some of the feature buttons on the home screen so you dont have to stretch and strain to use the important and useful features 
+based on what we have outlined here, the phone could improve by de cluttering the home screen of notifications changing the design to make it less overwhelming to look at. They could also improve by repositioning some of the feature buttons on the home screen so you don't have to stretch and strain to use the important and useful features 
 
 
 
