@@ -28,7 +28,7 @@
 - May have overlapping responsibilities
 
 ## Organising for security
-- The larger an organision the more difficult it is for the secuirty department to keep up with demand
+- The larger an organisation the more difficult it is for the security department to keep up with demand
 
 ## Information security roles
 - Definers
@@ -38,5 +38,10 @@
 	- Consulting and the risk assessment
 - Builders
 	- techies
-	- Create and install security soluions
-	- 
+	- Create and install security solutions
+
+## Security in large organisaions
+- Large organisaitions can invest more inro security soltuons
+- Easy for large organsaions to fall behind
+- Small organisaions is essentially investing more into security as it has less people
+- 
