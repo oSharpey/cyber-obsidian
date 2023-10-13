@@ -44,4 +44,9 @@
 - Large organisaitions can invest more inro security soltuons
 - Easy for large organsaions to fall behind
 - Small organisaions is essentially investing more into security as it has less people
-- 
+- Often larger organisations have longer term investments and processes
+
+## Security management considerations
+- Deter
+	- Deter a potential attacker: *Warning a system could be monitored*
+	- 
