@@ -67,6 +67,23 @@
 **Information protections = Information classififcation**
 
 - Personnel
-	- Secutiry screening of employees
-	- Personel securitu policies
-	- Confidential councelling 
+	- Security screening of employees
+		- What level of clearance
+	- Personnel security policies
+		- Probation period
+		- Agreements
+		- Job description
+	- Confidential counselling services
+	- Security training
+		- Secure information to protect the company
+
+## Principles of security management
+
+### Never Alone Principle
+- 2 or more people should witness every security relevent action and attest to it by singing logs
+	- happens in digital foresnics operations
+	- Enure no one makes unauthorised changes
+	- Continutity
+- Limited tenure
+	- No one should ever be left in a security related position that they believe the position is exclusive or permanent
+	- 
