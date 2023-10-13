@@ -86,4 +86,18 @@
 	- Continutity
 - Limited tenure
 	- No one should ever be left in a security related position that they believe the position is exclusive or permanent
-	- 
+	- Someone may be a member of a committee for a year
+	- People come in from different perspectives and input
+- Separation of Duties
+	- No person should have knowledge of an entire system
+	- Only be exposed to security related functions in their own ares
+	- Someone who is preparing data should not be processing data
+## Securitu Controls
+### Methods of defence
+- Encryption
+- Software controls
+- hardware controls
+- policies
+- Physical controls
+- effective controls
+
