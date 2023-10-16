@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-2/IRSM/Lecture-2.md",
+                "file": "year-1/SDS/lesson-1.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-2/IRSM/Lecture-2.md",
+                "file": "year-1/SDS/lesson-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-2/IRSM/Lecture-2.md",
+                "file": "year-1/SDS/lesson-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-2/IRSM/Lecture-2.md"
+                "file": "year-1/SDS/lesson-1.md"
               }
             }
           }
@@ -149,7 +149,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-2/IRSM/Lecture-2.md",
+                "file": "year-1/SDS/lesson-1.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -205,8 +205,23 @@
   },
   "active": "301cad5b8c33651e",
   "lastOpenFiles": [
-    "year-2/HBCS/Week-2.md",
+    "year-1/OSCC/windows-file-system.md",
+    "year-1/OSCC/persistence.md",
+    "year-1/OSCC/file-system.md",
+    "year-1/OSCC/concurency.md",
+    "year-1/OSCC/authentication.md",
+    "year-1/OSCC/lesson-8/swapping.md",
+    "year-1/OSCC/lesson-3/process-context.md",
+    "year-1/OSCC/lesson-3/direct-execution.md",
+    "year-1/OSCC/lesson-1/what-is-an-os.md",
+    "year-1/OSCC/lesson-1/the-kernel.md",
+    "year-1/OSCC/lesson-1/lesson-1-intro.md",
+    "year-1/OSCC/lesson-1/2-types-of-os.md",
+    "year-1/NCCD/iptables.md",
+    "year-1/NCCD/firewalls.md",
+    "year-1/NCCD/dns.md",
     "year-2/IRSM/Lecture-2.md",
+    "year-2/HBCS/Week-2.md",
     "year-2/ISS/Lecture-2.md",
     "year-2/ISS/Lecture-1.md",
     "year-2/IM/Week-2.md",
@@ -216,13 +231,6 @@
     "year-2/IRSM/Lecture-1.md",
     "year-2/PLCS/Lecture 1.md",
     "year-1/CSAO/0x0000/csao-intro.md",
-    "year-1/DSCS/sets.md",
-    "year-1/DSCS/proofs-1.md",
-    "year-1/DSCS/logic.md",
-    "year-1/NCCD/lab-02/lab-02-setup.md",
-    "year-1/CSAO/0x0000/data-representation.md",
-    "README.md",
-    "year-1/CSAO/0x0001/boolean-logic.md",
     "year-2/IM",
     "year-2/IRSM",
     "year-2/ISS",
@@ -230,14 +238,6 @@
     "year-2/PLCS",
     "year-2/HBCS",
     "year-1/CSAO/0x0000/csao-tutorial-0x0000.pdf",
-    "year-1/CSAO/0x0001/xor-encryption.md",
-    "year-1/CSAO/0x0001/debuggers.md",
-    "year-1/CSAO/0x0002/processes-in-memory.md",
-    "year-1/CSAO/0x0002/layout-of-assembly-program.md",
-    "year-1/CSAO/0x0002/instructions-opcode-operand.md",
-    "year-1/CSAO/0x0002/assembly-and-syntax.md",
-    "year-1/OSCC/lesson-1/2-types-of-os.md",
-    "year-1/OSCC/lesson-1/lesson-1-intro.md",
     "year-1/images-yr1/PAM.png",
     "year-1/CF/CW2/hydra.png",
     "year-1/CF/CW2/php-rev-shell.png",
