@@ -21,6 +21,7 @@ hackers can exploit.
 
 ## Factors of Risk
 - Language (or type of language).
-- Functions, techniques or components to use, to implement particular concepts.
-- Choice of how individual functionality has been written in the code.
-- The architecture of the operating system also impacts the likelihood of vulnerabilities.
+- Functions, techniques or components 
+- How individual functionality has been written.
+- Architecture of the operating system 
+
