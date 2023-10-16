@@ -24,7 +24,7 @@
 - Level 2: Physical Environment
 - Level 3: Technology
 
-
+![[HCI_Model.png]]
 
 ## Designing HCI
 - Involving users.
@@ -33,4 +33,13 @@
 	- Based on the STAR Life Cycle.
 	- Constant evaluation by users and experts.
 
+![[starModel.png]]
 
+## Ergononimcs
+- Fitts’s law (predicts the movement time as a function of the distance to and the size of the target).
+- Hick's Law (increasing the number of choices will increase the decision time logarithmically).
+- Yerkes-Dodson Law (performance peaks at a certain level of arousal).
+- Motor control (motor-control performances with different devices)
+
+### Fitt's Law
+- 
