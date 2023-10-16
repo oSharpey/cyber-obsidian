@@ -75,4 +75,16 @@
 - The analogy between human and computer functioning.
 - Simple aspects of perception, attention, short-term memory operations, planning, and motor behaviour in a single model.
 - Accounting for basic human processing requirements in order to optimise performance.
+- For some tasks humans respond like a serial processor
+- Sometimes parallel operation of the 3 tasks takes place
+- Uses experimental time to calculate cognitive and motor processing time
+- Breaks does every step of the task
 
+### GOMS
+- Earliest theory in HCI
+- Is a practical tool
+ - Example of GOMS
+	 - GOAL - go from hotel to airport
+	 - OPERATORS - walk, take bus, drive
+	 - METHODS - locate bus stop, wait for bus
+	 - SELECTION RULES - Walking is cheaper but slow, 
