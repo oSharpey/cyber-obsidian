@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-2/HBCS/Week-3.md",
+                "file": "year-2/PLCS/HENRYYYYYYY.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-2/HBCS/Week-3.md",
+                "file": "year-2/PLCS/HENRYYYYYYY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-2/HBCS/Week-3.md",
+                "file": "year-2/PLCS/HENRYYYYYYY.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-2/HBCS/Week-3.md"
+                "file": "year-2/PLCS/HENRYYYYYYY.md"
               }
             }
           }
@@ -162,7 +162,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-2/HBCS/Week-3.md",
+                "file": "year-2/PLCS/HENRYYYYYYY.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -218,6 +218,7 @@
   },
   "active": "e13b68033fa5bee4",
   "lastOpenFiles": [
+    "year-2/HBCS/Week-3.md",
     "year-2/images-y2/klm.png",
     "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
     "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
@@ -231,7 +232,6 @@
     "year-1/OSCC/lesson-1/2-types-of-os.md",
     "year-1/NCCD/viva-cheatsheet.md",
     "year-1/NCCD/stateless-firewalls.md",
-    "year-2/HBCS/Week-3.md",
     "year-2/images-y2/HCI_Model.png",
     "HCI_model.md",
     "year-2/IRSM/Lecture-2.md",
@@ -260,7 +260,6 @@
     "year-1/CF/CW2/mount-nfs.png",
     "year-1/CF/CW2/python-pty.png",
     "year-1/CF/CW2/sysinfo.png",
-    "year-1/CF/CW2/meterpreter-shell.png",
     "year-1/CF/CW2",
     "year-1/CF/cw2"
   ]
