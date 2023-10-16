@@ -87,4 +87,21 @@
 	 - GOAL - go from hotel to airport
 	 - OPERATORS - walk, take bus, drive
 	 - METHODS - locate bus stop, wait for bus
-	 - SELECTION RULES - Walking is cheaper but slow, 
+	 - SELECTION RULES - Walking is cheaper but slow, Taking bus is complicated abroad
+
+### KLM
+- Variation of GOMS
+- estimate execution time of a task
+- Done by listing the sequence of operators and totalling the execution times for the individual operators
+	- *Texecute = TK + TP + TH + TD + TM + TR*
+- Four physical-motor operators:
+	- K - keystroking/ keypressing
+	- P - pointing with a mouse to a target
+	- H - homing the hand on the keyboard
+	- D - drawing a line segment on a grid
+- One mental operator M and a system response operator R:
+	-  M stands for the time users have to mentally prepare themselves to do an action.
+	-  R stands for the time the user has to wait for the system.
+- 
+
+![[klm.png]]
