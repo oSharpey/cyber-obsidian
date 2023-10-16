@@ -53,7 +53,26 @@
 
 ### Yerkes-Dodson Law
 - High stress means less performance
-- Factors affecting performace
+- Factors affecting performance
 	- Slow changing, repetitive data
-	- 
+	- Boring Tasks
+	- Attention Diversion
+	- Stress
+	- Fatigue
+## Cognitive modelling
+- One way to evaluate the usability of a product
+- Human Processor Model
+	- Calculate hoe long it takes to perform a task
+- GOMS model (Goals, Operations, Methods, Selection)
+	- Produces quantitative and qualitative predictions of how people will use a proposed system
+- KLM (Keystroke-level model)
+	- The first and simplest GOMS technique.
+
+- GOMS MHP KLM introduced in 1983
+	- Tasks decomposed into millisecond level actions
+
+### MHP
+- The analogy between human and computer functioning.
+- Simple aspects of perception, attention, short-term memory operations, planning, and motor behaviour in a single model.
+- Accounting for basic human processing requirements in order to optimise performance.
 
