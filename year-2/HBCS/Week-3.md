@@ -42,4 +42,5 @@
 - Motor control (motor-control performances with different devices)
 
 ### Fitt's Law
-- 
+- Proves its faster hit closer larger targets than smaller further targets
+- SIZE DOES MATTER

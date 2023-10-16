@@ -33,14 +33,15 @@
 # Parameter Passing
 - A combination of registers and the stack is used to pass parameters to and/or from a function
 - The first 6 integer arguments are passed in registers as follows
-|Argument #|64-bit|32-bit|
-|-|-|-|
+
+|Argument |64-bit|32-bit|
+|:----------:|:------:|-------|
 |1|RDI|EDI|
 |2|RSI|ESI|
 |3|RDX|EDX|
 |4|RCX|ECX|
-|5|R8|R8D|
-|6|R9|R9D|
+|5    |R8|R8D|
+|6    |R9    |R9D |
 
 
 # Calling convention - Register use
