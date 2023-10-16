@@ -43,4 +43,17 @@
 
 ### Fitt's Law
 - Proves its faster hit closer larger targets than smaller further targets
-- SIZE DOES MATTER
+### Hicks Law
+- Applies to any simple decision with multiple choices
+- When response time is critical
+- Simplify complex processes
+	- Present specific parts of that process at any one time on screen
+	- Keep number of options small
+	- Highlight important choices
+
+### Yerkes-Dodson Law
+- High stress means less performance
+- Factors affecting performace
+	- Slow changing, repetitive data
+	- 
+
