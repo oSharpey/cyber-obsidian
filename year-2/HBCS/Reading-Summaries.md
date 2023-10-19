@@ -1,0 +1,14 @@
+# Reading 1: Member
+- Correlation between mental models and privacy conscious actions is influenced by personal experience.
+- 28 person survey, mostly under 30, doesn't represent average internet user.
+- Correlation is small and only a few people could make a difference.
+- Privacy tools are easier to use compared to 2015
+- Q1:
+    - People understand that privacy is a concern but do not see themselves as a target,
+    - "I've got nothing to hide."
+    - Misplaced trust in corporations
+    - People seem not to care
+- Q2:
+    - Need to improve mental models
+    - Fundamentals of where data goes
+    - Understand how policies influence their data and respond to threats
