@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
+                "file": "year-2/IRSM/Lecture-3.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
+                "file": "year-2/IRSM/Lecture-3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
+                "file": "year-2/IRSM/Lecture-3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md"
+                "file": "year-2/IRSM/Lecture-3.md"
               }
             }
           }
@@ -162,7 +162,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
+                "file": "year-2/IRSM/Lecture-3.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -216,8 +216,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8e219bebd780e6c9",
+  "active": "e13b68033fa5bee4",
   "lastOpenFiles": [
+    "year-1/SDS/lesson-1.md",
+    "year-2/IRSM/Lecture-3.md",
     "year-1/CSAO/0x0007/procedures.md",
     "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
     "year-1/CSAO/0x0000/registers.md",
@@ -244,8 +246,6 @@
     "year-2/images-y2/klm.png",
     "year-1/OSCC/windows-file-system.md",
     "year-1/OSCC/persistence.md",
-    "year-1/OSCC/file-system.md",
-    "year-1/OSCC/concurency.md",
     "year-2/images-y2/HCI_Model.png",
     "year-2/images-y2/starModel.png",
     "year-2/IM",
