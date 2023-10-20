@@ -82,6 +82,17 @@ Characteristics:
 - Lauri Love - before the case there was no legislation to give up your password when arrested
 - Now it is a legal requirement
 
-
+### Cyber Dependant Crimes
+#### Cyber-Attack (Hacking)
+*Profit, protest, or challenge*
+- An intrusion into a computer system/network
+- Hacker:
+	- Bypasses system’s access controls 
+	- Takes advantage of security weaknesses 
+	- knowledgeable and skilled, member of the hacker subculture, own philosophy and code of
+ethics
+Black hat: break into computer systems or use them without authorization
+Grey hat: walk the line between legal and illegal actions
+White hat: employed to break security to expose vulnerability
 
 
