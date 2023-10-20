@@ -28,15 +28,15 @@ Characteristics:
 	- Criminals commit crime with minimum effort & risk
 
 ## Anatonmy of Cyber Crime
-- MOMM Accronym
+- MOMM Acronym
 - Motivation: 
 	- Money, Ideology, Egotism
 - Opportunity
-	- Knowlege, Access
+	- Knowledge, Access
 - Means
 	- Purpose
 - Method
-	- Interceprion
+	- Interception
 	- Forgery
 
 ## Taxonomy of Cyberciminals
@@ -44,4 +44,24 @@ Characteristics:
 - Novice
 	- For media attention
 	- Little technical skills
-	- 
+	- "Script kiddies"
+- Cyber-Punks
+	- Cyber vandals
+	- Some skills
+- Internals
+	- Disgruntled employees
+	- sometimes computer literate
+	- Sometimes accidentally release data
+- Professional Criminals
+	- Motivated by profit
+	- Highly skilled
+	- Guns for hire
+- Cyber terrorists (State actors)
+	- Motivated by ideals
+	- Highly skilled, well-trained
+	- Well funded
+	- Political activists
+
+
+## Adverary model of Cyber crime
+- Once 
