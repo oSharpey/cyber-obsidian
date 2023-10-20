@@ -143,8 +143,20 @@ Characteristics:
 	- differences in approaches to data protection and respect for human rights.
 - Ethical
 	- refraining from harming others, systems, and data, and respecting the rule of law and human rights
-• Operational
-• cooperation with other countries
+- Operational
+	- Cooperation with other countries
+
+### Cyber Crime sees no boundaries
+- Trans national
+- Different legal systems
+- Different laws, court system
+- No matter how many international efforts taking place its very difficult to overcome
+- Ethical challenges: What is considered to be legal and what is not
+	- Cambridge analytica
+- Operational
+	- how do companies corporate
+	- How do they recover and prevent cyber attacks
+## F
 
 
 
