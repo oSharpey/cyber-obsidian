@@ -69,7 +69,17 @@ Characteristics:
 
 ## Types of Cyber crime
 
-| **Cyber-Enabled Crimes** | **Cyber-Dependan
+| Cyber-Enabled Crimes                                                                                                                                                         | Cyber-Dependant Crimes                                                                                                  |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| - Against Individuals    - Harassment    - Offensive and illegal content - Against Properties    - Vandalism    - Malware - Against Governments    - Terrorism     - Warfare | - Hacking - Phishing - Malware - creation, possession, and distribution - DDOS Attacks - Vandalism - website defacement |
+
+•Offensive and illegal content
+•Against Properties
+• Vandalism
+• Malware
+•Against Governments
+•Terrorism
+•Warfare
 ### cyber enabled crimes
 - Traditional types of crimes that have been transformed with the use of tech
 	- Computer-related fraud or forgery
