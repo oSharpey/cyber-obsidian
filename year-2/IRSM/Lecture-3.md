@@ -86,13 +86,34 @@ Characteristics:
 #### Cyber-Attack (Hacking)
 *Profit, protest, or challenge*
 - An intrusion into a computer system/network
+- 
 - Hacker:
 	- Bypasses system’s access controls 
 	- Takes advantage of security weaknesses 
-	- knowledgeable and skilled, member of the hacker subculture, own philosophy and code of
-ethics
-Black hat: break into computer systems or use them without authorization
-Grey hat: walk the line between legal and illegal actions
-White hat: employed to break security to expose vulnerability
+	- knowledgeable and skilled
+**Black hat**: break into computer systems or use them without authorization
+**Grey hat**: walk the line between legal and illegal actions
+**White hat**: employed to break security to expose vulnerability
+
+*Network Enumeration* - Research the target
+*Vulnerability analysis* - How to attack the target
+*Exploitation* - Compromise the system
+*Persistence* - Gain a foothold in the system
+
+#### DOS/DDOS
+- Main aims:
+	- Cause disruption
+	- Deny access to resources
+	- Gives attacks an opportunity to infiltrate what they want in the system
+	- Gives them space to access different types of resources
+- Motives
+	- Prevention of legitimate network traffic
+	- Disruption of service
+	- Access prevention
+	- Accessibility prevention
+
+#### Malicious Software
+- Started as a prank that causes little harm
+- Transformed into malware 
 
 
