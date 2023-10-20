@@ -114,6 +114,37 @@ Characteristics:
 
 #### Malicious Software
 - Started as a prank that causes little harm
-- Transformed into malware 
+- Transformed into malware that is highly disruptive
+- Causes extortion, financial gain, loss of data, loss of business
+ ![[malware.png]]
+
+## Who is Combating Cyber Crime
+- Government agencies
+	- Local police forces
+	- National Crime Agency (NCA)
+	- Child Exploitation and Online Protection Centre (CEOP)
+	- National Cyber Security Centre (NCSC)
+	- National Protective Security Authority (NPSA)
+	- Government Departments
+
+- Most of the work being done by NCA and NCSC (GCHQ).
+
+## Challenges in combating cyber crime
+- Technical
+	- attribution
+	-  vulnerabilities
+	- virtualised infrastructure
+- Legal
+	- transnational crime
+	- different legal systems between countries
+	- variations in national cybercrime laws
+	- differences in the rules of evidence and criminal procedure
+	- variations in the scope and geographic applicability of regional and multilateral cybercrime treaties
+	- differences in approaches to data protection and respect for human rights.
+- Ethical
+	- refraining from harming others, systems, and data, and respecting the rule of law and human rights
+• Operational
+• cooperation with other countries
+
 
 
