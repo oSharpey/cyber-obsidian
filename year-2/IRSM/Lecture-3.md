@@ -63,5 +63,11 @@ Characteristics:
 	- Political activists
 
 
-## Adverary model of Cyber crime
-- Once 
+## Adversary model of Cyber crime
+- Once you become a target, an attacker will find a way in
+- When we calculate risk, no matter how you build up a system, once you become a target there will be a way in
+
+## Types of Cyber crime
+- cyber emabled crimes
+	- Traditional types of crimes that have been transformed with the use of tech
+	
