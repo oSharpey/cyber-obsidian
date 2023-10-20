@@ -156,7 +156,19 @@ Characteristics:
 - Operational
 	- how do companies corporate
 	- How do they recover and prevent cyber attacks
-## F
+## Findings and recommendations
+- Attacks using commonly available cybercrime tools appear to be more likely, and easier to achieve
+	- Lowers the bar of entry
+	- Gives an easy opportunity for someone to take and use
+- Malware developers are increasingly relying on social engineering, spam botnets, and other infection methods
+	- Technical defences are getting more advanced
+	- Easier to use ready made tools
+- Law enforcement must continue to
+	- Focus on threat actors providing attack tools and services
+	- Attempting to prevent malware and distribution of malware
+	- get private sector to continue threat analysis
+	- Build trusted relationships internationally. Be current and relevant with new technology
+	- Develop strategies, prevention and awareness campaigns, educate the public to recognise threats
 
 
 
