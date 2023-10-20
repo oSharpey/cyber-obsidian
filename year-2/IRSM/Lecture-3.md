@@ -68,6 +68,15 @@ Characteristics:
 - When we calculate risk, no matter how you build up a system, once you become a target there will be a way in
 
 ## Types of Cyber crime
-- cyber emabled crimes
-	- Traditional types of crimes that have been transformed with the use of tech
-	
+
+| **Cyber-Enabled Crimes** | **Cyber-Dependan
+### cyber enabled crimes
+- Traditional types of crimes that have been transformed with the use of tech
+	- Computer-related fraud or forgery
+	- Computer-related identity offences
+	- Sending or controlling sending of spam
+	- Computer-related copyright or trademark offences
+	- Computer-related acts causing personal harm
+	- Computer-related solicitation or "grooming" of children
+- Lauri Love - before the case there was no legislation to give up your password when arrested
+- Now it is a legal requirement
