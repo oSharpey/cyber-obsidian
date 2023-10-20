@@ -27,17 +27,17 @@ Characteristics:
 	- Criminals can attack a large number of victims globally
 	- Criminals commit crime with minimum effort & risk
 
-## Anatonmy of Cyber Crime
+## Anatomy of Cyber Crime
 - MOMM Acronym
-- Motivation: 
-	- Money, Ideology, Egotism
-- Opportunity
-	- Knowledge, Access
-- Means
-	- Purpose
-- Method
-	- Interception
-	- Forgery
+	- Motivation: 
+		- Money, Ideology, Egotism
+	- Opportunity
+		- Knowledge, Access
+	- Means
+		- Purpose
+	- Method
+		- Interception
+		- Forgery
 
 ## Taxonomy of Cyberciminals
 - Characterising criminals based off motives and skills
@@ -69,18 +69,9 @@ Characteristics:
 
 ## Types of Cyber crime
 
-| Cyber-Enabled Crimes                                                                                                                                                         | Cyber-Dependant Crimes                                                                                                  |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| - Against Individuals    - Harassment    - Offensive and illegal content - Against Properties    - Vandalism    - Malware - Against Governments    - Terrorism     - Warfare | - Hacking - Phishing - Malware - creation, possession, and distribution - DDOS Attacks - Vandalism - website defacement |
+![[cybercrimes.png]]
 
-•Offensive and illegal content
-•Against Properties
-• Vandalism
-• Malware
-•Against Governments
-•Terrorism
-•Warfare
-### cyber enabled crimes
+### Cyber Enabled Crimes
 - Traditional types of crimes that have been transformed with the use of tech
 	- Computer-related fraud or forgery
 	- Computer-related identity offences
@@ -90,3 +81,7 @@ Characteristics:
 	- Computer-related solicitation or "grooming" of children
 - Lauri Love - before the case there was no legislation to give up your password when arrested
 - Now it is a legal requirement
+
+
+
+

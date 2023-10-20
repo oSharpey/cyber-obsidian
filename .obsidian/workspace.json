@@ -216,11 +216,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8e219bebd780e6c9",
+  "active": "e13b68033fa5bee4",
   "lastOpenFiles": [
+    "year-2/images-y2/cybercrimes.png",
+    "year-2/IRSM/Lecture-3.md",
+    "Pasted image 20231020111515.png",
     "year-2/images-y2/cybercimimals.png",
     "year-1/SDS/lesson-1.md",
-    "year-2/IRSM/Lecture-3.md",
     "year-1/CSAO/0x0007/procedures.md",
     "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
     "year-1/CSAO/0x0000/registers.md",
@@ -258,9 +260,6 @@
     "year-1/CF/CW2/hydra.png",
     "year-1/CF/CW2/php-rev-shell.png",
     "year-1/CF/CW2/2023-03-07-175207_12x2_scrot.png",
-    "year-1/CF/CW2/mount-nfs.png",
-    "year-1/CF/CW2/python-pty.png",
-    "year-1/CF/CW2/sysinfo.png",
     "year-1/CF/CW2",
     "year-1/CF/cw2"
   ]
