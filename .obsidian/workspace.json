@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-2/IRSM/Lecture-3.md",
+                "file": "year-2/HBCS/Week-4.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-2/IRSM/Lecture-3.md",
+                "file": "year-2/HBCS/Week-4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-2/IRSM/Lecture-3.md",
+                "file": "year-2/HBCS/Week-4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-2/IRSM/Lecture-3.md"
+                "file": "year-2/HBCS/Week-4.md"
               }
             }
           }
@@ -162,7 +162,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-2/IRSM/Lecture-3.md",
+                "file": "year-2/HBCS/Week-4.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -208,6 +208,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -218,9 +219,13 @@
   },
   "active": "e13b68033fa5bee4",
   "lastOpenFiles": [
+    "year-2/HBCS/Week-1.md",
+    "year-2/HBCS/Reading-Summaries.md",
+    "year-2/HBCS/Week-3.md",
+    "year-2/HBCS/Week-4.md",
+    "year-2/IRSM/Lecture-3.md",
     "year-2/images-y2/malware.png",
     "year-2/images-y2/cybercrimes.png",
-    "year-2/IRSM/Lecture-3.md",
     "Pasted image 20231020111515.png",
     "year-2/images-y2/cybercimimals.png",
     "year-1/SDS/lesson-1.md",
@@ -244,11 +249,8 @@
     "year-1/CSAO/0x0000/instruction-sets.md",
     "year-1/CSAO/0x0000/memory-categories.md",
     "year-1/CSAO/0x0004/arithmetic-instrcutions.md",
-    "year-2/HBCS/Week-3.md",
-    "year-2/HBCS/Reading-Summaries.md",
     "year-2/PLCS/HENRYYYYYYY.md",
     "year-2/images-y2/klm.png",
-    "year-1/OSCC/windows-file-system.md",
     "year-2/images-y2/HCI_Model.png",
     "year-2/images-y2/starModel.png",
     "year-2/IM",
@@ -260,7 +262,6 @@
     "year-1/images-yr1/PAM.png",
     "year-1/CF/CW2/hydra.png",
     "year-1/CF/CW2/php-rev-shell.png",
-    "year-1/CF/CW2/2023-03-07-175207_12x2_scrot.png",
     "year-1/CF/CW2",
     "year-1/CF/cw2"
   ]
