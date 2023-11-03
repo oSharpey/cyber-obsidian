@@ -94,3 +94,7 @@ driven, self-directed information security risk evaluation
 - Who owns the management and monitoring of these risks
 
 ## Information Security Governance Maturity
+- Information Security Maturity and Governance Maturity models have been developed to aid in the measurement of Cyber Security effectiveness
+	- enable organisations to identify where their practices are weak or not taken seriously and where their practices are truly embedded
+	- There are different models and frameworks to measure an organisation’s maturity level
+-  Maturity assessments allow organisations to improve in areas with low score ratings/ underdeveloped processes
