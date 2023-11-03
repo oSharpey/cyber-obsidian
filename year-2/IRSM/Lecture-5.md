@@ -39,7 +39,23 @@ ISO 27005 is specific to cyber security risk management
 
 ### ISO/IEC 38500:2015 - Governance of IT for the organization
 - international standard for the corporate governance of information technology
-
 ### ISO/IEC 27014:2020 - Governance of information security
 - The standard specifies six high-level “action-oriented” information security governance objective
-- 
+### ITIL- IT service management
+- framework for IT service management
+- Current version ITIL 4 was launched in February 2019.
+- supported by ISO/IEC 20000:2022 - International standard for ITSM
+### COBIT - Control Objectives for Information and Related Technology
+- Addresses regulatory compliance, risk management and aligning IT strategy with organisational goals.
+- COBIT 5 was released in 2012
+-  Principles
+	1. Meeting stakeholder needs
+	2. Covering the enterprise end to end
+	3. Applying a single integrated framework
+	4. Enabling a holistic approach
+	5. Separating governance from management
+### Implementation of IS Governance – IDEAL model
+| I   | Initiating | Lay the groundwork for a successful improvement effort   |
+| --- | ---------- | -------------------------------------------------------- |
+| D   | Diagnosing | Determine where you are relative to where you want to be |
+|     |            |                                                          |
