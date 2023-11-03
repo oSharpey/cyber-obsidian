@@ -29,3 +29,8 @@ ISO 27005 is specific to cyber security risk management
 ### ISO 31000
 - provides a structured methodology for evaluating threats to economic performance in an organization
 
+![[iso31000.png]]
+
+## Governance
+- the way in which an organisation is managed at the highest level, and the systems for doing this
+-  
