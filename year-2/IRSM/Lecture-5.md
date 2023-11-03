@@ -33,4 +33,4 @@ ISO 27005 is specific to cyber security risk management
 
 ## Governance
 - the way in which an organisation is managed at the highest level, and the systems for doing this
--  
+-  Governance of information security is a strategic planning responsibility
