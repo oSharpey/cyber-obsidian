@@ -15,4 +15,17 @@
 Risk mangement is made up of 2 areas, **Risk Assessment** & **Risk Conrol**
 - **Risk Assessment** - Identify and analyse the risks
 - **Risk Control** - Reduce risk and provide contingency
-- 
+
+## Standards for Risk management
+### ISO 27005 - 5 Stages
+- Risk Assessment
+- Risk Treatment
+- Risk Acceptacne
+- Risk Communication
+- Risk monitoring and reviuw
+
+ISO 27005 is specific to cyber security risk management
+
+### ISO 31000
+- provides a structured methodology for evaluating threats to economic performance in an organization
+
