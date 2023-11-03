@@ -66,3 +66,16 @@ ISO 27005 is specific to cyber security risk management
 ## Approaching Risk Management
 ![[riskmanagementframework.png]]
 
+## Risk Management Methodolgies
+### NIST Risk Management Framework
+1. Frame risk or establish a risk context describing the environment in which risk-based decisions are made
+2. Assess risk within the context of the organisational risk frame
+3. Respond to risk once that risk is determined based on the results of risk assessments
+4. Monitor risk over time
+
+### NIST Tiered risk management approach
+![[nistframework.png]]
+
+### OCTAVE ()
+essential components of a comprehensive, systematic, context-
+driven, self-directed information security risk evaluation
