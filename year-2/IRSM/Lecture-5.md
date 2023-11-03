@@ -76,6 +76,21 @@ ISO 27005 is specific to cyber security risk management
 ### NIST Tiered risk management approach
 ![[nistframework.png]]
 
-### OCTAVE ()
+### OCTAVE (Operationally Critical Threat, Asset, and Vulnerability Evaluation)
 essential components of a comprehensive, systematic, context-
 driven, self-directed information security risk evaluation
+![[octave.png]]
+
+### Microsoft’s risk management guide
+1. Assessing risk
+2. Conducting decision support
+3. Implementing controls
+4. Measuring program effectiveness
+
+### Risk and Control Self-Assessment (RCSA)
+- What the major known risks are
+- Which of these risks will limit the ability of the organisation to complete its mission
+- What plans are in place to deal with risks
+- Who owns the management and monitoring of these risks
+
+## Information Security Governance Maturity
