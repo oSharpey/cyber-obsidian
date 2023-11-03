@@ -61,3 +61,8 @@ ISO 27005 is specific to cyber security risk management
 | **E**   | **Establishing** | **Plan the specifics of how you will reach your destination**                                 |
 | **A**   | **Acting**      | **Do the work according to the plan**                                                         |
 | **L**   | **Learning**     | **Learn from the experience and improve you ability to adopt new improvements in the future** |
+
+
+## Approaching Risk Management
+![[riskmanagementframework.png]]
+
