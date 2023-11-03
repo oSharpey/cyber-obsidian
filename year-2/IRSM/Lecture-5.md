@@ -55,9 +55,9 @@ ISO 27005 is specific to cyber security risk management
 	4. Enabling a holistic approach
 	5. Separating governance from management
 ### Implementation of IS Governance – IDEAL model
-| I   | Initiating   | Lay the groundwork for a successful improvement effort    |
-| --- | ------------ | --------------------------------------------------------- |
-| D   | Diagnosing   | Determine where you are relative to where you want to be  |
-| E   | Establishing | Plan the specifics of how you will reach your destination |
-| A   | Acting       | Do the work according to the plan                         |
-| L    | Learning             | Learn                                                            |
+| I   | Initiating   | Lay the groundwork for a successful improvement effort                                    |
+| --- | ------------ | ----------------------------------------------------------------------------------------- |
+| **D**   | **Diagnosing**   | **Determine where you are relative to where you want to be**                                  |
+| **E**   | **Establishing** | **Plan the specifics of how you will reach your destination**                                 |
+| **A**   | **Acting**      | **Do the work according to the plan**                                                         |
+| **L**   | **Learning**     | **Learn from the experience and improve you ability to adopt new improvements in the future** |
