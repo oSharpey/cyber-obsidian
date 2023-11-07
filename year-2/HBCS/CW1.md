@@ -14,4 +14,7 @@ Threat Scenarios
 Assessing difficulty of use 
 - Sharing login information with trusted contacts: De-motivators
 	- system: Bitwardens sending system is complex to use, lots of complex options, not efficient 
-	- external: 
+	- external: User will be more inclined to use a less secure but more efficicient method of sharing passwords ie sending them in plaintext
+- Automatically autofilling passwords/card information
+	- system: Autofilling sometimes does not always fill in the correct fields causing user to have to manually enter in the card/login information
+	- system: Bitwarden hides autofill under a keyboard shortcut and is not 
