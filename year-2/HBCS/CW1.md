@@ -37,4 +37,5 @@ Assessing Ease of use
 	- External: Convenience with having passwords synced over multiple devices
 - A user choosing a weak easy to remember master password that is easily found in a wordlist
 	- System: At signup bitwarden does not provide users with details on how to choose a secure password, it only states 12 characters minimum and has a sliding scale of weak to excellent, user is allowed to enter password helloworld1234! which is ranked as good
-	- External: users choose path of least resistance, causes user to 
+	- External: users choose path of least resistance, causes user to use a password that is easily rememberd by them and is not as complex as it should be, users tend to use the bare minimun password requirements presented. Weak passwords are more convenient 
+	- 
