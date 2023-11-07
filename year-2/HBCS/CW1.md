@@ -33,4 +33,7 @@ Assessing Ease of use
 	- External: sophistication of phishing attacks may make it difficult for a lay user to identify the threat causing thier data to be compromised
 - Having passwords synced over multiple devices increases the possibility of having a password compromised - more devices you can leave unlocked 
 	- System: bitwarden does have an automatic logout feature, users stay logged into the password manager until the browser is closed, if you are actively using multiple devices its very easy to accidentally stay logged in leaving you exposed
-	- System: Bitwarden does have an option 
+	- System: Bitwarden does have an option to log out after a certain period of time. Not on be default however if on user may get frustrated at having to log in multiple times a day if the password manager is used regularly causing user to disable the feature
+	- External: Convenience with having passwords synced over multiple devices
+- A user choosing a weak easy to remember master password that is easily found in a wordlist
+	- 
