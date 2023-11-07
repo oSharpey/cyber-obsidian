@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-2/HBCS/CW1.md",
+                "file": "year-2/HBCS/Week-5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-2/HBCS/CW1.md",
+                "file": "year-2/HBCS/Week-5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-2/HBCS/CW1.md"
+                "file": "year-2/HBCS/Week-5.md"
               }
             }
           }
@@ -162,7 +163,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-2/HBCS/CW1.md",
+                "file": "year-2/HBCS/Week-5.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -217,10 +218,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "301cad5b8c33651e",
+  "active": "e13b68033fa5bee4",
   "lastOpenFiles": [
-    "year-2/HBCS/Week-5.md",
     "year-2/HBCS/CW1.md",
+    "year-2/HBCS/Week-5.md",
     "year-1/SDS/lesson-1.md",
     "year-2/IRSM/Lecture-5.md",
     "year-2/images-y2/octave.png",
