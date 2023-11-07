@@ -38,4 +38,8 @@ Assessing Ease of use
 - A user choosing a weak easy to remember master password that is easily found in a wordlist
 	- System: At signup bitwarden does not provide users with details on how to choose a secure password, it only states 12 characters minimum and has a sliding scale of weak to excellent, user is allowed to enter password helloworld1234! which is ranked as good
 	- External: users choose path of least resistance, causes user to use a password that is easily rememberd by them and is not as complex as it should be, users tend to use the bare minimun password requirements presented. Weak passwords are more convenient 
-	- 
+
+Recommendations  
+- Have the password manager session automatically log out after a specific amount of time to reduce the risk of password being exposed by leaving a device unlocked  
+- Have a more prominent password health section to warn the user of weak master passwords and prompt the user to change it
+- Educate users on phishing and provide phishing warnings to prevent autofilling on compromised websites
