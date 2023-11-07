@@ -26,3 +26,8 @@ Assessing difficulty of use
 	- external: lack of awareness for te benifits of using TFA
 	- external: Cost, users may be deterred if they see it may come with added cost, buying a physical key like ubikey or paying for premium
 	- System: Too much choice in options for TFA
+
+Assessing Ease of use
+-  A user falling for a phisihing attack and having the password manager autofill passwords and/or card information
+	- System: No warnings on use of the auto fill feature causing user to have blind trust in the security of the website and password manager
+	- External: 
