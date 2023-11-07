@@ -36,4 +36,5 @@ Assessing Ease of use
 	- System: Bitwarden does have an option to log out after a certain period of time. Not on be default however if on user may get frustrated at having to log in multiple times a day if the password manager is used regularly causing user to disable the feature
 	- External: Convenience with having passwords synced over multiple devices
 - A user choosing a weak easy to remember master password that is easily found in a wordlist
-	- System: At signup bitwarden does not 
+	- System: At signup bitwarden does not provide users with details on how to choose a secure password, it only states 12 characters minimum and has a sliding scale of weak to excellent, user is allowed to enter password helloworld1234! which is ranked as good
+	- External: users choose path of least resistance, causes user to 
