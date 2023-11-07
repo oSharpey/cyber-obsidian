@@ -30,4 +30,6 @@ Assessing difficulty of use
 Assessing Ease of use
 -  A user falling for a phisihing attack and having the password manager autofill passwords and/or card information
 	- System: No warnings on use of the auto fill feature causing user to have blind trust in the security of the website and password manager
-	- External: 
+	- External: sophistication of phishing attacks may make it difficult for a lay user to identify the threat causing thier data to be compromised
+- Having passwords synced over multiple devices increases the possibility of having a password compromised - more devices you can leave unlocked 
+	- System: bitwarden does have an automatic logout feature 
