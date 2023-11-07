@@ -24,5 +24,5 @@ Assessing difficulty of use
 - Configuring TFA for the password manager to protect your account
 	- system: logging in with TFA is time consuming and takes more effort than not using it
 	- external: lack of awareness for te benifits of using TFA
-	- external: Cost, users may be deterred if they see it may come with added cost, buying a physical key like ubikey or paying for 
-	- 
+	- external: Cost, users may be deterred if they see it may come with added cost, buying a physical key like ubikey or paying for premium
+	- System: Too much choice in options for TFA
