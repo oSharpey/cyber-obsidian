@@ -17,4 +17,5 @@ Assessing difficulty of use
 	- external: User will be more inclined to use a less secure but more efficicient method of sharing passwords ie sending them in plaintext
 - Automatically autofilling passwords/card information
 	- system: Autofilling sometimes does not always fill in the correct fields causing user to have to manually enter in the card/login information
-	- system: Bitwarden hides autofill under a keyboard shortcut and is not 
+	- system: Bitwarden hides autofill under a keyboard shortcut and is not shown to user as an option. User has to perform multiple clicks to get to the option of filling a password
+	- 
