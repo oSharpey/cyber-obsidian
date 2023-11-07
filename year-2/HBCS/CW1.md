@@ -12,4 +12,5 @@ Threat Scenarios
 
 
 Assessing difficulty of use 
-  
+- Sharing login information with trusted contacts: Demotivators
+- 
