@@ -10,4 +10,6 @@ Threat Scenarios
 - Having passwords synced over multiple devices increases the possibility of having a password compromised - more devices you can leave unlocked 
 - A user choosing a weak easy to remember master password that is easily found in a wordlist
 
+
+Assessing difficulty of use 
   
