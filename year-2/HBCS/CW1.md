@@ -13,4 +13,5 @@ Threat Scenarios
 
 Assessing difficulty of use 
 - Sharing login information with trusted contacts: De-motivators
-	- Bitwardens sending system is complex
+	- system: Bitwardens sending system is complex to use, lots of complex options, not efficient 
+	- external: 
