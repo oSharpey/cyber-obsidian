@@ -12,5 +12,5 @@ Threat Scenarios
 
 
 Assessing difficulty of use 
-- Sharing login information with trusted contacts: Demotivators
-- 
+- Sharing login information with trusted contacts: De-motivators
+	- Bitwardens sending system is complex
