@@ -149,8 +149,17 @@
                 "file": "year-2/HBCS/CW1.md"
               }
             }
+          },
+          {
+            "id": "708c540d16464218",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       },
       {
         "id": "e7e5d3e132aa53b5",
@@ -203,8 +212,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,7 +225,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "301cad5b8c33651e",
+  "active": "708c540d16464218",
   "lastOpenFiles": [
     "year-2/HBCS/Week-5.md",
     "year-2/HBCS/CW1.md",
