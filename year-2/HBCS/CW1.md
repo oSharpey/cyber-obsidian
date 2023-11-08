@@ -17,20 +17,20 @@ Assessing difficulty of use
 	- external: User will be more inclined to use a less secure but more efficient method of sharing passwords ie sending them in plaintext
 - Automatically auto-filling passwords/card information
 	- system: Auto-filling sometimes does not always fill in the correct fields causing user to have to manually enter in the card/login information
-	- system: Bitwarden hides autofill under a keyboard shortcut and is not shown to user as an option. User has to perform multiple clicks to get to the option of filling a password
-	- External: build on point above, users have less technical ability, poorer eyesight or impared motor functions may find it difficult to navigate to the autofill option in the browser extension or press the keyboard shortcut
-	- External: Competition offers ability to autofill password from the login form, ie firefox actively prompts user to autofill using built in password manager bypassing bitwarden
-	- System: bitwarden often saves the wrong url for the website, especially if the website sign up url is different to login, casues autofil to not work and user has to manually search for login in password manager
-- Configuring TFA for the password manager to protect your account
-	- system: logging in with TFA is time consuming and takes more effort than not using it
-	- external: lack of awareness for te benifits of using TFA
+	- system: Bitwarden hides auto-fill under a keyboard shortcut and is not shown to user as an option. User has to perform multiple clicks to get to the option of filling a password
+	- External: build on point above, users have less technical ability, poorer eyesight or impaired motor functions may find it difficult to navigate to the auto-fill option in the browser extension or press the keyboard shortcut
+	- External: Competition offers ability to auto-fill password from the login form, ie firefox actively prompts user to auto-fill using built in password manager bypassing bitwarden
+	- System: bitwarden often saves the wrong url for the website, especially if the website sign up url is different to login, causes auto-fill to not work and user has to manually search for login in password manager
+- Configuring 2FA for the password manager to protect your account
+	- system: logging in with 2FA is time consuming and takes more effort than not using it
+	- external: lack of awareness for te benifits of using 2FA
 	- external: Cost, users may be deterred if they see it may come with added cost, buying a physical key like ubikey or paying for premium
-	- System: Too much choice in options for TFA
+	- System: Too much choice in options for 2FA
 
 Assessing Ease of use
--  A user falling for a phishing attack and having the password manager autofill passwords and/or card information
+-  A user falling for a phishing attack and having the password manager auto-fill passwords and/or card information
 	- System: No warnings on use of the auto fill feature causing user to have blind trust in the security of the website and password manager
-	- External: sophistication of phishing attacks may make it difficult for a lay user to identify the threat causing thier data to be compromised
+	- External: sophistication of phishing attacks may make it difficult for a lay user to identify the threat causing their data to be compromised
 - Having passwords synced over multiple devices increases the possibility of having a password compromised - more devices you can leave unlocked 
 	- System: bitwarden does have an automatic logout feature, users stay logged into the password manager until the browser is closed, if you are actively using multiple devices its very easy to accidentally stay logged in leaving you exposed
 	- System: Bitwarden does have an option to log out after a certain period of time. Not on be default however if on user may get frustrated at having to log in multiple times a day if the password manager is used regularly causing user to disable the feature
