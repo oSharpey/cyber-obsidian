@@ -3,10 +3,10 @@ Bitwarden
 Usage scenarios
 - Sharing login information with trusted contacts
 - Automatically auto-filling a passwords and card information into a website 
-- Configuring TFA for the password manager to protect your account
+- Configuring 2FA for the password manager to protect your account
 
 Threat Scenarios
-- A user falling for a phishingthe  attack and having the password manager autofill passwords and/or card information
+- A user falling for a phishing attack and having the password manager auto-fill passwords and/or card information
 - Having passwords synced over multiple devices increases the possibility of having a password compromised - more devices you can leave unlocked 
 - A user choosing a weak easy to remember master password that is easily found in a wordlist
 
@@ -15,8 +15,8 @@ Assessing difficulty of use
 - Sharing login information with trusted contacts: De-motivators
 	- system: Bitwardens sending system is complex to use, lots of complex options, not efficient 
 	- external: User will be more inclined to use a less secure but more efficient method of sharing passwords ie sending them in plaintext
-- Automatically autofilling passwords/card information
-	- system: Autofilling sometimes does not always fill in the correct fields causing user to have to manually enter in the card/login information
+- Automatically auto-filling passwords/card information
+	- system: Auto-filling sometimes does not always fill in the correct fields causing user to have to manually enter in the card/login information
 	- system: Bitwarden hides autofill under a keyboard shortcut and is not shown to user as an option. User has to perform multiple clicks to get to the option of filling a password
 	- External: build on point above, users have less technical ability, poorer eyesight or impared motor functions may find it difficult to navigate to the autofill option in the browser extension or press the keyboard shortcut
 	- External: Competition offers ability to autofill password from the login form, ie firefox actively prompts user to autofill using built in password manager bypassing bitwarden
