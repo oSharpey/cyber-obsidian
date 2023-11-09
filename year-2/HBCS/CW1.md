@@ -1,7 +1,7 @@
 Bitwarden
 
 Usage scenarios
-- Sharing login information with trusted contacts
+- Sharing login information with trusted contacts with Bitwarden Send
 - Automatically auto-filling a passwords and card information into a website 
 - Configuring 2FA for the password manager to protect your account
 
