@@ -1,4 +1,4 @@
-Bitwarden
+ alBitwarden
 
 Usage scenarios
 - Sharing login information with trusted contacts with Bitwarden Send
