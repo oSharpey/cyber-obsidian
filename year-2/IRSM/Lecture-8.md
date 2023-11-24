@@ -38,4 +38,27 @@
 	- Controlling entity
 
 ## Identifying People, Procedures, and Data Assets
-- Identifying an
+- Identifying, describing and evaluating these information assets should be assigned to managers who posses the necessary knowledge, experience and judgement
+- Assets should be recorded via a reliable data handling process
+
+**Potential asset attributes**
+- People
+	- Position name/number/ID
+	- Supervisor name/number/ID
+	- Security clearance level
+	- Special skills
+- Procedures
+	- Description
+	- Intended purpose
+	- Software/hardware/networking elements to which it is tied
+	- Location where procedure documents are stored for reference
+	- Location where documents are stored for update purposes
+- Data
+	- Classification
+	- Owner/creator/manager
+	- Size of data structure
+	- Data organization used
+	- Online or offline
+	- Physical Location
+	- Media access method
+	- Backup procedures
