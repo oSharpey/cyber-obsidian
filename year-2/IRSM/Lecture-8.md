@@ -85,4 +85,20 @@ A threat assessment is a statement of threats that are related to vulnerabilitie
 -  Given the nature of the business, threats will be known and understood, even if the events associated with the threats cannot be predicted or measured in quite the same way as risk.
 **Threat:** A circumstance or event that has the potential to cause harm by violating security
 
+
+## The Overall Process
+1. Threat assessment
+	- Likelihood estimation
+	- Severity prediction
+2. Asset evaluation (importance, exposure, attractiveness)
+	- Vulnerability assessment
+3. Impact assessment
+	- Threat & asset interaction
+4. Safeguard evaluation
+
+- Reactive method, it needs history data for the threats.
+
 ## Threats to Information security
+![[threats.png]]
+
+
