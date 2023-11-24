@@ -73,4 +73,16 @@
 ## Asset Classification Scheme
 ![[assetclass.png]]
 
+## Rank Ordering Information Assets
+- The final step in the risk identification process is to prioritise, or rank order, the assets
+	- weighted table analysis
+	- method of valuing information assets by ranking various assets based on criteria specified by the organisation
+- More straightforward than a raw estimation based on some other more ambiguous assessment
 
+# Threat Assessment
+A threat assessment is a statement of threats that are related to vulnerabilities of company assets and threat agents, and also a statement of the believed capabilities that those threat agents possess.
+-  Discovering and assessing the motivation, capability, opportunity, and impact that threat agents may pose.
+-  Given the nature of the business, threats will be known and understood, even if the events associated with the threats cannot be predicted or measured in quite the same way as risk.
+**Threat:** A circumstance or event that has the potential to cause harm by violating security
+
+## Threats to Information security
