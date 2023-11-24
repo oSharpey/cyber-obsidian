@@ -23,11 +23,9 @@
             "id": "e13b68033fa5bee4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "year-2/HBCS/CW1.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20231124104737.png"
               }
             }
           },
@@ -102,8 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -119,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-2/HBCS/CW1.md",
+                "file": "Pasted image 20231124104737.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-2/HBCS/CW1.md",
+                "file": "Pasted image 20231124104737.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-2/HBCS/CW1.md"
+                "file": "Pasted image 20231124104737.png"
               }
             }
           },
@@ -184,7 +181,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-2/HBCS/CW1.md",
+                "file": "Pasted image 20231124104737.png",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,8 +236,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e13b68033fa5bee4",
+  "active": "8e219bebd780e6c9",
   "lastOpenFiles": [
+    "year-2/IRSM/Lecture-8.md",
+    "year-2/images-y2/assets.png",
+    "Pasted image 20231124104737.png",
+    "year-2/HBCS/CW1.md",
     "year-2/HBCS/Reading-Summaries.md",
     "year-1/NCCD/osi-7-layer-model.md",
     "year-1/NCCD/firewalls.md",
@@ -250,7 +251,6 @@
     "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
     "year-1/CSAO/0x0002/assembly-and-syntax.md",
     "year-1/CSAO/0x0007/procedures.md",
-    "year-2/HBCS/CW1.md",
     "year-1/SDS/lesson-1.md",
     "year-2/IRSM/Lecture-5.md",
     "year-2/images-y2/octave.png",
@@ -265,7 +265,6 @@
     "year-2/images-y2/malware.png",
     "year-2/images-y2/cybercrimes.png",
     "Pasted image 20231020111515.png",
-    "year-2/images-y2/cybercimimals.png",
     "year-1/CSAO/0x0000/registers.md",
     "year-1/CSAO/0x0001/machine-level-rep-of-data.md",
     "year-1/CSAO/0x0001/debuggers.md",
@@ -275,9 +274,6 @@
     "year-1/CSAO/0x0002/processes-in-memory.md",
     "year-1/CSAO/0x0002/layout-of-assembly-program.md",
     "year-1/CSAO/0x0001/xor-encryption.md",
-    "year-1/CSAO/0x0004/logical-bit-shifting-instructions.md",
-    "year-1/CSAO/0x0004/the-stack.md",
-    "year-2/images-y2/klm.png",
     "year-2/IM",
     "year-2/IRSM",
     "year-2/ISS",
