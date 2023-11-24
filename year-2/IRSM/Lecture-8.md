@@ -64,3 +64,13 @@
 	- Backup procedures
 
 ## Classifying and Categorising Information Assets
+- Once the initial inventory is assembled, determine whether its asset categories are meaningful to the RM program
+- Inventory should also reflect sensitivity and security priority assigned to each information asset
+-  A data classification scheme should be developed that categorises these information assets based on their sensitivity and security needs
+- Each of these categories designates the level of protection needed for a particular information asset
+- Classification categories must be comprehensive and mutually exclusive
+
+## Asset Classification Scheme
+![[assetclass.png]]
+
+
