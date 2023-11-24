@@ -120,12 +120,6 @@ A threat assessment is a statement of threats that are related to vulnerabilitie
 ## Vulnerability Assessment
 - Once the organization has identified and prioritized both its information assets and the threats facing those assets it can
 	- begin to compare information asset to threats
-	- a list should be created for each information asset to document its
-vulnerability to each possible or likely
-attack
-• This review leads to the creation of a
-list of vulnerabilities that remain
-potential risks to the organization
-• Vulnerabilities are specific avenues
-that threat agents can exploit to
-attack an information asset
+	- a list should be created for each information asset to document its vulnerability to each possible or likely attack
+- This review leads to the creation of a list of vulnerabilities that remain potential risks to the organization
+- Vulnerabilities are specific avenues that threat agents can exploit to attack an information asset
