@@ -85,7 +85,6 @@ A threat assessment is a statement of threats that are related to vulnerabilitie
 -  Given the nature of the business, threats will be known and understood, even if the events associated with the threats cannot be predicted or measured in quite the same way as risk.
 **Threat:** A circumstance or event that has the potential to cause harm by violating security
 
-
 ## The Overall Process
 1. Threat assessment
 	- Likelihood estimation
@@ -102,3 +101,31 @@ A threat assessment is a statement of threats that are related to vulnerabilitie
 ![[threats.png]]
 
 
+## Assessing Threats
+- Which threats
+	- represent an actual danger to our organization’s information?
+	- are internal and which are external?
+	- have the highest probability of occurrence?
+	- have the highest probability of success?
+	- could result in the greatest loss if successful?
+	- are the organization least prepared to handle?
+	- cost the most to protect against?
+	- cost the most to recover from?
+- Prioritise Threats
+	- list the categories of threats, then select categories that correspond to the questions of interest
+	- assessment of each threat by asset
+![[assessthreats.png]]
+
+
+## Vulnerability Assessment
+- Once the organization has identified and prioritized both its information assets and the threats facing those assets it can
+	- begin to compare information asset to threats
+	- a list should be created for each information asset to document its
+vulnerability to each possible or likely
+attack
+• This review leads to the creation of a
+list of vulnerabilities that remain
+potential risks to the organization
+• Vulnerabilities are specific avenues
+that threat agents can exploit to
+attack an information asset
