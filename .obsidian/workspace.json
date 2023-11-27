@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-2/IRSM/Lecture-8.md",
+                "file": "year-2/HBCS/Week-3.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-2/IRSM/Lecture-8.md",
+                "file": "year-2/HBCS/Week-3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-2/IRSM/Lecture-8.md",
+                "file": "year-2/HBCS/Week-3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-2/IRSM/Lecture-8.md"
+                "file": "year-2/HBCS/Week-3.md"
               }
             }
           },
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-2/IRSM/Lecture-8.md",
+                "file": "year-2/HBCS/Week-3.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -240,18 +240,18 @@
   },
   "active": "e13b68033fa5bee4",
   "lastOpenFiles": [
+    "year-2/HBCS/Week-5.md",
+    "year-2/IRSM/Lecture-8.md",
     "year-2/images-y2/assessthreats.png",
     "year-2/images-y2/threats.png",
     "year-2/images-y2/assetclass.png",
     "Pasted image 20231124104737.png",
-    "year-2/IRSM/Lecture-8.md",
     "year-2/images-y2/assets.png",
     "year-2/HBCS/CW1.md",
     "year-2/HBCS/Reading-Summaries.md",
     "year-1/NCCD/osi-7-layer-model.md",
     "year-1/NCCD/firewalls.md",
     "year-1/NCCD/dns.md",
-    "year-2/HBCS/Week-5.md",
     "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
     "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
     "year-1/CSAO/0x0002/assembly-and-syntax.md",
@@ -267,7 +267,6 @@
     "year-2/HBCS/Week-1.md",
     "year-2/HBCS/Week-3.md",
     "year-2/IRSM/Lecture-3.md",
-    "year-2/images-y2/malware.png",
     "year-1/CSAO/0x0000/registers.md",
     "year-1/CSAO/0x0001/machine-level-rep-of-data.md",
     "year-1/CSAO/0x0001/debuggers.md",
