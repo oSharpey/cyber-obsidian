@@ -14,6 +14,8 @@ Usability_Problems_Found(i) = NO-0- A)i)
 
 ## Choosing Users - Key issues
 - Setting Goals
-- Identiyfing Participants
+- Identifying Participants
 - Relationship with participants
+- Triangulation
+- Pilot Studies
 - 
