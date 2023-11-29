@@ -20,4 +20,8 @@ The paper aims to discuss the possibly that artificial intelligence could overco
 
 Do you agree on the 4 types of 
 
-The paper suggests that the "Super machine" - type 2 cognition would be the only for ai to gain consciousness and surpass humans. DO
+The paper suggests that the "Super machine" - type 2 cognition would be the only for ai to gain consciousness and surpass humans. Do you agree that AI can truly become conscious or is consciousness only something unique to being human. 
+
+If we do ever achieve human consciousness in machines how do we ensure they are aligned with human values, what interventions should be in place to prevent AI from surpassing humans
+
+How is it 
