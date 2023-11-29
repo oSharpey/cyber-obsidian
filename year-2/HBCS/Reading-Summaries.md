@@ -16,4 +16,4 @@
 
 
 # Reading 3
-The paper aims to discuss the possibly that artificial intelligence could overcome humans. It focuses on the shortcomings of current thoughts on AI and humanity being too focused on treating the brain like a computer and input-output relationships  
+The paper aims to discuss the possibly that artificial intelligence could overcome humans. It focuses on the shortcomings of current thoughts on AI and humanity being too focused on treating the brain like a computer and input-output relationships. The paper proposes a new way to look at the issue focusing more on the complexities of human consciousness and intelligence, identifying how important creativity, reason  
