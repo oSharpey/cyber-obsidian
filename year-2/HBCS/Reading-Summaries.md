@@ -24,4 +24,12 @@ The paper suggests that the "Super machine" - type 2 cognition would be the only
 
 If we do ever achieve human consciousness in machines how do we ensure they are aligned with human values, what interventions should be in place to prevent AI from surpassing humans
 
-How is it 
+If a machine develops it own sense of morality how will we be able to recognise it and should we intervene to stop it
+
+
+Plan
+- Discussion introduction, introduce the paper
+- Discuss our general thoughts on the paper, what did we find interesting and what criticisms did we have of the paper
+- Discuss Question 1
+- Discuss Question 2
+- 
