@@ -12,3 +12,8 @@
     - Need to improve mental models
     - Fundamentals of where data goes
     - Understand how policies influence their data and respond to threats
+
+
+
+# Reading 3
+The paper aims to discuss the possibly that artificial intelligence could overcome humans. It focuses on the shortcomings of current thoughts on AI and humanity being too focused on treating the brain like a computer and input-output relationships  
