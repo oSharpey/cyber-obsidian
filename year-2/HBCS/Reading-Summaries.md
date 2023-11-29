@@ -22,7 +22,7 @@ Do you agree on the 4 types of
 
 The paper suggests that the "Super machine" - type 2 cognition would be the only for ai to gain consciousness and surpass humans. Do you agree that AI can truly become conscious or is consciousness only something unique to being human - and if we do ever achieve human consciousness in machines and if a machine develops it own sense of morality how do we ensure they are aligned with human values, what interventions should be in place to prevent AI from surpassing humans
 
-Do you agree with the categories of cognition that the paper suggests we group machines into - do they miss out on some intrisincally human values 
+Do you agree with the categories of cognition that the paper suggests we group machines into - do they miss out on some intrinsically human values integral to real consciousness, are they sufficient to develop human intelligence in machines especially 
 
 Plan
 - Discussion introduction, introduce the paper
