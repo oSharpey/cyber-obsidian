@@ -16,4 +16,4 @@
 
 
 # Reading 3
-The paper aims to discuss the possibly that artificial intelligence could overcome humans. It focuses on the shortcomings of current thoughts on AI and humanity being too focused on treating the brain like a computer and input-output relationships. The paper proposes a new way to look at the issue focusing more on the complexities of human consciousness and intelligence, identifying how important creativity, reason  
+The paper aims to discuss the possibly that artificial intelligence could overcome humans. It focuses on the shortcomings of current thoughts on AI and humanity being too focused on treating the brain like a computer and input-output relationships. The paper proposes a new way to look at the issue focusing more on the complexities of human consciousness and intelligence, identifying how important creativity, morality, emotion and experiences are integral to being human.  The paper presents a new idea on how machines could achieve consciousness, grouping machines into 4 different categories based on 4 different types of cognician 
