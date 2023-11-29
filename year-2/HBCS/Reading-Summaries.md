@@ -30,6 +30,8 @@ If a machine develops it own sense of morality how will we be able to recognise 
 Plan
 - Discussion introduction, introduce the paper
 - Discuss our general thoughts on the paper, what did we find interesting and what criticisms did we have of the paper
+- Discuss the papers conclusion - do we agree on the conclusions of the author about how AI could possibly become conscious 
 - Discuss Question 1
 - Discuss Question 2
-- 
+- Space for some further discussion based on points raised by the 2 key questions
+- Final summary
