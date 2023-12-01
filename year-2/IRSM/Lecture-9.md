@@ -105,4 +105,35 @@ Assets with unacceptable levels of risk are treated using one of five strategies
 | ---- | ------- |
 | - difficult to determine <br> - Items that affect the cost of a control or safeguard include: <br> - Cost of development or acquisition <br>- Training fees  <br> - Cost of implementation <br> - Service costs <br> - Cost of maintenance  <br> - Potential cost from the loss of the asset  | - the value to the organisation of using controls to prevent losses associated with a specific vulnerability <br> - determined by valuing the information asset or assets exposed by the vulnerability and then determining how much of that value is at risk and how much risk there is for the asset <br> - Annualised loss expectancy (ALE) |
 
+Cost avoidance is the money saved by using the defence strategy via the implementation of a control, thus eliminating the financial ramifications of an incident
+- The criterion most used when evaluating a strategy to implement controls and safeguards is economic feasibility
 
+## Other Methods of Feasibility
+- Organisaional Feasibility
+- Operational Feasibility
+- Technical Feasibility
+- Political Feasibility
+
+# Alternative Risk Treatment Practices
+
+## (Semi) Qualitative and Hybrid Asset Valuation Measures
+- Execute risk assessment steps using estimates based on a qualitative assessment
+- More granular approach
+	- tries to reduce some of the ambiguity of qualitative measures without resorting to the unsubstantiated estimations used for quantitative measures
+
+
+## Delphi Technique
+- A process whereby a group rates or ranks a set of information
+	- The individual responses are compiled and then returned to the group for another iteration
+	- This process continues until the entire group is satisfied with the result
+	- This technique can be applied to the development of scales, asset valuation, asset or threat ranking, or any scenario that can benefit from the input of more than one decision maker
+
+
+# Asset Valuation
+
+## Single loss expectancy
+- Estimating the likelihood of an attack based on an annualised rate of occurrence and the impact of an attack based on loss expectancy
+- Considers the value of the asset and the expected percentage of loss that would occur from a particular attack
+- **Single loss expectancy (SLE) = the calculated value associated with the most likely loss from a single occurrence of a specific attack
+• Exposure factor (EF) = the percentage loss that would occur from a given
+vulnerability being exploited – usually estimated
