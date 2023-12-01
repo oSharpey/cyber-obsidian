@@ -103,13 +103,6 @@ Assets with unacceptable levels of risk are treated using one of five strategies
 
 | Cost | Benefit |
 | ---- | ------- |
-| - difficult to determine <br> - Items that affect the cost of a control or safeguard include:|  |
-• Items that affect the cost of a control or safeguard include:
-• Cost of development or
-acquisition
-• Training fees
-• Cost of implementation
-• Service costs
-• Cost of maintenance
-• Potential cost from the
-loss of the asset     |         |
+| - difficult to determine <br> - Items that affect the cost of a control or safeguard include: <br> - Cost of development or acquisition <br>- Training fees  <br> - Cost of implementation <br> - Service costs <br> - Cost of maintenance  <br> - Potential cost from the loss of the asset  | - the value to the organisation of using controls to prevent losses associated with a specific vulnerability <br> - determined by valuing the information asset or assets exposed by the vulnerability and then determining how much of that value is at risk and how much risk there is for the asset <br> - Annualised loss expectancy (ALE) |
+
+
