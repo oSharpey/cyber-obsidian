@@ -148,9 +148,10 @@ $$ SLE = asset value(AV) \times exposure factor(EF)$$
 - The **CBA** determines whether the benefit from a control alternative is worth the associated cost of implementing and maintaining the control
 - A **CBA** may be performed before implementing a control, or they can be performed after controls have been in place for a while
 
-$$ CBA = ALE(precontrol) - ALE(postcontrol) - ACS$$Where:
+$$ CBA = ALE(precontrol) - ALE(postcontrol) - ACS$$
+Where:
 ALE (precontrol) = ALE of the risk before the implementation of the control
 ALE (postcontrol) = ALE examined after the control has been in place for a period of time
-ACS = annualized cost of the safeguard
+ACS = annualized cost of the safeguard 
 
 
