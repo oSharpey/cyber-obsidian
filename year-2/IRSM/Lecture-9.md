@@ -7,9 +7,6 @@ For small/medium businesses RM can be overwhelming, aggregation can be used to m
 
 This is the grouping of assets, threats and their risks into more general categoires.
 
-
-
-
 # Types of Analysis Method
 
 - Quantitative
@@ -59,3 +56,17 @@ Attacker will be present in some form, except for environmental hazards, errors 
 
 # Deliverables
 ![[ra_deliverables.png]]
+
+
+# Risk evaluation and treatment
+Each organization must determine its risk appetite during risk evaluation.
+
+Assets with unacceptable levels of risk are treated using one of five strategies:
+- **Defence**: Preventing the exploitation of a vulnerability
+- **Transference**: Shifting risk to another entity 
+- **Mitigation**: Planning and prep to reduce the impact or potential consequences of an incident
+- **Acceptance**: Do nothing 
+- **Termination**
+
+## Mitigation Plan Example
+![[mit_plan_example.png]]
