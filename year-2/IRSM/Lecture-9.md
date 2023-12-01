@@ -94,3 +94,22 @@ Assets with unacceptable levels of risk are treated using one of five strategies
 - **An attacker’s potential gain is greater than the costs of attack**: Apply protections to increase the attacker’s cost or reduce the attacker’s gain by using technical or managerial controls
 - **A potential loss is substantial**: Apply design principles, architectural designs, and technical and nontechnical protections to limit the extent of the attack, thereby reducing the potential for loss
 
+*Each information threat/vulnerability/asset (TVA) triplet that was developed in the risk assessment should have a documented treatment strategy that clearly identifies any residual risk that remains after the proposed strategy has been executed*
+
+![[risk_treatment.png]]
+
+
+# Cost Benefit Analysis 
+
+| Cost | Benefit |
+| ---- | ------- |
+| - difficult to determine <br> - Items that affect the cost of a control or safeguard include:|  |
+• Items that affect the cost of a control or safeguard include:
+• Cost of development or
+acquisition
+• Training fees
+• Cost of implementation
+• Service costs
+• Cost of maintenance
+• Potential cost from the
+loss of the asset     |         |
