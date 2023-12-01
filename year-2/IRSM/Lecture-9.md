@@ -75,6 +75,11 @@ Assets with unacceptable levels of risk are treated using one of five strategies
 ## Managing the risk
 - Risk appetite is the quantity and nature of risk that organisations are willing to accept as they evaluate the trade-offs between perfect security and unlimited accessibility
 	- A reasoned approach balances the expense against the possible losses, if exploited
-- When vulnerabilities have been controlled to the degree possible, there is
-often remaining risk that has not been completely removed, shifted, or
-planned for— residual risk
+	- When vulnerabilities have been controlled to the degree possible, there is often remaining risk that has not been completely removed, shifted, or planned for— residual risk
+
+### Residual Risk
+- Often there is some remaining risk that has not been completely removed, shifted, or planned for
+- Residual risk persists even after safeguards are implemented
+
+![[residual_risk.png]]
+
