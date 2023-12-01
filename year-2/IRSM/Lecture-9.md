@@ -65,8 +65,16 @@ Assets with unacceptable levels of risk are treated using one of five strategies
 - **Defence**: Preventing the exploitation of a vulnerability
 - **Transference**: Shifting risk to another entity 
 - **Mitigation**: Planning and prep to reduce the impact or potential consequences of an incident
-- **Acceptance**: Do nothing 
-- **Termination**
+- **Acceptance**: Do nothing beyond current protections
+- **Termination**: Organisations intentional choice not to protect an asset
 
 ## Mitigation Plan Example
 ![[mit_plan_example.png]]
+
+
+## Managing the risk
+- Risk appetite is the quantity and nature of risk that organisations are willing to accept as they evaluate the trade-offs between perfect security and unlimited accessibility
+	- A reasoned approach balances the expense against the possible losses, if exploited
+- When vulnerabilities have been controlled to the degree possible, there is
+often remaining risk that has not been completely removed, shifted, or
+planned for— residual risk
