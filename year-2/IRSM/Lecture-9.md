@@ -83,3 +83,14 @@ Assets with unacceptable levels of risk are treated using one of five strategies
 
 ![[residual_risk.png]]
 
+### Risk Handling
+- The goal is to bring the risk in line with an organisation’s risk appetite, not zero
+- If decision makers and the authority groups decide to leave residual risk in place, then the information security program has accomplished its primary goal
+![[risk_handling.png]]
+
+### Risk Treatment
+- **A vulnerability exists in an important asset**: Implement security controls to reduce the likelihood of a vulnerability being exploited
+- **A vulnerability can be exploited**: Apply layered protections, architectural designs, and administrative controls to minimize the risk or prevent the occurrence of an attack
+- **An attacker’s potential gain is greater than the costs of attack**: Apply protections to increase the attacker’s cost or reduce the attacker’s gain by using technical or managerial controls
+- **A potential loss is substantial**: Apply design principles, architectural designs, and technical and nontechnical protections to limit the extent of the attack, thereby reducing the potential for loss
+

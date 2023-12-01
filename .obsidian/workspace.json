@@ -102,7 +102,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -224,8 +225,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -238,8 +238,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e13b68033fa5bee4",
+  "active": "708c540d16464218",
   "lastOpenFiles": [
+    "year-2/images-y2/risk_handling.png",
     "year-2/images-y2/residual_risk.png",
     "year-2/images-y2/mit_plan_example.png",
     "year-2/images-y2/ra_deliverables.png",
@@ -257,7 +258,6 @@
     "year-2/HBCS/Week-5.md",
     "year-2/IRSM/Lecture-8.md",
     "year-2/images-y2/assessthreats.png",
-    "year-2/images-y2/threats.png",
     "year-2/HBCS/CW1.md",
     "year-1/NCCD/osi-7-layer-model.md",
     "year-1/NCCD/firewalls.md",
