@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-2/HBCS/Reading-Summaries.md",
+                "file": "year-2/IRSM/Lecture-9.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-2/HBCS/Reading-Summaries.md",
+                "file": "year-2/IRSM/Lecture-9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-2/HBCS/Reading-Summaries.md",
+                "file": "year-2/IRSM/Lecture-9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-2/HBCS/Reading-Summaries.md"
+                "file": "year-2/IRSM/Lecture-9.md"
               }
             }
           },
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-2/HBCS/Reading-Summaries.md",
+                "file": "year-2/IRSM/Lecture-9.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -240,6 +240,12 @@
   },
   "active": "e13b68033fa5bee4",
   "lastOpenFiles": [
+    "year-2/images-y2/risk_calc_example.png",
+    "year-2/images-y2/likelihood_est.png",
+    "year-2/images-y2/quant_example.png",
+    "year-2/images-y2/anal_methods.png",
+    "year-2/HBCS/Reading-Summaries.md",
+    "year-2/IRSM/Lecture-9.md",
     "year-2/HBCS/Week-9.md",
     "symbols.md",
     "year-2/HBCS/Week-3.md",
@@ -251,7 +257,6 @@
     "Pasted image 20231124104737.png",
     "year-2/images-y2/assets.png",
     "year-2/HBCS/CW1.md",
-    "year-2/HBCS/Reading-Summaries.md",
     "year-1/NCCD/osi-7-layer-model.md",
     "year-1/NCCD/firewalls.md",
     "year-1/NCCD/dns.md",
@@ -263,10 +268,7 @@
     "year-2/IRSM/Lecture-5.md",
     "year-2/images-y2/octave.png",
     "year-2/images-y2/nistframework.png",
-    "year-2/images-y2/riskmanagementframework.png",
     "year-2/PLCS/HENRYYYYYYY.md",
-    "year-2/images-y2/iso31000.png",
-    "Pasted image 20231103105550.png",
     "year-2/HBCS/Week-1.md",
     "year-2/IRSM/Lecture-3.md",
     "year-1/CSAO/0x0000/registers.md",
@@ -275,8 +277,6 @@
     "year-1/CSAO/0x0000/csao-tutorial-0x0000.pdf",
     "year-1/CSAO/0x0003/assembly-program-structure.md",
     "year-1/CSAO/0x0003/types-of-mov-instructions.md",
-    "year-1/CSAO/0x0002/processes-in-memory.md",
-    "year-1/CSAO/0x0002/layout-of-assembly-program.md",
     "year-2/IM",
     "year-2/IRSM",
     "year-2/ISS",
