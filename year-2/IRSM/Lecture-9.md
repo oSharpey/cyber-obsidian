@@ -134,6 +134,23 @@ Cost avoidance is the money saved by using the defence strategy via the implemen
 ## Single loss expectancy
 - Estimating the likelihood of an attack based on an annualised rate of occurrence and the impact of an attack based on loss expectancy
 - Considers the value of the asset and the expected percentage of loss that would occur from a particular attack
-- **Single loss expectancy (SLE) = the calculated value associated with the most likely loss from a single occurrence of a specific attack
-• Exposure factor (EF) = the percentage loss that would occur from a given
-vulnerability being exploited – usually estimated
+- **Single loss expectancy (SLE)** = the calculated value associated with the most likely loss from a single occurrence of a specific attack
+- **Exposure factor (EF)** = the percentage loss that would occur from a given vulnerability being exploited – usually estimated
+
+$$ SLE = asset value(AV) \times exposure factor(EF)$$
+
+## Annualised rate of occurrence (ARO)
+- The probability of a threat occurring is depicted as a table that indicates how frequently an attack from each threat type is likely to occur within a given time frame
+	- indicates how often you expect a specific type of attack to occur
+
+## Asset Valuation - Annualised loss expectancy
+- Calculate the overall loss potential per risk expressed as an **annualised loss expectancy (ALE)** using the previous values for the **ARO** and **SLE**
+- The **CBA** determines whether the benefit from a control alternative is worth the associated cost of implementing and maintaining the control
+- A **CBA** may be performed before implementing a control, or they can be performed after controls have been in place for a while
+
+$$ CBA = ALE(precontrol) - ALE(postcontrol) - ACS$$Where:
+ALE (precontrol) = ALE of the risk before the implementation of the control
+ALE (postcontrol) = ALE examined after the control has been in place for a period of time
+ACS = annualized cost of the safeguard
+
+
