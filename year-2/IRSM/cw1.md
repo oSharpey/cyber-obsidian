@@ -4,7 +4,7 @@
 
 **Microsoft Server 2022 (build 10.0.20348.1787):**
 
-- **Active Directory:** Active Directory is a critical component of many IT infrastructures, and it is therefore a common target for attackers. Some of the most common Active Directory vulnerabilities include:
+- **Active Directory:** Active Directory is a critical component of many IT infrastructures, and it is therefore a common target for attackers. Some of the most common Active Direcoh thtory vulnerabilities include:
 
 > - **SambaCry:** This vulnerability allowed attackers to gain remote code execution on systems running Samba, a software package that provides file and printer sharing services for Linux and Unix systems.
 > - **CVE-2023-1675:** This vulnerability allowed attackers to gain remote code execution on systems running Windows Server 2022.
