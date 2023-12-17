@@ -54,3 +54,7 @@ To mitigate these risks, it is important to implement a comprehensive security s
 - **Use multi-factor authentication:** Multi-factor authentication adds an extra layer of security by requiring users to provide additional verification, such as a code from their phone, in addition to their password.
 
 By implementing these measures, you can help to protect your organization from a variety of security risks.
+
+
+
+As the company is looking to work on UK Government contracts it is a priority that the risk assessment framework allows for the company to be compliant with all applicable government regulations, specifically Cyber Essentials Plus which is needed for 
