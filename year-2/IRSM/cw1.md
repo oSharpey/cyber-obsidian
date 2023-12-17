@@ -57,4 +57,4 @@ By implementing these measures, you can help to protect your organization from a
 
 
 
-As the company is looking to work on UK Government contracts it is a priority that the risk assessment framework allows for the company to be compliant with all applicable government regulations, specifically Cyber Essentials Plus which is needed for 
+As the company is looking to work on UK Government contracts it is a priority that the risk assessment framework allows for the company to be compliant with all applicable government regulations, specifically Cyber Essentials and Cyber Essentials Plus which is needed for a company to work with certain UK Government contracts. 
