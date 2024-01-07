@@ -49,3 +49,8 @@ Henry situtation
 lack of communication lead to conflicting information
 lots of differeing opinons
 had to have meeting
+discuss the options
+ended up making a plan to help integrate but also keep them separate
+
+Organise an event
+took a step back and looked at the problem as a 
