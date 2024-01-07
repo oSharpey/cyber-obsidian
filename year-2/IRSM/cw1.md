@@ -62,3 +62,7 @@ As the company is looking to work on UK Government contracts it is a priority th
 The UK Government also provides an equivalent to NISTs CSF in the Minimum Cyber Security Standard (MCSS), however NISTs framework was still chosen due to it being more mature and widely recognised. 
 
 The combination of the NIST CSF and NIST SP 800-30 allows for continuous and dynamic identification and treatment of risks to keep compliance with Cyber Essentials needed to work on Government contracts, it allows for ongoing resilience in the ever evolving cyber landscape. 
+
+
+
+i have applied for the role because of my passion for cyber security, especially the technical side of the field. I enjoy reverse engineering and threat intelligence and the role would allow me to grow and hone my skills in these areas. It will also give my the unique opportunity to work with the team of experts at BAE and absorb as much knowledge as i can from them

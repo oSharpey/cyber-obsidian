@@ -43,3 +43,9 @@ Recommendations
 - Have the password manager session automatically log out after a specific amount of time to reduce the risk of password being exposed by leaving a device unlocked  
 - Have a more prominent password health section to warn the user of weak master passwords and prompt the user to change it
 - Educate users on phishing and provide phishing warnings to prevent autofilling on compromised websites
+
+
+Henry situtation
+lack of communication lead to conflicting information
+lots of differeing opinons
+had to have meeting
