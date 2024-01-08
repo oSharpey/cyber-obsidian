@@ -54,3 +54,7 @@ ended up making a plan to help integrate but also keep them separate
 
 Organise an event
 took a step back and looked at the problem as a 
+
+Challengeing courseworkds
+again broke it down to give motivation
+priotites important task first
