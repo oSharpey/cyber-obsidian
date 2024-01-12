@@ -44,6 +44,18 @@
             }
           },
           {
+            "id": "4a24f0456717f8fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "year-2/CCSE/cw1/allcode.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "312fce46ac2e5bba",
             "type": "leaf",
             "state": {
@@ -56,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -130,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-2/IRSM/Lecture-9.md",
+                "file": "year-2/CCSE/cw1/allcode.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-2/IRSM/Lecture-9.md",
+                "file": "year-2/CCSE/cw1/allcode.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-2/IRSM/Lecture-9.md"
+                "file": "year-2/CCSE/cw1/allcode.md"
               }
             }
           },
@@ -195,7 +207,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-2/IRSM/Lecture-9.md",
+                "file": "year-2/CCSE/cw1/allcode.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -250,10 +262,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1375560b7512c057",
+  "active": "4a24f0456717f8fd",
   "lastOpenFiles": [
-    "year-2/IRSM/Lecture-8.md",
+    "year-2/CCSE/cw1/book-hotel2.png",
+    "year-2/CCSE/cw1/allcode.md",
     "year-2/IRSM/Lecture-9.md",
+    "year-2/IRSM/Lecture-8.md",
     "year-2/HBCS/T2-W1.md",
     "year-2/HBCS/Week-9.md",
     "year-2/HBCS/Week-5.md",
@@ -286,9 +300,7 @@
     "year-2/IRSM/Lecture-3.md",
     "year-1/CSAO/0x0000/registers.md",
     "year-1/CSAO/0x0001/machine-level-rep-of-data.md",
-    "year-1/CSAO/0x0001/debuggers.md",
     "year-1/CSAO/0x0000/csao-tutorial-0x0000.pdf",
-    "year-1/CSAO/0x0003/assembly-program-structure.md",
     "year-2/IM",
     "year-2/IRSM",
     "year-2/ISS",
