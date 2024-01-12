@@ -3951,4 +3951,360 @@ namespace BlazorHotelBooking.Server.Controllers
 ```
 
 
+#### BlazorHotelBooking/Server/Controllers/PaymentController.cs
+```c#
+using BlazorHotelBooking.Server.Data;
+using BlazorHotelBooking.Shared;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace BlazorHotelBooking.Server.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class PaymentController : ControllerBase
+    {
+
+        private readonly DataContext _context;
+
+        public PaymentController(DataContext context)
+        {
+            _context = context;
+        }
+
+        [HttpGet]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<List<Payments>>> GetAllPayments()
+        {
+            List<Payments> list = await _context.Payments.OrderByDescending(x => x.PaymentDate).ToListAsync();
+
+            return Ok(list);
+        }
+
+        [HttpGet("{id}")]
+        [Authorize]
+        public async Task<ActionResult<List<Payments>>> GetAllPaymentsByUserId(string id)
+        {
+            List<Payments> list = await _context.Payments.Where(x => x.UserId == id).OrderByDescending(x => x.PaymentDate).ToListAsync();
+
+            return Ok(list);
+        }
+    }
+}
+```
+
+#### BlazorHotelBooking/Server/Controllers/RegisterController.cs
+```c#
+using BlazorHotelBooking.Server.Models;
+using BlazorHotelBooking.Shared.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+
+namespace BlazorHotelBooking.Server.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class RegisterController : ControllerBase
+    {
+        private readonly UserManager<ApplicationUser> _userManager;
+
+        public RegisterController(UserManager<ApplicationUser> userManager)
+        {
+            _userManager = userManager;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Register([FromBody] RegisterModel model)
+        {
+            ApplicationUser user = new ApplicationUser
+            {
+                UserName = model.Email,
+                Email = model.Email,
+                PassportNumber = model.PassportNumber,
+                PhoneNumber = model.PhoneNumber
+            };
+
+            IdentityResult result = await _userManager.CreateAsync(user, model.Password);
+
+            if (!result.Succeeded)
+            {
+                IEnumerable<string> errors = result.Errors.Select(e => e.Description);
+                return Ok(new RegisterResult { Successful = false, Errors = errors });
+            }
+
+            await _userManager.AddToRoleAsync(user, "User");
+            //if (user.Email == "admin@localhost")
+            //{
+            //    await _userManager.AddToRoleAsync(user, "Admin");
+            //    return Ok(new RegisterResult { Successful = true });
+            //}
+
+            return Ok(new RegisterResult { Successful = true });
+        }
+    }
+}
+```
+
+#### BlazorHotelBooking/Server/Controllers/TourController.cs
+```c#
+using BlazorHotelBooking.Server.Data;
+using BlazorHotelBooking.Shared;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+
+namespace BlazorHotelBooking.Server.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    [Authorize(Roles = "User")]
+
+    public class TourController : ControllerBase
+    {
+        private readonly DataContext _context;
+
+        public TourController(DataContext context)
+        {
+            _context = context;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<Tour>>> GetAllTours()
+        {
+            List<Tour> list = await _context.Tours.ToListAsync();
+
+            return Ok(list);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Tour>> GetTour(int id)
+        {
+            Tour? dbtour = await _context.Tours.FindAsync(id);
+
+            if (dbtour == null)
+            {
+                return NotFound("This tour does not exist");
+            }
+
+            return Ok(dbtour);
+        }
+    }
+}
+```
+
+
+#### BlazorHotelBooking/Server/Data/DataContext.cs
+```c#
+using BlazorHotelBooking.Server.Models;
+using BlazorHotelBooking.Shared;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+
+namespace BlazorHotelBooking.Server.Data
+{
+    public class DataContext : IdentityDbContext<ApplicationUser>
+    {
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
+        {
+        }
+        public DbSet<Hotel> Hotels { get; set; }
+        public DbSet<HotelBooking> HotelBookings => Set<HotelBooking>();
+        public DbSet<TourBooking> TourBookings => Set<TourBooking>();
+        public DbSet<PackageBooking> PackageBookings => Set<PackageBooking>();
+        public DbSet<Tour> Tours { get; set; }
+        public DbSet<Payments> Payments => Set<Payments>();
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<IdentityRole>().HasData(new IdentityRole
+            {
+                Name = "User",
+                NormalizedName = "USER",
+                Id = "1",
+                ConcurrencyStamp = Guid.NewGuid().ToString()
+            });
+
+
+            modelBuilder.Entity<IdentityRole>().HasData(new IdentityRole
+            {
+                Name = "Admin",
+                NormalizedName = "ADMIN",
+                Id = "2",
+                ConcurrencyStamp = Guid.NewGuid().ToString()
+            });
+
+            modelBuilder.Entity<Hotel>().HasData(
+                 new Hotel
+                 {
+                     Id = 1,
+                     Name = "Hilton London Hotel",
+                     SBPrice = 375,
+                     DBPrice = 775,
+                     FamPrice = 950,
+                     Description = "Experience luxury in the heart of the city, with sophisticated rooms and a stone's throw from London's major attractions and shopping districts."
+                 },
+
+                new Hotel
+                {
+                    Id = 2,
+                    Name = "London Marriott Hotel",
+                    SBPrice = 300,
+                    DBPrice = 500,
+                    FamPrice = 900,
+                    Description = "Indulge in elegance and comfort at this centrally located hotel, featuring top-notch amenities and easy access to London's historical landmarks"
+                },
+
+                new Hotel
+                {
+                    Id = 3,
+                    Name = "Travelodge Brighton Seafront",
+                    SBPrice = 80,
+                    DBPrice = 120,
+                    FamPrice = 150,
+                    Description = " Enjoy affordable comfort with stunning seafront views, ideally situated for exploring Brighton’s vibrant beach and pier attractions."
+                },
+
+                new Hotel
+                {
+                    Id = 4,
+                    Name = "Kings Hotel Brighton",
+                    SBPrice = 180,
+                    DBPrice = 400,
+                    FamPrice = 520,
+                    Description = "A charming, budget-friendly hotel on Brighton’s seafront, offering cozy accommodations with easy access to the city's lively nightlife and cultural sites"
+                },
+
+                new Hotel
+                {
+                    Id = 5,
+                    Name = "Leonardo Hotel Brighton",
+                    SBPrice = 180,
+                    DBPrice = 400,
+                    FamPrice = 520,
+                    Description = "Modern and stylish, this hotel provides a comfortable base to discover Brighton, conveniently close to the beach and the buzzing city center."
+                },
+
+                new Hotel
+                {
+                    Id = 6,
+                    Name = "Nevis Bank Inn, Fort William",
+                    SBPrice = 90,
+                    DBPrice = 100,
+                    FamPrice = 155,
+                    Description = "Nestled in the Scottish Highlands, this inn offers a serene getaway with scenic views, perfect for outdoor enthusiasts and nature lovers"
+                }
+            );
+
+            modelBuilder.Entity<Tour>().HasData(
+                new Tour
+                {
+                    Id = 1,
+                    Name = "Real Britain",
+                    Cost = 1200,
+                    DurationInDays = 6,
+                    MaxNumberOfGuests = 30,
+                    Description = "Dive into charming villages, rolling hills, and iconic castles in this 6-day escape to authentic Britain"
+                },
+                new Tour
+                {
+                    Id = 2,
+                    Name = "Britain and Ireland Explorer",
+                    Cost = 2000,
+                    DurationInDays = 16,
+                    MaxNumberOfGuests = 40,
+                    Description = "Journey through 16 days of cityscapes, dramatic coasts, and Celtic charm. Uncover the best of Britain and Ireland."
+                },
+                new Tour
+                {
+                    Id = 3,
+                    Name = "Best of Britain",
+                    Cost = 2900,
+                    DurationInDays = 12,
+                    MaxNumberOfGuests = 30,
+                    Description = "Indulge in 12 days of luxury. Explore stately homes, savor Michelin stars, and discover hidden gems of Britain's finest"
+                }
+            );
+        }
+    }
+}
+```
+
+
+#### BlazorHotelBooking/Server/Models/ApplicationUser.cs
+```c#
+using Microsoft.AspNetCore.Identity;
+
+namespace BlazorHotelBooking.Server.Models
+{
+    public class ApplicationUser : IdentityUser
+    {
+        public string PassportNumber { get; set; }
+    }
+}
+```
+
+
+#### BlazorHotelBooking/Server/Services/CheckLatePayementService.cs
+```c#
+using BlazorHotelBooking.Server.Data;
+using Sgbj.Cron;
+
+namespace BlazorHotelBooking.Server.Services
+{
+    // This service is used to check if a booking has been paid in full or not by a due date an cancel it if it has not been paid in full
+    public class CheckLatePayementService : BackgroundService
+    {
+        private readonly DataContext _context;
+        private const int generalDelay = 1 * 10 * 1000;
+
+        public CheckLatePayementService(IServiceScopeFactory factory)
+        {
+            _context = factory.CreateScope().ServiceProvider.GetRequiredService<DataContext>();
+        }
+
+        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+        {
+            // Run every day at midnight
+            using CronTimer timer = new CronTimer("0 0 * * *", TimeZoneInfo.Local);
+
+            while (await timer.WaitForNextTickAsync(stoppingToken))
+            {
+                List<Shared.HotelBooking> hotelbookings = _context.HotelBookings.Where(x => x.PaidInfull == false & x.IsCancelled == false & x.PaymentDueDate < DateTime.Now).ToList();
+                List<Shared.TourBooking> tourbookings = _context.TourBookings.Where(x => x.PaidInfull == false & x.IsCancelled == false & x.PaymentDueDate < DateTime.Now).ToList();
+                List<Shared.PackageBooking> packageBookings = _context.PackageBookings.Where(x => x.PaidInfull == false & x.IsCancelled == false & x.PaymentDueDate < DateTime.Now).ToList();
+
+                foreach (Shared.HotelBooking? booking in hotelbookings)
+                {
+                    Console.WriteLine($"{booking.Id} has been cancelled");
+                    booking.IsCancelled = true;
+                    _context.HotelBookings.Update(booking);
+
+                }
+
+                foreach (Shared.TourBooking? booking in tourbookings)
+                {
+                    Console.WriteLine($"{booking.Id} has been cancelled");
+                    booking.IsCancelled = true;
+                    _context.TourBookings.Update(booking);
+                }
+
+                foreach (Shared.PackageBooking? booking in packageBookings)
+                {
+                    Console.WriteLine($"{booking.Id} has been cancelled");
+                    booking.IsCancelled = true;
+                    _context.PackageBookings.Update(booking);
+                }
+
+                await _context.SaveChangesAsync();
+            }
+        }
+    }
+}
+```
+
 #### 
