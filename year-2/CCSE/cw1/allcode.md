@@ -4307,4 +4307,186 @@ namespace BlazorHotelBooking.Server.Services
 }
 ```
 
-#### 
+#### BlazorHotelBooking/Server/Program.cs
+```c#
+using BlazorHotelBooking.Server.Data;
+using BlazorHotelBooking.Server.Models;
+using BlazorHotelBooking.Server.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+
+builder.Services.AddControllersWithViews();
+builder.Services.AddHostedService<CheckLatePayementService>();
+builder.Services.AddRazorPages();
+builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<DataContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
+builder.Services.AddDefaultIdentity<ApplicationUser>()
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<DataContext>();
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        .AddJwtBearer(options =>
+        {
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateLifetime = true,
+                ValidateIssuerSigningKey = true,
+                ValidIssuer = builder.Configuration["JwtIssuer"],
+                ValidAudience = builder.Configuration["JwtAudience"],
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtKey"]!))
+            };
+        });
+
+
+WebApplication app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseWebAssemblyDebugging();
+}
+else
+{
+    app.UseExceptionHandler("/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+
+app.UseBlazorFrameworkFiles();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.UseSwagger();
+app.UseSwaggerUI();
+
+app.MapRazorPages();
+app.MapControllers();
+app.MapFallbackToFile("index.html");
+
+app.Run();
+```
+
+
+#### BlazorHotelBooking/Shared/Models/HotelBookingViewModel.cs
+```c#
+namespace BlazorHotelBooking.Shared.Models
+{
+    public class HotelBookingViewModel
+    {
+        public string bookingId { get; set; }
+        public string hotelName { get; set; }
+        public string RoomType { get; set; }
+        public DateTime CheckIn { get; set; }
+        public DateTime CheckOut { get; set; }
+        public int NumberOfNights { get; set; }
+        public decimal TotalPrice { get; set; }
+        public decimal DepositAmountPaid { get; set; }
+        public DateTime BookingDate { get; set; }
+        public bool paidInfull { get; set; }
+        public bool IsCancelled { get; set; }
+        public DateTime PaymentDueDate { get; set; }
+    }
+}
+```
+
+#### BlazorHotelBooking/Shared/Models/LoginModel.cs
+```c#
+using System.ComponentModel.DataAnnotations;
+
+namespace BlazorHotelBooking.Shared.Models
+{
+    public class LoginModel
+    {
+        [Required, EmailAddress, Display(Name = "Email")]
+        public string? Email { get; set; }
+        [Required, DataType(DataType.Password), Display(Name = "Password")]
+        public string? Password { get; set; }
+    }
+}
+```
+
+#### BlazorHotelBooking/Shared/Models/LoginResult.cs
+```c#
+﻿namespace BlazorHotelBooking.Shared.Models
+{
+    public class LoginResult
+    {
+        public bool Successful { get; set; }
+        public string? Error { get; set; }
+        public string? Token { get; set; }
+    }
+}
+```
+
+#### BlazorHotelBooking/Shared/Models/PackageBookingViewModel.cs
+```c#
+namespace BlazorHotelBooking.Shared.Models
+{
+    public class PackageBookingViewModel
+    {
+        public string bookingId { get; set; }
+        public string TourName { get; set; }
+        public DateTime CommencementDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public int NumberOfGuests { get; set; }
+        public string hotelName { get; set; }
+        public string RoomType { get; set; }
+        public DateTime CheckIn { get; set; }
+        public DateTime CheckOut { get; set; }
+        public int NumberOfNights { get; set; }
+        public decimal TotalPrice { get; set; }
+        public decimal DepositAmountPaid { get; set; }
+        public DateTime BookingDate { get; set; }
+        public bool paidInfull { get; set; }
+        public bool IsCancelled { get; set; }
+        public DateTime PaymentDueDate { get; set; }
+    }
+}
+```
+
+#### BlazorHotelBooking/Shared/Models/RegisterModel.cs
+```c#
+using System.ComponentModel.DataAnnotations;
+
+namespace BlazorHotelBooking.Shared.Models
+{
+    public class RegisterModel
+    {
+        [Required, EmailAddress, Display(Name = "Email")]
+        public string? Email { get; set; }
+
+        [Required, DataType(DataType.Password), Display(Name = "Password"),
+            StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        public string? Password { get; set; }
+
+        [DataType(DataType.Password), Display(Name = "Confirm Password"),
+            Compare("Password", ErrorMessage = "Passwords Do Not Match")]
+        public string? ConfirmPassword { get; set; }
+
+        [Required, Display(Name = "Passport Number")]
+        public string? PassportNumber { get; set; }
+        [Required, Display(Name = "Phone Number")]
+        public string? PhoneNumber { get; set; }
+    }
+}
+```
+
