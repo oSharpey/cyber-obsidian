@@ -4490,3 +4490,187 @@ namespace BlazorHotelBooking.Shared.Models
 }
 ```
 
+#### BlazorHotelBooking/Shared/Models/RegisterResult.cs
+```c#
+namespace BlazorHotelBooking.Shared.Models
+{
+    public class RegisterResult
+    {
+        public bool Successful { get; set; }
+        public IEnumerable<string>? Errors { get; set; }
+    }
+}
+```
+
+#### BlazorHotelBooking/Shared/Models/TourBookingViewModel.cs
+```c#
+namespace BlazorHotelBooking.Shared.Models
+{
+    public class TourBookingViewModel
+    {
+        public string bookingId { get; set; }
+        public string TourName { get; set; }
+        public DateTime CommencementDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public int NumberOfGuests { get; set; }
+        public decimal TotalPrice { get; set; }
+        public decimal DepositAmountPaid { get; set; }
+        public DateTime BookingDate { get; set; }
+        public bool paidInfull { get; set; }
+        public bool IsCancelled { get; set; }
+        public DateTime PaymentDueDate { get; set; }
+    }
+}
+```
+
+#### BlazorHotelBooking/Shared/Hotel.cs
+```c#
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BlazorHotelBooking.Shared
+{
+    public class Hotel
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        [Column(TypeName = "decimal(18,2")]
+        public decimal SBPrice { get; set; }
+        [Column(TypeName = "decimal(18,2")]
+        public decimal DBPrice { get; set; }
+        [Column(TypeName = "decimal(18,2")]
+        public decimal FamPrice { get; set; }
+        public string? Description { get; set; }
+    }
+}
+```
+
+#### BlazorHotelBooking/Shared/HotelBooking.cs
+```c#
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BlazorHotelBooking.Shared
+{
+    public class HotelBooking
+    {
+        [Key]
+        public string Id { get; set; } = Guid.NewGuid().ToString();
+        public int HotelId { get; set; }
+        [Required(ErrorMessage = "Room Type required.")]
+        public string RoomType { get; set; }
+        [Required(ErrorMessage = "Check-In Date required.")]
+        public DateTime CheckIn { get; set; } = DateTime.Now.Date.AddMonths(2);
+        public DateTime CheckOut { get; set; }
+        [Required(ErrorMessage = "Number of Nigts required.")]
+        public int NumberOfNights { get; set; }
+        [Column(TypeName = "decimal(18,2")]
+        public decimal TotalPrice { get; set; }
+        [Column(TypeName = "decimal(18,2")]
+        public decimal DepositAmountPaid { get; set; }
+        public string UserId { get; set; }
+        public DateTime BookingDate { get; set; } = DateTime.Now.Date;
+        public bool PaidInfull { get; set; } = false;
+        public bool IsCancelled { get; set; } = false;
+        public DateTime PaymentDueDate { get; set; }
+    }
+}
+```
+
+
+#### BlazorHotelBooking/Shared/PackageBooking.cs
+```c#
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BlazorHotelBooking.Shared
+{
+    public class PackageBooking
+    {
+        public string Id { get; set; } = Guid.NewGuid().ToString();
+        public int HotelId { get; set; }
+        public string RoomType { get; set; }
+        public DateTime HotelCheckIn { get; set; } = DateTime.Now.Date.AddMonths(2);
+        public DateTime HotelCheckOut { get; set; }
+        public int NumberOfNights { get; set; }
+        public int TourId { get; set; }
+        [Required(ErrorMessage = "Commencement Date required.")]
+        public DateTime TourStartDate { get; set; } = DateTime.Now.Date.AddMonths(2);
+        public DateTime TourEndDate { get; set; }
+        [Column(TypeName = "decimal(18,2")]
+        public decimal TotalPrice { get; set; }
+        public int NumberOfPeopleOnTour { get; set; }
+        [Column(TypeName = "decimal(18,2")]
+        public decimal DepositAmountPaid { get; set; }
+        public string UserId { get; set; }
+        public DateTime BookingDate { get; set; } = DateTime.Now.Date;
+        public bool PaidInfull { get; set; } = false;
+        public bool IsCancelled { get; set; } = false;
+        public DateTime PaymentDueDate { get; set; }
+    }
+}
+```
+
+#### BlazorHotelBooking/Shared/Payments.cs
+```c#
+namespace BlazorHotelBooking.Shared
+{
+    public class Payments
+    {
+        public string Id { get; set; } = Guid.NewGuid().ToString();
+        public string UserId { get; set; }
+        public string bookingId { get; set; }
+        public string bookingType { get; set; }
+        public string paymentType { get; set; }
+        public DateTime PaymentDate { get; set; } = DateTime.Now;
+        public decimal AmountPaid { get; set; }
+    }
+}
+```
+
+#### BlazorHotelBooking/Shared/Tour.cs
+```c#
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BlazorHotelBooking.Shared
+{
+    public class Tour
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        [Column(TypeName = "decimal(18,2")]
+        public decimal Cost { get; set; }
+        public int DurationInDays { get; set; }
+        public int MaxNumberOfGuests { get; set; }
+        public string? Description { get; set; }
+    }
+}
+```
+
+#### BlazorHotelBooking/Shared/TourBooking.cs
+```c#
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BlazorHotelBooking.Shared
+{
+    public class TourBooking
+    {
+        [Key]
+        public string Id { get; set; } = Guid.NewGuid().ToString();
+        public int TourId { get; set; }
+        [Required(ErrorMessage = "Commencement Date required.")]
+        public DateTime CommencementDate { get; set; } = DateTime.Now.Date.AddMonths(2);
+        public DateTime EndDate { get; set; }
+        [Column(TypeName = "decimal(18,2")]
+        public decimal TotalPrice { get; set; }
+        [Column(TypeName = "decimal(18,2")]
+        public decimal DepositAmountPaid { get; set; }
+        public int NumberOfPeople { get; set; }
+        public string UserId { get; set; }
+        public DateTime BookingDate { get; set; } = DateTime.Now.Date;
+        public bool PaidInfull { get; set; } = false;
+        public bool IsCancelled { get; set; } = false;
+        public DateTime PaymentDueDate { get; set; }
+    }
+}
+```
