@@ -2362,3 +2362,620 @@ else
 ```
 
 #### BlazorHotelBooking/Client/Pages/PaymentPage.razor
+```c#
+@page "/payments"
+@using BlazorHotelBooking.Shared
+@using Microsoft.AspNetCore.Authorization
+@using System.Security.Claims
+@inject HttpClient http
+@inject NavigationManager NavigationManager
+@attribute [Authorize]
+
+@if (payments is null)
+{
+    <span>Loading Payments…</span>
+}
+else
+{
+    <h5>Payments</h5>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Booking ID</th>
+                <th>Booking Type</th>
+                <th>Payment Type</th>
+                <th>Payment Date</th>
+                <th>Amount Paid</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (var p in payments)
+            {
+                <tr>
+                    <td width="5%">@p.bookingId</td>
+                    <td width="5%">@p.bookingType</td>
+                    <td width="5%">@p.paymentType</td>
+                    <td width="5%">@p.PaymentDate</td>
+                    <td width="5%">@p.AmountPaid</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    List<Payments> payments = new List<Payments>();
+
+    [CascadingParameter]
+    private Task<AuthenticationState>? authenticationState { get; set; }
+    private string userId;
+
+    protected override async Task OnInitializedAsync()
+    {
+
+
+        var authState = await authenticationState;
+        var user = authState?.User;
+        userId = user?.FindFirst(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+
+
+        var result = await http.GetFromJsonAsync<List<Payments>>($"/api/Payment/{userId}");
+        if (result != null)
+        {
+            payments = result;
+        }
+    }
+}
+```
+
+#### BlazorHotelBooking/Client/Pages/Register.razor
+```c#
+@page "/register"
+@using BlazorHotelBooking.Client.Service;
+@using BlazorHotelBooking.Shared.Models;
+@inject IAuthService AuthService
+@inject NavigationManager NavigationManager
+
+<h1>Register</h1>
+
+@if (ShowErrors)
+{
+    <div class="alert alert-danger" role="alert">
+        <ul>
+            @foreach (var error in Errors)
+            {
+                <li>@error</li>
+            }
+        </ul>
+    </div>
+}
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Please Enter Registration Details</h5>
+        <EditForm Model="registerModel" OnValidSubmit="HandleRegistration">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <div class="form-group mt-2">
+                <label for="email">Email address</label>
+                <InputText Id="email" class="form-control" @bind-Value="registerModel.Email" />
+                <ValidationMessage For="@(() => registerModel.Email)" />
+            </div>
+            <div class="form-group mt-2">
+                <label for="passportnum">Passport Number</label>
+                <InputText Id="passportnum" class="form-control" @bind-Value="registerModel.PassportNumber" />
+                <ValidationMessage For="@(() => registerModel.PassportNumber)" />
+            </div>
+            <div class="form-group mt-2">
+                <label for="phonenum">Contact Number</label>
+                <InputText Id="passportnum" class="form-control" @bind-Value="registerModel.PhoneNumber" />
+                <ValidationMessage For="@(() => registerModel.PhoneNumber)" />
+            </div>
+            <div class="form-group mt-2">
+                <label for="password">Password</label>
+                <InputText Id="password" type="password" class="form-control" @bind-Value="registerModel.Password" />
+                <ValidationMessage For="@(() => registerModel.Password)" />
+            </div>
+            <div class="form-group mt-2">
+                <label for="password">Confirm Password</label>
+                <InputText Id="password" type="password" class="form-control" @bind-Value="registerModel.ConfirmPassword" />
+                <ValidationMessage For="@(() => registerModel.ConfirmPassword)" />
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Register</button>
+        </EditForm>
+    </div>
+</div>
+
+
+@code {
+
+    private RegisterModel registerModel = new RegisterModel();
+    private bool ShowErrors;
+    private IEnumerable<string>? Errors;
+
+    private async Task HandleRegistration()
+    {
+        ShowErrors = false;
+
+        var result = await AuthService.Register(registerModel);
+        if (result.Successful)
+        {
+            NavigationManager.NavigateTo("/login");
+        }
+        else
+        {
+            ShowErrors = true;
+            Errors = result.Errors;
+        }
+    }
+}
+```
+
+
+#### BlazorHotelBooking/Client/Pages/TourDetails.razor
+```c#
+@page "/tours/{id}"
+@using BlazorHotelBooking.Shared;
+@using Microsoft.AspNetCore.Authorization;
+@using Microsoft.AspNetCore.Http;
+@using Syncfusion.Blazor.DropDowns;
+@using System.ComponentModel.DataAnnotations;
+@using System.Security.Claims
+@inject IHttpContextAccessor httpContextAccessor
+@inject HttpClient http
+@inject NavigationManager NavigationManager
+@attribute [Authorize]
+
+
+<div class="media">
+    <div class="media-body">
+        <h2 class="mb-0">@selectedTour.Name</h2>
+        <p>@selectedTour.Description</p>
+        <p>Max Number of Guests: @selectedTour.MaxNumberOfGuests</p>
+        <h4 class="price">
+            @selectedTour.Cost
+        </h4>
+        <button @onclick="ShowBookingForm" class="btn btn-primary"><i class="oi oi-cart">&nbsp;&nbsp;&nbsp; Book Tour</i></button>
+    </div>
+</div>
+
+@if(showBookingForm)
+{
+    <div class="backgroundPopupBox">
+        <div class="popupCreate">
+            <EditForm Model=@newBooking OnValidSubmit=BookTour>
+                <DataAnnotationsValidator />
+               @*  <ValidationSummary /> *@
+               
+                <div class="form-group">
+                    <label class="control-label">Commencement Date</label>
+                    <InputDate @bind-Value="newBooking.CommencementDate" min="@min" max="@max" Placeholder="Enter Date" />
+                    <ValidationMessage For="@(() => newBooking.CommencementDate)" />
+                </div>
+                <div class="form-group mt-3">
+                    <label class="control-label">Number of guests</label>
+                    <InputNumber id="NumOfGuests" @bind-Value="newBooking.NumberOfPeople" class="form-control" />
+                    <ValidationMessage For="@(() => newBooking.NumberOfPeople)" />
+                </div>
+
+                @{
+                    newBooking.TotalPrice = selectedTour.Cost;
+                    newBooking.DepositAmountPaid = newBooking.TotalPrice / 5;
+                    newBooking.EndDate = newBooking.CommencementDate.AddDays(selectedTour.DurationInDays - 1);
+                }
+
+                    
+                
+                <div>Tour start Date: @newBooking.CommencementDate.ToString("dd/MM/yyyy")</div>
+                <div>Tour End Date: @newBooking.EndDate.ToString("dd/MM/yyyy")</div>
+
+
+                <div>Total Price is £@newBooking.TotalPrice</div>
+                <div>Total to pay today (20%) £@newBooking.DepositAmountPaid</div>
+
+
+                @if(showOverlap)
+                {
+                    <div class="alert alert-danger" role="alert">
+                        <p>There are no more spaces left in this tour for that many people on these dates please select new dates or less people.</p>
+                    </div>
+                }
+
+                <button type="button" class="btn btn-success" @onclick="BookTour">Book</button>
+
+            </EditForm>
+
+            <div class="form-group">
+                <button class="btn btn-danger" @onclick="ClosePopup">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+}
+
+
+@code {
+    private Tour selectedTour = new Tour();
+    private TourBooking newBooking = new TourBooking();
+    private bool showBookingForm = false;
+    private string min;
+    private string max;
+    private string userId;
+    private int numOfOverlap;
+    private bool showOverlap = false;
+
+    [CascadingParameter]
+    private Task<AuthenticationState>? authenticationState { get; set; }
+
+    [Parameter]
+    public string? Id { get; set; }
+
+    List<Tour> tours = new List<Tour>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        min = DateOnly.FromDateTime(DateTime.Now.Date.AddMonths(2)).ToString("yyyy-MM-dd");
+        max = DateOnly.FromDateTime(DateTime.Now.Date.AddYears(5)).ToString("yyyy-MM-dd");
+
+        var authState = await authenticationState;
+        var user = authState?.User;
+        userId = user?.FindFirst(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+
+        var result = await http.GetFromJsonAsync<List<Tour>>("/api/tour");
+        if (result != null)
+        {
+            tours = result;
+        }
+
+        selectedTour = tours.FirstOrDefault(h => h.Id == Int32.Parse(Id));
+    }
+
+    private void ShowBookingForm()
+    {
+        showBookingForm = true;
+    }
+
+    async Task BookTour()
+    {
+
+        // Need to change for tours 
+
+        // code to check if the newbooking overlaps with existing bookings
+        numOfOverlap = await http.GetFromJsonAsync<int>($"/api/bookings/tour/overlap?start={newBooking.CommencementDate}&end={newBooking.EndDate}&tourId={selectedTour.Id}");
+
+        if (selectedTour.MaxNumberOfGuests < numOfOverlap + newBooking.NumberOfPeople)
+        {
+            showOverlap = true;
+        } 
+        else 
+        {
+            newBooking.TourId = selectedTour.Id;
+            newBooking.UserId = userId;
+            newBooking.PaymentDueDate = newBooking.CommencementDate.AddDays(-28);
+
+            
+
+            await http.PostAsJsonAsync("/api/bookings/tour/book", newBooking);
+
+            ClosePopup();
+            NavigationManager.NavigateTo("/mybookings");
+        }
+    }
+
+    private void ClosePopup()
+    {
+        showBookingForm = false;
+    }
+ }
+```
+
+
+#### BlazorHotelBooking/Client/Pages/TourEdit.razor
+```c#
+@page "/touredit"
+@page "/touredit/{id:int}"
+@using BlazorHotelBooking.Shared
+@using Microsoft.AspNetCore.Authorization
+@inject HttpClient http
+@inject NavigationManager NavigationManager
+@attribute [Authorize(Roles="Admin")]
+
+@if (Id is null)
+{
+    <PageTitle>Add New Tour</PageTitle>
+    <h3>Add New Tour</h3>
+}
+else
+{
+    <PageTitle> Edit @selectedTour.Name </PageTitle>
+    <h3>@selectedTour.Name</h3>
+}
+
+<EditForm Model="selectedTour" OnSubmit="HandleSubmit">
+
+    <div>
+        <label for="Id">Id</label>
+        <InputNumber id="Id" @bind-Value="selectedTour.Id" class="form-control" disabled="true" />
+    </div>
+    <div>
+        <label for="Name">Name</label>
+        <InputText id="Name" @bind-Value="selectedTour.Name" class="form-control" />
+    </div>
+    <div>
+        <label for="Cost">Cost</label>
+        <InputNumber id="Cost" @bind-Value="selectedTour.Cost" class="form-control" />
+    </div>
+    <div>
+        <label for="Duration">Duration</label>
+        <InputNumber id="Duration" @bind-Value="selectedTour.DurationInDays" class="form-control" />
+    </div>
+    <div>
+        <label for="MaxGuests">Max Number of Guests</label>
+        <InputNumber id="MaxGuests" @bind-Value="selectedTour.MaxNumberOfGuests" class="form-control" />
+    </div>
+    <div>
+        <label for="Description">Description</label>
+        <InputText id="Description" @bind-Value="selectedTour.Description" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    @if(Id is not null)
+    {
+        <button type="button" class="btn btn-danger" @onclick="DeleteTour">Delete</button>
+    }
+</EditForm>
+
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+
+    private Tour selectedTour = new Tour { Name = "New Tour" };
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Id is not null)
+        {
+            var result = await http.GetFromJsonAsync<Tour>($"api/tour/{Id}");
+            if (result is not null)
+            {
+                selectedTour = result;
+            }
+        }
+    }
+
+    async Task DeleteTour()
+    {
+        await http.DeleteAsync($"api/Admin/tour/{Id}");
+        NavigationManager.NavigateTo("/admin");
+    }
+
+    async Task HandleSubmit()
+    {
+        if(Id is null)
+        {
+            await http.PostAsJsonAsync("/api/Admin/tour", selectedTour);
+        }
+        else
+        {
+            await http.PutAsJsonAsync($"api/Admin/tour/{Id}", selectedTour);
+        }
+        NavigationManager.NavigateTo("/admin");
+    }
+}
+```
+
+#### BlazorHotelBooking/Client/Pages/Tours.razor
+```c#
+@page "/tours"
+@using BlazorHotelBooking.Shared
+@using Microsoft.AspNetCore.Authorization
+@inject HttpClient http
+@attribute [Authorize]
+
+<h3>Tours</h3>
+
+<input @oninput="Search" placeholder="Search..." class="p-3" />
+
+<br />
+<br />
+<EditForm Model="startDate" OnSubmit="DateSearch">
+    <div class="form-group">
+        <label class="control-label">Start Date</label>
+        <InputDate @bind-Value="startDate" min="@min" max="@max" Placeholder="Enter Date" />
+        <label class="control-label">Number Of People</label>
+        <InputNumber @bind-Value="numOfPeople" Placeholder="Number of People" />
+    </div>
+    <button type="button" class="btn btn-success" @onclick="DateSearch">Search</button>
+</EditForm>
+
+
+@if (tours.Count <= 0)
+{
+    <span> Loading tours...</span>
+}
+else
+{
+    @foreach (var tour in tours)
+    {
+        <li class="media my-3">
+            <div class="media-body">
+                <a href="/tours/@tour.Id">
+                    <h4 class="mb-0">@tour.Name</h4>
+                </a>
+                <p>@tour.Description</p>
+                <p>Max Number of Guests: @tour.MaxNumberOfGuests</p>
+                <h6 class="price">
+                    £@tour.Cost
+                </h6>
+            </div>
+        </li>
+    }
+}
+
+@code {
+    List<Tour> tours = new List<Tour>();
+    private DateTime startDate = DateTime.Now.Date.AddMonths(2);
+    private DateTime endDate;
+    private int numOfOverlap;
+    private int numOfPeople;
+    private string min;
+    private string max;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        min = DateOnly.FromDateTime(DateTime.Now.Date.AddMonths(2)).ToString("yyyy-MM-dd");
+        max = DateOnly.FromDateTime(DateTime.Now.Date.AddYears(5)).ToString("yyyy-MM-dd");
+
+        var result = await http.GetFromJsonAsync<List<Tour>>("/api/tour");
+        if (result != null)
+        {
+            tours = result;
+        }
+    }
+
+    private async void Search(ChangeEventArgs args)
+    {
+        var searchTerm = (string)args.Value;
+
+        var result = await http.GetFromJsonAsync<List<Tour>>("/api/tour");
+        // make it case insensitive to search hotels
+
+        tours = result.Where(x => x.Name.IndexOf(searchTerm, StringComparison.OrdinalIgnoreCase) >= 0)
+               .OrderByDescending(x => x.Id)
+               .ToList();
+
+        StateHasChanged();
+    }
+
+    private async void DateSearch()
+    {
+        var result = await http.GetFromJsonAsync<List<Tour>>("/api/tour");
+        var tempList = new List<Tour>();
+
+        if (result != null)
+        {
+            foreach (var tour in result.ToList())
+            {
+                endDate = startDate.AddDays(tour.DurationInDays);
+                numOfOverlap = await http.GetFromJsonAsync<int>($"/api/bookings/tour/overlap?start={startDate}&end={endDate}&tourId={tour.Id}");
+
+                if (!(tour.MaxNumberOfGuests < numOfOverlap + numOfPeople))
+                {
+                    tempList.Add(tour);
+                }
+            }
+
+            tours = tempList;
+        }
+
+        StateHasChanged();
+    }
+}
+```
+
+#### BlazorHotelBooking/Client/Service/AuthService.cs
+```c#
+using Blazored.LocalStorage;
+using BlazorHotelBooking.Client.Auth;
+using BlazorHotelBooking.Shared.Models;
+using Microsoft.AspNetCore.Components.Authorization;
+using System.Net.Http.Headers;
+using System.Net.Http.Json;
+using System.Text;
+using System.Text.Json;
+
+namespace BlazorHotelBooking.Client.Service
+{
+    public class AuthService : IAuthService
+    {
+        private readonly HttpClient _httpClient;
+        private readonly AuthenticationStateProvider _authStateProvider;
+        private readonly ILocalStorageService _localStorage;
+
+        public AuthService(HttpClient httpClient, AuthenticationStateProvider authStateProvider, ILocalStorageService localStorage)
+        {
+            _httpClient = httpClient;
+            _authStateProvider = authStateProvider;
+            _localStorage = localStorage;
+        }
+
+        public async Task<RegisterResult> Register(RegisterModel registerModel)
+        {
+            HttpResponseMessage result = await _httpClient.PostAsJsonAsync("api/register", registerModel);
+            if (!result.IsSuccessStatusCode)
+                return new RegisterResult { Successful = false, Errors = new List<string> { "Error occured" } };
+            return new RegisterResult { Successful = true, Errors = new List<string> { "Account Created successfully" } };
+        }
+
+        public async Task<LoginResult> Login(LoginModel loginModel)
+        {
+            string JsonLogin = JsonSerializer.Serialize(loginModel);
+            HttpResponseMessage response = await _httpClient.PostAsync("api/login",
+                new StringContent(JsonLogin, Encoding.UTF8, "application/json"));
+
+            LoginResult? loginResult = JsonSerializer.Deserialize<LoginResult>(
+                await response.Content.ReadAsStringAsync(),
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+            if (!response.IsSuccessStatusCode) return loginResult!;
+
+            await _localStorage.SetItemAsync("authToken", loginResult!.Token);
+            ((APIAuthStateProvider)_authStateProvider).MarkUserAsAuthenticated(loginResult.Token!);
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", loginResult.Token);
+
+            return loginResult;
+        }
+        public async Task Logout()
+        {
+            await _localStorage.RemoveItemAsync("authToken");
+            ((APIAuthStateProvider)_authStateProvider).MarkUserAsLoggedOut();
+            _httpClient.DefaultRequestHeaders.Authorization = null;
+        }
+    }
+}
+```
+
+#### BlazorHotelBooking/blob/master/BlazorHotelBooking/Client/Service/IAuthService.cs
+```c#
+﻿using BlazorHotelBooking.Shared.Models;
+
+namespace BlazorHotelBooking.Client.Service
+{
+    public interface IAuthService
+    {
+        Task<RegisterResult> Register(RegisterModel registerModel);
+        Task<LoginResult> Login(LoginModel loginModel);
+        Task Logout();
+    }
+}
+```
+
+#### 
+```c#
+using Blazored.LocalStorage;
+using BlazorHotelBooking.Client;
+using BlazorHotelBooking.Client.Auth;
+using BlazorHotelBooking.Client.Service;
+using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Syncfusion.Blazor;
+
+WebAssemblyHostBuilder builder = WebAssemblyHostBuilder.CreateDefault(args);
+builder.RootComponents.Add<App>("#app");
+builder.RootComponents.Add<HeadOutlet>("head::after");
+builder.Services.AddBlazoredLocalStorage();
+builder.Services.AddAuthorizationCore();
+builder.Services.AddScoped<AuthenticationStateProvider, APIAuthStateProvider>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddSyncfusionBlazor();
+
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+
+await builder.Build().RunAsync();
+```
