@@ -1042,7 +1042,7 @@ else
                 </div>
                 <div class="form-group mt-3">
                     <label class="control-label">Number of nights</label>
-                    <InputNumber id="NumOfNights" @bind-Value="newBooking.NumberOfNights" class="form-control" />
+                    <InputNumber Min=1 id="NumOfNights" @bind-Value="newBooking.NumberOfNights" class="form-control" />
                     <ValidationMessage For="@(() => newBooking.NumberOfNights)" />
                 </div>
                 
@@ -1080,6 +1080,13 @@ else
                     </div>
                 }
 
+                @if (showCannotBook)
+                {
+                    <div class="alert alert-danger" role="alert">
+                        <p>Please change number of nights to greater than 0</p>
+                    </div>
+                }
+
                 <button type="button" class="btn btn-success" @onclick="BookHotel">Book</button>
 
             </EditForm>
@@ -1101,7 +1108,7 @@ else
     private string max;
     private string userId;
     private int numOfOverlap;
-    private bool showOverlap = false;
+    private bool showOverlap, showCannotBook = false;
 
     [CascadingParameter]
     private Task<AuthenticationState>? authenticationState { get; set; }
@@ -1137,7 +1144,12 @@ else
 
     async Task BookHotel()
     {
-
+        if (newBooking.NumberOfNights < 1)
+        {
+            return;
+            showCannotBook = true;
+        }
+        
         //code to check if the newbooking overlaps with existing bookings
         numOfOverlap = await http.GetFromJsonAsync<int>($"/api/bookings/hotel/overlap?checkIn={newBooking.CheckIn}&checkOut={newBooking.CheckOut}&hotelId={selectedHotel.Id}&roomType={newBooking.RoomType}");
 
@@ -2584,6 +2596,13 @@ else
                     </div>
                 }
 
+                @if (showCannotBook)
+                {
+                    <div class="alert alert-danger" role="alert">
+                        <p>Please change number of guests or number of nights to greater than 0</p>
+                    </div>
+                }
+
                 <button type="button" class="btn btn-success" @onclick="BookTour">Book</button>
 
             </EditForm>
@@ -2605,7 +2624,7 @@ else
     private string max;
     private string userId;
     private int numOfOverlap;
-    private bool showOverlap = false;
+    private bool showOverlap, showCannotBook = false;
 
     [CascadingParameter]
     private Task<AuthenticationState>? authenticationState { get; set; }
@@ -2640,9 +2659,12 @@ else
 
     async Task BookTour()
     {
-
-        // Need to change for tours 
-
+        if (newBooking.NumberOfPeople < 1)
+        {
+            return;
+            showCannotBook = true;
+        }
+        
         // code to check if the newbooking overlaps with existing bookings
         numOfOverlap = await http.GetFromJsonAsync<int>($"/api/bookings/tour/overlap?start={newBooking.CommencementDate}&end={newBooking.EndDate}&tourId={selectedTour.Id}");
 
