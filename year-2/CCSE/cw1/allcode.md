@@ -1146,8 +1146,8 @@ else
     {
         if (newBooking.NumberOfNights < 1)
         {
-            return;
             showCannotBook = true;
+            return;
         }
         
         //code to check if the newbooking overlaps with existing bookings
@@ -2352,8 +2352,8 @@ else
 
         if (newBooking.NumberOfNights < 1 || newBooking.NumberOfPeopleOnTour < 1 || newBooking.RoomType == null)
         {
-            return;
             showCannotBook = true;
+            return;
         }
 
         numOfHotelOverlap = await http.GetFromJsonAsync<int>($"/api/bookings/hotel/overlap?checkIn={newBooking.HotelCheckIn}&checkOut={newBooking.HotelCheckOut}&hotelId={selectedHotel.Id}&roomType={newBooking.RoomType}");
@@ -2675,8 +2675,8 @@ else
     {
         if (newBooking.NumberOfPeople < 1)
         {
-            return;
             showCannotBook = true;
+            return;
         }
         
         // code to check if the newbooking overlaps with existing bookings
