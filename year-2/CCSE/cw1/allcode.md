@@ -2174,7 +2174,7 @@ else
                 </div>
                 <div class="form-group mt-3">
                     <label class="control-label">Number of nights</label>
-                    <InputNumber id="NumOfNights" @bind-Value="newBooking.NumberOfNights" class="form-control" />
+                    <InputNumber min=1 id="NumOfNights" @bind-Value="newBooking.NumberOfNights" class="form-control" />
                     <ValidationMessage For="@(() => newBooking.NumberOfNights)" />
                 </div>
                 
@@ -2208,7 +2208,7 @@ else
                 </div>
                 <div class="form-group mt-3">
                     <label class="control-label">Number of guests</label>
-                    <InputNumber id="NumOfGuests" @bind-Value="newBooking.NumberOfPeopleOnTour" class="form-control" />
+                    <InputNumber Min=1 id="NumOfGuests" @bind-Value="newBooking.NumberOfPeopleOnTour" class="form-control" />
                     <ValidationMessage For="@(() => newBooking.NumberOfPeopleOnTour)" />
                 </div>
 
@@ -2255,6 +2255,13 @@ else
                     </div>
                 }
 
+                @if(showCannotBook)
+                {
+                    <div class="alert alert-danger" role="alert">
+                        <p>Please change number of guests or number of nights to greater than 0</p>
+                    </div>
+                }
+
                 <button type="button" class="btn btn-success" @onclick="BookPackage">Book</button>
 
             </EditForm>
@@ -2280,7 +2287,7 @@ else
     private string max;
     private string userId;
     private int numOfTourOverlap, numOfHotelOverlap;
-    private bool showHotelOverlap, showTourOverlap = false;
+    private bool showHotelOverlap, showTourOverlap, showCannotBook = false;
 
 
     [CascadingParameter]
@@ -2342,6 +2349,13 @@ else
 
     async Task BookPackage()
     {
+
+        if (newBooking.NumberOfNights < 1 || newBooking.NumberOfPeopleOnTour < 1 || newBooking.RoomType == null)
+        {
+            return;
+            showCannotBook = true;
+        }
+
         numOfHotelOverlap = await http.GetFromJsonAsync<int>($"/api/bookings/hotel/overlap?checkIn={newBooking.HotelCheckIn}&checkOut={newBooking.HotelCheckOut}&hotelId={selectedHotel.Id}&roomType={newBooking.RoomType}");
         numOfTourOverlap = await http.GetFromJsonAsync<int>($"/api/bookings/tour/overlap?start={newBooking.TourStartDate}&end={newBooking.TourEndDate}&tourId={selectedTour.Id}");
 
@@ -4584,7 +4598,7 @@ namespace BlazorHotelBooking.Shared
         public DateTime CheckIn { get; set; } = DateTime.Now.Date.AddMonths(2);
         public DateTime CheckOut { get; set; }
         [Required(ErrorMessage = "Number of Nigts required.")]
-        public int NumberOfNights { get; set; }
+        public int NumberOfNights { get; set; } = 1;
         [Column(TypeName = "decimal(18,2")]
         public decimal TotalPrice { get; set; }
         [Column(TypeName = "decimal(18,2")]
@@ -4613,14 +4627,14 @@ namespace BlazorHotelBooking.Shared
         public string RoomType { get; set; }
         public DateTime HotelCheckIn { get; set; } = DateTime.Now.Date.AddMonths(2);
         public DateTime HotelCheckOut { get; set; }
-        public int NumberOfNights { get; set; }
+        public int NumberOfNights { get; set; } = 1;
         public int TourId { get; set; }
         [Required(ErrorMessage = "Commencement Date required.")]
         public DateTime TourStartDate { get; set; } = DateTime.Now.Date.AddMonths(2);
         public DateTime TourEndDate { get; set; }
         [Column(TypeName = "decimal(18,2")]
         public decimal TotalPrice { get; set; }
-        public int NumberOfPeopleOnTour { get; set; }
+        public int NumberOfPeopleOnTour { get; set; } = 1;
         [Column(TypeName = "decimal(18,2")]
         public decimal DepositAmountPaid { get; set; }
         public string UserId { get; set; }
@@ -4687,7 +4701,7 @@ namespace BlazorHotelBooking.Shared
         public decimal TotalPrice { get; set; }
         [Column(TypeName = "decimal(18,2")]
         public decimal DepositAmountPaid { get; set; }
-        public int NumberOfPeople { get; set; }
+        public int NumberOfPeople { get; set; } = 1;
         public string UserId { get; set; }
         public DateTime BookingDate { get; set; } = DateTime.Now.Date;
         public bool PaidInfull { get; set; } = false;
