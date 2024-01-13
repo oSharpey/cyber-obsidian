@@ -535,7 +535,7 @@ else
     </div>
     <div>
         <label for="NumOfNights">Number Of Nights</label>
-        <InputNumber id="NumOfNights" @bind-Value="selectedBooking.NumberOfNights" class="form-control" />
+        <InputNumber Min=1 id="NumOfNights" @bind-Value="selectedBooking.NumberOfNights" class="form-control" />
     </div>
     @{
         var currentDeposit = selectedBooking.DepositAmountPaid;
@@ -617,6 +617,13 @@ else
                 <p>There are no more spaces for this room on these dates please select new dates.</p>
             </div>
         }
+
+        @if (showCannotBook)
+        {
+            <div class="alert alert-danger" role="alert">
+                <p>Please change number of nights to greater than 0</p>
+            </div>
+        }
     }
     <button type="submit" class="btn btn-primary">Save</button>
 </EditForm> 
@@ -632,7 +639,7 @@ else
     private int currentNights;
     private decimal newTotal, newDeposit;
     private DateTime newCheckOut;
-    private bool showOverlap = false;
+    private bool showOverlap, showCannotBook = false;
     private int numOfOverlap;
     private decimal difference;
     private decimal surcharge;
@@ -655,6 +662,12 @@ else
 
     async Task HandleSubmit()
     {
+
+        if (selectedBooking.NumberOfNights <= 0)
+        {
+            showCannotBook = true;
+            return;
+        }
 
         if (selectedBooking.PaidInfull)
         {
@@ -823,6 +836,13 @@ else
                 <p>There are no more spaces left in this tour for that many people on these dates please select new dates or less people.</p>
             </div>
         }
+
+        @if (showCannotBook)
+        {
+            <div class="alert alert-danger" role="alert">
+                <p>Please change number of guests or number of nights to greater than 0</p>
+            </div>
+        }
     }
     <button type="submit" class="btn btn-primary">Save</button>
 </EditForm> 
@@ -840,7 +860,7 @@ else
     private decimal newTotal, newDeposit;
     private DateTime newCheckOut;
     private int numOfTourOverlap, numOfHotelOverlap;
-    private bool showHotelOverlap, showTourOverlap = false;
+    private bool showHotelOverlap, showTourOverlap, showCannotBook = false;
     private decimal difference;
     private decimal surcharge;
 
@@ -863,6 +883,15 @@ else
 
     async Task HandleSubmit()
     {
+
+        if (selectedBooking.NumberOfNights < 1 || selectedBooking.NumberOfPeopleOnTour < 1 || selectedBooking.RoomType == null)
+        {
+            showCannotBook = true;
+            return;
+        }
+
+
+
 
         if (selectedBooking.PaidInfull)
         {
@@ -931,6 +960,13 @@ else
                 <p>There are no more spaces for this tour for that many people.</p>
             </div>
         }
+
+        @if (showCannotBook)
+        {
+            <div class="alert alert-danger" role="alert">
+                <p>Please change number of guests or number of nights to greater than 0</p>
+            </div>
+        }
     }
     <button type="submit" class="btn btn-primary">Save</button>
 </EditForm> 
@@ -944,7 +980,7 @@ else
     private int currentNights;
     private decimal newTotal, newDeposit;
     private DateTime newCheckOut;
-    private bool showOverlap = false;
+    private bool showOverlap, showCannotBook = false;
     private int numOfOverlap;
     private int currentPeople;
     private double surcharge;
@@ -967,6 +1003,14 @@ else
 
     async Task HandleSubmit()
     {
+
+        if (selectedBooking.NumberOfPeople <= 0)
+        {
+            showCannotBook = true;
+            return;
+        }
+
+
 
         numOfOverlap = await http.GetFromJsonAsync<int>($"/api/bookings/tour/overlap?start={selectedBooking.CommencementDate}&end={selectedBooking.EndDate}&tourId={tour.Id}");
 
