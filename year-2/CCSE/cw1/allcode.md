@@ -3616,14 +3616,12 @@ namespace BlazorHotelBooking.Server.Controllers
         {
             var guestCount = 0;
             List<TourBooking> tourOverlap = _context.TourBookings.Where(x =>
-                x.CommencementDate <= end &&
-                x.EndDate >= start &&
+                x.CommencementDate == start &&
                 x.TourId == tourId
             ).ToList();
 
             List<PackageBooking> packageOverlap = _context.PackageBookings.Where(x =>
-                x.TourStartDate <= end &&
-                x.TourEndDate >= start &&
+                x.TourStartDate == start &&
                 x.TourId == tourId
             ).ToList();
 
