@@ -32,3 +32,9 @@ Plan
 - Discuss Question 2
 - Space for some further discussion based on points raised by the 2 key questions
 - Final summary and closing
+
+
+# Reading 4
+Loss framed messages more effective
+Win and lose may not be direct opposites
+

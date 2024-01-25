@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-2/CCSE/cw1/allcode.md",
+                "file": "year-2/HBCS/Reading-Summaries.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-2/CCSE/cw1/allcode.md",
+                "file": "year-2/HBCS/Reading-Summaries.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-2/CCSE/cw1/allcode.md",
+                "file": "year-2/HBCS/Reading-Summaries.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-2/CCSE/cw1/allcode.md"
+                "file": "year-2/HBCS/Reading-Summaries.md"
               }
             }
           },
@@ -207,7 +207,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-2/CCSE/cw1/allcode.md",
+                "file": "year-2/HBCS/Reading-Summaries.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -264,16 +264,16 @@
   },
   "active": "4a24f0456717f8fd",
   "lastOpenFiles": [
+    "year-2/HBCS/CW1.md",
+    "year-2/CCSE/cw1/allcode.md",
     "year-2/CCSE/cw1/allcode_tmp.html",
     "year-2/CCSE/cw1/allcode.pdf",
     "year-2/CCSE/cw1/book-hotel2.png",
-    "year-2/CCSE/cw1/allcode.md",
     "year-2/IRSM/Lecture-9.md",
     "year-2/IRSM/Lecture-8.md",
     "year-2/HBCS/T2-W1.md",
     "year-2/HBCS/Week-9.md",
     "year-2/HBCS/Week-5.md",
-    "year-2/HBCS/CW1.md",
     "year-2/HBCS/Reading-Summaries.md",
     "year-2/IRSM/cw1.md",
     "year-2/images-y2/risk_treatment.png",
@@ -308,7 +308,6 @@
     "year-2/CCSE",
     "year-2/PLCS",
     "year-2/HBCS",
-    "year-1/CF/CW2",
-    "year-1/CF/cw2"
+    "year-1/CF/CW2"
   ]
 }
