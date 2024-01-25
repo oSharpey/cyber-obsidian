@@ -37,4 +37,6 @@ Plan
 # Reading 4
 Loss framed messages more effective
 Win and lose may not be direct opposites
+Marked down for providing address when your'e being presented with a shopping website (may need billing address)
+
 
