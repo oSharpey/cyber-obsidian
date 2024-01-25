@@ -15,7 +15,16 @@
 
 
 
-#
+# Reading 2
+- No access to questions  
+- Some graphs, no actual data  
+- Not enough context in questions shown  
+- Subjective scale (true/false)  
+- Far too long  
+- Biased (only undergrads)  
+- Didn't show anything  
+- Didn't control for enough variables  
+- How trust their judgement without knowing qs
 
 
 
@@ -83,5 +92,7 @@ Marked down for providing address when your'e being presented with a shopping we
 Interesting how they weighted the cyber security behaviour 
 passwords should be ranked higher than other factors than sign up
 Using comp8 to measure security of passwords not the best way 
-Not too much difference between means of suffering cyber attack - would have been different 
+Not too much difference between means of suffering cyber attack - would have been different if weighting was different
+Mostly common sense
+
 
