@@ -2958,6 +2958,112 @@ else
 }
 ```
 
+
+#### BlazorHotelBooking/Client/Shared/MainLayout.razor
+```c#
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <div class="sidebar w-5">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row px-4">
+            <BlazorHotelBooking.Client.Pages.LoginDisplay/>
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+```
+
+
+#### BlazorHotelBooking/Client/Shared/NavMenu.razor
+```c#
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">BlazorHotelBooking</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+       @*  <div class="nav-item px-3">
+            <NavLink class="nav-link" href="counter">
+                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="fetchdata">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            </NavLink>
+        </div> *@
+        <AuthorizeView Roles="Admin">
+            <Authorized>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="admin">
+                    <span class="oi oi-cog" aria-hidden="true"></span> Admin Page
+                </NavLink>
+            </div>
+            </Authorized>
+        </AuthorizeView>
+        <AuthorizeView>
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="hotels">
+                    <span class="oi oi-home" aria-hidden="true"></span> Hotels
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="tours">
+                    <span class="oi oi-map" aria-hidden="true"></span> Tours
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="packages">
+                    <span class="oi oi-basket" aria-hidden="true"></span> Packages
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="mybookings">
+                    <span class="oi oi-calendar" aria-hidden="true"></span> My Bookings
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="payments">
+                    <span class="oi oi-british-pound" aria-hidden="true"></span> My Payments
+                </NavLink>
+            </div>
+        </AuthorizeView>
+        
+    </nav>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
+```
+
+
 #### BlazorHotelBooking/Client/Service/AuthService.cs
 ```c#
 using Blazored.LocalStorage;
@@ -4428,6 +4534,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             };
         });
 
+builder.Services.Configure<PasswordHasherOptions>(options =>
+{
+    options.IterationCount = 210_000;
+});
 
 WebApplication app = builder.Build();
 
