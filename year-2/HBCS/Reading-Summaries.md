@@ -96,3 +96,12 @@ Not too much difference between means of suffering cyber attack - would have bee
 Mostly common sense
 
 
+
+# Reading 5
+- Do not necessarily need consent from the employee in a penetration test  - undermines the integrity of the attack
+- Ask for consent at employment - putting it in contract could make people more vigilant
+- There needs to be a duty of care
+- Ethics only apply to the pen test, threat actors have no ethics
+- Where is the line - can you send real malicious threat emails or just regular impersonation phishing
+- Threats should be out of scope
+

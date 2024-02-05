@@ -49,7 +49,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-2/HBCS/Reading-Summaries.md",
+                "file": "symbols.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f84cd28074bd4535",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Comments.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -142,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-2/HBCS/Reading-Summaries.md",
+                "file": "Comments.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-2/HBCS/Reading-Summaries.md",
+                "file": "Comments.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-2/HBCS/Reading-Summaries.md"
+                "file": "Comments.md"
               }
             }
           },
@@ -207,7 +219,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-2/HBCS/Reading-Summaries.md",
+                "file": "Comments.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -262,8 +274,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4a24f0456717f8fd",
+  "active": "f84cd28074bd4535",
   "lastOpenFiles": [
+    "symbols.md",
+    "Comments.md",
+    "SSLC",
+    "year-2/HBCS/Reading-Summaries.md",
     "year-2/HBCS/CW1.md",
     "year-2/CCSE/cw1/allcode.md",
     "year-2/CCSE/cw1/allcode_tmp.html",
@@ -274,7 +290,6 @@
     "year-2/HBCS/T2-W1.md",
     "year-2/HBCS/Week-9.md",
     "year-2/HBCS/Week-5.md",
-    "year-2/HBCS/Reading-Summaries.md",
     "year-2/IRSM/cw1.md",
     "year-2/images-y2/risk_treatment.png",
     "year-2/images-y2/risk_handling.png",
@@ -285,7 +300,6 @@
     "year-2/images-y2/rating_key.png",
     "year-2/images-y2/risk_calc_example.png",
     "year-2/images-y2/likelihood_est.png",
-    "symbols.md",
     "year-2/HBCS/Week-3.md",
     "year-1/NCCD/osi-7-layer-model.md",
     "year-1/NCCD/firewalls.md",
@@ -307,7 +321,6 @@
     "year-2/ISS",
     "year-2/CCSE",
     "year-2/PLCS",
-    "year-2/HBCS",
-    "year-1/CF/CW2"
+    "year-2/HBCS"
   ]
 }
