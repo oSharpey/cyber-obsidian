@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-2/IRSM/Lecture-9.md",
+                "file": "year-2/IRSM/Lecture-1.md",
                 "mode": "source",
                 "source": false
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-2/IRSM/Lecture-9.md",
+                "file": "year-2/IRSM/Lecture-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-2/IRSM/Lecture-9.md",
+                "file": "year-2/IRSM/Lecture-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-2/IRSM/Lecture-9.md"
+                "file": "year-2/IRSM/Lecture-1.md"
               }
             }
           },
@@ -219,7 +219,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-2/IRSM/Lecture-9.md",
+                "file": "year-2/IRSM/Lecture-1.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -276,11 +276,13 @@
   },
   "active": "f84cd28074bd4535",
   "lastOpenFiles": [
-    "year-2/IRSM/Lecture-8.md",
-    "year-2/IRSM/Lecture-5.md",
+    "year-2/IRSM/cw1.md",
+    "year-2/IRSM/Lecture-1.md",
     "year-2/IRSM/Lecture-3.md",
     "year-2/IRSM/Lecture-2.md",
-    "year-2/IRSM/Lecture-1.md",
+    "year-2/IRSM/Lecture-9.md",
+    "year-2/IRSM/Lecture-8.md",
+    "year-2/IRSM/Lecture-5.md",
     "Comments.md",
     "symbols.md",
     "SSLC",
@@ -290,11 +292,9 @@
     "year-2/CCSE/cw1/allcode_tmp.html",
     "year-2/CCSE/cw1/allcode.pdf",
     "year-2/CCSE/cw1/book-hotel2.png",
-    "year-2/IRSM/Lecture-9.md",
     "year-2/HBCS/T2-W1.md",
     "year-2/HBCS/Week-9.md",
     "year-2/HBCS/Week-5.md",
-    "year-2/IRSM/cw1.md",
     "year-2/images-y2/risk_treatment.png",
     "year-2/images-y2/risk_handling.png",
     "year-2/images-y2/residual_risk.png",
