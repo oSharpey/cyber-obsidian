@@ -7,12 +7,12 @@
 ## Risk management
 - Risk management is the process of discovering and assessing the risks to an organisation’s operations and determining how those risks can be controlled or mitigated
 - This process involves discovering and understanding answers to some key questions about the risk associated with an organisation’s information assets:
-	- Risk Identifcation
+	- Risk Identification
 	- Risk Analysis
-	- Risk Evaluatuin
+	- Risk Evaluation
 	- Risk Treatment
 
-Risk mangement is made up of 2 areas, **Risk Assessment** & **Risk Conrol**
+Risk management is made up of 2 areas, **Risk Assessment** & **Risk Control**
 - **Risk Assessment** - Identify and analyse the risks
 - **Risk Control** - Reduce risk and provide contingency
 
@@ -20,9 +20,9 @@ Risk mangement is made up of 2 areas, **Risk Assessment** & **Risk Conrol**
 ### ISO 27005 - 5 Stages
 - Risk Assessment
 - Risk Treatment
-- Risk Acceptacne
+- Risk Acceptance
 - Risk Communication
-- Risk monitoring and reviuw
+- Risk monitoring and review
 
 ISO 27005 is specific to cyber security risk management
 

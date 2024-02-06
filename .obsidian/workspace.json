@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-2/IRSM/Lecture-2.md",
+                "file": "year-2/IRSM/Lecture-9.md",
                 "mode": "source",
                 "source": false
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-2/IRSM/Lecture-2.md",
+                "file": "year-2/IRSM/Lecture-9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-2/IRSM/Lecture-2.md",
+                "file": "year-2/IRSM/Lecture-9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-2/IRSM/Lecture-2.md"
+                "file": "year-2/IRSM/Lecture-9.md"
               }
             }
           },
@@ -219,7 +219,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-2/IRSM/Lecture-2.md",
+                "file": "year-2/IRSM/Lecture-9.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -276,6 +276,10 @@
   },
   "active": "f84cd28074bd4535",
   "lastOpenFiles": [
+    "year-2/IRSM/Lecture-8.md",
+    "year-2/IRSM/Lecture-5.md",
+    "year-2/IRSM/Lecture-3.md",
+    "year-2/IRSM/Lecture-2.md",
     "year-2/IRSM/Lecture-1.md",
     "Comments.md",
     "symbols.md",
@@ -287,7 +291,6 @@
     "year-2/CCSE/cw1/allcode.pdf",
     "year-2/CCSE/cw1/book-hotel2.png",
     "year-2/IRSM/Lecture-9.md",
-    "year-2/IRSM/Lecture-8.md",
     "year-2/HBCS/T2-W1.md",
     "year-2/HBCS/Week-9.md",
     "year-2/HBCS/Week-5.md",
@@ -310,11 +313,8 @@
     "year-1/CSAO/0x0002/assembly-and-syntax.md",
     "year-1/CSAO/0x0007/procedures.md",
     "year-1/SDS/lesson-1.md",
-    "year-2/IRSM/Lecture-5.md",
     "year-2/PLCS/HENRYYYYYYY.md",
     "year-2/HBCS/Week-1.md",
-    "year-2/IRSM/Lecture-3.md",
-    "year-1/CSAO/0x0000/registers.md",
     "year-1/CSAO/0x0000/csao-tutorial-0x0000.pdf",
     "year-2/IM",
     "year-2/IRSM",
