@@ -53,6 +53,23 @@ Harding, William and Matthew Kloster (Jan. 2024). Coding on Copilot. Tech. rep. 
 Khan, Hajra et al. (2021). “OFFENSIVE AI: UNIFICATION OF EMAIL GENERATION THROUGH GPT-2 MODEL WITH A GAME-THEORETIC APPROACH FOR SPEAR-PHISHING ATTACKS”. In: Competitive Advantage in the Digital Economy (CADE 2021). Vol. 2021, pp. 178–184. DOI: 10.1049/icp.2021.2422.  
 
 Lee, Hao-Ping et al. (2024). Deepfakes, Phrenology, Surveillance, and More! A Taxonomy of AI Privacy Risks. arXiv: 2310.07879 [cs.HC].  
-NCSC (Jan. 2024). The near-term impact of AI on the cyber threat. Tech. rep. Victoria, London, UK: National  
-Cyber Security Centre. URL: https://www.ncsc.gov.uk/pdfs/report/impact- of- ai- on- cyber-  
-threat.pdf
+
+NCSC (Jan. 2024). The near-term impact of AI on the cyber threat. Tech. rep. Victoria, London, UK: National Cyber Security Centre. URL: https://www.ncsc.gov.uk/pdfs/report/impact-of-ai-on-cyber-threat.pdf
+
+Piper, Rob (2023). “Explaining the Proliferation of U.S. Billionaires During the Neoliberal Period”. In: Class, Race and Corporate Power 11.2. ISSN: 23306297.  
+
+Saheb, Tahereh (July 2022). ““ethically contentious aspects of Artificial Intelligence Surveillance: A social science perspective””. In: AI and Ethics 3.2, pp. 369–379. DOI: 10.1007/s43681-022-00196-y.  
+
+Schneider, B (May 2023). “Technological unemployment in the British industrial revolution: the destruction of hand spinning”. In: Oxford Economic and Social History Working Papers 207.  
+
+Signorelli, Camilo Miguel (Oct. 2018). “Can Computers Become Conscious and Overcome Humans?” In: Frontiers in Robotics and AI 5.121. ISSN: 2296-9144. DOI: 10.3389/frobt.2018.00121. URL: https://www.frontiersin.org/articles/10.3389/frobt.2018.00121.  
+
+Solove, Daniel J. (Jan. 2006). “A taxonomy of privacy”. In: University of Pennsylvania Law Review 154.3, pp. 477–564. DOI: 10.2307/40041279.  
+
+Verma, Pranshu (Mar. 2023). “They thought loved ones were calling for help. It was an AI scam.” In: The Washington Post. URL: https://www.washingtonpost.com/technology/2023/03/05/ai-voice-scam/.  
+
+Voth, Hans-Joachim and Bruno Caprettini (May 2017). “Rage against the machines: New technology and violent unrest in industrialising Britain”. In: VoxEu. URL: https://cepr.org/voxeu/columns/rage-against-machines-new-technology-and-violent-unrest-industrialising-britain.  
+
+Yin, Leon, Davey Alba, and Leonardo Nicoletti (Mar. 2024). “OpenAI’s GPT Is a Recruiter’s Dream Tool. Tests Show There’s Racial Bias”. In: Bloomberg. URL: https://www.bloomberg.com/graphics/2024-openai-gpt-hiring-racial-discrimination/.  
+
+Zajko, Mike (Feb. 2022). “Artificial Intelligence, algorithms, and Social Inequality: Sociological Contributions to contemporary debates”. In: Sociology Compass 16.3. DOI: 10.1111/soc4.12962
