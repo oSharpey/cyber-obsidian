@@ -30,31 +30,29 @@ CBS (Mar. 2023). ““Godfather of artificial intelligence” weighs in on the 
 Chen, Lingjiao, Matei Zaharia, and James Zou (2023). How is ChatGPT’s behavior changing over time? arXiv: 2307.09009 [cs.CL].  
 
 Chomsky, Noam (Dec. 1998). Profit over people: Neoliberalism and the global order. New York: Seven Stories Press. ISBN: 9781888363821.  
-— (Mar. 2017). Requiem for the american dream: The 10 principles of concentration of Wealth & Power. New  
-York: Seven stories press. ISBN: 1609807367.  
-Collins, Chuck (2021). The Wealth Hoarders: How Billionaires Pay Millions to hide trillions. Polity.  
+— (Mar. 2017). Requiem for the american dream: The 10 principles of concentration of Wealth & Power. New York: Seven stories press. ISBN: 1609807367.  
+
+Collins, Chuck (2021). The Wealth Hoarders: How Billionaires Pay Millions to hide trillions. Polity. 
+
 Domin, Heather et al. (Nov. 2022). Standards for protecting at-risk groups in AI bias auditing. Tech. rep. IBM.  
-Eschenbach, Warren J. von (Sept. 2021). “Transparency and the Black Box Problem: Why We Do Not Trust Ai”.  
-In: Philosophy & Technology 34.4, pp. 1607–1622. DOI: 10.1007/s13347-021-00477-0.  
-Feldstein, Steven (Mar. 2019). “The Global Expansion of AI Surveillance”. In: Carnegie Endowment for Interna-  
-tional Peace, pp. 16–21. URL: http://www.jstor.org/stable/resrep20995.8.  
-Frey, Carl Benedikt and Michael A. Osborne (Jan. 2017). “The future of employment: How susceptible are jobs  
-to computerisation?” In: Technological Forecasting and Social Change 114, pp. 254–280. ISSN: 0040-1625.  
-DOI: https://doi.org/10.1016/j.techfore.2016.08.019. URL: https://www.sciencedirect.com/  
-science/article/pii/S0040162516302244.  
-Goertzel, Ben and Joel Pitt (June 2014). “Nine ways to bias open-source artificial general intelligence toward  
-friendliness”. In: Intelligence Unbound, pp. 61–89. DOI: 10.1002/9781118736302.ch4.  
-Gündo ̆gar, Ali and Saulius Niauronis (Apr. 2023). “Overview of potential risks of Artificial General Intelligence  
-Robots”. In: Applied Scientific Research 2 (1), pp. 26–40. DOI: 10.56131/tmt.2023.2.1.93.  
-Haney, Brian Seamus (Oct. 2018). “The Perils & promises of artificial general intelligence”. In: J. Legis. 151st ser.  
-45 (2). DOI: 10.2139/ssrn.3261254.  
-Harding, William and Matthew Kloster (Jan. 2024). Coding on Copilot. Tech. rep. GitClear. URL: https://www.  
-gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality.  
-Khan, Hajra et al. (2021). “OFFENSIVE AI: UNIFICATION OF EMAIL GENERATION THROUGH GPT-2 MODEL  
-WITH A GAME-THEORETIC APPROACH FOR SPEAR-PHISHING ATTACKS”. In: Competitive Advantage in  
-the Digital Economy (CADE 2021). Vol. 2021, pp. 178–184. DOI: 10.1049/icp.2021.2422.  
-Lee, Hao-Ping et al. (2024). Deepfakes, Phrenology, Surveillance, and More! A Taxonomy of AI Privacy Risks.  
-arXiv: 2310.07879 [cs.HC].  
+
+Eschenbach, Warren J. von (Sept. 2021). “Transparency and the Black Box Problem: Why We Do Not Trust Ai”. In: Philosophy & Technology 34.4, pp. 1607–1622. DOI: 10.1007/s13347-021-00477-0.  
+
+Feldstein, Steven (Mar. 2019). “The Global Expansion of AI Surveillance”. In: Carnegie Endowment for International Peace, pp. 16–21. URL: http://www.jstor.org/stable/resrep20995.8.  
+
+Frey, Carl Benedikt and Michael A. Osborne (Jan. 2017). “The future of employment: How susceptible are jobs to computerisation?” In: Technological Forecasting and Social Change 114, pp. 254–280. ISSN: 0040-1625. DOI: https://doi.org/10.1016/j.techfore.2016.08.019. URL: https://www.sciencedirect.com/science/article/pii/S0040162516302244.  
+
+Goertzel, Ben and Joel Pitt (June 2014). “Nine ways to bias open-source artificial general intelligence toward friendliness”. In: Intelligence Unbound, pp. 61–89. DOI: 10.1002/9781118736302.ch4.  
+
+Gündo ̆gar, Ali and Saulius Niauronis (Apr. 2023). “Overview of potential risks of Artificial General Intelligence Robots”. In: Applied Scientific Research 2 (1), pp. 26–40. DOI: 10.56131/tmt.2023.2.1.93.  
+
+Haney, Brian Seamus (Oct. 2018). “The Perils & promises of artificial general intelligence”. In: J. Legis. 151st ser. 45 (2). DOI: 10.2139/ssrn.3261254.  
+
+Harding, William and Matthew Kloster (Jan. 2024). Coding on Copilot. Tech. rep. GitClear. URL: https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality.  
+
+Khan, Hajra et al. (2021). “OFFENSIVE AI: UNIFICATION OF EMAIL GENERATION THROUGH GPT-2 MODEL WITH A GAME-THEORETIC APPROACH FOR SPEAR-PHISHING ATTACKS”. In: Competitive Advantage in the Digital Economy (CADE 2021). Vol. 2021, pp. 178–184. DOI: 10.1049/icp.2021.2422.  
+
+Lee, Hao-Ping et al. (2024). Deepfakes, Phrenology, Surveillance, and More! A Taxonomy of AI Privacy Risks. arXiv: 2310.07879 [cs.HC].  
 NCSC (Jan. 2024). The near-term impact of AI on the cyber threat. Tech. rep. Victoria, London, UK: National  
 Cyber Security Centre. URL: https://www.ncsc.gov.uk/pdfs/report/impact- of- ai- on- cyber-  
 threat.pdf
