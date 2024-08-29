@@ -8,3 +8,6 @@
 6) once whole binary had been loaded dump it from memory
 7) Edit the hex dump so it starts with MZ
 8) Use a tool like sentinalOne's beacon parser to get beacon config which contains flag.
+
+
+Intake24{why_n0T_str1k3_b4cK}
