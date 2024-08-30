@@ -13,4 +13,8 @@
 Intake24{why_n0T_str1k3_b4cK}
 
 # Executive Protection Services 1
-Help someone has encrypted our clients filesyte
+Help someone has encrypted our clients filesytem with some custom written encryption - can you help get the client their files back?
+
+Encryption:
+1) take the md5 hash of the rootfs.gz file encrypt it with chacha20 or aes256
+2) store master key as a global 
