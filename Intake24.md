@@ -20,4 +20,9 @@ Encryption:
 2) store master key as a global and calculated with sha3 - that is used as a key and iv
 3) hash together master key and sha hash of rootfs.gz store at rootfs.gz+256
 4) hash part of master key with md5 and use it as enc_state1 and enc_state2
-5) 
+5) expand key from original IV 
+6) encrypt enc_state1 and enc_state2 to use as xoring key
+7) xor 16 bytes
+8) add on a key value (0x4)
+9) re_encrypt_key
+	
