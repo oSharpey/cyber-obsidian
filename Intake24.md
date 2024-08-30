@@ -1,4 +1,4 @@
-# Cobalt Mining
+# Executive Protection Services 2
 
 1) You get a exe file called challenge.exe
 2) putting this into VT shows it to be a colbalt strike stager
@@ -11,3 +11,6 @@
 
 
 Intake24{why_n0T_str1k3_b4cK}
+
+# Executive Protection Services 1
+Help someone has encrypted our clients filesyte
