@@ -16,6 +16,8 @@ Intake24{why_n0T_str1k3_b4cK}
 Help someone has encrypted our clients filesytem with some custom written encryption - can you help get the client their files back?
 
 Encryption:
-1) take the sha with hash of the rootfs.gz file encrypt it with chacha20 or aes256
+1) take the sha with hash of the rootfs.gz 
 2) store master key as a global and calculated with sha3 - that is used as a key and iv
-3) hash together master key and sha hash of 
+3) hash together master key and sha hash of rootfs.gz store at rootfs.gz+256
+4) hash part of master key with md5 and use it as enc_state1 and enc_state2
+5) 
