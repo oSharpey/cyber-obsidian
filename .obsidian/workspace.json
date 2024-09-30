@@ -90,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.5
+    "width": 270.5,
+    "collapsed": true
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -226,7 +227,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ad4039c662493bbf",
+  "active": "8e219bebd780e6c9",
   "lastOpenFiles": [
     "Intake24.md",
     "year-3/osm/lecture0x01.md",
