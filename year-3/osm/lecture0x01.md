@@ -56,7 +56,6 @@
 4. Prioritisation & Analysis
 5. Remediation & Recovery
 6. Assessment & Audit
-
 ##### 1. Asset Discovery
 - Maintain an up-to-date inventory of all assets
 - Use passive and active scans, and business process analysis
@@ -93,7 +92,6 @@
 - Perform periodic vulnerability scans
 - Generate compliance reports
 - Review and test Incident Response plans
-- Continuously improve based on lessons learned
 #### Defence-in-depth
 - Layered security approach
 - Tools: Vulnerability scanner, Behavioural monitoring, IDS/IPS, EDR/XDR, SIEM, SOAR
