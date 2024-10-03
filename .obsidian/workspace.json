@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-3/osm/lecture0x01.md",
+                "file": "Intake24.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Intake24.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Intake24.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Intake24.md"
               }
             }
           },
@@ -171,7 +171,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "README.md",
+                "file": "Intake24.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -226,12 +226,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8e219bebd780e6c9",
+  "active": "ad4039c662493bbf",
   "lastOpenFiles": [
+    "symbols.md",
+    "README.md",
     "Intake24.md",
     "year-3/osm/lecture0x01.md",
-    "README.md",
-    "symbols.md",
     "year-1/images-yr1/2-switch-diagram.png",
     "2024-07-21.md",
     "year-1/CSAO/0x0000/cpu-architecture.md",
