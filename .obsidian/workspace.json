@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ad99098dbd781374",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,6 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Interview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Interview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Intake24.md"
+                "file": "Interview.md"
               }
             }
           },
@@ -156,6 +171,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Interview.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -210,10 +226,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8e219bebd780e6c9",
+  "active": "ad99098dbd781374",
   "lastOpenFiles": [
-    "symbols.md",
     "README.md",
+    "Interview.md",
+    "symbols.md",
     "Intake24.md",
     "year-3/osm/lecture0x01.md",
     "year-1/images-yr1/2-switch-diagram.png",
@@ -256,7 +273,6 @@
     "year-1/NCCD/osi-7-layer-model.md",
     "year-1/NCCD/firewalls.md",
     "year-1/NCCD/dns.md",
-    "year-1/CSAO/0x0007/procedures-and-the-stack-operation.md",
     "year-1/CSAO/0x0000/csao-tutorial-0x0000.pdf"
   ]
 }
