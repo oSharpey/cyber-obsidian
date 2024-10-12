@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-3/proj/JournalDB/Differential Power Analysis Attacks on Different Implementations of AES with the ChipWhisperer Nano.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-3/proj/JournalDB/Differential Power Analysis Attacks on Different Implementations of AES with the ChipWhisperer Nano.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-3/proj/JournalDB/Differential Power Analysis Attacks on Different Implementations of AES with the ChipWhisperer Nano.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-3/proj/JournalDB/Differential Power Analysis Attacks on Different Implementations of AES with the ChipWhisperer Nano.md"
+                "file": "year-3/proj/Paper Tracker.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-3/proj/JournalDB/Differential Power Analysis Attacks on Different Implementations of AES with the ChipWhisperer Nano.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -216,6 +216,8 @@
   },
   "active": "fa5633d4e1624f7a",
   "lastOpenFiles": [
+    "year-3/proj/JournalDB/Differential Power Analysis Attacks on Different Implementations of AES with the ChipWhisperer Nano.md",
+    "year-3/proj/JournalDB/Advanced modes in AES - Are they safe from power analysis based side channel attacks?.md",
     "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
     "year-3/proj/JournalDB/Power analysis attacks on the AES-128 S-box using differential power analysis (DPA) and correlation power analysis (CPA).md",
     "year-3/proj/Paper Tracker.md",
@@ -241,8 +243,6 @@
     "year-1/CSAO/0x0000/csao-intro.md",
     "year-1/CSAO/0x0000/cpu-architecture.md",
     "year-1/CF/wannacry-timeline.md",
-    "year-1/CF/Untitled.md",
-    "year-1/CF/the-cyber-lexicon.md",
     "Untitled.canvas",
     "wp4660137-anime-lofi-wallpapers.jpg",
     "year-3/proj/JournalDB",
