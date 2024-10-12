@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Notion/Journal Tracker (V1)/Paper Tracker.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#tag",
+                "query": "tag:#reading",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -73,11 +73,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 270.5
+    "width": 328.5
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -213,7 +214,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "fa5633d4e1624f7a",
+  "active": "2ed04788633b615d",
   "lastOpenFiles": [
     "Notion/Journal Tracker (V1)/JournalDB/New Paper.md",
     "Notion/Journal Tracker (V1)/Paper Tracker.md",
