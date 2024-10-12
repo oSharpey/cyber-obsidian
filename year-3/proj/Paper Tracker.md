@@ -14,6 +14,7 @@ cssclasses:
 | [[Deep Learning-Based Power Analysis Attack for Extracting AES Keys on ATmega328P Microcontroller]]                          | #not-started | #AES #AI #Experimental       |           | [10.1007/s13369-023-08341-3](https://doi.org/10.1007/s13369-023-08341-3)             |                                                                                   |
 | [[Power Analysis Side Channel Attacks and Countermeasures for the Internet of Things]]                                       | #not-started | #Power-analysis #IOT         |           | [10.1109/PAINE56030.2022.10014854](https://doi.org/10.1109/PAINE56030.2022.10014854) | Look at low power IOT                                                             |
 |                                                                                                                              |              |                              |           |                                                                                      |                                                                                   |
+|                                                                                                                              |              |                              |           |                                                                                      |                                                                                   |
 
   
   

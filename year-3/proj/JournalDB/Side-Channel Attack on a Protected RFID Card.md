@@ -1,8 +1,9 @@
 ---
 Status: Not started
 tags:
-  - GRB
-DOI: 10.48550/arXiv.2307.02976
+  - Power-analysis
+  - "#RFID"
+DOI: 10.1109/ACCESS.2018.2870663
 CreatedTime: 2024-10-12T16:52
 ---
 ```Markdown
