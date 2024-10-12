@@ -1,0 +1,10 @@
+---
+cssclasses:
+  - purpleRed
+  - wideTable
+---
+
+
+| asdasd |     |
+| :----- | --- |
+|        |     |

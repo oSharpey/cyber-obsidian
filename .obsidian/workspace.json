@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-3/osm/lecture0x01.md",
+                "file": "year-3/proj/Papers.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-3/osm/lecture0x01.md",
+                "file": "year-3/proj/Papers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-3/osm/lecture0x01.md",
+                "file": "year-3/proj/Papers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-3/osm/lecture0x01.md"
+                "file": "year-3/proj/Papers.md"
               }
             }
           },
@@ -171,7 +171,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-3/osm/lecture0x01.md",
+                "file": "year-3/proj/Papers.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -212,8 +212,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -228,11 +227,13 @@
   },
   "active": "ad99098dbd781374",
   "lastOpenFiles": [
-    "Interview.md",
+    "year-3/osm/lecture0x01.md",
+    "year-3/proj/Papers.md",
+    "Untitled.canvas",
     "README.md",
+    "Interview.md",
     "symbols.md",
     "Intake24.md",
-    "year-3/osm/lecture0x01.md",
     "year-1/images-yr1/2-switch-diagram.png",
     "2024-07-21.md",
     "year-1/CSAO/0x0000/cpu-architecture.md",
@@ -272,7 +273,6 @@
     "year-2/HBCS/Week-3.md",
     "year-1/NCCD/osi-7-layer-model.md",
     "year-1/NCCD/firewalls.md",
-    "year-1/NCCD/dns.md",
     "year-1/CSAO/0x0000/csao-tutorial-0x0000.pdf"
   ]
 }
