@@ -1,9 +1,9 @@
 ---
-Status: Skimmed
+Status: Not started
 tags:
-  - Cosmology
-  - JWST
-DOI: 10.1093/mnras/stad2032
+  - "#Low-Power"
+  - IOT
+DOI: 10.1504/IJHPSA.2018.100713
 CreatedTime: 2024-10-12T16:52
 ---
 ```Markdown
