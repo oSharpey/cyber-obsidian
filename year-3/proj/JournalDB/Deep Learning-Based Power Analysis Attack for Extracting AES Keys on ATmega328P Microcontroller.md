@@ -1,9 +1,10 @@
 ---
-Status: Reading
+Status: Not started
 tags:
-  - Cosmology
-  - GW
-DOI: 10.1088/1361-6382/aac608
+  - AES
+  - Experimental
+  - AI
+DOI: 10.1007/s13369-023-08341-3
 CreatedTime: 2024-10-12T16:52
 ---
 ```Markdown
