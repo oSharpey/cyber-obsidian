@@ -281,7 +281,7 @@ Eg. cssclass: purpleRed, wideTable
 	border: 0 none;
 }
 .whiteRed th {	
-	font-family:Lato-Bold;
+	/*font-family:Lato-Bold;*/
 	font-size:15px;
 	color:#fa4251;
 	background-color: white !important;
@@ -289,7 +289,7 @@ Eg. cssclass: purpleRed, wideTable
 	padding: 14px 15px;
 }
 .whiteRed td {	
-	font-family:Lato-Regular;
+	/*font-family:Lato-Regular;8*/
 	font-size:15px;
 	color:gray;
 	line-height:1.5;
