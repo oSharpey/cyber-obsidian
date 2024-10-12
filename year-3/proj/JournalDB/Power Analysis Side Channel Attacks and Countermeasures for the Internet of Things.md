@@ -1,10 +1,9 @@
 ---
-Status: Completed
+Status: Not started
 tags:
-  - Cosmology
-  - FRB
-  - SKA-Mission
-DOI: 10.48550/arXiv.2307.01605
+  - Power-analysis
+  - "#IOT"
+DOI: 10.1109/PAINE56030.2022.10014854
 CreatedTime: 2024-10-12T16:52
 ---
 ```Markdown
