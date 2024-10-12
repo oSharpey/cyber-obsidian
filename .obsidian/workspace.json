@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-3/proj/JournalDB/Lightweight Cryptography - A Solution to Secure IoT.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#annotated",
+                "query": "tag:#IPT",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-3/proj/JournalDB/Lightweight Cryptography - A Solution to Secure IoT.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-3/proj/JournalDB/Lightweight Cryptography - A Solution to Secure IoT.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-3/proj/JournalDB/Lightweight Cryptography - A Solution to Secure IoT.md"
+                "file": "year-3/proj/Paper Tracker.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-3/proj/JournalDB/Lightweight Cryptography - A Solution to Secure IoT.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -216,9 +216,10 @@
   },
   "active": "fa5633d4e1624f7a",
   "lastOpenFiles": [
-    "year-3/proj/JournalDB/Situation-aware Adaptive Cryptography.md",
-    "year-3/proj/JournalDB/Lightweight Cryptography - A Solution to Secure IoT.md",
+    "year-3/proj/JournalDB/Power analysis attack against encryption devices - a comprehensive analysis of AES, DES, and BC3.md",
     "year-3/proj/Paper Tracker.md",
+    "year-3/proj/JournalDB/Lightweight Cryptography - A Solution to Secure IoT.md",
+    "year-3/proj/JournalDB/Situation-aware Adaptive Cryptography.md",
     "year-3/proj/JournalDB/A comprehensive survey of modern symmetric cryptographic solutions for resource constrained environments.md",
     "year-3/proj/JournalDB/Energy-efficient Adaptive Encryption for Wireless Visual Sensor Networks.md",
     "year-3/proj/JournalDB/Power analysis attacks on the AES-128 S-box using differential power analysis (DPA) and correlation power analysis (CPA).md",
@@ -242,7 +243,6 @@
     "year-1/NCCD/lab-02/lab-02-setup.md",
     "year-1/NCCD/lab-02/lab-02-commands.md",
     "year-1/images-yr1/2-switch-diagram.png",
-    "year-1/CSAO/0x0008/stack-based-buffer-overflows.md",
     "Untitled.canvas",
     "wp4660137-anime-lofi-wallpapers.jpg",
     "year-3/proj/JournalDB",
