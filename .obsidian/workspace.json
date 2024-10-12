@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notion/Journal Tracker (V1)/Paper Tracker.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notion/Journal Tracker (V1)/Paper Tracker.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notion/Journal Tracker (V1)/Paper Tracker.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notion/Journal Tracker (V1)/Paper Tracker.md"
+                "file": "year-3/proj/Paper Tracker.md"
               }
             }
           },
@@ -159,7 +159,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Notion/Journal Tracker (V1)/Paper Tracker.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -214,28 +214,29 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "fa5633d4e1624f7a",
+  "active": "2ed04788633b615d",
   "lastOpenFiles": [
-    "Notion/Journal Tracker (V1)/JournalDB/New Paper.md",
-    "Notion/Journal Tracker (V1)/Paper Tracker.md",
-    "Notion/Journal Tracker (V1)/JournalDB/JWST early Universe observations and ΛCDM cosmology.md",
-    "Notion/Journal Tracker (V1)/JournalDB/Supernova Limits on Muonic Dark Forces.md",
-    "Notion/Journal Tracker (V1)/JournalDB/Proton irradiation of plastic scintillator bars for POLAR-2.md",
-    "Notion/Journal Tracker (V1)/JournalDB/Multi-messenger Observations of Tidal Disruption Events.md",
-    "Notion/Journal Tracker (V1)/JournalDB/Future developments in ground-based gamma-ray astronomy.md",
-    "Notion/Journal Tracker (V1)/JournalDB/Cosmological backgrounds of gravitational waves.md",
-    "Notion/Journal Tracker (V1)/JournalDB/An S-band cryogenic phased array feed for radio astronomy.md",
+    "year-3/proj/JournalDB/Future developments in ground-based gamma-ray astronomy.md",
+    "year-3/proj/JournalDB/Cosmology with fast radio bursts in the era of SKA.md",
+    "year-3/proj/JournalDB/Cosmological backgrounds of gravitational waves.md",
+    "year-3/proj/JournalDB/An S-band cryogenic phased array feed for radio astronomy.md",
+    "year-3/proj/Paper Tracker.md",
+    "year-3/proj/JournalDB/Rotation measure variations in galactic centre pulsars.md",
     "year-3/proj/Papers.md",
-    "Notion/Journal Tracker (V1)/JournalDB/Rotation measure variations in galactic centre pulsars.md",
-    "Notion/Journal Tracker (V1)/JournalDB/Cosmology with fast radio bursts in the era of SKA.md",
-    "Notion/Journal Tracker (V1)/JournalDB/Microsecond-duration bursts from FRB 20121102A.md",
+    "year-3/proj/JournalDB/JWST early Universe observations and ΛCDM cosmology.md",
+    "year-3/proj/JournalDB/Proton irradiation of plastic scintillator bars for POLAR-2.md",
+    "year-3/proj/JournalDB/New Paper.md",
+    "2024-10-12.md",
+    "Untitled.canvas",
+    "year-3/proj/JournalDB/Supernova Limits on Muonic Dark Forces.md",
+    "year-3/proj/JournalDB/Multi-messenger Observations of Tidal Disruption Events.md",
+    "year-3/proj/JournalDB/Microsecond-duration bursts from FRB 20121102A.md",
     "wp4660137-anime-lofi-wallpapers.jpg",
-    "Notion/Journal Tracker (V1)/JournalDB",
+    "year-3/proj/JournalDB",
     "Notion/Journal Tracker (V1)",
     "Notion",
     "year-3/osm/lecture0x01.md",
     "README.md",
-    "Untitled.canvas",
     "Interview.md",
     "symbols.md",
     "Intake24.md",
@@ -252,8 +253,6 @@
     "year-2/HBCS/cw2.md",
     "year-2/IRSM/Lecture-5.md",
     "year-2/IRSM/Lecture-3.md",
-    "year-2/IRSM/Lecture-2.md",
-    "year-2/IRSM/Lecture-1.md",
     "SSLC",
     "year-2/CCSE/cw1/book-hotel2.png",
     "year-2/images-y2/risk_treatment.png",
