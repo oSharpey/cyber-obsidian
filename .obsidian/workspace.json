@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#completed",
+                "query": "tag:#skimmed",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md"
+                "file": "year-3/proj/Paper Tracker.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -214,18 +214,18 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "fa5633d4e1624f7a",
+  "active": "8e219bebd780e6c9",
   "lastOpenFiles": [
+    "year-3/proj/JournalDB/New Paper.md",
+    "year-3/proj/JournalDB/Advanced modes in AES - Are they safe from power analysis based side channel attacks?.md",
+    "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
     "year-3/proj/Paper Tracker.md",
     "year-3/proj/JournalDB/Future developments in ground-based gamma-ray astronomy.md",
     "year-3/proj/JournalDB/Cosmology with fast radio bursts in the era of SKA.md",
     "year-3/proj/JournalDB/Cosmological backgrounds of gravitational waves.md",
-    "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
     "year-3/proj/JournalDB/Rotation measure variations in galactic centre pulsars.md",
     "year-3/proj/Papers.md",
     "year-3/proj/JournalDB/JWST early Universe observations and ΛCDM cosmology.md",
-    "year-3/proj/JournalDB/Proton irradiation of plastic scintillator bars for POLAR-2.md",
-    "year-3/proj/JournalDB/New Paper.md",
     "2024-10-12.md",
     "Untitled.canvas",
     "year-3/proj/JournalDB/Supernova Limits on Muonic Dark Forces.md",
