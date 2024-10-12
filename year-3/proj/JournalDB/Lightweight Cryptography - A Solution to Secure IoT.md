@@ -3,8 +3,8 @@ Status: Not started
 tags:
   - "#Low-Power"
   - IOT
-DOI: 10.1016/j.jnca.2014.09.006
-CreatedTime: 2024-10-12T19:25:00
+DOI: " http://lup.lub.lu.se/student-papers/record/8936871"
+CreatedTime: 2024-10-12T16:52
 ---
 ```Markdown
 Write down the structure of the research paper.
