@@ -1,8 +1,9 @@
 ---
-Status: Paused
+Status: Not started
 tags:
-  - FRB
-DOI: 10.48550/arXiv.2307.02303
+  - Low-Power
+  - IOT
+DOI: 10.1016/j.pmcj.2022.101552
 CreatedTime: 2024-10-12T16:52
 ---
 ```Markdown

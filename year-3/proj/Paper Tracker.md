@@ -4,7 +4,6 @@ cssclasses:
   - purpleRed
 ---
 
-
 | PaperName                                                                                                                    | Status       | Tags                         | Will use? | DOI                                                                                  | Remarks                                                                           |
 | ---------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------------------------- | --------- | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
 | [[Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman]]                                        | #not-started | #Review-Paper #DPA #CPA      |           | [10.3390/cryptography4020015](https://doi.org/10.3390/cryptography4020015)           | Good overview of past research                                                    |

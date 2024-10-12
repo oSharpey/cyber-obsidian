@@ -1,7 +1,7 @@
 {
   "theme": "obsidian",
-  "cssTheme": "Things",
-  "accentColor": "#163832",
+  "cssTheme": "Mammoth",
+  "accentColor": "#90dfd0",
   "enabledCssSnippets": [
     "tables"
   ]
