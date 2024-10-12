@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-3/proj/Paper Tracker.md",
+                "file": "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-3/proj/Paper Tracker.md",
+                "file": "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-3/proj/Paper Tracker.md",
+                "file": "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-3/proj/Paper Tracker.md"
+                "file": "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md"
               }
             }
           },
@@ -159,7 +158,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-3/proj/Paper Tracker.md",
+                "file": "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -200,7 +199,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,13 +214,13 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "2ed04788633b615d",
+  "active": "fa5633d4e1624f7a",
   "lastOpenFiles": [
+    "year-3/proj/Paper Tracker.md",
     "year-3/proj/JournalDB/Future developments in ground-based gamma-ray astronomy.md",
     "year-3/proj/JournalDB/Cosmology with fast radio bursts in the era of SKA.md",
     "year-3/proj/JournalDB/Cosmological backgrounds of gravitational waves.md",
-    "year-3/proj/JournalDB/An S-band cryogenic phased array feed for radio astronomy.md",
-    "year-3/proj/Paper Tracker.md",
+    "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
     "year-3/proj/JournalDB/Rotation measure variations in galactic centre pulsars.md",
     "year-3/proj/Papers.md",
     "year-3/proj/JournalDB/JWST early Universe observations and ΛCDM cosmology.md",

@@ -1,8 +1,9 @@
 ---
-Status: Cancelled
+Status: Not started
 tags:
-  - Radio
-DOI: 10.1093/rasti/rzad025
+  - Review-Paper
+  - Power-analysis
+DOI: 10.3390/cryptography4020015
 CreatedTime: 2024-10-12T16:52
 ---
 ```Markdown
