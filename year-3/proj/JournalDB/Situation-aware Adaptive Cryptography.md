@@ -1,8 +1,9 @@
 ---
-Status: Backlog
+Status: Not started
 tags:
-  - TDE
-DOI: 10.48550/arXiv.2307.00902
+  - "#Low-Power"
+  - IOT
+DOI: " http://lup.lub.lu.se/student-papers/record/8936871"
 CreatedTime: 2024-10-12T16:52
 ---
 ```Markdown
