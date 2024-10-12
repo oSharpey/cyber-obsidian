@@ -2,7 +2,10 @@
 Status: Not started
 tags:
   - AES
-DOI: 10.1093/mnras/stad2047
+  - CPA
+  - DPA
+  - Experimental
+DOI: 10.1080/23742917.2016.1231523
 CreatedTime: 2024-10-12T16:52
 ---
 ```Markdown

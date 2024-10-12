@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-3/proj/Paper Tracker.md",
+                "file": "year-3/proj/JournalDB/Differential Power Analysis Attacks on Different Implementations of AES with the ChipWhisperer Nano.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-3/proj/Paper Tracker.md",
+                "file": "year-3/proj/JournalDB/Differential Power Analysis Attacks on Different Implementations of AES with the ChipWhisperer Nano.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-3/proj/Paper Tracker.md",
+                "file": "year-3/proj/JournalDB/Differential Power Analysis Attacks on Different Implementations of AES with the ChipWhisperer Nano.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-3/proj/Paper Tracker.md"
+                "file": "year-3/proj/JournalDB/Differential Power Analysis Attacks on Different Implementations of AES with the ChipWhisperer Nano.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-3/proj/Paper Tracker.md",
+                "file": "year-3/proj/JournalDB/Differential Power Analysis Attacks on Different Implementations of AES with the ChipWhisperer Nano.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -216,9 +216,9 @@
   },
   "active": "fa5633d4e1624f7a",
   "lastOpenFiles": [
+    "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
     "year-3/proj/JournalDB/Power analysis attacks on the AES-128 S-box using differential power analysis (DPA) and correlation power analysis (CPA).md",
     "year-3/proj/Paper Tracker.md",
-    "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
     "README.md",
     "year-1/SDS/lesson-1.md",
     "year-1/OSCC/lesson-8/swapping.md",
