@@ -1,7 +1,6 @@
 ---
 cssclasses:
-  - purpleRed
-  - wideTable
+  - whiteRed whiteRed-rounded wideTable
 ---
 
 

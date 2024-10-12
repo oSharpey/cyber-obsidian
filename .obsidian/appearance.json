@@ -1,5 +1,8 @@
 {
   "theme": "obsidian",
   "cssTheme": "Things",
-  "accentColor": "#163832"
+  "accentColor": "#163832",
+  "enabledCssSnippets": [
+    "tables"
+  ]
 }
