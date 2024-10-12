@@ -9,9 +9,9 @@
           "b": 255
         },
         "background_color": {
-          "r": 23,
-          "g": 211,
-          "b": 95
+          "r": 32,
+          "g": 162,
+          "b": 82
         },
         "luminance_offset": 0.15
       },

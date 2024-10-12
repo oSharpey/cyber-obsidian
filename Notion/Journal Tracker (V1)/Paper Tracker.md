@@ -5,7 +5,7 @@ cssclasses:
 ---
 
 
-| Journal Name                                            | Status     | Tags            | DOI                       | Remarks |
+| PaperName                                               | Status     | Tags            | DOI                       | Remarks |
 | ------------------------------------------------------- | ---------- | --------------- | ------------------------- | ------- |
 | [[JWST early Universe observations and ΛCDM cosmology]] | #completed | Cosmology, JWST | 10.1093/mnras/stad2032    |         |
 | [[Supernova Limits on Muonic Dark Forces]]              | #skimmed   | Supernova       | 10.48550/arXiv.2307.03143 |         |
