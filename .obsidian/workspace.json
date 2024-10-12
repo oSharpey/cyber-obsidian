@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-3/proj/Papers.md",
-                "mode": "preview",
+                "file": "Notion/Journal Tracker (V1)/Paper Tracker.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-3/proj/Papers.md",
+                "file": "Notion/Journal Tracker (V1)/Paper Tracker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-3/proj/Papers.md",
+                "file": "Notion/Journal Tracker (V1)/Paper Tracker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-3/proj/Papers.md"
+                "file": "Notion/Journal Tracker (V1)/Paper Tracker.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-3/proj/Papers.md",
+                "file": "Notion/Journal Tracker (V1)/Paper Tracker.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -209,14 +209,31 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-importer:Open Importer": false
     }
   },
   "active": "fa5633d4e1624f7a",
   "lastOpenFiles": [
+    "Notion/Journal Tracker (V1)/JournalDB/New Paper.md",
+    "Notion/Journal Tracker (V1)/JournalDB/Supernova Limits on Muonic Dark Forces.md",
+    "Notion/Journal Tracker (V1)/Paper Tracker.md",
+    "Notion/Journal Tracker (V1)/JournalDB/JWST early Universe observations and ΛCDM cosmology.md",
+    "Notion/Journal Tracker (V1)/JournalDB/Proton irradiation of plastic scintillator bars for POLAR-2.md",
+    "Notion/Journal Tracker (V1)/JournalDB/Multi-messenger Observations of Tidal Disruption Events.md",
+    "Notion/Journal Tracker (V1)/JournalDB/Future developments in ground-based gamma-ray astronomy.md",
+    "Notion/Journal Tracker (V1)/JournalDB/Cosmological backgrounds of gravitational waves.md",
+    "Notion/Journal Tracker (V1)/JournalDB/An S-band cryogenic phased array feed for radio astronomy.md",
+    "year-3/proj/Papers.md",
+    "Notion/Journal Tracker (V1)/JournalDB/Rotation measure variations in galactic centre pulsars.md",
+    "Notion/Journal Tracker (V1)/JournalDB/Cosmology with fast radio bursts in the era of SKA.md",
+    "Notion/Journal Tracker (V1)/JournalDB/Microsecond-duration bursts from FRB 20121102A.md",
+    "wp4660137-anime-lofi-wallpapers.jpg",
+    "Notion/Journal Tracker (V1)/JournalDB",
+    "Notion/Journal Tracker (V1)",
+    "Notion",
     "year-3/osm/lecture0x01.md",
     "README.md",
-    "year-3/proj/Papers.md",
     "Untitled.canvas",
     "Interview.md",
     "symbols.md",
@@ -236,30 +253,14 @@
     "year-2/IRSM/Lecture-3.md",
     "year-2/IRSM/Lecture-2.md",
     "year-2/IRSM/Lecture-1.md",
-    "year-2/IRSM/cw1.md",
-    "year-2/IRSM/Lecture-9.md",
-    "year-2/IRSM/Lecture-8.md",
     "SSLC",
-    "year-2/HBCS/Reading-Summaries.md",
-    "year-2/HBCS/CW1.md",
-    "year-2/CCSE/cw1/allcode.md",
-    "year-2/CCSE/cw1/allcode_tmp.html",
-    "year-2/CCSE/cw1/allcode.pdf",
     "year-2/CCSE/cw1/book-hotel2.png",
-    "year-2/HBCS/T2-W1.md",
-    "year-2/HBCS/Week-9.md",
-    "year-2/HBCS/Week-5.md",
     "year-2/images-y2/risk_treatment.png",
     "year-2/images-y2/risk_handling.png",
     "year-2/images-y2/residual_risk.png",
     "year-2/images-y2/mit_plan_example.png",
     "year-2/images-y2/ra_deliverables.png",
     "year-2/images-y2/heatmap.png",
-    "year-2/images-y2/rating_key.png",
-    "year-2/images-y2/risk_calc_example.png",
-    "year-2/HBCS/Week-3.md",
-    "year-1/NCCD/osi-7-layer-model.md",
-    "year-1/NCCD/firewalls.md",
-    "year-1/CSAO/0x0000/csao-tutorial-0x0000.pdf"
+    "year-2/images-y2/rating_key.png"
   ]
 }
