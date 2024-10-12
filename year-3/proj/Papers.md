@@ -1,9 +1,10 @@
 ---
 cssclasses:
-  - whiteRed whiteRed-rounded wideTable
+  - wideTable
+  - purpleRed
 ---
 
 
-| asdasd |     |
-| :----- | --- |
-|        |     |
+| Paper |     |     |     |     |     |     |
+|:----- | --- | --- | --- | --- | --- | --- |
+|       |     |     |     |     |     |     |

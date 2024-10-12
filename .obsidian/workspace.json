@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "year-3/proj/Papers.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "ad99098dbd781374",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "year-3/proj/Papers.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -225,12 +212,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ad99098dbd781374",
+  "active": "fa5633d4e1624f7a",
   "lastOpenFiles": [
     "year-3/osm/lecture0x01.md",
+    "README.md",
     "year-3/proj/Papers.md",
     "Untitled.canvas",
-    "README.md",
     "Interview.md",
     "symbols.md",
     "Intake24.md",
