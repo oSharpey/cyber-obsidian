@@ -1,6 +1,9 @@
 ---
 Status: Not started
-CreatedTime: 2024-10-12T16:52
+tags:
+  - "#Low-Power"
+DOI: " http://lup.lub.lu.se/student-papers/record/8936871"
+CreatedTime: 2024-10-12T19:22:00
 ---
 ```Markdown
 Write down the structure of the research paper.
