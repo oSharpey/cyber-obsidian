@@ -68,7 +68,7 @@ Determine the number of encryption operations and power traces to collect for ea
 
 ## 5. Data Analysis
 
-### 5.1 Analyzing Power Traces
+### 5.1 Analysing Power Traces
 - Use signal processing techniques (e.g., filtering, noise reduction) to clean the power traces.
 - Perform differential power analysis (DPA) and simple power analysis (SPA) to determine key leakage.
 ### 5.2 Evaluating Attack Effectiveness
@@ -83,24 +83,23 @@ Determine the number of encryption operations and power traces to collect for ea
 - Calculate attack success rates for each configuration
 - Analyse the relationship between energy efficiency and security
 - Compare adaptive system performance to static configurations
-### 5.5 Visualise your results
+### 5.5 Visualise results
 - Create graphs showing attack success rates vs. number of traces
 - Plot energy consumption against security level
 - Develop comparative charts for different AES modes and key sizes
-### 17. Interpret your findings
-- Identify patterns and trends in the data
-- Relate results back to your research questions and hypotheses
-
 
 ## 6. Discussion
 
 ### 6.1 Vulnerability of Adaptive Encryption Systems
 - Discuss how key sizes, modes of operation, and IV sizes affect the effectiveness of side-channel attacks.
 - Explore the trade-off between energy efficiency and security in adaptive encryption systems.
+- **Key Size**: Discuss the differences in vulnerability to power analysis attacks across different AES key sizes (128-bit, 192-bit, and 256-bit). Did the larger key sizes provide better protection, as theory suggests? Did the power analysis attacks succeed more easily with smaller keys?
+	- For example, if **AES-128** was significantly more vulnerable to differential power analysis (DPA) than AES-256, you can speculate that the reduced number of key rounds may provide more opportunities for attackers to exploit leakage from intermediate states.
+	- Consider also any **trade-offs** between the smaller key sizes and lower energy consumption—was AES-128 more vulnerable, but also more energy-efficient? How should that trade-off be interpreted?
+
 
 ### 6.2 Implications for Energy-Constrained Devices
 - Implications for the security of IoT devices, mobile devices, and other energy-constrained platforms using adaptive encryption systems.
-
 ### 6.3 Limitations and Challenges
 - Discuss any limitations of the experimental setup (e.g., noise in power traces, hardware limitations).
 - Consider how the results may differ with other side-channel attack techniques or more advanced hardware.
