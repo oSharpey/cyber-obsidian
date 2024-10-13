@@ -5,6 +5,7 @@
   "things-style@@active-line": false,
   "minimal-advanced@@styled-scrollbars": true,
   "minimal-advanced@@cursor": "default",
-  "things-style@@h6-color": "#37C171",
-  "things-style@@h3-color": "#D97B3C"
+  "things-style@@h6-color": "#24B637",
+  "things-style@@h3-color": "#EE6A37",
+  "things-style@@h2-underline": true
 }

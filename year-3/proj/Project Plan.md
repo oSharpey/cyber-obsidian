@@ -1,5 +1,7 @@
 # Dissertation Plan: Analysing the Effectiveness of Side-Channel Attacks on an Adaptive Encryption System Using Power Analysis
 
+
+## Phase 1: Preparation and Background Research 
 ### 1. Abstract
 A concise overview of the dissertation, outlining the research problem, objectives, methodology, and key findings. The aim will be to explore how effective power analysis side-channel attacks (specifically using the ChipWhisperer Lite) are against AES encryption, particularly when encryption parameters such as key size, encryption mode, and IV size are adapted for energy constraints.
 ### 2. Introduction
@@ -19,53 +21,43 @@ A concise overview of the dissertation, outlining the research problem, objectiv
   - How do different AES modes affect attack effectiveness?
   - What is the impact of key and IV sizes on attack success rates?
   - How does the adaptive nature of the system influence its vulnerability?
-
-
 ### 3. Literature Review
-
 #### 3.1 Overview of Encryption Systems
 - Symmetric key encryption, with a focus on AES.
 - Modes of operation in AES (e.g., CBC, ECB, GCM).
-- Importance of initialization vectors (IV) in encryption.
-
+- Importance of initialisation vectors (IV) in encryption.
 #### 3.2 Side-Channel Attacks (SCA)
 - Overview of side-channel attacks, with a specific focus on power analysis (differential power analysis and simple power analysis).
 - Historical examples of power analysis attacks on AES and similar encryption schemes.
 - Impact of key size, mode of operation, and IV on side-channel vulnerabilities.
-
-### 3.3 Adaptive Encryption Systems
-- Overview of systems that adapt encryption parameters (e.g., key size, encryption mode) to optimize for energy efficiency.
+#### 3.3 Adaptive Encryption Systems
+- Overview of systems that adapt encryption parameters (e.g., key size, encryption mode) to optimise for energy efficiency.
 - Trade-offs between security and energy consumption in constrained devices (e.g., IoT, embedded systems).
-
-### 3.4 Tools and Platforms for SCA
+#### 3.4 Tools and Platforms for SCA
 - Overview of hardware platforms used in side-channel research.
 - Detailed discussion of the ChipWhisperer Lite, its capabilities, and why it’s suitable for this study.
-### 3.5 Summary of Gaps in Existing Literature
+#### 3.5 Summary of Gaps in Existing Literature
 - Lack of studies on adaptive encryption systems and their vulnerability to side-channel attacks when energy consumption is a factor.
 
-## 4. Methodology
+## Phase 2: Experimental Design and Setup
+### 4. Methodology
 
-### 4.1 Experimental Setup
-
-#### Hardware and Software
+#### 4.1 Experimental Setup
 - **ChipWhisperer Lite:** A low-cost hardware tool for conducting power analysis attacks.
 - **Target Device:** Adaptive encryption system capable of adjusting encryption parameters (using AES).
 - **Energy Measurement Tools:** Instrumentation to monitor power consumption during encryption.
-
-### 4.2 Encryption Parameters to be Tested
+#### 4.2 Encryption Parameters to be Tested
 - **AES Key Sizes:** 128-bit, 192-bit, and 256-bit.
 - **AES Modes of Operation:** ECB, CBC, GCM.
-- **Initialization Vector (IV) Sizes:** Standard vs. modified sizes, depending on implementation.
-
-### 4.3 Experimental Procedure
+- **Initialisation Vector (IV) Sizes:** Standard vs. modified sizes, depending on implementation.
+#### 4.3 Experimental Procedure
 1. **Configure** the adaptive encryption system to adjust key size, encryption mode, and IV size based on predefined energy levels.
 2. **Implement** the system on a power-constrained device (e.g., IoT, embedded device) to simulate real-world energy efficiency requirements.
 3. **Execute** side-channel attacks (using the ChipWhisperer Lite) on each configuration:
     - Measure the system’s power consumption during encryption.
     - Capture power traces for analysis.
 4. **Perform** the same set of power analysis attacks using differential and simple power analysis techniques across all configurations.
-
-### 4.4 Data Collection
+#### 4.4 Data Collection
 - **Power Traces:** Collect power traces from the encryption process for each configuration.
 - **Execution Time:** Record the encryption time under each configuration.
 - **Energy Consumption:** Measure the energy consumption for different parameter settings.
