@@ -47,6 +47,8 @@ A concise overview of the dissertation, outlining the research problem, objectiv
 - **Target Device:** Adaptive encryption system capable of adjusting encryption parameters (using AES).
 - **Energy Measurement Tools:** Instrumentation to monitor power consumption during encryption.
 #### 4.2 Encryption Parameters to be Tested
+Define test cases: a. AES modes: ECB, CBC, CTR b. Key sizes: 128, 192, 256 bits c. IV sizes: Standard and custom sizes
+Determine the number of encryption operations and power traces to collect for each configuration
 - **AES Key Sizes:** 128-bit, 192-bit, and 256-bit.
 - **AES Modes of Operation:** ECB, CBC, GCM.
 - **Initialisation Vector (IV) Sizes:** Standard vs. modified sizes, depending on implementation.
@@ -63,27 +65,32 @@ A concise overview of the dissertation, outlining the research problem, objectiv
 - **Energy Consumption:** Measure the energy consumption for different parameter settings.
 - **Side-Channel Attack Success:** Measure the success rate of recovering the encryption key.
 
----
 
 ## 5. Data Analysis
 
 ### 5.1 Analyzing Power Traces
 - Use signal processing techniques (e.g., filtering, noise reduction) to clean the power traces.
 - Perform differential power analysis (DPA) and simple power analysis (SPA) to determine key leakage.
-
 ### 5.2 Evaluating Attack Effectiveness
 - **Key Recovery Rate:** Compare the success rate of key recovery using DPA and SPA for each key size, encryption mode, and IV size.
 - **Leakage Analysis:** Quantify the amount of information leaked during encryption as the key size and IV size change.
 - **Impact of Mode:** Compare the vulnerability of different AES modes (e.g., CBC, GCM) to power analysis attacks.
-
 ### 5.3 Correlation Between Energy Consumption and Vulnerability
 - Examine the relationship between the energy efficiency (adaptive encryption settings) and the system’s vulnerability to side-channel attacks.
 - Identify trends in how lowering energy consumption increases susceptibility to power analysis attacks.
-
 ### 5.4 Statistical Analysis
 - Perform statistical tests (e.g., ANOVA) to determine the significance of the differences in key recovery success rates across different configurations.
+- Calculate attack success rates for each configuration
+- Analyse the relationship between energy efficiency and security
+- Compare adaptive system performance to static configurations
+### 5.5 Visualise your results
+- Create graphs showing attack success rates vs. number of traces
+- Plot energy consumption against security level
+- Develop comparative charts for different AES modes and key sizes
+### 17. Interpret your findings
+- Identify patterns and trends in the data
+- Relate results back to your research questions and hypotheses
 
----
 
 ## 6. Discussion
 
