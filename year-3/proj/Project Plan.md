@@ -59,31 +59,44 @@ Determine the number of encryption operations and power traces to collect for ea
     - Measure the system’s power consumption during encryption.
     - Capture power traces for analysis.
 4. **Perform** the same set of power analysis attacks using differential and simple power analysis techniques across all configurations.
-#### 4.4 Data Collection
+## Phase 3: Data Collection
+### 5 Data Collection
 - **Power Traces:** Collect power traces from the encryption process for each configuration.
 - **Execution Time:** Record the encryption time under each configuration.
 - **Energy Consumption:** Measure the energy consumption for different parameter settings.
 - **Side-Channel Attack Success:** Measure the success rate of recovering the encryption key.
+#### 5.1 Conduct pilot tests
+- Run a small-scale version of your experiments
+- Verify data collection procedures and quality
 
+#### 5.2 Perform full-scale experiments
+- Collect power traces for each AES configuration
+- Measure energy consumption and encryption/decryption times
+- Store all data in your prepared database
 
-## 5. Data Analysis
+#### 5.3 Implement power analysis attacks
+- Develop scripts for Correlation Power Analysis (CPA)
+- Attempt key recovery for each configuration
+- Record success rates and number of traces required
 
-### 5.1 Analysing Power Traces
+## Phase 4: Data Analysis
+### 6. Data Analysis
+#### 6.1 Analysing Power Traces
 - Use signal processing techniques (e.g., filtering, noise reduction) to clean the power traces.
 - Perform differential power analysis (DPA) and simple power analysis (SPA) to determine key leakage.
-### 5.2 Evaluating Attack Effectiveness
+#### 5.2 Evaluating Attack Effectiveness
 - **Key Recovery Rate:** Compare the success rate of key recovery using DPA and SPA for each key size, encryption mode, and IV size.
 - **Leakage Analysis:** Quantify the amount of information leaked during encryption as the key size and IV size change.
 - **Impact of Mode:** Compare the vulnerability of different AES modes (e.g., CBC, GCM) to power analysis attacks.
-### 5.3 Correlation Between Energy Consumption and Vulnerability
+#### 5.3 Correlation Between Energy Consumption and Vulnerability
 - Examine the relationship between the energy efficiency (adaptive encryption settings) and the system’s vulnerability to side-channel attacks.
 - Identify trends in how lowering energy consumption increases susceptibility to power analysis attacks.
-### 5.4 Statistical Analysis
+#### 5.4 Statistical Analysis
 - Perform statistical tests (e.g., ANOVA) to determine the significance of the differences in key recovery success rates across different configurations.
 - Calculate attack success rates for each configuration
 - Analyse the relationship between energy efficiency and security
 - Compare adaptive system performance to static configurations
-### 5.5 Visualise results
+#### 5.5 Visualise results
 - Create graphs showing attack success rates vs. number of traces
 - Plot energy consumption against security level
 - Develop comparative charts for different AES modes and key sizes
@@ -96,15 +109,15 @@ Determine the number of encryption operations and power traces to collect for ea
 - **Key Size**: Discuss the differences in vulnerability to power analysis attacks across different AES key sizes (128-bit, 192-bit, and 256-bit). Did the larger key sizes provide better protection, as theory suggests? Did the power analysis attacks succeed more easily with smaller keys?
 	- For example, if **AES-128** was significantly more vulnerable to differential power analysis (DPA) than AES-256, you can speculate that the reduced number of key rounds may provide more opportunities for attackers to exploit leakage from intermediate states.
 	- Consider also any **trade-offs** between the smaller key sizes and lower energy consumption—was AES-128 more vulnerable, but also more energy-efficient? How should that trade-off be interpreted?
-
-
+- **Energy-Adaptive Encryption**: Focuses is the adaptability of encryption to energy constraints. How did the system’s ability to **dynamically adjust parameters** based on energy needs impact its vulnerability to side-channel attacks? Did the encryption system become significantly more vulnerable when trying to conserve energy?
+    - If the system shifted to smaller key sizes or simpler modes to save power, discuss how these adjustments correlate with a **higher rate of key recovery**. Highlight if there's a particular **tipping point** where energy savings severely compromised security (e.g., when key size drops below 192 bits).
+- **Correlation Between Energy and Attack Success**: Based on statistical findings (such as correlation and regression analysis), discuss the relationship between **power consumption** and attack success rates. Was there a clear positive correlation, indicating that as energy consumption decreased, the system became more vulnerable?
+    - For instance, if you found that **lower power settings** led to **higher leakage**, explore the implications for real-world systems like IoT devices, where energy efficiency is critical. Can this result be generalised across similar adaptive encryption systems?
 ### 6.2 Implications for Energy-Constrained Devices
 - Implications for the security of IoT devices, mobile devices, and other energy-constrained platforms using adaptive encryption systems.
 ### 6.3 Limitations and Challenges
 - Discuss any limitations of the experimental setup (e.g., noise in power traces, hardware limitations).
 - Consider how the results may differ with other side-channel attack techniques or more advanced hardware.
-
----
 
 ## 7. Conclusion
 
