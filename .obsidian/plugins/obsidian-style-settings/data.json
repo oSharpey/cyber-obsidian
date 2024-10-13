@@ -4,5 +4,7 @@
   "obsidian-prism-theme@@dark-accent-color-preset": "pt-accent-color-red-dt",
   "things-style@@active-line": false,
   "minimal-advanced@@styled-scrollbars": true,
-  "minimal-advanced@@cursor": "default"
+  "minimal-advanced@@cursor": "default",
+  "things-style@@h6-color": "#37C171",
+  "things-style@@h3-color": "#D97B3C"
 }
