@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "year-3/proj/Project Plan.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -146,7 +146,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "e7e5d3e132aa53b5",
@@ -189,7 +189,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.5559484594931873,
+                  "scale": 0.026853926583728125,
                   "close": true
                 }
               }
@@ -199,8 +199,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 335.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,9 +215,11 @@
   },
   "active": "fa5633d4e1624f7a",
   "lastOpenFiles": [
+    "year-2/CCSE/cw1/allcode.md",
+    "year-2/CCSE/cw1/apibook.png",
     "year-3/proj/Paper Tracker.md",
-    "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
     "year-3/proj/Project Plan.md",
+    "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
     "Interview.md",
     "year-3/proj/JournalDB/Power Analysis Attacks on AES.md",
     "year-3/proj/JournalDB/Correlation power analysis of modes of encryption in AES and its countermeasures.md",
@@ -241,7 +242,6 @@
     "year-3/proj/JournalDB/Energy optimised cryptography for low power devices in internet of things.md",
     "README.md",
     "year-1/SDS/lesson-1.md",
-    "year-1/OSCC/lesson-8/swapping.md",
     "year-1/images-yr1/2-switch-diagram.png",
     "Untitled.canvas",
     "wp4660137-anime-lofi-wallpapers.jpg",
@@ -261,7 +261,6 @@
     "year-2/images-y2/residual_risk.png",
     "year-2/images-y2/mit_plan_example.png",
     "year-2/images-y2/ra_deliverables.png",
-    "year-2/images-y2/heatmap.png",
-    "year-2/images-y2/rating_key.png"
+    "year-2/images-y2/heatmap.png"
   ]
 }

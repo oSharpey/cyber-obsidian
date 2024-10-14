@@ -1,8 +1,9 @@
 {
   "theme": "obsidian",
-  "cssTheme": "Things",
+  "cssTheme": "Flexoki",
   "accentColor": "#90dfd0",
   "enabledCssSnippets": [
     "tables"
-  ]
+  ],
+  "nativeMenus": false
 }
