@@ -4,7 +4,6 @@ cssclasses:
   - purpleRed
 ---
 
-
 | PaperName                                                                                                                    | Status       | Tags                          | Will use? | DOI                                                                                                                                  | Remarks                                                                           |
 | ---------------------------------------------------------------------------------------------------------------------------- | ------------ | ----------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
 | [[Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman]]                                        | #not-started | #Review-Paper #DPA #CPA       |           | [10.3390/cryptography4020015](https://doi.org/10.3390/cryptography4020015)                                                           | Good overview of past research                                                    |
@@ -26,6 +25,8 @@ cssclasses:
 | [[Securing AES Designs Against Power Analysis Attacks - A Survey]]                                                           | #not-started | #Review-Paper #AES            |           | [10.1109/JIOT.2023.3265683](https://doi.org/10.1109/JIOT.2023.3265683)                                                               |                                                                                   |
 | [[Correlation power analysis of modes of encryption in AES and its countermeasures]]                                         | #not-started | #AES #CPA                     |           | [10.1016/j.future.2017.06.004](https://doi.org/10.1016/j.future.2017.06.004 "Persistent link using digital object identifier")       |                                                                                   |
 | [[Power Analysis Attacks on AES]]                                                                                            | #not-started | #AES #CPA #Book               |           | https://link.springer.com/chapter/10.1007/978-3-031-31034-8_8                                                                        |                                                                                   |
+| Comparison between Differential and Correlation Power Analysis Attacks on Embedded Systems                                   | #not-started | #AES #CPA #DPA #ChipWhisperer |           | https://webthesis.biblio.polito.it/21081/                                                                                            |                                                                                   |
+|                                                                                                                              |              |                               |           |                                                                                                                                      |                                                                                   |
 
   
   
