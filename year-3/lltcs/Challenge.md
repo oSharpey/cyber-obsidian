@@ -33,4 +33,8 @@ $ ldd ctf
 ```
 
 9) now the file can be run - so load it into IDA/Ghidra/Binja
-10) 
+10) rename vars see what it is doing - you see you need to pass in "show_me_the_flag"
+11) realise doing dynamically would be easier and load into gdb
+12) break at getenv to see what environment variable is needed and set it
+13) break at the rc4_decrypt to see what is needed in the envrioment variable and set it
+14) continue - get flag
