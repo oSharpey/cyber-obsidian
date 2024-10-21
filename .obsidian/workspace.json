@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-3/proj/Paper Tracker.md",
+                "file": "year-3/lltcs/Challenge.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 328.5,
-    "collapsed": true
+    "width": 328.5
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "year-3/proj/Paper Tracker.md",
+                "file": "year-3/lltcs/Challenge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "year-3/proj/Paper Tracker.md",
+                "file": "year-3/lltcs/Challenge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "year-3/proj/Paper Tracker.md"
+                "file": "year-3/lltcs/Challenge.md"
               }
             }
           },
@@ -164,7 +163,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "year-3/proj/Paper Tracker.md",
+                "file": "year-3/lltcs/Challenge.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -222,8 +221,9 @@
   },
   "active": "66f3d0ce9b278771",
   "lastOpenFiles": [
-    "year-3/proj/Project Plan.md",
     "year-3/proj/Paper Tracker.md",
+    "year-3/lltcs/Challenge.md",
+    "year-3/proj/Project Plan.md",
     "year-2/CCSE/cw1/allcode.md",
     "year-2/CCSE/cw1/apibook.png",
     "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
@@ -248,7 +248,6 @@
     "year-3/proj/JournalDB/Deep Learning-Based Power Analysis Attack for Extracting AES Keys on ATmega328P Microcontroller.md",
     "year-3/proj/JournalDB/Energy optimised cryptography for low power devices in internet of things.md",
     "README.md",
-    "year-1/SDS/lesson-1.md",
     "year-1/images-yr1/2-switch-diagram.png",
     "Untitled.canvas",
     "wp4660137-anime-lofi-wallpapers.jpg",
