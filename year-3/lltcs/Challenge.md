@@ -18,3 +18,19 @@ $ ldd ctf
 6) Load into a hex editor - elf file with bitmap header on top of it
 7) remove the bitmap header - this is the shared library
 8) link this library into the file
+
+```
+$ patchelf --replace-needed lib5ae9b7f.so ./lib/lib5ae9b7f.so --set-rpath lib ctf
+
+$ ldd ctf
+	linux-vdso.so.1 (0x00007fccdc8a6000)
+	./lib/lib5ae9b7f.so (0x00007fccdc400000)
+	libstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007fccdc000000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007fccdc859000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fccdc668000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fccdc31c000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fccdc8a8000)
+```
+
+9) now the file can be run - so load it into IDA/Ghidra/Binja
+10) 
