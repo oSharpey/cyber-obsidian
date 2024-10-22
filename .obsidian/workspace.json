@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 328.5
+    "width": 328.5,
+    "collapsed": true
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -218,7 +219,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "fa5633d4e1624f7a",
+  "active": "8e219bebd780e6c9",
   "lastOpenFiles": [
     "year-3/proj/JournalDB/Situation-aware Adaptive Cryptography.md",
     "year-3/proj/Paper Tracker.md",
