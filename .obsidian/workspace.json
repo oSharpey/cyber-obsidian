@@ -77,8 +77,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -219,11 +218,12 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "2ed04788633b615d",
+  "active": "fa5633d4e1624f7a",
   "lastOpenFiles": [
+    "year-3/proj/JournalDB/Energy optimised cryptography for low power devices in internet of things.md",
+    "year-3/proj/Paper Tracker.md",
     "year-3/proj/Project Plan.md",
     "year-3/lltcs/Challenge.md",
-    "year-3/proj/Paper Tracker.md",
     "year-2/CCSE/cw1/allcode.md",
     "year-2/CCSE/cw1/apibook.png",
     "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
@@ -246,7 +246,6 @@
     "year-3/proj/JournalDB/Power Analysis Side Channel Attacks and Countermeasures for the Internet of Things.md",
     "year-3/proj/JournalDB/Differential Power Analysis Attacks on Different Implementations of AES with the ChipWhisperer Nano.md",
     "year-3/proj/JournalDB/Deep Learning-Based Power Analysis Attack for Extracting AES Keys on ATmega328P Microcontroller.md",
-    "year-3/proj/JournalDB/Energy optimised cryptography for low power devices in internet of things.md",
     "README.md",
     "year-1/images-yr1/2-switch-diagram.png",
     "Untitled.canvas",
