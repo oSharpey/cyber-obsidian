@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#IPT",
+                "query": "tag:#not-started",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -77,7 +77,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -218,7 +219,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "fa5633d4e1624f7a",
+  "active": "2ed04788633b615d",
   "lastOpenFiles": [
     "year-3/proj/Project Plan.md",
     "year-3/lltcs/Challenge.md",
