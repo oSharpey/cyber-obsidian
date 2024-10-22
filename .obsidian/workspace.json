@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#not-started",
+                "query": "tag:#not-starte",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
