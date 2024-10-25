@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 328.5
+    "width": 328.5,
+    "collapsed": true
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -219,7 +220,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "2ed04788633b615d",
+  "active": "fa5633d4e1624f7a",
   "lastOpenFiles": [
     "year-3/proj/JournalDB/Deep Learning-Based Power Analysis Attack for Extracting AES Keys on ATmega328P Microcontroller.md",
     "year-3/proj/Paper Tracker.md",
