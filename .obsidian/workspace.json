@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-3/proj/Paper Tracker.md",
+                "file": "year-3/proj/Project Plan.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "year-3/lltcs/Challenge.md",
+                "file": "year-3/proj/Paper Tracker.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,13 +78,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 328.5,
-    "collapsed": true
+    "width": 328.5
   },
   "right": {
     "id": "e2efc083b9b7dcdc",
@@ -220,14 +219,14 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "fa5633d4e1624f7a",
+  "active": "66f3d0ce9b278771",
   "lastOpenFiles": [
-    "year-3/proj/JournalDB/Deep Learning-Based Power Analysis Attack for Extracting AES Keys on ATmega328P Microcontroller.md",
+    "year-3/proj/Project Plan.md",
     "year-3/proj/Paper Tracker.md",
+    "year-3/lltcs/Challenge.md",
+    "year-3/proj/JournalDB/Deep Learning-Based Power Analysis Attack for Extracting AES Keys on ATmega328P Microcontroller.md",
     "year-3/proj/JournalDB/Situation-aware Adaptive Cryptography.md",
     "year-3/proj/JournalDB/Energy optimised cryptography for low power devices in internet of things.md",
-    "year-3/proj/Project Plan.md",
-    "year-3/lltcs/Challenge.md",
     "year-2/CCSE/cw1/allcode.md",
     "year-2/CCSE/cw1/apibook.png",
     "year-3/proj/JournalDB/Power Side-Channel Attack Analysis - A Review of 20 Years of Study for the Layman.md",
