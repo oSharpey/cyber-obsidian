@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#skimmed",
+                "query": "tag:#annotated",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -242,7 +242,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "66f3d0ce9b278771",
+  "active": "2ed04788633b615d",
   "lastOpenFiles": [
     "year-3/proj/JournalDB/Hybrid and Adaptive Cryptographic-based secure authentication approach in IoT based applications using hybrid encryption.md",
     "year-3/proj/Project Plan.md",
