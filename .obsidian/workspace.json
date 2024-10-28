@@ -242,11 +242,12 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "2ed04788633b615d",
+  "active": "66f3d0ce9b278771",
   "lastOpenFiles": [
+    "year-3/proj/JournalDB/Securing AES Designs Against Power Analysis Attacks - A Survey.md",
+    "year-3/proj/Paper Tracker.md",
     "year-3/proj/JournalDB/Hybrid and Adaptive Cryptographic-based secure authentication approach in IoT based applications using hybrid encryption.md",
     "year-3/proj/Project Plan.md",
-    "year-3/proj/Paper Tracker.md",
     "year-3/lltcs/Challenge.md",
     "year-3/proj/JournalDB/Deep Learning-Based Power Analysis Attack for Extracting AES Keys on ATmega328P Microcontroller.md",
     "year-3/proj/JournalDB/Situation-aware Adaptive Cryptography.md",
@@ -258,7 +259,6 @@
     "year-3/proj/JournalDB/Power Analysis Attacks on AES.md",
     "year-3/proj/JournalDB/Correlation power analysis of modes of encryption in AES and its countermeasures.md",
     "year-3/proj/JournalDB/Success rate model for fully AES-128 in correlation power analysis.md",
-    "year-3/proj/JournalDB/Securing AES Designs Against Power Analysis Attacks - A Survey.md",
     "year-3/proj/JournalDB/Power analysis attack against encryption devices - a comprehensive analysis of AES, DES, and BC3.md",
     "year-3/proj/JournalDB/Lightweight Cryptography - A Solution to Secure IoT.md",
     "year-3/proj/JournalDB/A comprehensive survey of modern symmetric cryptographic solutions for resource constrained environments.md",
