@@ -37,4 +37,4 @@ cssclasses:
 | Differential Power Analysis                                                                                                  | #not-started | #DPA                           |           | https://doi.org/10.1007/3-540-48405-1_25                                                                                                         | Original DPA paper                                                                |
 
   
-  
+150 word summary for each paper with thoughts and knowledge gaps 
