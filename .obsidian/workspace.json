@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#not-started",
+                "query": "tag:#annotated",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -227,7 +227,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "fa5633d4e1624f7a",
+  "active": "2ed04788633b615d",
   "lastOpenFiles": [
     "year-3/proj/Project Plan.md",
     "year-3/proj/Paper Tracker.md",
