@@ -88,8 +88,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -242,7 +241,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "66f3d0ce9b278771",
+  "active": "8e219bebd780e6c9",
   "lastOpenFiles": [
     "year-3/proj/JournalDB/Securing AES Designs Against Power Analysis Attacks - A Survey.md",
     "year-3/proj/Paper Tracker.md",
