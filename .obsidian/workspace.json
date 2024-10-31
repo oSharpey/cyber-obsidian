@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "2d0c8373c0df04b7",
+    "type": "split",
+    "children": [
+      {
+        "id": "dea64f8185d9fb0f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "614d71a7483b649e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "year-3/proj/Paper Tracker.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Paper Tracker"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cbb5a376b9b77256",
+    "type": "split",
+    "children": [
+      {
+        "id": "f802a037d2596478",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1e5ee659f4231ae0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1bd1d05e5250f7fa",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "33a2cf738b548289",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a6ace02bfb21be27",
+    "type": "split",
+    "children": [
+      {
+        "id": "2140c178ea3874df",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8719dda57659180a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "year-3/proj/Paper Tracker.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Paper Tracker"
+            }
+          },
+          {
+            "id": "abed98d9a81448ac",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "year-3/proj/Paper Tracker.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Paper Tracker"
+            }
+          },
+          {
+            "id": "b4103525bec79e01",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "edc2b31075f088fc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "year-3/proj/Paper Tracker.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Paper Tracker"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-importer:Open Importer": false
+    }
+  },
+  "active": "614d71a7483b649e",
+  "lastOpenFiles": [
+    "Advanced modes in AES - Are they safe from power analysis based side channel attacks?.md",
+    "year-3/proj/Paper Tracker.md"
+  ]
+}
