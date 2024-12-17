@@ -28,6 +28,9 @@
 - Deletes original file
 - runs new malware file
 
-## 
+## ms457.exe
+- 2 Possible leads from VT
+	- TeslaCrypt 
+	- Dridex
 
 
