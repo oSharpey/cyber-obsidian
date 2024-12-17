@@ -25,7 +25,7 @@
 - loads the ms457.exe into memory
 - changes a byte at 0x3c to 0xd0
 	- Changes the location of the PE header 
-	- Anti-debugging techniuew 
+	- Anti-debugging technique to prevent just running binary
 - Writes the new file to appdata
 - Deletes original file
 - runs new malware file
@@ -34,5 +34,6 @@
 - 2 Possible leads from VT
 	- TeslaCrypt 
 	- Dridex
+- Seems to be packed 
 
 
