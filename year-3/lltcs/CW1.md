@@ -24,6 +24,8 @@
 ## 12152021_17_59_52.ps1
 - loads the ms457.exe into memory
 - changes a byte at 0x3c to 0xd0
+	- Changes the location of the PE header 
+	- Anti-debugging techniuew 
 - Writes the new file to appdata
 - Deletes original file
 - runs new malware file
