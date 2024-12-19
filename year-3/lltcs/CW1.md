@@ -43,6 +43,7 @@
 		- Jumps to .data (stage 2)
 	- Stage 2: 
 		- copies environment vars into heap buffers
+		- Presumably .data contains the main malware code 
 
 
 ## Unpacked Malware
