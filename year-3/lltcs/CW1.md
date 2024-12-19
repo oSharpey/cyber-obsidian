@@ -31,9 +31,8 @@
 - runs new malware file
 
 ## ms457.exe
-- 2 Possible leads from VT
-	- TeslaCrypt 
-	- Dridex
+- TeslaCrypt dropper
 - Seems to be packed 
+- Dynamically resolves VirtualAlloc address so does not show in imports
 
 
