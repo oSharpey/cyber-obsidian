@@ -34,5 +34,11 @@
 - TeslaCrypt dropper
 - Seems to be packed 
 - Dynamically resolves VirtualAlloc address so does not show in imports
+- Unpacked woo
+
+
+## Unpacked Malware
+- No imports, most likely resolves all at runtime
+- 
 
 
