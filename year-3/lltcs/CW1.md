@@ -36,6 +36,9 @@
 - Dynamically resolves VirtualAlloc address so does not show in imports
 - Unpacks a section to memory and jumps to it
 - Seemingly then resolves kernel functions, changes protections on .data and unpacks it in place
+- Multi stage unpacking
+	- Stage 1: Resolves kernel.dll, ntdll and other library functions 
+	- creates
 
 
 ## Unpacked Malware
