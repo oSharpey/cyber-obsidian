@@ -37,8 +37,12 @@
 - Unpacks a section to memory and jumps to it
 - Seemingly then resolves kernel functions, changes protections on .data and unpacks it in place
 - Multi stage unpacking
-	- Stage 1: Resolves kernel.dll, ntdll and other library functions - unpacks code in .data
-	- Stage 2: .data code - 
+	- Stage 1: 
+		- Resolves kernel.dll, ntdll and other library functions - 
+		- unpacks code in .data
+		- Jumps to .data (stage 2)
+	- Stage 2: 
+		- copies environment vars into heap buffers
 
 
 ## Unpacked Malware
