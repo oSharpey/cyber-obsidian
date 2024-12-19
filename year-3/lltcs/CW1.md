@@ -39,7 +39,7 @@
 
 ## Unpacked Malware
 - No imports, most likely resolves all at runtime
-- Ran in sandbox
+- Stores address of VirtualAlloc on the stack to cal
 - 
 
 
