@@ -34,7 +34,8 @@
 - TeslaCrypt dropper
 - Seems to be packed 
 - Dynamically resolves VirtualAlloc address so does not show in imports
-- Unpacked woo
+- Unpacks a section to memory and jumps to it
+- Seemingly then resolves kernel functions, changes protections on .data and unpacks it in place
 
 
 ## Unpacked Malware
