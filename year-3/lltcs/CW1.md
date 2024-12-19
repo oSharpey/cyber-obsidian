@@ -43,6 +43,7 @@
 		- copies program code to .data
 		- Jumps to .data (stage 2)
 	- Stage 2: 
+		- Checks if a debugger is present
 		- sends requests to what can only be c2
 		- probably does encryption stuff
 
