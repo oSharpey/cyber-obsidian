@@ -39,16 +39,12 @@
 - Multi stage unpacking
 	- Stage 1: 
 		- Resolves kernel.dll, ntdll and other library functions - 
-		- unpacks code in .data
+		- Unpacks main binary into a buffer
+		- copies program code to .data
 		- Jumps to .data (stage 2)
 	- Stage 2: 
-		- copies environment vars into heap buffers
-		- Presumably .data contains the main malware code 
+		- sends requests to what can only be c2
+		- probably does encryption stuff
 
-
-## Unpacked Malware
-- No imports, most likely resolves all at runtime
-- Stores address of VirtualAlloc on the stack to cal
-- 
-
+## Yara rules
 
