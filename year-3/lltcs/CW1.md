@@ -41,6 +41,7 @@
 		- Resolves kernel.dll, ntdll and other library functions - 
 		- Unpacks main binary into a buffer
 		- Offset of VirtualAlloc = AB237C - AB0000 (+237C)
+		- Zeroes out program memory from 400000 to 
 		- +2645 is where move to data happens
 		- copies program code to .data
 		- Jumps to .data (stage 2)
