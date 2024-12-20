@@ -40,8 +40,10 @@
 	- Stage 1: 
 		- Resolves kernel.dll, ntdll and other library functions - 
 		- Unpacks main binary into a buffer
+		- Offset of VirtualAlloc = AB237C - AB0000 (+237C)
 		- copies program code to .data
 		- Jumps to .data (stage 2)
+	
 	- Stage 2: 
 		- Checks if a debugger is present
 		- sends requests to what can only be c2
