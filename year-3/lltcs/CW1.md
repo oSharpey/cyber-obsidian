@@ -37,20 +37,21 @@
 - Unpacks a section to memory and jumps to it
 - Seemingly then resolves kernel functions, changes protections on .data and unpacks it in place
 - Multi stage unpacking
+	- Stage 1:
+		- 1st stub program
+		- Allocated buffer (base+1DC9) 
+		- unpacks 2nd stub to buffer (base+1DD8)
+		- Jumps to new 
 	- Stage 1: 
 		- Resolves kernel.dll, ntdll and other library functions - 
 		- Unpacks main binary into a buffer
-		- Offset of VirtualAlloc = AB237C - AB0000 (+237C)
-		- Zeroes out program memory from 400000 to 485000 (+25FB)
-		- Copies unpacked buffer set at +237C to 400000 (+2619)
-		- Deletes unpacked binary from memory (+2645)
+		- Offset of VirtualAlloc = AB237C - AB0000 (buffer+237C)
+		- Zeroes out program memory from 400000 to 485000 (buffer+25FB)
+		- Copies unpacked buffer set at +237C to 400000 (buffer+2619)
+		- Deletes unpacked binary from memory (buffer+2645)
 		- Jumps to .data (cleanup code)
 		- Deletes original binary, creates new process with new binary
 	
-	- Stage 2: 
-		- Checks if a debugger is present
-		- sends requests to what can only be c2
-		- probably does encryption stuff
-
+	
 ## Yara rules
 
