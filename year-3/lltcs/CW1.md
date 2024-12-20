@@ -41,8 +41,8 @@
 		- 1st stub program
 		- Allocated buffer (base+1DC9) 
 		- unpacks 2nd stub to buffer (base+1DD8)
-		- Jumps to new 
-	- Stage 1: 
+		- Jumps to 2nd stub (base+3830)
+	- Stage 2: 
 		- Resolves kernel.dll, ntdll and other library functions - 
 		- Unpacks main binary into a buffer
 		- Offset of VirtualAlloc = AB237C - AB0000 (buffer+237C)
