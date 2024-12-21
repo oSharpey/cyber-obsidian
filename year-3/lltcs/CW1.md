@@ -57,5 +57,7 @@
 ## TeslaCrypt Static Analysis
 - See IDA project
 
+426590 - address of winmain
+
 ## Yara rules
 
