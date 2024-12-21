@@ -54,7 +54,7 @@
 	
 
 ## TeslaCrypt Static Analysis
-
+- See IDA project
 
 ## Yara rules
 
