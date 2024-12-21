@@ -51,6 +51,7 @@
 		- Deletes unpacked binary from memory (buffer+2645)
 		- Jumps to new binary (cleanup code) (buffer+2752)
 		- Deletes original binary, creates new process with new binary (0x41FA49)
+		- In normal terms, it does process hollowing on itself
 	
 
 ## TeslaCrypt Static Analysis
