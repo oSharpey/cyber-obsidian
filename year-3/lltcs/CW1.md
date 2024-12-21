@@ -52,6 +52,9 @@
 		- Jumps to .data (cleanup code)
 		- Deletes original binary, creates new process with new binary
 	
-	
+
+## TeslaCrypt Static Analysis
+
+
 ## Yara rules
 
