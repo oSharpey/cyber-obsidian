@@ -61,3 +61,6 @@
 
 ## Yara rules
 
+
+
+6FB89AF0 - CreateThread
