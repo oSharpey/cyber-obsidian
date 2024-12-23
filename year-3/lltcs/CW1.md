@@ -45,7 +45,7 @@
 	- Stage 2: 
 		- Resolves kernel.dll, ntdll and other library functions - 
 		- Unpacks main binary into a buffer
-		- Offset of VirtualAlloc = AB237C - AB0000 (buffer+237C)
+		- Offset of VirtualAlloc  (buffer+237C)
 		- Zeroes out program memory from 400000 to 485000 (buffer+25FB)
 		- Copies unpacked buffer set at +237C to 400000 (buffer+2619)
 		- Deletes unpacked binary from memory (buffer+2645)
