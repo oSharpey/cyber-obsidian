@@ -47,7 +47,7 @@
 		- Unpacks main binary into a buffer
 		- Offset of VirtualAlloc  (buffer+237C)
 		- Zeroes out program memory from 400000 to 485000 (buffer+25FB)
-		- Copies unpacked buffer set at +237C to 400000 (buffer+2619)
+		- Copies unpacked buffer set at +237C to 400000 (buffer+2619)W
 		- Deletes unpacked binary from memory (buffer+2645)
 		- Jumps to new binary (cleanup code) (buffer+2752)
 		- Deletes original binary, creates new process with new binary (0x41FA49)
