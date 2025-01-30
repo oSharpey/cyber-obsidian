@@ -11,3 +11,16 @@
 	- trick question - only know what name was given during the install
 	- Registered owner only, no way to know who actually installed it
 	- Software/Microsoft/Windows NT/CurrentVersion
+
+## Names and accounts
+- **Name of computer**
+	- XP system: ControlSet01/Control/ComputerName/ComputerName
+	- Win 8+: Control Set
+- **Who (appears to have) has an account on this system?**
+	- Software/Microsoft/WindowsNT/CurrentVersion/ProfileList
+- **When did they last log in?**
+- **When did each of them last shutdown the computer?**
+- **What was the timezone the computer was set to?**
+- **What USB devices have been accessed on this system?**
+- **What WiFi networks have been accessed on this system?**
+- **What programmes have been installed on this system? Is there evidence of programmes having been uninstalled (see my paper)?**
