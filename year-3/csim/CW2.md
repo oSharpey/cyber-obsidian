@@ -22,9 +22,11 @@
 	- Software/Microsoft/WindowsNT/CurrentVersion/WinLogon
 - **When did they last login**
 	- Software/Microsoft/WindowsNT/CurrentVersion/WinLogon - last written time
-- **When did each of them last shutdown the computer?**
 - **What was the timezone the computer was set to?**
 	- XP system: System/ControlSet01/Control/TimezoneInformation
+- **When did each of them last shutdown the computer?**
+- **When was the last ever shutdown**
+	- XP system: System/ControlSet01/Control/Windows
 - **What USB devices have been accessed on this system?**
 - **What WiFi networks have been accessed on this system?**
 - **What programmes have been installed on this system? Is there evidence of programmes having been uninstalled (see my paper)?**
