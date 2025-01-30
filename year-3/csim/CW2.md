@@ -28,5 +28,7 @@
 - **When was the last ever shutdown**
 	- XP system: System/ControlSet01/Control/Windows
 - **What USB devices have been accessed on this system?**
-- **What WiFi networks have been accessed on this system?**
+	- Trick, in m57 case no devices
+	- System/ControlSet01/Enum/USBSTOR
 - **What programmes have been installed on this system? Is there evidence of programmes having been uninstalled (see my paper)?**
+	- Software/Microsoft/Windows/CurrentVersion/Uninstall
