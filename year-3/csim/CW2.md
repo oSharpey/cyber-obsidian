@@ -18,10 +18,13 @@
 	- Win 8+: Control Set
 - **Who (appears to have) has an account on this system?**
 	- Software/Microsoft/WindowsNT/CurrentVersion/ProfileList/*
-- **When did they last log in?**
-	- 
+- **Who was the last user to login?**
+	- Software/Microsoft/WindowsNT/CurrentVersion/WinLogon
+- **When did they last login**
+	- Software/Microsoft/WindowsNT/CurrentVersion/WinLogon - last written time
 - **When did each of them last shutdown the computer?**
 - **What was the timezone the computer was set to?**
+	- XP system: System/ControlSet01/Control/TimezoneInformation
 - **What USB devices have been accessed on this system?**
 - **What WiFi networks have been accessed on this system?**
 - **What programmes have been installed on this system? Is there evidence of programmes having been uninstalled (see my paper)?**
