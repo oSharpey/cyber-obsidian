@@ -1,5 +1,13 @@
 - Harj sets weird time-zones
-
-- Get os build, install date and 
-	- software/ms/win_nt/currentversion
-	- 
+- Take local time not UTC
+## Operating system
+- **Get Current OS and build**
+	- Software file
+	- Software/Microsoft/Windows NT/CurrentVersion
+- **Get Install date**
+	- Software file
+	- Software/Microsoft/Windows NT/CurrentVersion
+- **Which user installed it**
+	- trick question - only know what name was given during the install
+	- Registered owner only, no way to know who actually installed it
+	- Software/Microsoft/Windows NT/CurrentVersion
