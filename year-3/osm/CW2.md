@@ -16,7 +16,10 @@
 		- `index=botsv1 dest_ip=192.168.250.70 src=23.22.63.114 sourcetype="stream:http" http_method=POST | rex field=form_data "passwd=(?<bruteforce>\w+)" | search bruteforce=* | table bruteforce`
 	- We get a list of 412 brute force passwords two of which *anthony* and *camaro*
 1. **How many unique passwords were attempted in the brute force attempt?** 
-2. **Workstation we8105desk was connected to a file server during a ransomware attack. Find and locate the IP address of the file server?** 
-3. **Locate and report how many unique PDF files did the ransomware encrypt on the remote file server?** 
-4. **Locate and report how many unique text files did the ransomware encrypt on the Bob Smith’s host?** 
-5. **There was a VBScript found during the post mortem, which launches a temp file. Locate is the ParentProcessId of this initial launch and the name of the temp file the VBScript had executed?**
+	- Building off previous search, use dc() to get a unique count of all passwords
+		- `index=botsv1 dest_ip=192.168.250.70 src=23.22.63.114 sourcetype="stream:http" http_method=POST | rex field=form_data "passwd=(?<bruteforce>\w+)" | search bruteforce=* | table bruteforce | stats dc(bruteforce)`
+	- We get a unique count of *412*
+1. **Workstation we8105desk was connected to a file server during a ransomware attack. Find and locate the IP address of the file server?** 
+2. **Locate and report how many unique PDF files did the ransomware encrypt on the remote file server?** 
+3. **Locate and report how many unique text files did the ransomware encrypt on the Bob Smith’s host?** 
+4. **There was a VBScript found during the post mortem, which launches a temp file. Locate is the ParentProcessId of this initial launch and the name of the temp file the VBScript had executed?**
