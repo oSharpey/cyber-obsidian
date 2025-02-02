@@ -43,8 +43,11 @@
 	- We need to first find the hostname of the file server with ip 192.168.250.20
 		- `index=botsv1 sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" 192.168.250.20`
 	- The dest_host and src_host have the most frequent value being *we9041srv* this is most likely our hostname
-	- First look at sysmon to see if there are any PDFs mentioned - gives us no results so change to look at other windows source types
-	- 
+	- First look at sysmon to see if there are any PDFs mentioned - gives us no results so change to look at other windows source types, gives us 526 results
+		- `index=botsv1 host="we9041srv" pdf (sourcetype="WinEventLog:Security" OR source="WinEventLog:System")`
+	- As the malware was run from Bob Smiths machine we should filter for that 
+	- Use dc() to get the number of unique pdfs
+		- 
 1. **Locate and report how many unique text files did the ransomware encrypt on the Bob Smith’s host?** 
 	- Look at text files references in sysmon data
 		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk *.txt`
