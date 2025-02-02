@@ -12,6 +12,9 @@
 		- `index=botsv1 dest_ip=192.168.250.70 sourcetype="stream:http" http_method=POST form_data="*username*passwd*" | table form_data`
 	- Sort by src - most come from 23.22.63.114
 		- `index=botsv1 dest_ip=192.168.250.70 sourcetype="stream:http" http_method=POST form_data="*username*passwd*" | stats count by src`
+	- Narrow search to just that source and sort by earliest to newest
+		- `index=botsv1 dest_ip=192.168.250.70 src=23.22.63.114 sourcetype="stream:http" http_method=POST form_data="*username*passwd*" | table _time form_data ``
+	- 
 1. **How many unique passwords were attempted in the brute force attempt?** 
 2. **Workstation we8105desk was connected to a file server during a ransomware attack. Find and locate the IP address of the file server?** 
 3. **Locate and report how many unique PDF files did the ransomware encrypt on the remote file server?** 
