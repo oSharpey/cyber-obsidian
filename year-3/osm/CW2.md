@@ -27,6 +27,7 @@
 		- `index=botsv1 dest_ip=192.168.250.70 src=23.22.63.114 sourcetype="stream:http" http_method=POST | rex field=form_data "passwd=(?<bruteforce>\w+)" | search bruteforce=* | table bruteforce | stats dc(bruteforce)`
 	- We get a unique count of *412*
 3. **Workstation we8105desk was connected to a file server during a ransomware attack. Find and locate the IP address of the file server?** 
-4. **Locate and report how many unique PDF files did the ransomware encrypt on the remote file server?** 
-5. **Locate and report how many unique text files did the ransomware encrypt on the Bob Smith’s host?** 
-6. **There was a VBScript found during the post mortem, which launches a temp file. Locate is the ParentProcessId of this initial launch and the name of the temp file the VBScript had executed?**
+	- Find sourcetypes to look at 
+1. **Locate and report how many unique PDF files did the ransomware encrypt on the remote file server?** 
+2. **Locate and report how many unique text files did the ransomware encrypt on the Bob Smith’s host?** 
+3. **There was a VBScript found during the post mortem, which launches a temp file. Locate is the ParentProcessId of this initial launch and the name of the temp file the VBScript had executed?**
