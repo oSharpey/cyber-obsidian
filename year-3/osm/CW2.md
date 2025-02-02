@@ -10,6 +10,7 @@
 	- Look at the url to see *poisonivy-is-coming-for-you-batman.jpeg* being retrieved
 		- `index=botsv1 src=192.168.250.70 sourcetype=stream:http | table url`
 	- This can also be confirmed with Suricata and the firewall
+		- `index=botsv1 sourcetype=fgt_utm "192.168.250.70" NOT dest="192.168.250.70" catdesc="Malicious Websites"`
 		- 
 1. **Can you locate two of the brute force password used?** 
 	- Narrow down search dest to webserver (192.168.250.70)
