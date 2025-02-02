@@ -1,9 +1,7 @@
 ## Answer the following questions (to be presented in section Analysis of logs in your report):
 1. **What was the file name of the executable uploaded by PoisonIvy, including the file extension?** 
 	- Find machine doing vuln scan - gives you malicious ip - 40.80.148.42. Verify the IP is in fact malicious 
-		- ```
-		-```
-```index=botsv1 imreallynotbatman.com sourcetype=stream:http | stats count by src | sort - count`
+		- `index=botsv1 imreallynotbatman.com sourcetype=stream:http | stats count by src | sort - count`
 		- `index=botsv1 imreallynotbatman.com src=40.80.148.42 sourcetype=suricata
 	- Get IP of where the website is hosted (192.168.250.70)
 		- `index=botsv1 src=40.80.148.42 sourcetype=stream:http | stats count by dest_ip | sort - count`
