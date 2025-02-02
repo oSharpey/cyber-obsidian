@@ -41,4 +41,9 @@
 		- `index=botsv1 sourcetype=winregistry host=we8105desk fileshare | rex field=key_path "(?<ip>(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})" | search ip=* | stats values(ip)`
 1. **Locate and report how many unique PDF files did the ransomware encrypt on the remote file server?** 
 2. **Locate and report how many unique text files did the ransomware encrypt on the Bob Smith’s host?** 
-3. **There was a VBScript found during the post mortem, which launches a temp file. Locate is the ParentProcessId of this initial launch and the name of the temp file the VBScript had executed?**
+	- Look at text files references in sysmon data
+		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk *.txt`
+	- Look at the events - 2 unique events ID: 2 (File create time), ID 1 (process create)
+	- File create time looks more interesting - from microsoft:
+		- 
+1. **There was a VBScript found during the post mortem, which launches a temp file. Locate is the ParentProcessId of this initial launch and the name of the temp file the VBScript had executed?**
