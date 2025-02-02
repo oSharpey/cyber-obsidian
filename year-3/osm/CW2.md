@@ -2,7 +2,8 @@
 1. **What was the file name of the executable uploaded by PoisonIvy, including the file extension?** 
 	- Find machine doing vuln scan - gives you malicious ip - 40.80.148.42
 		- `index=botsv1 imreallynotbatman.com sourcetype=stream:http | stats count by src | sort - count`
-	- 
+	- Verify the IP is malicious by looking at signature field from search below
+		- `index=botsv1 imreallynotbatman.com src=40.80.148.42 sourcetype=suricata
 1. **Can you locate two of the brute force password used?** 
 2. **How many unique passwords were attempted in the brute force attempt?** 
 3. **Workstation we8105desk was connected to a file server during a ransomware attack. Find and locate the IP address of the file server?** 
