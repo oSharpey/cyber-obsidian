@@ -6,7 +6,11 @@
 	- Get IP of where the website is hosted (192.168.250.70)
 		- `index=botsv1 src=40.80.148.42 sourcetype=stream:http | stats count by dest_ip | sort - count`
 	- Look to see for traffic going out of the web server
-		- `index=botsv1 sourcetype=fgt_utm "192.168.250.70" NOT dest="192.168.250.70" | stats count` -> 9 events with 
+		- `index=botsv1 src=192.168.250.70 sourcetype=stream:http` -> 9 events with our web server as the source which is weird
+	- Look at the url to see *poisonivy-is-coming-for-you-batman.jpeg* being retrieved
+		- `index=botsv1 src=192.168.250.70 sourcetype=stream:http | table url`
+	- This can also be confirmed with Suricata and the firewall
+		- 
 1. **Can you locate two of the brute force password used?** 
 	- Narrow down search dest to webserver (192.168.250.70)
 	- Looking for post requests as trying to log in 
