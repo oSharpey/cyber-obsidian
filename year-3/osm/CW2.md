@@ -46,8 +46,10 @@
 	- First look at sysmon to see if there are any PDFs mentioned - gives us no results so change to look at other windows source types, gives us 526 results
 		- `index=botsv1 host="we9041srv" pdf (sourcetype="WinEventLog:Security" OR source="WinEventLog:System")`
 	- As the malware was run from Bob Smiths machine we should filter for that 
+		- `index=botsv1 host="we9041srv" pdf (sourcetype="WinEventLog:Security" OR source="WinEventLog:System") Source_Address="192.168.250.100"`
 	- Use dc() to get the number of unique pdfs
-		- 
+		- `index=botsv1 host="we9041srv" pdf (sourcetype="WinEventLog:Security" OR source="WinEventLog:System") Source_Address="192.168.250.100" | stats dc(Relative_Target_Name)`
+	- And we get *257* unique PDFs encryped
 1. **Locate and report how many unique text files did the ransomware encrypt on the Bob Smith’s host?** 
 	- Look at text files references in sysmon data
 		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk *.txt`
@@ -61,3 +63,4 @@
 		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk EventCode=2 TargetFilename="C:\\Users\\bob.smith.WAYNECORPINC\\*.txt" | stats dc(TargetFilename)`
 	- This gives *406* text files most likely encrypted
 2. **There was a VBScript found during the post mortem, which launches a temp file. Locate is the ParentProcessId of this initial launch and the name of the temp file the VBScript had executed?**
+	- 
