@@ -40,7 +40,11 @@
 	- Looking through the result we can see one IP address mentioned 192.168.250.20. This can be further verified with a regex lookup
 		- `index=botsv1 sourcetype=winregistry host=we8105desk fileshare | rex field=key_path "(?<ip>(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})" | search ip=* | stats values(ip)`
 1. **Locate and report how many unique PDF files did the ransomware encrypt on the remote file server?** 
-2. **Locate and report how many unique text files did the ransomware encrypt on the Bob Smith’s host?** 
+	- We need to first find the hostname of the file server with ip 192.168.250.20
+		- `index=botsv1 sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" 192.168.250.20`
+	- The dest_host and src_host have the most frequent value being *we9041srv* this is most likely our hostname
+	- First look at sysmon to see if there are any PDFs mentioned - gives us no resut
+1. **Locate and report how many unique text files did the ransomware encrypt on the Bob Smith’s host?** 
 	- Look at text files references in sysmon data
 		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk *.txt`
 	- Look at the events - 2 unique events ID: 2 (File create time), ID 1 (process create)
@@ -51,5 +55,5 @@
 		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk EventCode=2 TargetFilename="C:\\Users\\bob.smith.WAYNECORPINC\\*.txt"`
 	- We can use the dc() function like we used before to get a count of all unique files
 		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk EventCode=2 TargetFilename="C:\\Users\\bob.smith.WAYNECORPINC\\*.txt" | stats dc(TargetFilename)`
-	- Th
-1. **There was a VBScript found during the post mortem, which launches a temp file. Locate is the ParentProcessId of this initial launch and the name of the temp file the VBScript had executed?**
+	- This gives *406* text files most likely encrypted
+2. **There was a VBScript found during the post mortem, which launches a temp file. Locate is the ParentProcessId of this initial launch and the name of the temp file the VBScript had executed?**
