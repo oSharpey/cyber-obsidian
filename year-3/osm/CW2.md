@@ -30,7 +30,12 @@
 	- Find sourcetypes to look at - most come from sysmon so this seems like it would be useful and sysmon gives info on fileshares
 		- `index=botsv1 we8105desk | stats count by sourcetype | sort - count`
 	- Look for connections from we8105desk to other internal ip addresses
-		- 
+		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk | stats count by src`
+	- Setting the source in the search to out hostname (we8105desk.waynecorpinc.local) we can see traffic outgoing - all outgoing traffic is network connect
+		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk src=we8105desk.waynecorpinc.local`
+	- We can see the most frequently hit ips from our pc with the search below
+		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk src=we8105desk.waynecorpinc.local | stats count by dest_ip | sort - count`
+	- 
 1. **Locate and report how many unique PDF files did the ransomware encrypt on the remote file server?** 
 2. **Locate and report how many unique text files did the ransomware encrypt on the Bob Smith’s host?** 
 3. **There was a VBScript found during the post mortem, which launches a temp file. Locate is the ParentProcessId of this initial launch and the name of the temp file the VBScript had executed?**
