@@ -37,7 +37,8 @@
 		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk src=we8105desk.waynecorpinc.local | stats count by dest_ip | sort - count`
 	- Look for fileshares in the registry 
 		- `index=botsv1 sourcetype=winregistry host=we8105desk fileshare`
-	- Looking through the result we can see one IP address mentioned 
+	- Looking through the result we can see one IP address mentioned 192.168.250.20. This can be further verified with a regex lookup
+		- `index=botsv1 sourcetype=winregistry host=we8105desk fileshare | rex field=key_path "(?<ip>(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})" | search ip=* | stats values(ip)`
 1. **Locate and report how many unique PDF files did the ransomware encrypt on the remote file server?** 
 2. **Locate and report how many unique text files did the ransomware encrypt on the Bob Smith’s host?** 
 3. **There was a VBScript found during the post mortem, which launches a temp file. Locate is the ParentProcessId of this initial launch and the name of the temp file the VBScript had executed?**
