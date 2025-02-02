@@ -1,7 +1,9 @@
 ## Answer the following questions (to be presented in section Analysis of logs in your report):
 1. **What was the file name of the executable uploaded by PoisonIvy, including the file extension?** 
 	- Find machine doing vuln scan - gives you malicious ip - 40.80.148.42. Verify the IP is in fact malicious 
-		- `index=botsv1 imreallynotbatman.com sourcetype=stream:http | stats count by src | sort - count`
+		- ```
+		-```
+```index=botsv1 imreallynotbatman.com sourcetype=stream:http | stats count by src | sort - count`
 		- `index=botsv1 imreallynotbatman.com src=40.80.148.42 sourcetype=suricata
 	- Get IP of where the website is hosted (192.168.250.70)
 		- `index=botsv1 src=40.80.148.42 sourcetype=stream:http | stats count by dest_ip | sort - count`
@@ -66,6 +68,7 @@
 	- As we know a usb drive was used we can look for common external drive letters D:\ E:\ and F:\ and we can see the Miranda tate file is on D:\
 		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host="we8105desk" ("d:\\" OR "e:\\" OR "f:\\")`
 	- We can then look at processes executed and their command lines in the D:\ drive
-		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk (CommandLine="*d:\\*" OR ParentCommandLine="*d:\\*") | table _time CommandLine ParentCommandLine | sort _time`
+		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk (CommandLine="*d:\\*Miranda*" OR ParentCommandLine="*d:\\*Miranda*") | table _time CommandLine ParentCommandLine | sort _time`
 	- We can see Miranda_tate_unveiled.dotm execute 2 child processes - a VB script and an exe file
-	- 
+	- We can see the ParentProcessId of the VBScript and EXE as *3756*
+	- The name of the exe executed is *splwow.exe*
