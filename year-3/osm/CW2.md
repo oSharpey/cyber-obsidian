@@ -33,9 +33,11 @@
 		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk | stats count by src`
 	- Setting the source in the search to out hostname (we8105desk.waynecorpinc.local) we can see traffic outgoing - all outgoing traffic is network connect
 		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk src=we8105desk.waynecorpinc.local`
-	- We can see the most frequently hit ips from our pc with the search below
+	- We can see the most frequently hit ips from our pc with the search below - 2 IPs with most traffic 192.168.250.20, 192.168.2.50
 		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk src=we8105desk.waynecorpinc.local | stats count by dest_ip | sort - count`
-	- 
+	- Look for fileshares in the registry 
+		- `index=botsv1 sourcetype=winregistry host=we8105desk fileshare`
+	- Looking through the result we can see one IP address mentioned 
 1. **Locate and report how many unique PDF files did the ransomware encrypt on the remote file server?** 
 2. **Locate and report how many unique text files did the ransomware encrypt on the Bob Smith’s host?** 
 3. **There was a VBScript found during the post mortem, which launches a temp file. Locate is the ParentProcessId of this initial launch and the name of the temp file the VBScript had executed?**
