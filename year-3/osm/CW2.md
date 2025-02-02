@@ -65,5 +65,7 @@
 2. **There was a VBScript found during the post mortem, which launches a temp file. Locate is the ParentProcessId of this initial launch and the name of the temp file the VBScript had executed?**
 	- As we know a usb drive was used we can look for common external drive letters D:\ E:\ and F:\ and we can see the Miranda tate file is on D:\
 		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host="we8105desk" ("d:\\" OR "e:\\" OR "f:\\")`
+	- We can then look at processes executed and their command lines in the D:\ drive
+		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk (CommandLine="*d:\\*" OR ParentCommandLine="*d:\\*") | table _time CommandLine ParentCommandLine | sort _time`
+	- We can see Miranda_tate_unveiled.dotm execute 2 child processes - a VB script and an exe file
 	- 
-`
