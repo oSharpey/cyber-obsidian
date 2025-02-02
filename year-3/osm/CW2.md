@@ -63,5 +63,7 @@
 		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk EventCode=2 TargetFilename="C:\\Users\\bob.smith.WAYNECORPINC\\*.txt" | stats dc(TargetFilename)`
 	- This gives *406* text files most likely encrypted
 2. **There was a VBScript found during the post mortem, which launches a temp file. Locate is the ParentProcessId of this initial launch and the name of the temp file the VBScript had executed?**
-	- As we know a usb drive was used we can look for the most common drive
+	- As we know a usb drive was used we can look for common external drive letters D:\ E:\ and F:\ and we can see the Miranda tate file is on D:\
+		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host="we8105desk" ("d:\\" OR "e:\\" OR "f:\\")`
+	- 
 `
