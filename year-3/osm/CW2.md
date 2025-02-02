@@ -1,6 +1,8 @@
 ## Answer the following questions (to be presented in section Analysis of logs in your report):
 1. **What was the file name of the executable uploaded by PoisonIvy, including the file extension?** 
-	- Find mach
+	- Find machine doing vuln scan - gives you malicious ip - 40.80.148.42
+		- `index=botsv1 imreallynotbatman.com sourcetype=stream:http | stats count by src | sort - count`
+	- 
 1. **Can you locate two of the brute force password used?** 
 2. **How many unique passwords were attempted in the brute force attempt?** 
 3. **Workstation we8105desk was connected to a file server during a ransomware attack. Find and locate the IP address of the file server?** 
