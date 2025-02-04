@@ -70,3 +70,119 @@
 	- We can see Miranda_tate_unveiled.dotm execute 2 child processes - a VB script and an exe file
 	- We can see the ParentProcessId of the VBScript and EXE as *3756*
 	- The name of the exe executed is *splwow.exe*
+
+
+
+
+
+Creating detection rules in Splunk to identify malicious activities based on your provided searches and context
+involves leveraging Splunk's capabilities to monitor for specific events and patterns indicative of cyber threats.
+Below are the detection rules aligned with Mitre ATT&CK tactics:
+
+---
+
+### **1. Detection Rule: Malicious File Uploads (T1078 - Exfiltration)**
+**Objective:** Detect unauthorized file uploads or access to files from external devices or unusual locations.
+
+#### **Splunk Search Example:**
+```splunk
+index=TA-Windows
+(SrcFileName="*Miranda*" OR ParentProcessId=*3756*)
+AND (DevicePath="D:\\" OR DevicePath="E:\\" OR DevicePath="F:\\")
+| stats count BY ProcessName, CommandLine, TargetFilename
+```
+
+#### **Rule Explanation:**
+- This rule identifies processes accessing files from external devices (e.g., USB drives).
+- It looks for the specific file "Miranda_tate_unveiled.dotm" and tracks its execution.
+- The rule is mapped to **T1078 - Exfiltration** as it detects unauthorized file access or uploads.
+
+---
+
+### **2. Detection Rule: Brute Force Attack Detection (T1069 - Credential Dumping, T1124 - Brute Force)**
+
+#### **Splunk Search Example:**
+```splunk
+index=TA-Security
+(FailedLogin OR BadPassword)
+| timechart count BY UserId
+| where count > 5 AND range(CountTimeWindow) < 30m
+```
+
+#### **Rule Explanation:**
+- Monitors for multiple failed login attempts from the same user within a short timeframe.
+- This rule is mapped to **T1124 - Brute Force** and helps identify potential brute force attacks.
+
+---
+
+### **3. Detection Rule: Command and Control (C2) Behavior (T1048 - Exfiltration, T1056 - Exfiltration Over
+Alternative Protocols)**
+
+#### **Splunk Search Example:**
+```splunk
+index=TA-Network
+(DNS_QryName=*malicious_domain* OR HTTP_Domain=*malicious_domain*)
+| stats count BY DNS_QryName, IP
+| where count > 10 AND range(CountTimeWindow) < 24h
+```
+
+#### **Rule Explanation:**
+- Detects repeated attempts to communicate with known malicious domains or IPs.
+- This rule is mapped to **T1048 - Exfiltration** and helps identify potential C2 activities.
+
+---
+
+### **4. Detection Rule: Ransomware Activity (T1485 - Data Encryption)**
+
+#### **Splunk Search Example:**
+```splunk
+index=TA-Windows
+(File_Create OR File_Delete)
+AND Path="C:\Users\*\\Documents"
+| stats count BY ProcessName, ParentProcessId, EventTime
+| where count > 10 AND range(CountTimeWindow) < 30m
+```
+
+#### **Rule Explanation:**
+- Monitors file modifications or deletions in user directories, which may indicate ransomware activity.
+- This rule is mapped to **T1485 - Data Encryption** and helps identify potential ransomware behavior.
+
+---
+
+### **5. Detection Rule: Script Execution from External Devices (T1055 - Scripting)**
+
+#### **Splunk Search Example:**
+```splunk
+index=TA-Windows
+ProcessName="wscript.exe" OR ProcessName="cscript.exe"
+AND ParentProcessId=*3756*
+AND DevicePath="D:\\"
+| stats count BY CommandLine, EventTime
+```
+
+#### **Rule Explanation:**
+- Detects script execution (e.g., VBScript) from external devices with a high parent process ID.
+- This rule is mapped to **T1055 - Scripting** and helps identify potential malicious script activity.
+
+---
+
+### **Summary of Detection Rules:**
+
+| **Rule Name**                     | **Mitre ATT&CK Tactic**               | **Splunk Search Example**
+                                                     |
+|-----------------------------------|-----------------------------------------|------------------------------------||-----------------------------------|-----------------------------------------|-------------------------------------------------------------------------------------------|
+| Malicious File Uploads           | T1078 - Exfiltration                   | `index=TA-Windows
+(SrcFileName="*Miranda*" OR ParentProcessId=*3756*) AND (DevicePath="D:\\" OR DevicePath="E:\\")` |
+| Brute Force Attack Detection      | T1124 - Brute Force                    | `index=TA-Security (FailedLogin OR
+BadPassword) | timechart count BY UserId`        |
+| Command and Control Behavior      | T1048 - Exfiltration, T1056 - Exfil.    | `index=TA-Network
+(DNS_QryName=*malicious_domain* OR HTTP_Domain=*malicious_domain*)` |
+| Ransomware Activity               | T1485 - Data Encryption                | `index=TA-Windows (File_Create OR
+File_Delete) AND Path="C:\Users\*\\Documents"`         |
+| Script Execution from External Devices | T1055 - Scripting                     | `index=TA-Windows
+ProcessName="wscript.exe" AND ParentProcessId=*3756*`                  |
+
+---
+
+These detection rules can be implemented in Splunk using the provided search queries and can be further refined
+based on your specific environment and threat intelligence
