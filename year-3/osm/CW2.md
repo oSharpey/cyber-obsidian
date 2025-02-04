@@ -157,9 +157,8 @@ index=botsv1 sourcetype=stream:http http_method=POST form_data="*username*passwd
 **Splunk SPL Detection Rule**:  
 ```spl
 index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational 
-(CommandLine="*wscript*" OR CommandLine="*cscript*") (CommandLine="*temp*" OR CommandLine="*.vbs*") 
-| stats count by ParentProcessId, ProcessId, CommandLine 
-| table _time, host, ParentProcessId, ProcessId, CommandLine  
+(CommandLine="*wscript*" OR CommandLine="*cscript*") (CommandLine="*temp*" OR CommandLine="*.vbs*" ) 
+| table ParentProcessId, ProcessId, CommandLine
 ```  
 **Rationale**:  
 - Flags scripts (e.g., VBScript) executed from temporary directories (`temp`) or removable drives (`D:\`), which are common in ransomware delivery.  
