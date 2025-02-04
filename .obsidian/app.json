@@ -6,6 +6,5 @@
   "promptDelete": false,
   "readableLineLength": false,
   "strictLineBreaks": false,
-  "showLineNumber": true,
-  "showRibbon": true
+  "showLineNumber": true
 }
