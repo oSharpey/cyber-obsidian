@@ -5,9 +5,9 @@
 		- `index=botsv1 imreallynotbatman.com src=40.80.148.42 sourcetype=suricata
 	- Get IP of where the website is hosted (192.168.250.70)
 		- `index=botsv1 src=40.80.148.42 sourcetype=stream:http | stats count by dest_ip | sort - count`
-	- Look to see for traffic going out of the web server
-		- `index=botsv1 src=192.168.250.70 sourcetype=stream:http` -> 9 events with our web server as the source which is weird
-	- Look at the url to see *poisonivy-is-coming-for-you-batman.jpeg* being retrieved
+	- Look for executables being sent to the web server
+		- `index=botsv1 sourcetype=stream:http dest="192.168.250.70" *.exe` 
+	- Look at part_filename we see 3791.exe and agent.php
 		- `index=botsv1 src=192.168.250.70 sourcetype=stream:http | table url`
 	- This can also be confirmed with Suricata and the firewall
 		- `index=botsv1 sourcetype=fgt_utm "192.168.250.70" NOT dest="192.168.250.70" catdesc="Malicious Websites"`
