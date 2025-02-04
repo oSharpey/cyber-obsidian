@@ -11,8 +11,8 @@
 		- `index=botsv1 src=192.168.250.70 sourcetype=stream:http | table url`
 	- This can also be confirmed with Suricata and the firewall
 		- `index=botsv1 sourcetype=fgt_utm "192.168.250.70" NOT dest="192.168.250.70" catdesc="Malicious Websites"`
-		- `index=botsv1 src=192.168.250.70 sourcetype=suricata dest_ip=23.22.63.114 | stats values(url)`
-1. **Can you locate two of the brute force password used?** 
+		- `index=botsv1 sourcetype=suricata (dest=imreallynotbatman.com OR dest="192.168.250.70") http.http_method=POST .exe | stats values(fileinfo.filename)`
+2. **Can you locate two of the brute force password used?** 
 	- Narrow down search dest to webserver (192.168.250.70)
 	- Looking for post requests as trying to log in 
 	- Look at http form data to search for usernames and passwords
@@ -22,11 +22,11 @@
 	- Narrow search to just that source and get a list of all passwords with regex
 		- `index=botsv1 dest_ip=192.168.250.70 src=23.22.63.114 sourcetype="stream:http" http_method=POST | rex field=form_data "passwd=(?<bruteforce>\w+)" | search bruteforce=* | table bruteforce`
 	- We get a list of 412 brute force passwords two of which *anthony* and *camaro*
-2. **How many unique passwords were attempted in the brute force attempt?** 
+3. **How many unique passwords were attempted in the brute force attempt?** 
 	- Building off previous search, use dc() to get a unique count of all passwords
 		- `index=botsv1 dest_ip=192.168.250.70 src=23.22.63.114 sourcetype="stream:http" http_method=POST | rex field=form_data "passwd=(?<bruteforce>\w+)" | search bruteforce=* | table bruteforce | stats dc(bruteforce)`
 	- We get a unique count of *412*
-3. **Workstation we8105desk was connected to a file server during a ransomware attack. Find and locate the IP address of the file server?** 
+4. **Workstation we8105desk was connected to a file server during a ransomware attack. Find and locate the IP address of the file server?** 
 	- Find sourcetypes to look at - most come from sysmon so this seems like it would be useful and sysmon gives info on fileshares
 		- `index=botsv1 we8105desk | stats count by sourcetype | sort - count`
 	- Look for connections from we8105desk to other internal ip addresses
@@ -39,7 +39,7 @@
 		- `index=botsv1 sourcetype=winregistry host=we8105desk fileshare`
 	- Looking through the result we can see one IP address mentioned 192.168.250.20. This can be further verified with a regex lookup
 		- `index=botsv1 sourcetype=winregistry host=we8105desk fileshare | rex field=key_path "(?<ip>(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})" | search ip=* | stats values(ip)`
-1. **Locate and report how many unique PDF files did the ransomware encrypt on the remote file server?** 
+5. **Locate and report how many unique PDF files did the ransomware encrypt on the remote file server?** 
 	- We need to first find the hostname of the file server with ip 192.168.250.20
 		- `index=botsv1 sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" 192.168.250.20`
 	- The dest_host and src_host have the most frequent value being *we9041srv* this is most likely our hostname
@@ -50,7 +50,7 @@
 	- Use dc() to get the number of unique pdfs
 		- `index=botsv1 host="we9041srv" pdf (sourcetype="WinEventLog:Security" OR source="WinEventLog:System") Source_Address="192.168.250.100" | stats dc(Relative_Target_Name)`
 	- And we get *257* unique PDFs encryped
-1. **Locate and report how many unique text files did the ransomware encrypt on the Bob Smith’s host?** 
+6. **Locate and report how many unique text files did the ransomware encrypt on the Bob Smith’s host?** 
 	- Look at text files references in sysmon data
 		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk *.txt`
 	- Look at the events - 2 unique events ID: 2 (File create time), ID 1 (process create)
@@ -62,7 +62,7 @@
 	- We can use the dc() function like we used before to get a count of all unique files
 		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk EventCode=2 TargetFilename="C:\\Users\\bob.smith.WAYNECORPINC\\*.txt" | stats dc(TargetFilename)`
 	- This gives *406* text files most likely encrypted
-2. **There was a VBScript found during the post mortem, which launches a temp file. Locate is the ParentProcessId of this initial launch and the name of the temp file the VBScript had executed?**
+7. **There was a VBScript found during the post mortem, which launches a temp file. Locate is the ParentProcessId of this initial launch and the name of the temp file the VBScript had executed?**
 	- As we know a usb drive was used we can look for common external drive letters D:\ E:\ and F:\ and we can see the Miranda tate file is on D:\
 		- `index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host="we8105desk" ("d:\\" OR "e:\\" OR "f:\\")`
 	- We can then look at processes executed and their command lines in the D:\ drive
