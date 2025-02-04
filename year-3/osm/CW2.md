@@ -73,116 +73,108 @@
 
 
 
+### **1. Detection Rule: Malicious File Uploads**  
+**MITRE ATT&CK Mapping**:  
+- **Tactic**: Command and Control (TA0011)  
+- **Technique**: Ingress Tool Transfer (T1105)  
+- **ID**: T1105  
 
-
-Creating detection rules in Splunk to identify malicious activities based on your provided searches and context
-involves leveraging Splunk's capabilities to monitor for specific events and patterns indicative of cyber threats.
-Below are the detection rules aligned with Mitre ATT&CK tactics:
-
----
-
-### **1. Detection Rule: Malicious File Uploads (T1078 - Exfiltration)**
-**Objective:** Detect unauthorized file uploads or access to files from external devices or unusual locations.
-
-#### **Splunk Search Example:**
-```splunk
-index=TA-Windows
-(SrcFileName="*Miranda*" OR ParentProcessId=*3756*)
-AND (DevicePath="D:\\" OR DevicePath="E:\\" OR DevicePath="F:\\")
-| stats count BY ProcessName, CommandLine, TargetFilename
-```
-
-#### **Rule Explanation:**
-- This rule identifies processes accessing files from external devices (e.g., USB drives).
-- It looks for the specific file "Miranda_tate_unveiled.dotm" and tracks its execution.
-- The rule is mapped to **T1078 - Exfiltration** as it detects unauthorized file access or uploads.
+**Splunk SPL Detection Rule**:  
+```spl
+index=botsv1 sourcetype=stream:http http_method=POST dest_ip=192.168.250.70 *.exe 
+| stats count by src, url, file_name 
+| where count > 0 
+| table _time, src, dest_ip, url, file_name  
+```  
+**Rationale**:  
+- Monitors HTTP POST requests containing `.exe` files to the web server (`dest_ip=192.168.250.70`), which is indicative of adversaries uploading malicious tools.  
+- Maps to **T1105** (Upload malicious files to victim infrastructure).  
 
 ---
 
-### **2. Detection Rule: Brute Force Attack Detection (T1069 - Credential Dumping, T1124 - Brute Force)**
+### **2. Detection Rule: Brute Force Attacks**  
+**MITRE ATT&CK Mapping**:  
+- **Tactic**: Credential Access (TA0006)  
+- **Technique**: Brute Force (T1110)  
+- **ID**: T1110  
 
-#### **Splunk Search Example:**
-```splunk
-index=TA-Security
-(FailedLogin OR BadPassword)
-| timechart count BY UserId
-| where count > 5 AND range(CountTimeWindow) < 30m
-```
-
-#### **Rule Explanation:**
-- Monitors for multiple failed login attempts from the same user within a short timeframe.
-- This rule is mapped to **T1124 - Brute Force** and helps identify potential brute force attacks.
-
----
-
-### **3. Detection Rule: Command and Control (C2) Behavior (T1048 - Exfiltration, T1056 - Exfiltration Over
-Alternative Protocols)**
-
-#### **Splunk Search Example:**
-```splunk
-index=TA-Network
-(DNS_QryName=*malicious_domain* OR HTTP_Domain=*malicious_domain*)
-| stats count BY DNS_QryName, IP
-| where count > 10 AND range(CountTimeWindow) < 24h
-```
-
-#### **Rule Explanation:**
-- Detects repeated attempts to communicate with known malicious domains or IPs.
-- This rule is mapped to **T1048 - Exfiltration** and helps identify potential C2 activities.
+**Splunk SPL Detection Rule**:  
+```spl
+index=botsv1 sourcetype=stream:http http_method=POST form_data="*passwd*" dest_ip=192.168.250.70 
+| rex field=form_data "passwd=(?<password>\w+)" 
+| stats dc(password) as unique_passwords, values(password) as passwords_used by src 
+| where unique_passwords > 5 
+```  
+**Rationale**:  
+- Detects multiple unique passwords (`dc(password)`) used in HTTP POST requests to the web server, a hallmark of brute force attacks.  
+- Threshold (`unique_passwords > 5`) reduces noise from legitimate login attempts.  
 
 ---
 
-### **4. Detection Rule: Ransomware Activity (T1485 - Data Encryption)**
+### **3. Detection Rule: Command and Control (C2) Behavior**  
+**MITRE ATT&CK Mapping**:  
+- **Tactic**: Command and Control (TA0011)  
+- **Technique**: Non-Application Layer Protocol (T1095)  
+- **ID**: T1095  
 
-#### **Splunk Search Example:**
-```splunk
-index=TA-Windows
-(File_Create OR File_Delete)
-AND Path="C:\Users\*\\Documents"
-| stats count BY ProcessName, ParentProcessId, EventTime
-| where count > 10 AND range(CountTimeWindow) < 30m
-```
-
-#### **Rule Explanation:**
-- Monitors file modifications or deletions in user directories, which may indicate ransomware activity.
-- This rule is mapped to **T1485 - Data Encryption** and helps identify potential ransomware behavior.
-
----
-
-### **5. Detection Rule: Script Execution from External Devices (T1055 - Scripting)**
-
-#### **Splunk Search Example:**
-```splunk
-index=TA-Windows
-ProcessName="wscript.exe" OR ProcessName="cscript.exe"
-AND ParentProcessId=*3756*
-AND DevicePath="D:\\"
-| stats count BY CommandLine, EventTime
-```
-
-#### **Rule Explanation:**
-- Detects script execution (e.g., VBScript) from external devices with a high parent process ID.
-- This rule is mapped to **T1055 - Scripting** and helps identify potential malicious script activity.
+**Splunk SPL Detection Rule**:  
+```spl
+index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational 
+| stats count by dest_ip, Image 
+| where count > 100 AND dest_ip IN ("192.168.250.20", "192.168.2.50") 
+| table _time, host, dest_ip, Image  
+```  
+**Rationale**:  
+- Identifies abnormal traffic to internal servers (e.g., `192.168.250.20`), which may indicate ransomware spreading laterally or C2 communication.  
+- Focuses on Sysmon events to track process-to-IP connections.  
 
 ---
 
-### **Summary of Detection Rules:**
+### **4. Detection Rule: Ransomware Activity**  
+**MITRE ATT&CK Mapping**:  
+- **Tactic**: Impact (TA0040)  
+- **Technique**: Data Encrypted for Impact (T1486)  
+- **ID**: T1486  
 
-| **Rule Name**                     | **Mitre ATT&CK Tactic**               | **Splunk Search Example**
-                                                     |
-|-----------------------------------|-----------------------------------------|------------------------------------||-----------------------------------|-----------------------------------------|-------------------------------------------------------------------------------------------|
-| Malicious File Uploads           | T1078 - Exfiltration                   | `index=TA-Windows
-(SrcFileName="*Miranda*" OR ParentProcessId=*3756*) AND (DevicePath="D:\\" OR DevicePath="E:\\")` |
-| Brute Force Attack Detection      | T1124 - Brute Force                    | `index=TA-Security (FailedLogin OR
-BadPassword) | timechart count BY UserId`        |
-| Command and Control Behavior      | T1048 - Exfiltration, T1056 - Exfil.    | `index=TA-Network
-(DNS_QryName=*malicious_domain* OR HTTP_Domain=*malicious_domain*)` |
-| Ransomware Activity               | T1485 - Data Encryption                | `index=TA-Windows (File_Create OR
-File_Delete) AND Path="C:\Users\*\\Documents"`         |
-| Script Execution from External Devices | T1055 - Scripting                     | `index=TA-Windows
-ProcessName="wscript.exe" AND ParentProcessId=*3756*`                  |
+**Splunk SPL Detection Rule**:  
+```spl
+index=botsv1 (sourcetype=WinEventLog:Security OR sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational) 
+(EventCode=2 OR EventCode=11) (TargetFilename=*.pdf OR TargetFilename=*.txt) 
+| stats dc(TargetFilename) as encrypted_files by host 
+| where encrypted_files > 100 
+```  
+**Rationale**:  
+- Detects mass file encryption by monitoring Sysmon `EventCode=2` (FileCreateTime) and Windows Security logs for rapid file modifications.  
+- Threshold (`encrypted_files > 100`) highlights ransomware behavior.  
 
 ---
 
-These detection rules can be implemented in Splunk using the provided search queries and can be further refined
-based on your specific environment and threat intelligence
+### **5. Detection Rule: Scripts Launching Temp Files**  
+**MITRE ATT&CK Mapping**:  
+- **Tactic**: Execution (TA0002)  
+- **Technique**: Command and Scripting Interpreter (T1059)  
+- **ID**: T1059  
+
+**Splunk SPL Detection Rule**:  
+```spl
+index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational 
+(CommandLine="*wscript*" OR CommandLine="*cscript*") (CommandLine="*temp*" OR CommandLine="*.vbs*") 
+| stats count by ParentProcessId, ProcessId, CommandLine 
+| table _time, host, ParentProcessId, ProcessId, CommandLine  
+```  
+**Rationale**:  
+- Flags scripts (e.g., VBScript) executed from temporary directories (`temp`) or removable drives (`D:\`), which are common in ransomware delivery.  
+- Tracks parent-child process relationships (e.g., `splwow.exe` spawned by `Miranda_Tate_unveiled.dotm`).  
+
+---
+
+### **Additional Recommendations**:  
+1. **False Positive Reduction**:  
+   - Combine rules with threat intelligence (e.g., blocklisted IPs, known malicious hashes).  
+   - Use Splunk’s `lookup` command to cross-reference internal asset databases.  
+2. **Automated Response**:  
+   - Integrate with SOAR tools to quarantine hosts or block IPs upon detection.  
+3. **MITRE ATT&CK Enrichment**:  
+   - Use Splunk’s ATT&CK Framework App to visualize rule mappings.  
+
+These rules align with the BOTS v1 dataset patterns and real-world adversarial TTPs.
