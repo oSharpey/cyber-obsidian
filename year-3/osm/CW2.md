@@ -124,10 +124,7 @@ index=botsv1 sourcetype=stream:http http_method=POST form_data="*username*passwd
 
 **Splunk SPL Detection Rule**:  
 ```spl
-index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational 
-| stats count by dest_ip, Image 
-| where count > 100 AND dest_ip IN ("192.168.250.20", "192.168.2.50") 
-| table _time, host, dest_ip, Image  
+
 ```  
 **Rationale**:  
 - Identifies abnormal traffic to internal servers (e.g., `192.168.250.20`), which may indicate ransomware spreading laterally or C2 communication.  
@@ -143,10 +140,7 @@ index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 
 **Splunk SPL Detection Rule**:  
 ```spl
-index=botsv1 (sourcetype=WinEventLog:Security OR sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational) 
-(EventCode=2 OR EventCode=11) (TargetFilename=*.pdf OR TargetFilename=*.txt) 
-| stats dc(TargetFilename) as encrypted_files by host 
-| where encrypted_files > 100 
+ 
 ```  
 **Rationale**:  
 - Detects mass file encryption by monitoring Sysmon `EventCode=2` (FileCreateTime) and Windows Security logs for rapid file modifications.  
