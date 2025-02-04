@@ -81,10 +81,15 @@
 
 **Splunk SPL Detection Rule**:  
 ```spl
-index=botsv1 sourcetype=stream:http http_method=POST dest_ip=192.168.250.70 *.exe 
-| stats count by src, url, file_name 
-| where count > 0 
-| table _time, src, dest_ip, url, file_name  
+index=botsv1 
+((sourcetype="suricata" dest_ip="192.168.250.70" http.http_method=POST fileinfo.filename=*.exe)
+OR
+(sourcetype=fgt_utm dest=192.168.250.70 eventtype="ftnt_fgt_virus" .exe))
+| eval destination=coalesce(dest_ip,dest)
+| eval filename=coalesce(fileinfo.filename, filename) 
+| eventstats dc(sourcetype) as sourcetype_count by filename  
+| where sourcetype_count >=2  
+| table _time, sourcetype, filename, src, destination
 ```  
 **Rationale**:  
 - Monitors HTTP POST requests containing `.exe` files to the web server (`dest_ip=192.168.250.70`), which is indicative of adversaries uploading malicious tools.  
