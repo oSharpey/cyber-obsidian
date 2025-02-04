@@ -105,10 +105,10 @@ OR
 
 **Splunk SPL Detection Rule**:  
 ```spl
-index=botsv1 sourcetype=stream:http http_method=POST form_data="*passwd*" dest_ip=192.168.250.70 
+index=botsv1 sourcetype=stream:http http_method=POST form_data="*username*passwd*" 
 | rex field=form_data "passwd=(?<password>\w+)" 
-| stats dc(password) as unique_passwords, values(password) as passwords_used by src 
-| where unique_passwords > 5 
+| stats dc(password) AS unique_passwords by src 
+| where unique_passwords > 20
 ```  
 **Rationale**:  
 - Detects multiple unique passwords (`dc(password)`) used in HTTP POST requests to the web server, a hallmark of brute force attacks.  
