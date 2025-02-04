@@ -10,7 +10,7 @@
 	- Look at part_filename we see 3791.exe and agent.php
 		- `index=botsv1 src=192.168.250.70 sourcetype=stream:http | table url`
 	- This can also be confirmed with Suricata and the firewall
-		- `index=botsv1 sourcetype=fgt_utm "192.168.250.70" NOT dest="192.168.250.70" catdesc="Malicious Websites"`
+		- `index=botsv1 sourcetype=fgt_utm dest=192.168.250.70 .exe | stats values(filename)`
 		- `index=botsv1 sourcetype=suricata (dest=imreallynotbatman.com OR dest="192.168.250.70") http.http_method=POST .exe | stats values(fileinfo.filename)`
 2. **Can you locate two of the brute force password used?** 
 	- Narrow down search dest to webserver (192.168.250.70)
