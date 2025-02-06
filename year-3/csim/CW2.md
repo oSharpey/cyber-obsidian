@@ -1,5 +1,9 @@
 - Harj sets weird time-zones
 - Take local time not UTC
+- To prove provenance go through web search history, look for zone identifiers
+	- Some files you will find zone identifiers, has urls that might be live
+	- For illegal images dont go to the urls -> dont have to prove that the images came from that website
+- Disable all network connectivity on the VM -> Must report this in the methodology
 ## Operating system
 - **Get Current OS and build**
 	- Software file
