@@ -6,5 +6,6 @@
     "tables"
   ],
   "nativeMenus": false,
-  "baseFontSizeAction": false
+  "baseFontSizeAction": false,
+  "showRibbon": true
 }
