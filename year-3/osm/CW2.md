@@ -140,27 +140,20 @@ index=botsv1 sourcetype=stream:http http_method=POST form_data="*username*passwd
 
 **Splunk SPL Detection Rule**:  
 ```spl
- ((index=botsv1 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk EventCode=2 TargetFilename="*\.7z" OR TargetFilename="*\.bmp" OR TargetFilename="*\.chm" OR TargetFilename="*\.cmd" OR TargetFilename="*\.db" OR TargetFilename="*\.doc*" OR TargetFilename="*\.gif" OR TargetFilename="*\.ini" OR TargetFilename="*\.jpeg" OR TargetFilename="*\.jpg" OR TargetFilename="*\.js" OR TargetFilename="*\.log" OR TargetFilename="*\.png" OR TargetFilename="*\.ppt*" OR TargetFilename="*\.ps1" OR TargetFilename="*\.rar" OR TargetFilename="*\.vbs" OR TargetFilename="*\.xls*" OR TargetFilename="*\.zip" OR TargetFilename="*\.txt" AND (NOT TargetFilename="*\.tmp"))
+((index=botsv1 minutesago=5 sourcetype=XmlWinEventLog:Microsoft-Windows-Sysmon/Operational host=we8105desk EventCode=2 TargetFilename="*\.7z" OR TargetFilename="*\.bmp" OR TargetFilename="*\.chm" OR TargetFilename="*\.cmd" OR TargetFilename="*\.db" OR TargetFilename="*\.doc*" OR TargetFilename="*\.gif" OR TargetFilename="*\.ini" OR TargetFilename="*\.jpeg" OR TargetFilename="*\.jpg" OR TargetFilename="*\.js" OR TargetFilename="*\.log" OR TargetFilename="*\.png" OR TargetFilename="*\.ppt*" OR TargetFilename="*\.ps1" OR TargetFilename="*\.rar" OR TargetFilename="*\.vbs" OR TargetFilename="*\.xls*" OR TargetFilename="*\.zip" OR TargetFilename="*\.txt" AND (NOT TargetFilename="*\.tmp"))
 OR
 (index=botsv1 host="we9041srv" pdf (sourcetype="WinEventLog:Security" OR sourcetype="WinEventLog:System") Source_Address="192.168.250.100")
 AND
 (NOT (process=backgroundTaskHost.exe OR process=svchost.exe)))
 | eval file_name=coalesce(TargetFilename, Relative_Target_Name)
-| bin _time span=5m  
 | stats 
     dc(file_name) as files_modified 
     values(host) as machine
-    values(ProcessId) as process_ids 
+    values(ProcessId) as process_ids
 | where 
-    (files_modified > 20) 
-| stats 
-    sum(files_modified) as total_files 
-    values(process_ids) as process_ids 
-| where 
-    (total_files > 20) 
+    (files_modified > 20)
 | eval 
-    alert_message=" encryption spike detected - ".total_files." files modified within 5 mins of eachother",
-    details="Processes: ".mvjoin(process_ids, ", ")." | IPs: ".mvjoin(source_ips, ", ")
+    alert_message=" encryption spike detected - ".files_modified." files modified"
 ```  
 **Rationale**:  
 - Detects mass file encryption by monitoring Sysmon `EventCode=2` (FileCreateTime) and Windows Security logs for rapid file modifications.  
