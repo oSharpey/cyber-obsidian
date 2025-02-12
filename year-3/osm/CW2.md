@@ -8,7 +8,6 @@
 	- Look for executables being sent to the web server
 		- `index=botsv1 sourcetype=stream:http dest="192.168.250.70" *.exe` 
 	- Look at part_filename we see 3791.exe and agent.php
-		- `index=botsv1 src=192.168.250.70 sourcetype=stream:http | table url`
 	- This can also be confirmed with Suricata and the firewall
 		- `index=botsv1 sourcetype=fgt_utm dest=192.168.250.70 .exe | stats values(filename)`
 		- `index=botsv1 sourcetype=suricata (dest=imreallynotbatman.com OR dest="192.168.250.70") http.http_method=POST .exe | stats values(fileinfo.filename)`
