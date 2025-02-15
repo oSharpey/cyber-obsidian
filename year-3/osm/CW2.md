@@ -123,7 +123,9 @@ index=botsv1 sourcetype=stream:http http_method=POST form_data="*username*passwd
 
 **Splunk SPL Detection Rule**:  
 ```spl
-
+index=botsv1 src_ip="192.168.250.100" source="stream:dns" NOT query=*.arpa AND NOT query=*.live.com AND NOT query=*.windowsupdate.com AND NOT query=*.windows.com AND NOT query=*.bing.com AND NOT query=*.office.com AND NOT query=*.microsoft.com AND NOT query=*.msn.com AND NOT query=*.info AND NOT query=*.local AND query=*.* 
+| table dest_ip _time query
+| sort by _time desc
 ```  
 **Rationale**:  
 - Identifies abnormal traffic to internal servers (e.g., `192.168.250.20`), which may indicate ransomware spreading laterally or C2 communication.  
