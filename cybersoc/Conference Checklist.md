@@ -7,4 +7,7 @@
 - [ ] Get Speakers Confirmed
 - [ ] Create timetable/schedule
 - [ ] Create Marketing Material
-- [ ] Release T
+- [ ] Release Tickets
+- [ ] Email people for CTF
+- [ ] Finalise CTF challenges
+- [ ] Promoteeee
