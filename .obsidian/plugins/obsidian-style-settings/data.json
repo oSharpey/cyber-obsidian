@@ -7,5 +7,7 @@
   "minimal-advanced@@cursor": "default",
   "things-style@@h6-color": "#24B637",
   "things-style@@h3-color": "#EE6A37",
-  "things-style@@h2-underline": true
+  "things-style@@h2-underline": true,
+  "anuppuccin-theme-settings@@anuppuccin-theme-light": "ctp-latte",
+  "anuppuccin-theme-settings@@anuppuccin-theme-dark": "ctp-mocha-old"
 }
