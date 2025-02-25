@@ -3,7 +3,8 @@
   "cssTheme": "AnuPpuccin",
   "accentColor": "#90dfd0",
   "enabledCssSnippets": [
-    "tables"
+    "tables",
+    "extended-colorschemes"
   ],
   "nativeMenus": false,
   "baseFontSizeAction": false,
