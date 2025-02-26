@@ -1,5 +1,11 @@
 # CSIM CW2 notes
 
+
+## Hash verification
+- Use FTK imager to verifiy the image
+
+
+
 ## Initial analysis
 - Spiderman photos have been found
 - Email correspondence about 'drops' for red and blue things
