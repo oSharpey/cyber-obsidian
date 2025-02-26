@@ -2,7 +2,7 @@
 
 
 ## Hash verification
-- Use FTK imager to verifiy the image
+- Use FTK imager to verify the image
 
 
 
@@ -22,4 +22,7 @@
 
 ## Analysis
 ### Images
+- 116 Category A images
+- 187 Category B images
+- This is not an exhaustive list of images, enough were identified in order to prosecute 
 - 
