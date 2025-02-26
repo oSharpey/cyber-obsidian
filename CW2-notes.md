@@ -25,4 +25,5 @@
 - 116 Category A images
 - 187 Category B images
 - This is not an exhaustive list of images, enough were identified in order to prosecute 
-- 
+- Found in these locations mainly 
+	- img_Radovan-Marc-Andran[.]img/vol_vol2/$RECYCLE_BIN
