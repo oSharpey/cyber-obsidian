@@ -13,11 +13,13 @@
 
 ## To-do
 - [x] Categorise images 
-- [ ] Look at email accounts
-- [ ] Find out what drops are
-- [ ] Look at web downloads
+- [x] Look at email accounts
+- [x] Find out what drops are
+- [x] Look at web downloads
 - [ ] Prove no malware was on the system 
-- [ ] Prove he is interested in the images
+- [x] Prove he is interested in the images
+- [ ] Create timeline
+	- [ ] 
 
 
 ## Interview statements
@@ -27,9 +29,10 @@
 - Emails between suspect, Jenny and dinny
 ### There must have been malware
 ### Would have deleted them straight away
-- Downloaded images still in bo
+- Downloaded images still in both downloads folder and myphotos folder, not deleted
 ### Never been in contact with people who like those things
-
+- Emails showing distribution of images via wetransfer
+- Emails regarding going to meetings about SM (spiderman) images
 
 ## Analysis
 ### Images
