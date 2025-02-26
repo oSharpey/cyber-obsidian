@@ -34,6 +34,8 @@
 	- `spiderman`
 	- `spiderman photos`
 	- `spiderman photos new`
+- Provenance of the images can be tracked to actions taken by the user
+	- 
 
 ### Emails
 - Found suspicious emails from Andran and Radovan
@@ -41,4 +43,5 @@
 - Radovan emailing various accounts about:
 	- SM meet
 	- numbers of photos
-	- emailing wetransfer links for zip folders found on the system containing spider
+	- emailing wetransfer links for zip folders found on the system containing spiderman photos
+	
