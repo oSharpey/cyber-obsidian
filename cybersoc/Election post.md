@@ -17,4 +17,5 @@ Final reminder that nominations close at 6pm, and the AGM also starts at 6pm tod
 	9) Pres
 - Each candidate will be given 1 minute for a small speech (2 mins for Pres and VP), followed by a Q+A with all candidates
 - After the last Q+A voting will open and all eligible members will receive a email with the voting form
-- Voting will last for 48 hours closing at 6pm on Saturday
+- Voting will last for 48 hours closing at 6pm on Saturday with results released on Sunday. 
+- If anyone has specific things they want shown during their speech (extra poster, slides etc) either DM me or email me (oscar.sharpe@warwick.ac.uk or vp@warwickcybersoc.com)
