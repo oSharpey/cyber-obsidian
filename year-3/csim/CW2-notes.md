@@ -71,4 +71,5 @@
 - I do not believe this provides a defence
 	- First communication regarding spiderman photos was before these files were on the system
 	- No evidence that these files were executed on the PC
-	- 
+	- Registry keys that the malware is known to set are not changed on the system
+- It is of my opinion that 
