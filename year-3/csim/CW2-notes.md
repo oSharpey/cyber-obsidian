@@ -20,6 +20,17 @@
 - [ ] Prove he is interested in the images
 
 
+## Interview statements
+### Not interested in images like that
+- Google searches for spiderman images
+- Downloads for spiderman images 
+- Emails between suspect, Jenny and dinny
+### There must have been malware
+### Would have deleted them straight away
+- Downloaded images still in bo
+### Never been in contact with people who like those things
+
+
 ## Analysis
 ### Images
 - 116 Category A images
