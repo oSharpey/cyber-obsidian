@@ -26,4 +26,7 @@
 - 187 Category B images
 - This is not an exhaustive list of images, enough were identified in order to prosecute 
 - Found in these locations mainly 
-	- img_Radovan-Marc-Andran[.]img/vol_vol2/$RECYCLE_BIN
+	- `/img_Radovan-Marc-Andran.img/vol_vol2/$RECYCLE_BIN/S-1-5-21-2189243936-2770537914-435387343-1001`
+	- `/img_Radovan-Marc-Andran.img/vol_vol2/Users/vboxuser/Downloads/`
+	- `/img_Radovan-Marc-Andran.img/vol_vol2/Users/vboxuser/Desktop/myphhotos/`
+- As they were 
