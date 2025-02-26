@@ -7,8 +7,13 @@
 
 ## To-do
 - [x] Categorise images 
-- [ ] 
+- [ ] Look at email accounts
 - [ ] Find out what drops are
 - [ ] Look at web downloads
 - [ ] Prove no malware was on the system 
 - [ ] Prove he is interested in the images
+
+
+## Analysis
+### Images
+- 
