@@ -29,4 +29,5 @@
 	- `/img_Radovan-Marc-Andran.img/vol_vol2/$RECYCLE_BIN/S-1-5-21-2189243936-2770537914-435387343-1001`
 	- `/img_Radovan-Marc-Andran.img/vol_vol2/Users/vboxuser/Downloads/`
 	- `/img_Radovan-Marc-Andran.img/vol_vol2/Users/vboxuser/Desktop/myphhotos/`
-- As they were 
+- Arrested in September, images have been present in downloads since beginning of august, in myphotos since end of july
+- 
