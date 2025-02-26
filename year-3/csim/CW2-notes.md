@@ -69,10 +69,11 @@
 ### Malware
 - There are 2 malicious files on the PC in LucusPics
 	- Identified with cyber triage malware scanner
-	- One is an XMRig miner
-	- Other is a cred stealer, StealC
+	- One is an XMRig miner (Spidey2)
+	- Other is a cred stealer, StealC (Spidey3)
 - I do not believe this provides a defence
 	- First communication regarding spiderman photos was before these files were on the system
 	- No evidence that these files were executed on the PC
 	- Registry keys that the malware is known to set are not changed on the system
+- Spidey1 and Spidey2 were accessed (from jumplist) 
 - It is of my opinion that this malware was never executed on the machine
