@@ -35,6 +35,7 @@
 	- `spiderman photos`
 	- `spiderman photos new`
 - Provenance of the images can be tracked to actions taken by the user
+	- Downloads of zip files containing hundreds of spiderman photos each 
 	- 
 
 ### Emails
