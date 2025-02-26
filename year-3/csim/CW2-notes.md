@@ -34,4 +34,11 @@
 	- `spiderman`
 	- `spiderman photos`
 	- `spiderman photos new`
-- 
+
+### Emails
+- Found suspicious emails from Andran and Radovan
+- Andran emails seems related to drugs, with drops and references to grams and dealing
+- Radovan emailing various accounts about:
+	- SM meet
+	- numbers of photos
+	- emailing wetransfer links for zip folders found on the system containing spider
