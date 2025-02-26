@@ -64,4 +64,11 @@
 	- SM meet
 	- numbers of photos
 	- emailing wetransfer links for zip folders found on the system containing spiderman photos
-	
+
+
+### Malware
+- There are 2 malicious files on the PC in LucusPics
+- I do not believe this provides a defence
+	- First communication regarding spiderman photos was before these files were on the system
+	- No evidence that these files were executed on the PC
+	- 
