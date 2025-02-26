@@ -4,8 +4,6 @@
 ## Hash verification
 - Use FTK imager to verify the image
 
-
-
 ## Initial analysis
 - Spiderman photos have been found
 - Email correspondence about 'drops' for red and blue things
@@ -19,7 +17,14 @@
 - [ ] Prove no malware was on the system 
 - [x] Prove he is interested in the images
 - [ ] Create timeline
-	- [ ] 
+	- [ ] OS installed
+	- [ ] Accounts created
+	- [ ] First images downloaded
+	- [ ] First email to other suspects
+	- [ ] First google searches
+	- [ ] First images sent via wetransfer
+	- [ ] Last logon date
+	- [ ] Warrant executed
 
 
 ## Interview statements
