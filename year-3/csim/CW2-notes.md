@@ -77,3 +77,52 @@
 	- Registry keys that the malware is known to set are not changed on the system
 - Spidey1 and Spidey2 were accessed (from jumplist) 
 - It is of my opinion that this malware was never executed on the machine
+
+
+### Registry
+- Decrypted Userasist
+```
+UEME_CTLCUACount:ctor	
+{9E3995AB-1F9C-4F13-B827-48B24B6C7174}\TaskBar\Internet Explorer.lnk	
+UEME_CTLSESSION	
+C:\Users\Public\Desktop\Thunderbird.lnk	
+{A77F5D77-2E2B-44C3-A6A2-ABA601054A51}\System Tools\Control Panel.lnk
+{0139D44E-6AFE-49F2-8690-3DAFCAE6FFB8}\Thunderbird.lnk	
+C:\Users\vboxuser\AppData\Local\Microsoft\Windows\Application Shortcuts\Microsoft.BingWeather_8wekyb3d8bbwe\App.lnk	
+C:\Users\vboxuser\AppData\Local\Microsoft\Windows\Application Shortcuts\microsoft.windowscommunicationsapps_8wekyb3d8bbwe\Microsoft.WindowsLive.Mail.lnk	
+{A77F5D77-2E2B-44C3-A6A2-ABA601054A51}\Internet Explorer.lnk	
+{9E3995AB-1F9C-4F13-B827-48B24B6C7174}\TaskBar\Google Chrome.lnk	
+{A77F5D77-2E2B-44C3-A6A2-ABA601054A51}\System Tools\Windows.Defender.lnk
+C:\Users\Public\Desktop\Google Chrome.lnk
+{A77F5D77-2E2B-44C3-A6A2-ABA601054A51}\Accessories\Notepad.lnk	
+{0139D44E-6AFE-49F2-8690-3DAFCAE6FFB8}\Accessories\Snipping Tool.lnk	
+
+
+UEME_CTLCUACount:ctor	
+Microsoft.Windows.Shell.RunDialog
+UEME_CTLSESSION	
+Microsoft.Windows.ControlPanel	
+Microsoft.Windows.Explorer	
+Microsoft.InternetExplorer.Default	
+C:\Users\vboxuser\AppData\Local\Microsoft\Windows\INetCache\IE\7CKFGW48\Thunderbird Setup 115.12.1.exe	
+D78BF5DD33499EC2	
+windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel	
+{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\rundll32.exe	
+Microsoft.BingWeather_8wekyb3d8bbwe!App	
+microsoft.windowscommunicationsapps_8wekyb3d8bbwe!Microsoft.WindowsLive.Mail	
+Microsoft.Windows.ControlPanel.Taskbar	
+C:\Users\vboxuser\AppData\Local\Microsoft\Windows\INetCache\IE\7CKFGW48\ChromeSetup.exe	
+{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\Google\Temp\GUMEDD8.tmp\GoogleUpdate.exe	
+{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\Google\Update\GoogleUpdate.exe	
+Chrome	
+C:\Users\vboxuser\AppData\Local\Microsoft\Windows\INetCache\IE\1N1221UW\ChromeSetup.exe	
+{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\Google\Temp\GUMC86C.tmp\GoogleUpdate.exe
+C:\Users\vboxuser\Downloads\DropboxInstaller.exe
+{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\Dropbox\Temp\GUMC933.tmp\DropboxUpdate.exe
+{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\Dropbox\Update\DropboxUpdate.exe	
+Microsoft.Windows.Defender	
+FileManager_cw5n1h2txyewy!Microsoft.Windows.PhotoManager	
+{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\OpenWith.exe	
+{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\notepad.exe	
+{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\SnippingTool.exe	
+```
