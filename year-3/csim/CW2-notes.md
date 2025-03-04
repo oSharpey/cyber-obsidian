@@ -134,21 +134,21 @@ FileManager_cw5n1h2txyewy!Microsoft.Windows.PhotoManager
 **Who installed it?**
 - Unsure, RegisteredOwner not set
 **Name of computer**
-	- XP system: ControlSet01/Control/ComputerName/ComputerName
-	- Win 8+: Control Set
-- **Who (appears to have) has an account on this system?**
-	- Software/Microsoft/WindowsNT/CurrentVersion/ProfileList/*
-- **Who was the last user to login?**
-	- Software/Microsoft/WindowsNT/CurrentVersion/WinLogon
-- **When did they last login**
-	- Software/Microsoft/WindowsNT/CurrentVersion/WinLogon - last written time
-- **What was the timezone the computer was set to?**
-	- XP system: System/ControlSet01/Control/TimezoneInformation
-- **When did each of them last shutdown the computer?**
-- **When was the last ever shutdown**
-	- XP system: System/ControlSet01/Control/Windows
-- **What USB devices have been accessed on this system?**
-	- Trick, in m57 case no devices
-	- System/ControlSet01/Enum/USBSTOR
-- **What programmes have been installed on this system? Is there evidence of programmes having been uninstalled (see my paper)?**
-	- Software/Microsoft/Windows/CurrentVersion/Uninstall
+- ANDREJA
+**Who (appears to have) has an account on this system?**
+- 
+**Who was the last user to login?**
+
+**When did they last login**
+
+**What was the timezone the computer was set to?**
+
+**When did each of them last shutdown the computer?**
+
+**When was the last ever shutdown**
+
+**What USB devices have been accessed on this system?**
+
+
+**What programmes have been installed on this system? Is there evidence of programmes having been uninstalled (see my paper)?**
+
