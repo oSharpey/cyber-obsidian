@@ -14,7 +14,6 @@
 - [x] Look at email accounts
 - [x] Find out what drops are
 - [x] Look at web downloads
-- [ ] Prove no malware was on the system 
 - [x] Prove he is interested in the images
 - [ ] Create timeline
 	- [ ] OS installed
