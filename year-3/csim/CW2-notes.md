@@ -142,13 +142,16 @@ FileManager_cw5n1h2txyewy!Microsoft.Windows.PhotoManager
 **Who was the last user to login?**
 - vboxuser (Radovan)
 **When did they last login**
-- 06/09/2024 03:51:13 UTC
+- 2024-09-06 03:47:29
+**When was Radovan Account created**
+- 2024-06-20 12:53:20
 **What was the timezone the computer was set to?**
 - European Standard Time, CET, UTC+01:00
 **When did each of them last shutdown the computer?**
 
 **When was the last ever shutdown**
-
+- Data
+9C-09-A7-05-10-00-DB-01
 **What USB devices have been accessed on this system?**
 
 
