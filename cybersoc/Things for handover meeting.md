@@ -1,0 +1,10 @@
+- Accounts
+	- Vaultwarden
+	- Toms personal cloudflare
+	- Bank cards for domain and email
+- What is happening in term 3
+	- Talk series
+	- Cafe
+	- Conference 
+	- Ball
+	- 
