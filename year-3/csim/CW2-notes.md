@@ -125,3 +125,8 @@ FileManager_cw5n1h2txyewy!Microsoft.Windows.PhotoManager
 {1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\notepad.exe	
 {1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\SnippingTool.exe	
 ```
+
+
+### System Information
+
+Current OS
