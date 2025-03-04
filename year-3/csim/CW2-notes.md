@@ -128,5 +128,5 @@ FileManager_cw5n1h2txyewy!Microsoft.Windows.PhotoManager
 
 
 ### System Information
-
-Current OS
+**Current OS and Build**
+- 
