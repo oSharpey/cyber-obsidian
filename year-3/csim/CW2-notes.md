@@ -144,7 +144,7 @@ FileManager_cw5n1h2txyewy!Microsoft.Windows.PhotoManager
 **When did they last login**
 - 06/09/2024 03:51:13 UTC
 **What was the timezone the computer was set to?**
-- 
+- European Standard Time, CET, UTC+01:00
 **When did each of them last shutdown the computer?**
 
 **When was the last ever shutdown**
