@@ -21,8 +21,7 @@
 	- Peter & Artem
 		- Sponsors for next year
 		- Who to email, what to email
-	- Me, Peter, Oscar, ellis?
+	- Me, Peter, Oscar, ellis
 		- Their plans for term 3
 		- Handover packs
 		- exec training
-		- 
