@@ -150,7 +150,7 @@ FileManager_cw5n1h2txyewy!Microsoft.Windows.PhotoManager
 **When did each of them last shutdown the computer?**
 
 **When was the last ever shutdown**
-- Saturday, April 20, 1957 10:26:24 AM ?????
+- Friday, September 6, 2024 3:51:15 AM
 **What USB devices have been accessed on this system?**
 
 
