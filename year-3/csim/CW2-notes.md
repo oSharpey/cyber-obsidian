@@ -140,11 +140,11 @@ FileManager_cw5n1h2txyewy!Microsoft.Windows.PhotoManager
 - S-1-5-21-2189243936-2770537914-435387343-1002	C:\Users\Andran
 - S-1-5-21-2189243936-2770537914-435387343-1003	C:\Users\Marc
 **Who was the last user to login?**
-- vboxuser 
+- vboxuser (Radovan)
 **When did they last login**
-
+- 06/09/2024 03:51:13 UTC
 **What was the timezone the computer was set to?**
-
+- 
 **When did each of them last shutdown the computer?**
 
 **When was the last ever shutdown**
