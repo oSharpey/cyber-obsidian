@@ -136,9 +136,11 @@ FileManager_cw5n1h2txyewy!Microsoft.Windows.PhotoManager
 **Name of computer**
 - ANDREJA
 **Who (appears to have) has an account on this system?**
-- 
+- S-1-5-21-2189243936-2770537914-435387343-1001	C:\Users\vboxuser (Radovan shown in autopsy)
+- S-1-5-21-2189243936-2770537914-435387343-1002	C:\Users\Andran
+- S-1-5-21-2189243936-2770537914-435387343-1003	C:\Users\Marc
 **Who was the last user to login?**
-
+- vboxuser 
 **When did they last login**
 
 **What was the timezone the computer was set to?**
