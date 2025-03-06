@@ -139,3 +139,10 @@ Determine the number of encryption operations and power traces to collect for ea
 - The ChipWhisperer’s own software for real-time analysis and visualisation of side-channel attacks.
 ### Ethics and Security
 Ensure that the research complies with ethical guidelines, especially if any part of the project involves handling or simulating sensitive data.
+
+
+
+
+
+
+limit time for doing the more difficult one - need to know when to switch to backup 
