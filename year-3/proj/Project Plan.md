@@ -146,3 +146,4 @@ Ensure that the research complies with ethical guidelines, especially if any par
 
 
 limit time for doing the more difficult one - need to know when to switch to backup 
+start thinking about what happens if things go wrong. 
