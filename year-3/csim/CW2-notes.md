@@ -65,7 +65,7 @@
 
 
 ### Malware
-- There are 2 malicious files on the PC in LucusPics
+- There are 3 malicious files on the PC in LucusPics
 	- Identified with cyber triage malware scanner
 	- One is an XMRig miner (Spidey2)
 	- Other is a cred stealer, StealC (Spidey3)
