@@ -160,22 +160,22 @@ FileManager_cw5n1h2txyewy!Microsoft.Windows.PhotoManager
 
 
 ### Technical terms
-Autopsy
-Bad Block
-Cryptominer
-File Hash
-Forensic Image
-FTK Imager
-Jumplist
-Keylogger
-Malware
-PerfLogs
-ProgramFiles
-Registry Key
-Run Programs
-Shellbag
-Stealer Malware
-UserAsist
-Virustotal
-Windows Registry
-ZoneIdentifier
+\textbf{Autopsy}:  Digital forensics software used to analyse computer hard drives
+\textbf{Bad Block}: Indicate somewhere in the file is damaged
+\textbf{Cryptominer}: Malicious computer program to mine cryptocurrency 
+\textbf{File Hash}: A unique fingerprint of a file
+\textbf{Forensic Image}: An exact identical copy of the hard drive of a laptop
+\textbf{FTK Imager}: Another digital forensics software used to analyse computer hard drives
+\textbf{Jumplist}: A list of frequently used or recently used files, programs and folders on a system
+\textbf{Keylogger}: 
+\textbf{Malware}
+\textbf{PerfLogs}
+\textbf{ProgramFiles}
+\textbf{Registry Key}
+\textbf{Run Programs}
+\textbf{Shellbag}
+\textbf{Stealer Mal}ware
+\textbf{UserAsist}
+\textbf{Virustotal}
+\textbf{Windows Registry}
+\textbf{ZoneIdentifier}
