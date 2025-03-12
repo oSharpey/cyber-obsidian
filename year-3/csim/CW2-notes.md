@@ -160,18 +160,22 @@ FileManager_cw5n1h2txyewy!Microsoft.Windows.PhotoManager
 
 
 ### Technical terms
+Autopsy
+Bad Block
+Cryptominer
+File Hash
 Forensic Image
+FTK Imager
+Jumplist
+Keylogger
+Malware
+PerfLogs
+ProgramFiles
+Registry Key
+Run Programs
+Shellbag
+Stealer Malware
+UserAsist
+Virustotal
 Windows Registry
 ZoneIdentifier
-Shellbag
-Jumplist
-ProgramFiles
-PerfLogs
-Malware
-Virustotal
-Keylogger
-Cryptominer
-Stealer Malware
-Run Programs
-UserAsist
-Registry Key
