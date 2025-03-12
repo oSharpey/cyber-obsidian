@@ -170,11 +170,10 @@ FileManager_cw5n1h2txyewy!Microsoft.Windows.PhotoManager
 \textbf{Keylogger}: Malicious computer program that sends all key presses back to an attacker
 \textbf{PerfLogs}: Folder containing information about PC performance, folder is hidden by default
 \textbf{ProgramFiles}: Folder containing programs installed on the system with
-\textbf{Registry Key}: 
-\textbf{Run Programs}
-\textbf{Shellbag}
-\textbf{Stealer Mal}ware
+\textbf{Run Programs}: 
+\textbf{Shellbag}: A collection of keys in the Registry containing information on how and when a user viewed a folder
+\textbf{Stealer Malware}: Malicious computer program that steals login credentials 
 \textbf{UserAsist}
 \textbf{Virustotal}
-\textbf{Windows Registry}
+\textbf{Windows Registry}: A collection of configurable settings for Windows
 \textbf{ZoneIdentifier}
