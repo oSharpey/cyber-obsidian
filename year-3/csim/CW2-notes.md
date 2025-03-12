@@ -176,4 +176,4 @@ FileManager_cw5n1h2txyewy!Microsoft.Windows.PhotoManager
 \textbf{UserAsist}: A feature that tracks the usage of executable files and applications by the user
 \textbf{Virustotal}: A website for analysing malicious files.
 \textbf{Windows Registry}: A collection of configurable settings for Windows
-\textbf{ZoneIdentifier}: A file that windows uses to specify a file has been downloaded
+\textbf{ZoneIdentifier}: A system windows uses to specify a file has been downloaded from the internet and from where
