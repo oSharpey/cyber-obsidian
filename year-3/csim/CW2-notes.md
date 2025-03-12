@@ -163,4 +163,15 @@ FileManager_cw5n1h2txyewy!Microsoft.Windows.PhotoManager
 Forensic Image
 Windows Registry
 ZoneIdentifier
-Shelln
+Shellbag
+Jumplist
+ProgramFiles
+PerfLogs
+Malware
+Virustotal
+Keylogger
+Cryptominer
+Stealer Malware
+Run Programs
+UserAsist
+Registry Key
