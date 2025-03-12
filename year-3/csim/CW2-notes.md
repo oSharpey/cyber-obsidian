@@ -167,11 +167,10 @@ FileManager_cw5n1h2txyewy!Microsoft.Windows.PhotoManager
 \textbf{Forensic Image}: An exact identical copy of the hard drive of a laptop
 \textbf{FTK Imager}: Another digital forensics software used to analyse computer hard drives
 \textbf{Jumplist}: A list of frequently used or recently used files, programs and folders on a system
-\textbf{Keylogger}: 
-\textbf{Malware}
-\textbf{PerfLogs}
-\textbf{ProgramFiles}
-\textbf{Registry Key}
+\textbf{Keylogger}: Malicious computer program that sends all key presses back to an attacker
+\textbf{PerfLogs}: Folder containing information about PC performance, folder is hidden by default
+\textbf{ProgramFiles}: Folder containing programs installed on the system with
+\textbf{Registry Key}: 
 \textbf{Run Programs}
 \textbf{Shellbag}
 \textbf{Stealer Mal}ware
