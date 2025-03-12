@@ -157,3 +157,10 @@ FileManager_cw5n1h2txyewy!Microsoft.Windows.PhotoManager
 
 **What programmes have been installed on this system? Is there evidence of programmes having been uninstalled (see my paper)?**
 
+
+
+### Technical terms
+Forensic Image
+Windows Registry
+ZoneIdentifier
+Shelln
