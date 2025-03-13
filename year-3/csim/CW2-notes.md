@@ -13,16 +13,16 @@
 - [x] Find out what drops are
 - [x] Look at web downloads
 - [x] Prove he is interested in the images
-- [ ] Create timeline
-	- [ ] OS installed:  Thu Jun 20 12:54:09 2024
-	- [ ] Accounts created: 2024-06-20 12:53:20
-	- [ ] First images downloaded
-	- [ ] First email to other suspects
-	- [ ] First google searches
-	- [ ] First images sent via wetransfer
-	- [ ] Last logon date: 2024-09-06 03:47:29
-	- [ ] Last Shutdown:  Friday, September 6, 2024 3:51:15 AM
-	- [ ] Warrant executed
+- [x] Create timeline
+	- [x] OS installed:  Thu Jun 20 12:54:09 2024
+	- [x] Accounts created: 2024-06-20 12:53:20
+	- [x] First images downloaded
+	- [x] First email to other suspects
+	- [x] First google searches
+	- [x] First images sent via wetransfer
+	- [x] Last logon date: 2024-09-06 03:47:29
+	- [x] Last Shutdown:  Friday, September 6, 2024 3:51:15 AM
+	- [x] Warrant executed
 
 
 ## Interview statements
