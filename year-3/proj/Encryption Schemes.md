@@ -28,16 +28,10 @@ Scheme 2 - Encryption key size:
 - Level 3: 256-bit key
 
 ## Different Algos
-
-Protection level Cryptographic Algorithm 
-HIGH AES256 with SHA3-256 
-MEDIUM SPECK128 with BLAKE2s 
-LOW BLAKE2s keyed 
-NONE None Clear text
-
+### https://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=8936871&fileOId=8936873
 | **Protection level** | **Cryptographic Algorithm** |
 | -------------------- | --------------------------- |
 | HIGH                 | AES256 with SHA3-256        |
 | MEDIUM               | SPECK128 with BLAKE2s       |
-| LOW                  |                             |
-| NONE                 |                             |
+| LOW                  | BLAKE2s keyed               |
+| NONE                 | None                        |
