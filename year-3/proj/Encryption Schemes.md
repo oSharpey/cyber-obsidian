@@ -1,7 +1,7 @@
 # Encryption Systems
 
 ## HIGHT Cipher
-
+### https://ieeexplore.ieee.org/document/8717426
 HIGHT cipher, shown in Fig. 5, has the following features:
 - is generalized feistel network,
 - has block size of 64-bit and key size of 128-bit,
@@ -17,3 +17,5 @@ one-round implementation, which is a configurable low-power implementation of HI
     - number of rounds used in the implementation. While HIGHT algorithm is designed for 32 round, we decided to reduce the number of rounds to meet power/energy constraints. While there is risk in reducing number of iterations, it is better than inhibiting encryption entirely or shutting down components. The number of iterations is decreased for only one round implementation.
 
 ![[Pasted image 20250318153627.png]]
+
+
