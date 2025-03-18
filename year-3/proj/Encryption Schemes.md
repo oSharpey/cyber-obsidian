@@ -19,3 +19,11 @@ one-round implementation, which is a configurable low-power implementation of HI
 ![[Pasted image 20250318153627.png]]
 
 
+## AES Cipher
+### https://sbrc2016.ufba.br/downloads/SessoesTecnicas/151977.pdf
+Scheme 2 - Encryption key size:
+- Level 0: Unencrypted;
+- Level 1: 128-bit key;
+- Level 2: 192-bit key;
+- Level 3: 256-bit key
+
