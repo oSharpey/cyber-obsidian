@@ -35,3 +35,13 @@ Scheme 2 - Encryption key size:
 | MEDIUM               | SPECK128 with BLAKE2s       |
 | LOW                  | BLAKE2s keyed               |
 | NONE                 | None                        |
+### https://www.sciencedirect.com/science/article/pii/S2542660524001604
+
+|Security level|Encryption algorithm|
+|---|---|
+|L1|LBlock, Skipjack|
+|L2|PRINCE|
+|L3|RECTANGLE|
+|L4|Piccolo|
+|L5|PRESENT, HIGHT, SIMON|
+|L6|XTEA, AES|
