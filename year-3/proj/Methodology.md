@@ -28,4 +28,4 @@ Higher hamming weights in general linearly scale to higher power consumption, so
 
 Correlation uses Pearsons Correlation Coefficient:
  $$ r=\frac{cov(X,Y)}{\sigma _{x}\sigma _{y}}$$$$cov(X,Y) = \sum_{n=1}^{N}(Y_{n}-\bar{Y})(X_{n}-\bar{X})$$ $$\sigma _{X}=\sqrt{\sum_{n=1}^{N}(X_{n}-\bar{X})^{2}}$$
- where $r$ is the correlation, 
+ where X is the set of captured power traces and Y is the guess at the internal state (the power model/guessed hamming weights), $cov(X,Y)$ is the covariance between the two datasets - identifying a potential linear relationship between the two and sigma is the standard deviation. In totality the PCC measures the linear correlation between two sets of data. 
