@@ -33,6 +33,9 @@ Correlation uses Pearsons Correlation Coefficient:
 ### Ranking successful attacks
 Use:
 - measurements to disclosure (average minimum number of traces to get full key )
-- Success rate - different papers calculate this different w
+- Success rate - different papers calculate this different ways need to find one that works well
+
+
+
 
 
