@@ -14,4 +14,11 @@ Using the Chipwhisperer lite with CW303 ARM target board
 Chipwhisperer lite single board solution comes as single unit already with the target connected to the capture board. All that needs to be done is to connect the 
 capture board to the laptop via USB. The python API can be used to program the target board with different implementations. 
 ### Target Software Setup
-Target software can be complied and programmed with the python API - MBEDTLS is used as the AES implemetation with the simpleserial protocal used to trigger encryption and set the key. 
+Target software can be complied and programmed with the python API - MBEDTLS is used as the AES implementation with the simpleserial protocol used to trigger encryption and set the key. MBEDTLS is optimised with t-tables
+### Capturing Traces
+Use the python API to send various plaintexts and capture the traces from that, number of traces can vary from 50 to 10000 
+
+## Attack
+### CPA attack
+Basic steps:
+- Get all data, power traces and corressponding plaintexts sent
