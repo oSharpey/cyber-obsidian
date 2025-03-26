@@ -12,4 +12,6 @@ Using the Chipwhisperer lite with CW303 ARM target board
 
 ### Hardware Setup
 Chipwhisperer lite single board solution comes as single unit already with the target connected to the capture board. All that needs to be done is to connect the 
-capture board to the laptop via USB. The python API can be used to program the target board with different implementations
+capture board to the laptop via USB. The python API can be used to program the target board with different implementations. 
+### Target Software Setup
+Target software can be complied and 
