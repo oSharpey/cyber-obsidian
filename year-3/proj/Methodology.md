@@ -27,5 +27,5 @@ Basic steps:
 Higher hamming weights in general linearly scale to higher power consumption, so a higher correlation between the HW and power consumption corresponds to a more likely key 
 
 Correlation uses Pearsons Correlation Coefficient:
-
-#### $r=cov(X,Y)/$
+#### $$ r=\frac{cov(X,Y)}{\sigma _{x}\sigma _{y}}$$
+#### $$cov(X,Y)=
