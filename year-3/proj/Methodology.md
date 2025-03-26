@@ -31,3 +31,8 @@ Correlation uses Pearsons Correlation Coefficient:
  where X is the set of captured power traces and Y is the guess at the internal state (the power model/guessed hamming weights), $cov(X,Y)$ is the covariance between the two datasets - identifying a potential linear relationship between the two and sigma is the standard deviation. In totality the PCC measures the linear correlation between two sets of data. 
 
 ### Ranking successful attacks
+Use:
+- measurements to disclosure (average minimum number of traces to get full key )
+- Success rate - different papers calculate this different w
+
+
