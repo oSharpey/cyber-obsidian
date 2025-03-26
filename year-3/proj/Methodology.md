@@ -24,4 +24,4 @@ Basic steps:
 - Get all data, power traces and corresponding plaintexts sent
 - Create a power leakage model based off hamming weights of intermediate values - XORing key with plaintext output from the SBOX. This loops through all traces
 - Rank the correlation coefficients to determine what is the most likely key
-
+Higher hamming weights in general linearly scale to higher power consumption, so a higher correlation between the HW and power consumption corresponds to a more likely key 
