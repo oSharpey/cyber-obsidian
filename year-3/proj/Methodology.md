@@ -21,4 +21,7 @@ Use the python API to send various plaintexts and capture the traces from that, 
 ## Attack
 ### CPA attack
 Basic steps:
-- Get all data, power traces and corressponding plaintexts sent
+- Get all data, power traces and corresponding plaintexts sent
+- Create a power leakage model based off hamming weights of intermediate values - XORing key with plaintext output from the SBOX. This loops through all traces
+- Rank the correlation coefficients to determine what is the most likely key
+
