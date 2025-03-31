@@ -34,8 +34,7 @@ Target software can be complied and programmed with the python API - MBEDTLS is 
 ### Capturing Traces
 Use the python API to send various plaintexts and capture the traces from that, number of traces can vary from 50 to 10000. For the type of attack 2000 will be more than enough and can be cut down after the fact for the sake of speed
 
-
-***All the code is in jupyter notebooks 
+***All the code is in jupyter notebooks and will be compiled once all data is collected***
 ## Attack
 ### CPA attack
 Basic steps:
@@ -44,9 +43,11 @@ Basic steps:
 - Rank the correlation coefficients to determine what is the most likely key
 Higher hamming weights in general linearly scale to higher power consumption, so a higher correlation between the HW and power consumption corresponds to a more likely key 
 
+Different algorithms have different leakage models for unoptimised versions of AES you can use the SBOX output, for t-table optimised versions you can use either the output of the SBOX (as this is the first t-table) or the output of the whole t-table operation. For AES, these leakage models have been implelemented already and for SPECK there is a good blog explaining where leakage occurs (https://blog.zweinoch.de/posts/speck-correlated-power-analysis/)
+
 Correlation uses Pearsons Correlation Coefficient:
  $$ r=\frac{cov(X,Y)}{\sigma _{x}\sigma _{y}}$$$$cov(X,Y) = \sum_{n=1}^{N}(Y_{n}-\bar{Y})(X_{n}-\bar{X})$$ $$\sigma _{X}=\sqrt{\sum_{n=1}^{N}(X_{n}-\bar{X})^{2}}$$
- where X is the set of captured power traces and Y is the guess at the internal state (the power model/guessed hamming weights), $cov(X,Y)$ is the covariance between the two datasets - identifying a potential linear relationship between the two and sigma is the standard deviation. In totality the PCC measures the linear correlation between two sets of data. 
+ where X is the set of captured power traces and Y is the guess at the internal state (the power model/guessed hamming weights), $cov(X,Y)$ is the covariance between the two datasets - identifying a potential linear relationship between the two and sigma is the standard deviation. In simple terms the PCC measures the linear correlation between two sets of data. 
 
 ### Ranking successful attacks
 Use:
