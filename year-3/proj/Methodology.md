@@ -1,6 +1,22 @@
 # Methodology
 ## Design of adaptive system
-[[Encryption Schemes]]
+### AES Cipher
+### https://sbrc2016.ufba.br/downloads/SessoesTecnicas/151977.pdf
+Scheme 2 - Encryption key size:
+- Level 0: Unencrypted;
+- Level 1: 128-bit key;
+- Level 2: 192-bit key;
+- Level 3: 256-bit key
+
+### Different Algos
+### BASED ON https://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=8936871&fileOId=8936873
+| **Protection level** | **Cryptographic Algorithm**      |
+| -------------------- | -------------------------------- |
+| HIGH                 | AES256                           |
+| MEDIUM               | AES128 (or something else maybe) |
+| LOW                  | SPECK128                         |
+| NONE                 | None                             |
+
 ## Experimental Setup
 Using the Chipwhisperer lite with CW303 ARM target board 
 ### Hardware and Software
@@ -16,8 +32,10 @@ capture board to the laptop via USB. The python API can be used to program the t
 ### Target Software Setup
 Target software can be complied and programmed with the python API - MBEDTLS is used as the AES implementation with the simpleserial protocol used to trigger encryption and set the key. MBEDTLS is optimised with t-tables
 ### Capturing Traces
-Use the python API to send various plaintexts and capture the traces from that, number of traces can vary from 50 to 10000 
+Use the python API to send various plaintexts and capture the traces from that, number of traces can vary from 50 to 10000. For the type of attack 2000 will be more than enough and can be cut down after the fact for the sake of speed
 
+
+***All the code is in jupyter notebooks 
 ## Attack
 ### CPA attack
 Basic steps:
