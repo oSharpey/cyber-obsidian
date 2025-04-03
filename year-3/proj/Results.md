@@ -6,3 +6,7 @@
 ### TRACE SET 3: 91 traces
 ### TRACE SET 4: 69 traces
 ### TRACE SET 5: 62 traces
+
+## AES 256
+### TRACE SET 1:
+- 1st half key - 85 traces
