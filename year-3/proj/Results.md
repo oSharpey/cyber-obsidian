@@ -22,5 +22,5 @@
 
 ### TRACE SET 4:
 - 1st half key - 68 traces
-- 2nd half key - 47 traces
+- 2nd half key - 41 traces
 
