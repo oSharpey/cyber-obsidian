@@ -10,3 +10,5 @@
 ## AES 256
 ### TRACE SET 1:
 - 1st half key - 85 traces
+- 2nd half key - 65 traces
+
