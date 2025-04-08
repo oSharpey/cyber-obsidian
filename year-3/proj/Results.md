@@ -46,5 +46,5 @@
 - 2nd half key - 32 traces
 
 ### TRACE SET 5:
-- 1st half key - 78 traces
+- 1st half key - 75 traces
 - 2nd half key - 49 traces
