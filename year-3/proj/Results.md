@@ -1,11 +1,16 @@
 # Results
 
 ## AES 128
-### TRACE SET 1: 82 traces
-### TRACE SET 2: 49 traces
-### TRACE SET 3: 91 traces
-### TRACE SET 4: 69 traces
-### TRACE SET 5: 62 traces
+### TRACE SET 1: 
+- 82 traces
+### TRACE SET 2: 
+- 49 traces
+### TRACE SET 3:
+- 91 traces
+### TRACE SET 4: 
+- 69 traces
+### TRACE SET 5: 
+- 62 traces
 
 ## AES 256
 ### TRACE SET 1:
@@ -47,4 +52,4 @@
 
 ### TRACE SET 5:
 - 1st half key - 75 traces
-- 2nd half key - 49 traces
+- 2nd half key - 36 traces
