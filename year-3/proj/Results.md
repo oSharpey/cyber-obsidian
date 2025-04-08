@@ -39,7 +39,7 @@
 
 ### TRACE SET 3:
 - 1st half key - 44 traces
-- 2nd half key - 47 traces
+- 2nd half key - 38 traces
 
 ### TRACE SET 4:
 - 1st half key - 68 traces
