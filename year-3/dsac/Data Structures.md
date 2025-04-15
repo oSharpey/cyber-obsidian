@@ -125,25 +125,152 @@ def insertNodeAtPosition(head, newNode, position):
 - A **collision** happens when two Hash Table elements have the same hash code, because that means they belong to the same **bucket**. A collision can be solved in two ways.
 - **Chaining** is the way collisions are solved in this tutorial, by using arrays or linked lists to allow more than one element in the same bucket.
 - **Open Addressing** is another way to solve collisions. With open addressing, if we want to store an element but there is already an element in that bucket, the element is stored in the next available bucket. This can be done in many different ways, but we will not explain open addressing any further here.
+
 **Overview and Operation Complexities:**
 - **Common-Case (Average-Case):**
     - **Insertion:** **O(1)**
     - **Search:** **O(1)**
     - **Deletion:** **O(1)**
-        
 - **Collision Resolution Techniques:**
-    
     - **Chaining:**  
         Each bucket holds a secondary data structure (like a linked list) where multiple items that hash to the same index are stored.
-        
         - _Worst-Case:_ If many keys collide (e.g., a poor hash function), all keys could be stored in one bucket, leading to **O(n)** operations.
-            
     - **Open Addressing:**  
         When a collision occurs, the algorithm searches for the next available slot following a probe sequence (linear, quadratic, or double hashing).
-        
         - _Worst-Case:_ Again, if many keys cluster together, operations may degrade to **O(n)**.
+```python
+my_hash_set = [
+    [None],
+    ['Jones'],
+    [None],
+    ['Lisa'],
+    [None],
+    ['Bob'],
+    [None],
+    ['Siri'],
+    ['Pete'],
+    [None]
+]
 
+def hash_function(value):
+    return sum(ord(char) for char in value) % 10
+    
+def add(value):
+    index = hash_function(value)
+    bucket = my_hash_set[index]
+    if value not in bucket:
+        bucket.append(value)
+        
+def contains(value):
+    index = hash_function(value)
+    bucket = my_hash_set[index]
+    return value in bucket
+
+add('Stuart')
+
+print(my_hash_set)
+print('Contains Stuart:',contains('Stuart'))
+```
 # Stack
+- Think of a stack like a pile of pancakes.
+- In a pile of pancakes, the pancakes are both added and removed from the top. So when removing a pancake, it will always be the last pancake you added. This way of organizing elements is called LIFO: Last In First Out.
+- Basic operations we can do on a stack are:
+	- **Push:** Adds a new element on the stack.
+	- **Pop:** Removes and returns the top element from the stack.
+	- **Peek:** Returns the top element on the stack.
+	- **isEmpty:** Checks if the stack is empty.
+	- **Size:** Finds the number of elements in the stack.
+- Stacks can be implemented by using arrays or linked lists.1
+- Stacks can be used to implement undo mechanisms, to revert to previous states, to create algorithms for depth-first search in graphs, or for backtracking.
+#### With array
+```python
+class Stack:
+    def __init__(self):
+        self.stack = []
+    
+    def push(self, element):
+        self.stack.append(element)
+    
+    def pop(self):
+        if self.isEmpty():
+            return "Stack is empty"
+        return self.stack.pop()
+    
+    def peek(self):
+        if self.isEmpty():
+            return "Stack is empty"
+        return self.stack[-1]
+    
+    def isEmpty(self):
+        return len(self.stack) == 0
+    
+    def size(self):
+        return len(self.stack)
+
+# Create a stack
+myStack = Stack()
+
+myStack.push('A')
+myStack.push('B')
+myStack.push('C')
+print("Stack: ", myStack.stack)
+
+print("Pop: ", myStack.pop())
+
+print("Peek: ", myStack.peek())
+
+print("isEmpty: ", myStack.isEmpty())
+
+print("Size: ", myStack.size())
+```
+#### With Linked list
+```python
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+class Stack:
+    def __init__(self):
+        self.head = None
+        self.size = 0
+    
+    def push(self, value):
+        new_node = Node(value)
+        if self.head:
+            new_node.next = self.head
+        self.head = new_node
+        self.size += 1
+    
+    def pop(self):
+        if self.isEmpty():
+            return "Stack is empty"
+        popped_node = self.head
+        self.head = self.head.next
+        self.size -= 1
+        return popped_node.value
+    
+    def peek(self):
+        if self.isEmpty():
+            return "Stack is empty"
+        return self.head.value
+    
+    def isEmpty(self):
+        return self.size == 0
+    
+    def stackSize(self):
+        return self.size
+
+myStack = Stack()
+myStack.push('A')
+myStack.push('B')
+myStack.push('C')
+
+print("Pop: ", myStack.pop())
+print("Peek: ", myStack.peek())
+print("isEmpty: ", myStack.isEmpty())
+print("Size: ", myStack.stackSize())
+```
 
 # Queue
 
