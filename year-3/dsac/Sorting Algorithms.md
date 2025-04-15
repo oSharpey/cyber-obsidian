@@ -83,4 +83,12 @@ print("Sorted array:", my_array)
 - **Step 2**: Traverse the unsorted part of the list and find the minimum value.
 - **Step 3**: Swap the smallest element, swap this smallest element with the first element of the unsorted portion.
 - **Step 4**: Move to the next element, repeat the process for the next element in the list, reducing the size of the unsorted portion by one after each iteration.
-- Step 5**: Repeat until sorted.
+- **Step 5**: Repeat until sorted.
+- ***Loops through the entire array, finds the smallest item and moves it to the front of the sorted section***
+### Big O
+- Best Case Big-O: ***O(n^2)***
+- Worst Case Big-O: ***O(n^2)***
+- Average Big-O: ***O(n^2)***
+- Space Complexity: ***O(1)***
+#### Why these complexities
+regardless of the input order, the algorithm always performs a nested loop: one loop to pick the position in the array and a nested loop to find the minimum element
