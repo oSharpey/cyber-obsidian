@@ -5,7 +5,15 @@
 - Worst Case Big-O: ***O(n^2)***
 - Average Big-O: ***O(n^2)***
 - Space Complexity: ***O(1)***
-#### Why 
+#### Why these complexities
+- Best case: 
+	- If the array is already sorted
+	- Algorithm will only have to loop through the array once
+- Worst case:
+	- Array is in reverse order
+	- loops through every value in the array, comparing it to the value next to it. So for an array of n values, there must be n such comparisons in one loop.
+	- And after one loop, the array is looped through again and again n times
+	- Every single value will need to be bubbled up to the end of the array
 ### Un-optimised implementation
 ```python
 my_array = [64, 34, 25, 12, 22, 11, 90, 5]
