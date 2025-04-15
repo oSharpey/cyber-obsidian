@@ -1,5 +1,11 @@
 # Sorting Algorithms
 ## Bubble Sort
+### Big O
+- Best Case Big-O: ***O(n)***
+- Worst Case Big-O: ***O(n^2)***
+- Average Big-O: ***O(n^2)***
+- Space Complexity: ***O(1)***
+#### Why 
 ### Un-optimised implementation
 ```python
 my_array = [64, 34, 25, 12, 22, 11, 90, 5]
