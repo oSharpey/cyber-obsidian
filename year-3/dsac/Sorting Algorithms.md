@@ -214,3 +214,39 @@ print("Sorted array:", sortedArr)
 **Step 2**: Partition the array. Rearrange the array so that all elements smaller than the pivot come before it, and all elements greater than the pivot come after it. The pivot is now in its correct sorted position.
 **Step 3**: Apply the same logic to the subarrays to the left and right of the pivot.
 **Step 4**: If the subarray has one or no elements, it is already sorted.
+
+### Big O
+TIME
+- Best: O(n * logn),
+- Average: O(n * logn), 
+- Worst:O(n^2)
+SPACE
+- O(1) auxiliary; 
+- Stack space: O(logn) (best), O(n) (worst)
+### Implementation
+```python
+def partition(array, low, high):
+    pivot = array[high]
+    i = low - 1
+
+    for j in range(low, high):
+        if array[j] <= pivot:
+            i += 1
+            array[i], array[j] = array[j], array[i]
+
+    array[i+1], array[high] = array[high], array[i+1]
+    return i+1
+
+def quicksort(array, low=0, high=None):
+    if high is None:
+        high = len(array) - 1
+
+    if low < high:
+        pivot_index = partition(array, low, high)
+        quicksort(array, low, pivot_index-1)
+        quicksort(array, pivot_index+1, high)
+
+my_array = [64, 34, 25, 12, 22, 11, 90, 5]
+quicksort(my_array)
+print("Sorted array:", my_array)
+```
