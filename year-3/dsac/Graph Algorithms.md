@@ -302,3 +302,10 @@ for i, d in enumerate(distances):
 - The Minimum Spanning Tree (MST) is the collection of edges required to connect all vertices in an undirected graph, with the minimum total edge weight.
 - It is called a Minimum Spanning **Tree**, because it is a connected, acyclic, undirected graph, which is the definition of a tree data structure.
 - In the real world, finding the Minimum Spanning Tree can help us find the most effective way to connect houses to the internet or to the electrical grid, or it can help us finding the fastest route to deliver packages.
+
+
+|                                                                         | Prims Algorithm                              | Kruskals Algorithm                                            |
+| ----------------------------------------------------------------------- | -------------------------------------------- | ------------------------------------------------------------- |
+| _Can it find MSTs (a Minimum Spanning Forest) in an unconnected graph?_ | No                                           | Yes                                                           |
+| _How does it start?_                                                    | The MST grows from a randomly chosen vertex. | The first edge in the MST is the edge with lowest edge weight |
+| _What time complexity does it have?_                                    | O(V^2), or O(E⋅logV) (Optimized)             | O(E⋅logE)                                                     |
