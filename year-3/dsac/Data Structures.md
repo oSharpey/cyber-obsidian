@@ -38,6 +38,31 @@ A big benefit with using linked lists is that nodes are stored wherever there is
 | _Memory usage is low  <br>(each node only contains data, no links to other nodes)_                          | Yes    | No           |
 | _Elements, or nodes, can be accessed directly (random access)_                                              | Yes    | No           |
 | _Elements, or nodes, can be inserted or deleted in constant time, no shifting operations in memory needed._ | No     | Yes          |
+```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+    
+node1 = Node(3)
+node2 = Node(5)
+node3 = Node(13)
+node4 = Node(2)
+
+node1.next = node2
+node2.next = node3
+node3.next = node4
+
+currentNode = node1
+while currentNode:
+    print(currentNode.data, end=" -> ")
+    currentNode = currentNode.next
+print("null")
+```
+## Traversal of a Linked List
+- Traversing a linked list means to go through the linked list by following the links from one node to the next.
+- Traversal of linked lists is typically done to search for a specific node, and read or modify the node's content, remove the node, or insert a node right before or after that node.
+- To traverse a singly linked list, we start with the first node in the list, the head node, and follow that node's next link, and the next node's next link and so on, until the next address is null
 
 
 
