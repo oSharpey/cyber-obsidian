@@ -327,4 +327,13 @@ for i, d in enumerate(distances):
 2. For each edge, starting with the one with the lowest edge weight:
     1. Will this edge create a cycle in the current MST?
         - If no: Add the edge as an MST edge.
--
+
+## Prim's
+- Prim's algorithm finds the MST by first including a random vertex to the MST. The algorithm then finds the vertex with the lowest edge weight from the current MST, and includes that to the MST. Prim's algorithm keeps doing this until all nodes are included in the MST.
+- Prim's algorithm is greedy, and has a straightforward way to create a minimum spanning tree.
+- For Prim's algorithm to work, all the nodes must be connected.
+### How it works
+1. Choose a random vertex as the starting point, and include it as the first vertex in the MST.
+2. Compare the edges going out from the MST. Choose the edge with the lowest weight that connects a vertex among the MST vertices to a vertex outside the MST.
+3. Add that edge and vertex to the MST.
+4. Keep doing step 2 and 3 until all vertices belong to the MST.
