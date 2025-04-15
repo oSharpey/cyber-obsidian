@@ -63,9 +63,61 @@ print("null")
 - Traversing a linked list means to go through the linked list by following the links from one node to the next.
 - Traversal of linked lists is typically done to search for a specific node, and read or modify the node's content, remove the node, or insert a node right before or after that node.
 - To traverse a singly linked list, we start with the first node in the list, the head node, and follow that node's next link, and the next node's next link and so on, until the next address is null
+- **Searching by Value:**
+    - A linear traversal is required, so the complexity is **O(n)**.
+- **Searching by Index:**
+    - To access a node at a particular index, you need to traverse the list from the head, which is **O(n)** in the worst-case.
+```python
+def traverseAndPrint(head):
+    currentNode = head
+    while currentNode:
+        print(currentNode.data, end=" -> ")
+        currentNode = currentNode.next
+    print("null")
+```
+## Delete a Node in a Linked List
+- In this case we have the link (or pointer or address) to a node that we want to delete.
+- It is important to connect the nodes on each side of the node before deleting it, so that the linked list is not broken.
+- So before deleting the node, we need to get the next pointer from the previous node, and connect the previous node to the new next node before deleting the node in between.
+- In a singly linked list, like we have here, to get the next pointer from the previous node we actually need traverse the list from the start, because there is no way to go backwards from the node we want to delete.
+```python
+def deleteSpecificNode(head, nodeToDelete):
+    if head == nodeToDelete:
+        return head.next
+    currentNode = head
+    while currentNode.next and currentNode.next != nodeToDelete:
+        currentNode = currentNode.next
+    if currentNode.next is None:
+        return head
+    currentNode.next = currentNode.next.next
+    return head
+```
+## Insert a Node in a Linked List
+Inserting a node into a linked list is very similar to deleting a node, because in both cases we need to take care of the next pointers to make sure we do not break the linked list.
+To insert a node in a linked list we first need to create the node, and then at the position where we insert it, we need to adjust the pointers so that the previous node points to the new node, and the new node points to the correct next node.
+**Insertion:**
+- **Best Case:**  
+    Inserting at the beginning or immediately after a known node is **O(1)** (for both singly and doubly linked lists).
+- **Worst Case:**  
+    Inserting at the end (if you do not maintain a tail pointer) is **O(n)** because you must traverse the entire list.
 
 
+```python
+def insertNodeAtPosition(head, newNode, position):
+    if position == 1:
+        newNode.next = head
+        return newNode
+    
+    currentNode = head
+    for _ in range(position - 2):
+        if currentNode is None:
+            break
+        currentNode = currentNode.next
 
+    newNode.next = currentNode.next
+    currentNode.next = newNode
+    return head
+```
 # Hash Table
 
 # Stack
