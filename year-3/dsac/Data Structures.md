@@ -430,9 +430,6 @@ Benefits of Binary Trees over Arrays and Linked Lists:
 - **Arrays** are fast when you want to access an element directly, like element number 700 in an array of 1000 elements for example. But inserting and deleting elements require other elements to shift in memory to make place for the new element, or to take the deleted elements place, and that is time consuming.
 - **Linked Lists** are fast when inserting or deleting nodes, no memory shifting needed, but to access an element inside the list, the list must be traversed, and that takes time.
 - **Binary Trees**, such as Binary Search Trees and AVL Trees, are great compared to Arrays and Linked Lists because they are BOTH fast at accessing a node, AND fast when it comes to deleting or inserting a node, with no shifts in memory needed.
-
-We will take a closer look at how Binary Search Trees (BSTs) and AVL Trees work on the next two pages, but first let's look at how a Binary Tree can be implemented, and how it can be traversed.
-
 ### Types of Binary Trees
 There are different variants, or types, of Binary Trees worth discussing to get a better understanding of how Binary Trees can be structured.
 The different kinds of Binary Trees are also worth mentioning now as these words and concepts will be used later in the tutorial.
@@ -441,8 +438,61 @@ Below are short explanations of different types of Binary Tree structures, and b
 - A **complete** Binary Tree has all levels full of nodes, except the last level, which is can also be full, or filled from left to right. The properties of a complete Binary Tree means it is also balanced.
 - A **full** Binary Tree is a kind of tree where each node has either 0 or 2 child nodes.
 - A **perfect** Binary Tree has all leaf nodes on the same level, which means that all levels are full of nodes, and all internal nodes have two child nodes.The properties of a perfect Binary Tree means it is also full, balanced, and complete.
-## Binary Search Tree
 
+### Implementation
+```python
+class TreeNode:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+
+root = TreeNode('R')
+nodeA = TreeNode('A')
+nodeB = TreeNode('B')
+nodeC = TreeNode('C')
+nodeD = TreeNode('D')
+nodeE = TreeNode('E')
+nodeF = TreeNode('F')
+nodeG = TreeNode('G')
+
+root.left = nodeA
+root.right = nodeB
+
+nodeA.left = nodeC
+nodeA.right = nodeD
+
+nodeB.left = nodeE
+nodeB.right = nodeF
+
+nodeF.left = nodeG
+
+# Test
+print("root.right.left.data:", root.right.left.data)
+```
+## Binary Search Tree
+A Binary Search Tree (BST) is a type of [Binary Tree data structure](https://www.w3schools.com/dsa/dsa_data_binarytrees.php), where the following properties must be true for any node "X" in the tree:
+- The X node's left child and all of its descendants (children, children's children, and so on) have lower values than X's value.
+- The right child, and all its descendants have higher values than X's value.
+- Left and right subtrees must also be Binary Search Trees.
+
+**Operation Complexities (for Balanced BSTs):**
+- **Binary Search (Lookup):**  
+    **O(log n)** in the best and average cases, but in the worst-case scenario (when the tree is skewed, resembling a linked list) it is **O(n)**.
+- **Insertion & Deletion:**  
+    Similarly, if the tree remains balanced, these operations are **O(log n)** on average, but **O(n)** in the worst-case.
+
+The **size** of a tree is the number of nodes in it (n
+
+).
+
+A **subtree** starts with one of the nodes in the tree as a local root, and consists of that node and all its descendants.
+
+The **descendants** of a node are all the child nodes of that node, and all their child nodes, and so on. Just start with a node, and the descendants will be all nodes that are connected below that node.
+
+The **node's height** is the maximum number of edges between that node and a leaf node.
+
+A **node's in-order successor** is the node that comes after it if we were to do in-order traversal. In-order traversal of the BST above would result in node 13 coming before node 14, and so the successor of node 13 is node 14.
 # Red Black Tree
 
 # Graphs
