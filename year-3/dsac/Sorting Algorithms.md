@@ -1,4 +1,4 @@
-# Sorting Algorithms
+# Simple Sorting Algorithms
 ## Bubble Sort
 ### How it works
 - **Step 1**: Start with the unsorted list and compare adjacent elements. Start from the first element, compare it with the next element. If the current element is greater than the next element, swap them.
@@ -77,4 +77,10 @@ for i in range(1,n):
 print("Sorted array:", my_array)
 ```
 
-
+## Selection Sort
+### How it works
+- **Step 1**: Start with the first element, assume the first element is the smallest in the list.
+- **Step 2**: Traverse the unsorted part of the list and find the minimum value.
+- **Step 3**: Swap the smallest element, swap this smallest element with the first element of the unsorted portion.
+- **Step 4**: Move to the next element, repeat the process for the next element in the list, reducing the size of the unsorted portion by one after each iteration.
+- Step 5**: Repeat until sorted.
