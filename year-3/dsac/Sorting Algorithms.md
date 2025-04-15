@@ -209,3 +209,8 @@ print("Sorted array:", sortedArr)
 ```
 
 ## Quick Sort
+### How it works
+**Step 1**: Choose a pivot. Select an element from the array to act as the pivot. This could be the first element, the last element, a random element, or the median. The choice of pivot affects the efficiency of the algorithm, but the basic operation remains the same.
+**Step 2**: Partition the array. Rearrange the array so that all elements smaller than the pivot come before it, and all elements greater than the pivot come after it. The pivot is now in its correct sorted position.
+**Step 3**: Apply the same logic to the subarrays to the left and right of the pivot.
+**Step 4**: If the subarray has one or no elements, it is already sorted.
