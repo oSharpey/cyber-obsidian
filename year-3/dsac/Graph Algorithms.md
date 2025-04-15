@@ -74,4 +74,23 @@ print("\nBreadth First Search starting from vertex D:")
 g.bfs('D')
 ```
 
+
+## Adversarial for BFS:
+Graphs with an extremely high branching factor (wide graphs) can quickly use up memory, as many nodes are enqueued simultaneously.
+- **Mitigation:**  
+    Limiting the depth or using iterative deepening can help if only a limited search depth is required.
+
+
 # Depth First Search
+## How it works
+- Depth-first search commonly referred to as DFS and breadth-first search are two algorithms used to search through trees and graphs.
+- DFS starts at the root node, and goes as far down one branch as possible, all the way to the end.
+- Once we hit the deepest point, we come back to an un-visited branch and go down that one.
+
+## Time and Space Complexities:
+
+- **Time Complexity:**  
+    _O(V + E)_ since every vertex and edge is explored.
+    
+- **Space Complexity:**  
+    _O(V)_ in the worst case, mainly due to the recursion stack (if the graph is deep) or explicit stack if using an iterative approach.
