@@ -92,6 +92,34 @@ def deleteSpecificNode(head, nodeToDelete):
     currentNode.next = currentNode.next.next
     return head
 ```
+
+```python 
+class Solution(object):
+    def removeNthFromEnd(self, head, n):
+        """
+        :type head: Optional[ListNode]
+        :type n: int
+        :rtype: Optional[ListNode]
+        """
+
+        dummy = ListNode(0)
+        dummy.next = head
+        first = dummy
+        second = dummy
+
+        for _ in range(n + 1):
+            print(second.val)
+            first = first.next
+
+        while first is not None:
+            first = first.next
+            second = second.next
+
+        second.next = second.next.next
+
+        return dummy.next
+
+```
 ## Insert a Node in a Linked List
 Inserting a node into a linked list is very similar to deleting a node, because in both cases we need to take care of the next pointers to make sure we do not break the linked list.
 To insert a node in a linked list we first need to create the node, and then at the position where we insert it, we need to adjust the pointers so that the previous node points to the new node, and the new node points to the correct next node.
