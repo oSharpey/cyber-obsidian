@@ -32,4 +32,41 @@ To design an algorithm for a problem using Dynamic Programming, the problem we w
 - **Optimal Substructure:** Means that the complete solution to a problem can be constructed from the solutions of its smaller subproblems. So not only must the problem have overlapping subproblems, the substructure must also be optimal so that there is a way to piece the solutions to the subproblems together to form the complete solution.
 
 
-# Amortisation
+# Memoization
+
+
+
+Memoization is a technique where results are stored to avoid doing the same computations many times.
+
+When Memoization is used to improve recursive algorithms, it is called a "top-down" approach because of how it starts with the main problem and breaks it down into smaller subproblems.
+Memoization is used in dynamic programming
+
+**When It’s Useful:**
+- **Overlapping Subproblems:** Whenever recursive calls compute the same values repeatedly, memoization ensures that once a subproblem is solved, the result is saved and simply returned on subsequent calls.
+- **Improving Recursive Algorithms:** Algorithms that would otherwise be exponential in time—like naive Fibonacci or recursive solutions to combinatorial problems—can often be reduced to polynomial or even linear time with memoization.
+
+## Using Memoization To Find The nth Fibonacci Number
+
+The nth Fibonacci number can be found using recursion. Read more about how that is done on [this page](https://www.w3schools.com/dsa/dsa_algo_simple.php#nthfibo).
+The problem with this implementation is that the number of computations and recursive calls "explodes" when trying to find a higher Fibonacci number, because the same computations are done over and over again.
+
+But using memoization can help finding the n
+th Fibonacci number using recursion much more effectively.
+We use memoization by creating an array `memo` to hold the Fibonacci numbers, so that Fibonacci number `n` can be found as element `memo[n]`. And we only compute the Fibonacci number if it does not already exist in the `memo` array.
+
+```python
+def F(n):
+    if memo[n] != None: # Already computed
+        return memo[n]
+    else: # Computation needed
+        print('Computing F('+str(n)+')')
+        if n <= 1:
+            memo[n] = n
+        else:
+            memo[n] = F(n - 1) + F(n - 2)
+        return memo[n] 
+
+memo = [None]*7
+print('F(6) = ',F(6))
+print('memo = ',memo)
+```
