@@ -55,11 +55,12 @@ print("Sorted array:", my_array)
 	- Algorithm will only have to loop through the array once
 - Worst case:
 	- Array is in reverse order
-	- loops through every value in the array, comparing it to the value next to it. So for an array of n values, there must be n such comparisons in one loop.
-	- And after one loop, the array is looped through again and again n times
-	- Every single value will need to be bubbled up to the end of the array
-
-
+	- loops through every value in the array, comparing it every element in the sorted array before it 
+	- Every single value will need to be inserted to the start of the array
+- Average Case:
+	- On average, each value must be compared to about n/2 other values to find the correct place to insert it.
+	- Insertion Sort must run the loop to insert a value in its correct place approximately n times.
+	- so we get O(n/2 * n) = O(n^2)
 ### Implementation
 ```python
 my_array = [64, 34, 25, 12, 22, 11, 90, 5]
@@ -75,3 +76,5 @@ for i in range(1,n):
 
 print("Sorted array:", my_array)
 ```
+
+
