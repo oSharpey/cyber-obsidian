@@ -10,6 +10,7 @@
     _O(V)_ because in the worst case, all vertices may be stored in the queue.
 
 ## Implementation
+### With Class
 ```python
 class Graph:
     def __init__(self, size):
@@ -73,7 +74,36 @@ g.print_graph()
 print("\nBreadth First Search starting from vertex D:")
 g.bfs('D')
 ```
+### No Class
+```python
+from collections import deque
 
+def bfs(graph, start):
+    visited = []
+    queue = deque([start])
+    seen = set([start])
+    
+    while queue:
+        vertex = queue.popleft()
+        visited.append(vertex)
+        for neighbor in graph.get(vertex, []):
+            if neighbor not in seen:
+                seen.add(neighbor)
+                queue.append(neighbor)
+    return visited
+
+# Example usage:
+if __name__ == '__main__':
+    graph = {
+        'A': ['B', 'C'],
+        'B': ['A', 'D', 'E'],
+        'C': ['A', 'F'],
+        'D': ['B'],
+        'E': ['B', 'F'],
+        'F': ['C', 'E']
+    }
+    print("BFS Traversal:", bfs(graph, 'A'))
+```
 
 ## Adversarial for BFS:
 Graphs with an extremely high branching factor (wide graphs) can quickly use up memory, as many nodes are enqueued simultaneously.
