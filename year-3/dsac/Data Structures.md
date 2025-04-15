@@ -594,6 +594,29 @@ def delete(node, data):
     return node
 ```
 # Red Black Tree
+**Overview:**
+- **What They Are:**  
+    A red-black tree is a kind of self-balancing BST that ensures the tree remains approximately balanced after insertions and deletions.
+**Key Rules of a Red-Black Tree:**
+1. Every node is either **red** or **black**.
+2. The root is always **black**.
+3. All leaves (NIL nodes) are **black**.
+4. If a node is **red**, then both its children are **black** (no two reds in a row).
+5. Every path from a given node to any of its descendant NIL nodes contains the same number of black nodes.
+
+**Rotations (How Balancing Works):**
+- **Left Rotation:**  
+    When a right child is heavy, a left rotation moves the right child up and the current node down to the left.
+- **Right Rotation:**  
+    Similarly, for a left-heavy situation, a right rotation moves the left child up and the current node down to the right.
+
+These rotations are key to restoring the red-black properties after modifications.
+
+**How They Differ from BSTs:**
+- While both maintain the binary search property, red-black trees use color and rotations to ensure no path is more than twice as long as any other, guaranteeing logarithmic time operations in the worst-case.
+    
+
+---
 
 # Graphs
 
