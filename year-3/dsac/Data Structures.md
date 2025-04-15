@@ -118,6 +118,30 @@ def insertNodeAtPosition(head, newNode, position):
     return head
 ```
 # Hash Table
+- Hash Table elements are stored in storage containers called **buckets**.
+- Every Hash Table element has a part that is unique that is called the **key**.
+- A **hash function** takes the key of an element to generate a **hash code**.
+- The hash code says what bucket the element belongs to, so now we can go directly to that Hash Table element: to modify it, or to delete it, or just to check if it exists. Specific hash functions are explained in detail on the next two pages.
+- A **collision** happens when two Hash Table elements have the same hash code, because that means they belong to the same **bucket**. A collision can be solved in two ways.
+- **Chaining** is the way collisions are solved in this tutorial, by using arrays or linked lists to allow more than one element in the same bucket.
+- **Open Addressing** is another way to solve collisions. With open addressing, if we want to store an element but there is already an element in that bucket, the element is stored in the next available bucket. This can be done in many different ways, but we will not explain open addressing any further here.
+**Overview and Operation Complexities:**
+- **Common-Case (Average-Case):**
+    - **Insertion:** **O(1)**
+    - **Search:** **O(1)**
+    - **Deletion:** **O(1)**
+        
+- **Collision Resolution Techniques:**
+    
+    - **Chaining:**  
+        Each bucket holds a secondary data structure (like a linked list) where multiple items that hash to the same index are stored.
+        
+        - _Worst-Case:_ If many keys collide (e.g., a poor hash function), all keys could be stored in one bucket, leading to **O(n)** operations.
+            
+    - **Open Addressing:**  
+        When a collision occurs, the algorithm searches for the next available slot following a probe sequence (linear, quadratic, or double hashing).
+        
+        - _Worst-Case:_ Again, if many keys cluster together, operations may degrade to **O(n)**.
 
 # Stack
 
