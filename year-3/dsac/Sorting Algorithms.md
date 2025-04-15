@@ -39,3 +39,22 @@ print("Sorted array:", my_array)
 
 ## Insertion Sort
 ### How it works
+- **Step 1**: Start with the first element and assume that the first element of the array is already sorted.
+- **Step 2**: Select the next element in the array and compare it with the elements in the sorted portion (to its left).
+- **Step 3**: If the new element is smaller than the elements in the sorted portion, shift the larger elements one position to the right to make space.
+- **Step 4**: Insert the new element into the correct position in the sorted portion.
+- **Step 5**: Move to the next unsorted element and repeat the process until all elements are sorted
+### Big O
+- Best Case Big-O: ***O(n)***
+- Worst Case Big-O: ***O(n^2)***
+- Average Big-O: ***O(n^2)***
+- Space Complexity: ***O(1)***
+#### Why these complexities
+- Best case: 
+	- If the array is already sorted
+	- Algorithm will only have to loop through the array once
+- Worst case:
+	- Array is in reverse order
+	- loops through every value in the array, comparing it to the value next to it. So for an array of n values, there must be n such comparisons in one loop.
+	- And after one loop, the array is looped through again and again n times
+	- Every single value will need to be bubbled up to the end of the array
