@@ -116,11 +116,102 @@ Graphs with an extremely high branching factor (wide graphs) can quickly use up 
 - Depth-first search commonly referred to as DFS and breadth-first search are two algorithms used to search through trees and graphs.
 - DFS starts at the root node, and goes as far down one branch as possible, all the way to the end.
 - Once we hit the deepest point, we come back to an un-visited branch and go down that one.
-
 ## Time and Space Complexities:
-
 - **Time Complexity:**  
     _O(V + E)_ since every vertex and edge is explored.
-    
 - **Space Complexity:**  
     _O(V)_ in the worst case, mainly due to the recursion stack (if the graph is deep) or explicit stack if using an iterative approach.
+## Adversarial for DFS:
+Graphs with very deep paths or skewed trees can lead to deep recursion (or large stack sizes), possibly causing stack overflow errors.
+- **Mitigation:**  
+    Use an iterative implementation with an explicit stack, or incorporate recursion depth control/iterative deepening.
+## Implementation
+```python
+def dfs(graph, start, visited=None):
+    if visited is None:
+        visited = set()
+    
+    visited.add(start)
+    visited_order = [start]
+    
+    for neighbor in graph.get(start, []):
+        if neighbor not in visited:
+            visited_order.extend(dfs(graph, neighbor, visited))
+    
+    return visited_order
+
+# Example usage:
+if __name__ == '__main__':
+    graph = {
+        'A': ['B', 'C'],
+        'B': ['D', 'E'],
+        'C': ['F'],
+        'D': [],
+        'E': ['F'],
+        'F': []
+    }
+    print("DFS Traversal:", dfs(graph, 'A'))
+```
+
+```python
+class Graph:
+    def __init__(self, size):
+        self.adj_matrix = [[0] * size for _ in range(size)]
+        self.size = size
+        self.vertex_data = [''] * size  
+
+    def add_edge(self, u, v):
+        if 0 <= u < self.size and 0 <= v < self.size:
+            self.adj_matrix[u][v] = 1
+            self.adj_matrix[v][u] = 1
+
+    def add_vertex_data(self, vertex, data):
+        if 0 <= vertex < self.size:
+            self.vertex_data[vertex] = data
+
+    def print_graph(self):
+        print("Adjacency Matrix:")
+        for row in self.adj_matrix:
+            print(' '.join(map(str, row)))
+        print("\nVertex Data:")
+        for vertex, data in enumerate(self.vertex_data):
+            print(f"Vertex {vertex}: {data}")
+            
+    def dfs_util(self, v, visited):
+        visited[v] = True
+        print(self.vertex_data[v], end=' ')
+
+        for i in range(self.size):
+            if self.adj_matrix[v][i] == 1 and not visited[i]:
+                self.dfs_util(i, visited)
+
+    def dfs(self, start_vertex_data):
+        visited = [False] * self.size
+        start_vertex = self.vertex_data.index(start_vertex_data)
+        self.dfs_util(start_vertex, visited)
+
+g = Graph(7)
+
+g.add_vertex_data(0, 'A')
+g.add_vertex_data(1, 'B')
+g.add_vertex_data(2, 'C')
+g.add_vertex_data(3, 'D')
+g.add_vertex_data(4, 'E')
+g.add_vertex_data(5, 'F')
+g.add_vertex_data(6, 'G')
+
+g.add_edge(3, 0)  # D - A
+g.add_edge(0, 2)  # A - C
+g.add_edge(0, 3)  # A - D
+g.add_edge(0, 4)  # A - E
+g.add_edge(4, 2)  # E - C
+g.add_edge(2, 5)  # C - F
+g.add_edge(2, 1)  # C - B
+g.add_edge(2, 6)  # C - G
+g.add_edge(1, 5)  # B - F
+
+g.print_graph()
+
+print("\nDepth First Search starting from vertex D:")
+g.dfs('D')
+```
