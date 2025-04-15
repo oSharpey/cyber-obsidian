@@ -482,17 +482,117 @@ A Binary Search Tree (BST) is a type of [Binary Tree data structure](https://www
 - **Insertion & Deletion:**  
     Similarly, if the tree remains balanced, these operations are **O(log n)** on average, but **O(n)** in the worst-case.
 
-The **size** of a tree is the number of nodes in it (n
-
-).
-
+The **size** of a tree is the number of nodes in it (n).
 A **subtree** starts with one of the nodes in the tree as a local root, and consists of that node and all its descendants.
-
 The **descendants** of a node are all the child nodes of that node, and all their child nodes, and so on. Just start with a node, and the descendants will be all nodes that are connected below that node.
-
 The **node's height** is the maximum number of edges between that node and a leaf node.
-
 A **node's in-order successor** is the node that comes after it if we were to do in-order traversal. In-order traversal of the BST above would result in node 13 coming before node 14, and so the successor of node 13 is node 14.
+### Traversal 
+```python
+class TreeNode:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+
+def inOrderTraversal(node):
+    if node is None:
+        return
+    inOrderTraversal(node.left)
+    print(node.data, end=", ")
+    inOrderTraversal(node.right)
+
+root = TreeNode(13)
+node7 = TreeNode(7)
+node15 = TreeNode(15)
+node3 = TreeNode(3)
+node8 = TreeNode(8)
+node14 = TreeNode(14)
+node19 = TreeNode(19)
+node18 = TreeNode(18)
+
+root.left = node7
+root.right = node15
+
+node7.left = node3
+node7.right = node8
+
+node15.left = node14
+node15.right = node19
+
+node19.left = node18
+
+# Traverse
+inOrderTraversal(root)
+```
+
+### Search 
+**How it works:**
+1. Start at the root node.
+2. If this is the value we are looking for, return.
+3. If the value we are looking for is higher, continue searching in the right subtree.
+4. If the value we are looking for is lower, continue searching in the left subtree.
+5. If the subtree we want to search does not exist, depending on the programming language, return `None`, or `NULL`, or something similar, to indicate that the value is not inside the BST.
+```python
+def search(node, target):
+    if node is None:
+        return None 
+    elif node.data == target:
+        return node
+    elif target < node.data:
+        return search(node.left, target)
+    else:
+        return search(node.right, target)
+```
+### Insertion
+**How it works:**
+1. Start at the root node.
+2. Compare each node:
+    - Is the value lower? Go left.
+    - Is the value higher? Go right.
+3. Continue to compare nodes with the new value until there is no right or left to compare with. That is where the new node is inserted.
+```python
+def insert(node, data):
+    if node is None:
+        return TreeNode(data)
+    else:
+        if data < node.data:
+            node.left = insert(node.left, data)
+        elif data > node.data:
+            node.right = insert(node.right, data)
+    return node
+```
+### Deletion
+**How it works:**
+1. If the node is a leaf node, remove it by removing the link to it.
+2. If the node only has one child node, connect the parent node of the node you want to remove to that child node.
+3. If the node has both right and left child nodes: Find the node's in-order successor, change values with that node, then delete it.
+```python
+def delete(node, data):
+    if not node:
+        return None
+
+    if data < node.data:
+        node.left = delete(node.left, data)
+    elif data > node.data:
+        node.right = delete(node.right, data)
+    else:
+        # Node with only one child or no child
+        if not node.left:
+            temp = node.right
+            node = None
+            return temp
+        elif not node.right:
+            temp = node.left
+            node = None
+            return temp
+
+        # Node with two children, get the in-order successor
+        node.data = minValueNode(node.right).data
+        node.right = delete(node.right, node.data)
+
+    return node
+```
 # Red Black Tree
 
 # Graphs
