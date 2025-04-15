@@ -100,8 +100,7 @@ To insert a node in a linked list we first need to create the node, and then at 
     Inserting at the beginning or immediately after a known node is **O(1)** (for both singly and doubly linked lists).
 - **Worst Case:**  
     Inserting at the end (if you do not maintain a tail pointer) is **O(n)** because you must traverse the entire list.
-
-
+    
 ```python
 def insertNodeAtPosition(head, newNode, position):
     if position == 1:
