@@ -303,9 +303,13 @@ for i, d in enumerate(distances):
 - It is called a Minimum Spanning **Tree**, because it is a connected, acyclic, undirected graph, which is the definition of a tree data structure.
 - In the real world, finding the Minimum Spanning Tree can help us find the most effective way to connect houses to the internet or to the electrical grid, or it can help us finding the fastest route to deliver packages.
 
-
 |                                                                         | Prims Algorithm                              | Kruskals Algorithm                                            |
 | ----------------------------------------------------------------------- | -------------------------------------------- | ------------------------------------------------------------- |
 | _Can it find MSTs (a Minimum Spanning Forest) in an unconnected graph?_ | No                                           | Yes                                                           |
 | _How does it start?_                                                    | The MST grows from a randomly chosen vertex. | The first edge in the MST is the edge with lowest edge weight |
 | _What time complexity does it have?_                                    | O(V^2), or O(E⋅logV) (Optimized)             | O(E⋅logE)                                                     |
+## Kruskals
+- The MST (or MSTs) found by Kruskal's algorithm is the collection of edges that connect all vertices (or as many as possible) with the minimum total edge weight.
+- Kruskal's algorithm adds edges to the MST (or Minimum Spanning Forest), starting with the edges with the lowest edge weights.
+- Edges that would create a cycle are not added to the MST. These are the red blinking lines in the animation above.
+- Kruskal's algorithm checks all edges in the graph, but the animation above is made to stop when the MST or Minimum Spanning forest is completed, so that you don't have to wait for the longest edges to be checked.
