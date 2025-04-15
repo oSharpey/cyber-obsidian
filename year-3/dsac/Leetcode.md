@@ -66,6 +66,9 @@ class Solution(object):
         s = s.strip()
         sign = 1
         num = 0
+		if not s:
+			return 0
+
 
         if s[0] == "-":
             sign = -1
