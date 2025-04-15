@@ -303,6 +303,14 @@ for i, d in enumerate(distances):
 - It is called a Minimum Spanning **Tree**, because it is a connected, acyclic, undirected graph, which is the definition of a tree data structure.
 - In the real world, finding the Minimum Spanning Tree can help us find the most effective way to connect houses to the internet or to the electrical grid, or it can help us finding the fastest route to deliver packages.
 
+- **Dense Graphs:**  
+    Dense graphs may slow down both algorithms due to the large number of edges. Efficient sorting (Kruskal) or efficient priority queue operations (Prim) are critical.
+- **Sparse Graphs:**  
+    Both algorithms generally perform well on sparse graphs.
+- **Mitigation Strategies:**
+    - When using Kruskal's, a well-implemented union-find can mitigate cycle detection overhead.
+    - When using Prim's, choosing the right data structure (e.g., Fibonacci heaps or optimized binary heaps) can improve performance.
+
 |                                                                         | Prims Algorithm                              | Kruskals Algorithm                                            |
 | ----------------------------------------------------------------------- | -------------------------------------------- | ------------------------------------------------------------- |
 | _Can it find MSTs (a Minimum Spanning Forest) in an unconnected graph?_ | No                                           | Yes                                                           |
@@ -312,4 +320,11 @@ for i, d in enumerate(distances):
 - The MST (or MSTs) found by Kruskal's algorithm is the collection of edges that connect all vertices (or as many as possible) with the minimum total edge weight.
 - Kruskal's algorithm adds edges to the MST (or Minimum Spanning Forest), starting with the edges with the lowest edge weights.
 - Edges that would create a cycle are not added to the MST. These are the red blinking lines in the animation above.
-- Kruskal's algorithm checks all edges in the graph, but the animation above is made to stop when the MST or Minimum Spanning forest is completed, so that you don't have to wait for the longest edges to be checked.
+- Kruskal's algorithm checks all edges in the graph
+
+### How it works
+1. Sort the edges in the graph from the lowest to the highest edge weight.
+2. For each edge, starting with the one with the lowest edge weight:
+    1. Will this edge create a cycle in the current MST?
+        - If no: Add the edge as an MST edge.
+-
