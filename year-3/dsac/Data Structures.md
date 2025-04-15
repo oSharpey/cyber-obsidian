@@ -272,10 +272,145 @@ print("isEmpty: ", myStack.isEmpty())
 print("Size: ", myStack.stackSize())
 ```
 
+**Overview and Operation Complexities:**
+- **Stack (LIFO – Last In, First Out):**
+    - **Insertion (Push):** **O(1)**
+    - **Search by Value:**  
+        Typically **O(n)** in the worst and average cases, since you may have to check each element.
+    - **Deletion (Pop):** **O(1)**
 # Queue
+Think of a queue as people standing in line in a supermarket.
+The first person to stand in line is also the first who can pay and leave the supermarket. This way of organizing elements is called FIFO: First In First Out.
+Basic operations we can do on a queue are:
+- **Enqueue:** Adds a new element to the queue.
+- **Dequeue:** Removes and returns the first (front) element from the queue.
+- **Peek:** Returns the first element in the queue.
+- **isEmpty:** Checks if the queue is empty.
+- **Size:** Finds the number of elements in the queue.
+#### With array
+```python
+class Queue:
+    def __init__(self):
+        self.queue = []
+    
+    def enqueue(self, element):
+        self.queue.append(element)
+    
+    def dequeue(self):
+        if self.isEmpty():
+            return "Queue is empty"
+        return self.queue.pop(0)
+    
+    def peek(self):
+        if self.isEmpty():
+            return "Queue is empty"
+        return self.queue[0]
+    
+    def isEmpty(self):
+        return len(self.queue) == 0
+    
+    def size(self):
+        return len(self.queue)
 
+# Create a queue
+myQueue = Queue()
+
+myQueue.enqueue('A')
+myQueue.enqueue('B')
+myQueue.enqueue('C')
+print("Queue: ", myQueue.queue)
+
+print("Dequeue: ", myQueue.dequeue())
+
+print("Peek: ", myQueue.peek())
+
+print("isEmpty: ", myQueue.isEmpty())
+
+print("Size: ", myQueue.size())
+```
+#### With linked list
+```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class Queue:
+    def __init__(self):
+        self.front = None
+        self.rear = None
+        self.length = 0
+    
+    def enqueue(self, element):
+        new_node = Node(element)
+        if self.rear is None:
+            self.front = self.rear = new_node
+            self.length += 1
+            return
+        self.rear.next = new_node
+        self.rear = new_node
+        self.length += 1
+    
+    def dequeue(self):
+        if self.isEmpty():
+            return "Queue is empty"
+        temp = self.front
+        self.front = temp.next
+        self.length -= 1
+        if self.front is None:
+            self.rear = None
+        return temp.data
+    
+    def peek(self):
+        if self.isEmpty():
+            return "Queue is empty"
+        return self.front.data
+    
+    def isEmpty(self):
+        return self.length == 0
+    
+    def size(self):
+        return self.length
+
+    def printQueue(self):
+        temp = self.front
+        while temp:
+            print(temp.data, end=" ")
+            temp = temp.next
+        print()
+
+# Create a queue
+myQueue = Queue()
+
+myQueue.enqueue('A')
+myQueue.enqueue('B')
+myQueue.enqueue('C')
+print("Queue: ", end="")
+myQueue.printQueue()
+
+print("Dequeue: ", myQueue.dequeue())
+
+print("Peek: ", myQueue.peek())
+
+print("isEmpty: ", myQueue.isEmpty())
+
+print("Size: ", myQueue.size())
+```
+### Complexities
+**Queue (FIFO – First In, First Out):**
+- **Insertion (Enqueue):** **O(1)**
+- **Search by Value:** **O(n)**
+- **Deletion (Dequeue):** **O(1)**
 ## Priority Queue
-
+- A priority queue is an abstract data structure in which each element has a priority.
+- It allows for the retrieval of the highest (or lowest) priority element rather than just the "first in" or "last in" element.
+**Basic Implementations:**
+- **Using an Array/Linked List:**  
+    One simple implementation is to keep items sorted upon insertion. This makes insertion cost **O(n)**, but removal of the highest-priority element is **O(1)**.
+- **Using a Heap (not examining binary heaps per se):**  
+    A more efficient (and common) implementation is to use a heap (often a binary heap). This is typically how priority queues are implemented in practice but you’re not required to know exact complexities here.
+- **Understanding:**  
+    The key takeaway is that priority queues allow you to quickly retrieve an element based on its priority rather than its insertion order.
 # Binary Search Tree
 
 # Red Black Tree
