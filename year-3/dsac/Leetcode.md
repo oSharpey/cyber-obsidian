@@ -54,3 +54,39 @@ class Solution(object):
 
 		return sign * rev
 ```
+
+# ATOI
+```python
+class Solution(object):
+    def myAtoi(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        s = s.strip()
+        sign = 1
+        num = 0
+
+        if s[0] == "-":
+            sign = -1
+            s = s[1:]
+        elif s[0] == "+":
+            sign = 1
+            s = s[1:]
+
+        for i in s:
+            if i.isdigit():
+                num = num * 10 + int(i)
+            else:
+                break
+
+        num *= sign
+
+        if num > 2**31 - 1:
+            return 2**31 - 1
+        elif num < -(2**31):
+            return -(2**31)
+
+        return num
+
+```
