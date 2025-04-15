@@ -108,4 +108,22 @@ for i in range(n-1):
 print("Sorted array:", my_array)
 ```
 
-# Advance
+# Advanced Sorting Algorithms 
+## Merge Sort
+### How it Works
+**Step 1**: Arrays or lists are split into two (roughly )equal halves. Continue splitting recursively until each sublist contains a single element or is empty. These are inherently sorted.
+**Step 2**: Merge each pair of sorted sublists into a single sorted sublist. Continue merging until all sublists are merged back into one sorted list. During the merge step, two sorted arrays are combined into one sorted array by comparing their elements one by one.
+**Step 3**: After merging all sublists, the original list is fully sorted.
+
+**Divide:** The algorithm starts with breaking up the array into smaller and smaller pieces until one such sub-array only consists of one element.
+**Conquer:** The algorithm merges the small pieces of the array back together by putting the lowest values first, resulting in a sorted array.
+![[Pasted image 20250415161325.png]]
+
+### Big O
+- Best Case Big-O: ***O(n * logn)***
+- Worst Case Big-O: ***O(n * logn)***
+- Average Big-O: ***O(n * logn)***
+- Space Complexity: ***O(n)***
+#### Why these complexites
+- because the array is always divided in half and then merged.
+- More space needed to hold individual sub lists
