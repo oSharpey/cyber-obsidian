@@ -191,3 +191,37 @@ class Solution(object):
 
         return dummy
 ```
+
+# Find the starting and ending index of a value in an array
+```python
+class Solution(object):
+    def searchRange(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+
+        def binarySearch(nums, x):
+            left = 0
+            right = len(nums)
+
+            while left < right:
+                mid = (left + right) // 2
+
+        
+                if nums[mid] < x:
+                    left = mid + 1
+                else:
+                    right = mid 
+
+            return left
+
+        low = binarySearch(nums, target)
+        high = binarySearch(nums, target+1) - 1
+
+        if low <= high:
+            return [low, high]
+
+        return [-1, -1]
+```
