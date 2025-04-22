@@ -246,3 +246,59 @@ class Solution(object):
 
         return valid(root, float("-inf"), float("inf"))
 ```
+
+# Word Break
+## Intuition
+
+When you first see the problem, it feels natural to try to build the string piece by piece using words from the dictionary. The idea is:
+
+“Can I match a word at the beginning? If so, can I recursively break the rest of the string too?”
+
+This leads us to a recursive solution, where at each step we try all words in the dictionary and check whether they match the current position in the string.
+
+However, since there can be many overlapping subproblems (e.g., checking the same substring multiple times), we should cache the results using memoization to avoid redundant work.
+
+## Approach
+
+Convert wordDict to a set for O(1) lookups.
+
+Use a helper recursive function backtrack(index):
+
+It returns True if the substring s[index:] can be broken into valid words.
+
+At each recursive step:
+
+Loop through each word in the dictionary.
+
+If the word matches the current position (s.startswith(word, index)), recurse on the remaining string from index + len(word).
+
+Use a memo dictionary to cache results for each starting index.
+
+Base case: if index == len(s), return True (we've used the entire string successfully).
+```python
+class Solution(object):
+    def wordBreak(self, s, wordDict):
+        """
+        :type s: str
+        :type wordDict: List[str]
+        :rtype: bool
+        """
+        word_set = set(wordDict)
+        memo = {}
+
+        def backtrack(index):
+            if index == len(s):
+                return True
+            if index in memo:
+                return memo[index]
+
+            for word in word_set:
+                if s.startswith(word, index):
+                    if backtrack(index + len(word)):
+                        memo[index] = True
+                        return True
+
+            memo[index] = False
+            return False
+        return backtrack(0)
+```
