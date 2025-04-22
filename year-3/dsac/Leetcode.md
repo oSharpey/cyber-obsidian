@@ -172,3 +172,22 @@ class Solution(object):
         return parens
 
 ```
+
+# Swap adjacent nodes in linked list
+```python
+class Solution(object):
+    def swapPairs(self, head):
+        """
+        :type head: Optional[ListNode]
+        :rtype: Optional[ListNode]
+        """
+        
+        if not head or not head.next:
+            return head
+        
+        dummy = head.next
+        head.next = self.swapPairs(dummy.next)
+        dummy.next = head
+
+        return dummy
+```
