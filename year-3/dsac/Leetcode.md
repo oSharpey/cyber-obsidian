@@ -303,4 +303,48 @@ class Solution(object):
         return backtrack(0)
 ```
 
+
+# Max non adjacent subset
+```python
+def maxSubsetSum(arr):
+    if not arr:
+        return 0
+    n = len(arr)
+    if n == 1:
+        return max(0, arr[0])
+
+    incl = max(0, arr[0])
+    excl = 0
+
+    for i in range(1, n):
+        new_incl = excl + arr[i]
+        excl = max(incl, excl)
+        incl = max(new_incl, incl)
+
+    return max(incl, excl)
+```
+
 # Integer replacement
+```python
+class Solution(object):
+    def integerReplacement(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        memo = {}
+        
+        def helper(x):
+            if x == 1:
+                return 0
+            if x in memo:
+                return memo[x]
+            if x % 2 == 0:
+                memo[x] = 1 + helper(x // 2)
+            else:
+                memo[x] = 1 + min(helper(x + 1), helper(x - 1))
+            return memo[x]
+        
+        return helper(n)
+        
+```
