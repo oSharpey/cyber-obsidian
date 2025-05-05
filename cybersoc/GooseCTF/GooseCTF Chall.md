@@ -1,7 +1,23 @@
 
 ## Go go power rangers
 AES KEY: `[0xfc, 0x27, 0xd0, 0xc3, 0x3d, 0x11, 0xfb, 0x88, 0x6a, 0xd9, 0x34, 0x87, 0x5d, 0x0c, 0xa7, 0xf4]`
-FLAG: `GooseCTF{r1t4_r3pu154_3v1l_r337urn5}`
+FLAG: `GooseCTF{1t5_m0rph1n_t1m3!!!}`
+Files: power.npy, text.npy
+Encrypted flag
+
+
+
+
+
+
+
+
+
+
+
+
+## Go go power rangers 2
+FLAG: `GooseCTF{r1t4_r3pu154_3v1l_r37urn5}`
 
 
 
